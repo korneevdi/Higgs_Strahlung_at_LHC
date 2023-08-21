@@ -1,0 +1,27 @@
+
+Date: Thu Aug 26 17:37:28 2021
+
+Setting up job queue from jobs_B_sectormappings_appl.yaml
+Updating job queue dependencies
+Processing jobs in serial mode (non-MPI build)
+Inserted new job in queue: job(1): select reductions: [...]./../REDUZE/3_no_distribute/list_of_inregrals.yaml
+Inserted new job in queue: job(2): reduce files ./masters_tmp/tmp/AMP_MI.sol
+Inserted new job in queue: job(3): reduce files ./masters_tmp/tmp/AMP_MIF2.sol
+Inserted new job in queue: job(4): export file masters_tmp/tmp/AMP_MIF3.sol
+Updating job queue dependencies
+Loading uncrossed integral families from file ./config/integralfamilies.yaml
+Initialize integral family 'T1'
+Loaded integral family T1
+Initialize integral family 'T2'
+Loaded integral family T2
+Loaded 2 (uncrossed) integral families
+Done loading uncrossed integral families
+
++-------+
+| ERROR |
++-------+
+could not resolve dependency problem:
+missing file '../../REDUZE/3_no_distribute/list_of_inregrals.yaml' needed by job job(1): select reductions: [...]./../REDUZE/3_no_distribute/list_of_inregrals.yaml
+
+
+Killing Fermat

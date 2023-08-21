@@ -1,0 +1,25 @@
+
+Date: Thu Aug 26 10:10:23 2021
+
+
+conditional: false
+input_file: ./tmp/T1_4_78/seeds/seeds_T1_4_78_lorentz
+output_file: ./tmp/T1_4_78/identities/identities_T1_4_78_lorentz_1_of_1
+type: lorentz
+options:
+  transform_integrals_to_equivalent: true
+  solve_equations: true
+  set_subsectors_to_zero: false
+  eliminate_subsectors_by_shift: true
+  map_on_coeff: []
+from: 1
+to: 1000
+
+  Adjusting last integral 1000 to 56
+  Generating identities of type lorentz: identities_T1_4_78_lorentz_1_of_1
+  identities from 56 seeds, range: [1, 56]
+  ..................................................  **************************************************
+  Identities generated: 168 (time: 0.1 s)
+  Average number of integrals per equation: 6
+
+Job done (total time: 0 s)

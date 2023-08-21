@@ -1,0 +1,81 @@
+
+Date: Thu Aug 26 17:46:25 2021
+
+Setting up job queue from jobs_B_sectormappings_appl.yaml
+Updating job queue dependencies
+Processing jobs in serial mode (non-MPI build)
+Inserted new job in queue: job(1): select reductions: [...]./../REDUZE/3_no_distribute/list_of_integrals.yaml
+Inserted new job in queue: job(2): reduce files ./masters_tmp/tmp/AMP_MI.sol
+Inserted new job in queue: job(3): reduce files ./masters_tmp/tmp/AMP_MIF2.sol
+Inserted new job in queue: job(4): export file masters_tmp/tmp/AMP_MIF3.sol
+Updating job queue dependencies
+Loading uncrossed integral families from file ./config/integralfamilies.yaml
+Initialize integral family 'T1'
+Loaded integral family T1
+Initialize integral family 'T2'
+Loaded integral family T2
+Loaded 2 (uncrossed) integral families
+Done loading uncrossed integral families
+Inserted new job in queue: job(5): run reduction of files ./masters_tmp/tmp/AMP_MI.sol + ...
+Inserted new job in queue: job(6): run reduction of files ./masters_tmp/tmp/AMP_MIF2.sol + ...
+Updated job queue:
+  [p] job(1): select reductions: [...]./../REDUZE/3_no_distribute/list_of_integrals.yaml  [dep: ]
+  [p] job(5): run reduction of files ./masters_tmp/tmp/AMP_MI.sol + ...  [dep: 1]
+  [p] job(2): reduce files ./masters_tmp/tmp/AMP_MI.sol  [dep: 1,5]
+  [p] job(6): run reduction of files ./masters_tmp/tmp/AMP_MIF2.sol + ...  [dep: 2]
+  [p] job(3): reduce files ./masters_tmp/tmp/AMP_MIF2.sol  [dep: 2,6]
+  [p] job(4): export file masters_tmp/tmp/AMP_MIF3.sol  [dep: 3]
+
+
+Date: Thu Aug 26 17:46:25 2021
+
+Run ID: f3839bf2
+
+Starting job(1): select reductions: [...]./../REDUZE/3_no_distribute/list_of_integrals.yaml
+Completed Job(1) [Time: 2s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 17:46:28 2021
+
+Run ID: f3839bf2
+
+Starting job(5): run reduction of files ./masters_tmp/tmp/AMP_MI.sol + ...
+Completed Job(5) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 17:46:28 2021
+
+Run ID: f3839bf2
+
+Starting job(2): reduce files ./masters_tmp/tmp/AMP_MI.sol
+Completed Job(2) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 17:46:28 2021
+
+Run ID: f3839bf2
+
+Starting job(6): run reduction of files ./masters_tmp/tmp/AMP_MIF2.sol + ...
+Completed Job(6) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 17:46:28 2021
+
+Run ID: f3839bf2
+
+Starting job(3): reduce files ./masters_tmp/tmp/AMP_MIF2.sol
+Completed Job(3) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 17:46:28 2021
+
+Run ID: f3839bf2
+
+Starting job(4): export file masters_tmp/tmp/AMP_MIF3.sol
+Completed Job(4) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+Completed jobs in jobqueue
+
+Completed all jobs
+Total run time: 3 s
+Killing Fermat

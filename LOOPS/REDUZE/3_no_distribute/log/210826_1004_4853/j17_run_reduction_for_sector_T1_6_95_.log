@@ -1,0 +1,4669 @@
+
+Date: Thu Aug 26 10:49:28 2021
+
+
+conditional: false
+min_workers: 0
+max_workers: 0
+tmp_directory: ./tmp/T1_6_95/
+identity_filenames:
+  - ./tmp/T1_6_95/identities/identities_T1_6_95_ibp_1_of_1
+  - ./tmp/T1_6_95/identities/identities_T1_6_95_lorentz_1_of_1
+  - ./tmp/T1_6_95/identities/identities_T1_6_95_sector_symmetries_1_of_1
+subst_filenames:
+  []
+output_file: ./reductions/reduction_T1_6_95
+output_file_external: ./reductions/external_T1_6_95
+solutions:
+  requested_solutions:
+    - {r: [t, 9], s: [0, 3]}
+  set_subsectors_to_zero: false
+  map_on_coeff: []
+  discard_new_subsector_identities: false
+reduzer_options:
+  num_equations_per_subjob: 1
+  num_blocks_per_subjob: 1
+  only_substitute: false
+preferred_masters_file: ""
+delete_files:
+  - ./tmp/T1_6_95/seeds/seeds_T1_6_95_ibp
+  - ./tmp/T1_6_95/identities/identities_T1_6_95_ibp_1_of_1
+  - ./tmp/T1_6_95/seeds/seeds_T1_6_95_lorentz
+  - ./tmp/T1_6_95/identities/identities_T1_6_95_lorentz_1_of_1
+  - ./tmp/T1_6_95/seeds/seeds_T1_6_95_sector_symmetries
+  - ./tmp/T1_6_95/identities/identities_T1_6_95_sector_symmetries_1_of_1
+delete_directories:
+  - ./tmp/T1_6_95/seeds/
+  - ./tmp/T1_6_95/identities/
+subst_subsectors: true
+sector: [T1, 95]
+
+Checking for aborted previous run
+Setting up in-memory reduction
+Determining integrals: all_ints, external_ints, helper_ints, critical_ints, discard_ints
+Find integrals in identities
+  scanning ./tmp/T1_6_95/identities/identities_T1_6_95_ibp_1_of_1 (0.2s)
+  scanning ./tmp/T1_6_95/identities/identities_T1_6_95_lorentz_1_of_1 (0.009s)
+  scanning ./tmp/T1_6_95/identities/identities_T1_6_95_sector_symmetries_1_of_1 (0.006s)
+Add optimal set of sub-sector substitution files
+  using ./reductions/reduction_T1_5_79
+  using ./reductions/reduction_T1_5_87
+  using ./reductions/reduction_T1_5_93
+  using ./reductions/reduction_T1_5_94
+Find integrals in substitutions
+  scanning ./reductions/reduction_T1_5_79 (0.1s)
+  scanning ./reductions/reduction_T1_5_87 (0.08s)
+  scanning ./reductions/reduction_T1_5_93 (0.09s)
+  scanning ./reductions/reduction_T1_5_94 (0.1s)
+Find external and helper integrals
+Find critical integrals
+Selecting border as critical integrals
+Checking 16 rs-points for border
+  on border: 6 3
+  on border: 7 3
+  on border: 8 3
+  on border: 9 0
+  on border: 9 1
+  on border: 9 2
+  on border: 9 3
+Initialize reduzer
+Allocated maps for data during reduction.
+Building INT translations
+Insert integrals for algorithm control:
+Insert substitutions
+  Inserting needed substitutions from ./reductions/reduction_T1_5_79 to database
+  scanning 5195531 bytes
+  ..................................................  **************************************************
+  file scanned (time: 0.1 s)
+  Inserting needed substitutions from ./reductions/reduction_T1_5_87 to database
+  scanning 7085554 bytes
+  ..................................................  **************************************************
+  file scanned (time: 0.1 s)
+  Inserting needed substitutions from ./reductions/reduction_T1_5_93 to database
+  scanning 8617496 bytes
+  ..................................................  **************************************************
+  file scanned (time: 0.1 s)
+  Inserting needed substitutions from ./reductions/reduction_T1_5_94 to database
+  scanning 15657994 bytes
+  ..................................................  **************************************************
+  file scanned (time: 0.1 s)
+Insert equations to be reduced
+  Inserting equations ./tmp/T1_6_95/identities/identities_T1_6_95_ibp_1_of_1 to database
+  inserting 2487166 bytes to database
+  ..................................................  **************************************************
+  file loaded (time: 0.2 s)
+  Inserting equations ./tmp/T1_6_95/identities/identities_T1_6_95_lorentz_1_of_1 to database
+  inserting 33199 bytes to database
+  ..................................................  **************************************************
+  file loaded (time: 0.0 s)
+  Inserting equations ./tmp/T1_6_95/identities/identities_T1_6_95_sector_symmetries_1_of_1 to database
+  inserting 0 bytes to database
+  ..................................................
+  file loaded (time: 0.0 s)
+Starting with 1730 reducible integrals
+Setup done
+Setup of reduction done (time: 1.4 s)
+Running Reduction for sector (T1:6:95)
+Performing computation in serial mode
+  reduction
+  ..................................................Processed integral 1/11545
+  Reduced block [2e-03 s]
+Processed integral 1/11527
+Reduced block [1e-03 s]
+Processed integral 1/11526
+Reduced block [3e-03 s]
+Processed integral 1/11480
+Reduced block [8e-04 s]
+Processed integral 1/11479
+Reduced block [2e-03 s]
+Processed integral 1/11477
+Reduced block [5e-03 s]
+Processed integral 1/11384
+Reduced block [9e-04 s]
+Processed integral 1/11383
+Reduced block [2e-03 s]
+Processed integral 1/11381
+Reduced block [4e-03 s]
+Processed integral 1/11378
+Reduced block [1e-02 s]
+Processed integral 1/11203
+Reduced block [1e-03 s]
+Processed integral 1/11198
+Reduced block [1e-03 s]
+Processed integral 1/11197
+Reduced block [1e-03 s]
+Processed integral 1/11156
+Reduced block [3e-03 s]
+Processed integral 1/11142
+Reduced block [1e-03 s]
+Processed integral 1/11141
+Reduced block [2e-03 s]
+Processed integral 1/11138
+Reduced block [2e-03 s]
+Processed integral 1/11025
+Reduced block [5e-03 s]
+Processed integral 1/10998
+Reduced block [1e-03 s]
+Processed integral 1/10997
+Reduced block [2e-03 s]
+Processed integral 1/10995
+Reduced block [4e-03 s]
+Processed integral 1/10989
+Reduced block [4e-03 s]
+Processed integral 1/10750
+Reduced block [1e-02 s]
+Processed integral 1/10706
+Reduced block [1e-03 s]
+Processed integral 1/10705
+Reduced block [3e-03 s]
+Processed integral 1/10703
+Reduced block [5e-03 s]
+Processed integral 1/10700
+Reduced block [8e-03 s]
+Processed integral 1/10690
+Reduced block [7e-03 s]
+Processed integral 1/10157
+Reduced block [2e-03 s]
+Processed integral 1/10152
+Reduced block [9e-04 s]
+Processed integral 1/10151
+Reduced block [1e-03 s]
+Processed integral 1/10143
+Reduced block [1e-03 s]
+Processed integral 1/10141
+Reduced block [1e-03 s]
+Processed integral 1/10050
+Reduced block [3e-03 s]
+Processed integral 1/10035
+Reduced block [2e-03 s]
+Processed integral 1/10032
+Reduced block [2e-03 s]
+Processed integral 1/10009
+Reduced block [1e-03 s]
+Processed integral 1/10008
+Reduced block [3e-03 s]
+Processed integral 1/10002
+Reduced block [2e-03 s]
+Processed integral 1/9749
+Reduced block [6e-03 s]
+Processed integral 1/9719
+Reduced block [4e-03 s]
+Processed integral 1/9713
+Reduced block [4e-03 s]
+Processed integral 1/9668
+Reduced block [1e-03 s]
+Processed integral 1/9667
+Reduced block [3e-03 s]
+Processed integral 1/9665
+Reduced block [5e-03 s]
+Processed integral 1/9653
+Reduced block [5e-03 s]
+Processed integral 1/9114
+Reduced block [1e-02 s]
+Processed integral 1/9064
+Reduced block [1e-02 s]
+Processed integral 1/9054
+Reduced block [1e-02 s]
+Processed integral 1/8980
+Reduced block [2e-03 s]
+Processed integral 1/8979
+Reduced block [4e-03 s]
+Processed integral 1/8977
+Reduced block [7e-03 s]
+Processed integral 1/8974
+Reduced block [1e-02 s]
+Processed integral 1/8954
+Reduced block [1e-02 s]
+Processed integral 1/2860
+Reduced block [1e-02 s]
+Processed integral 2/2860
+Reduced block [7e-03 s]
+Processed integral 3/2860
+Reduced block [2e-02 s]
+Processed integral 4/2860
+Reduced block [1e-02 s]
+Processed integral 5/2860
+Reduced block [7e-03 s]
+Processed integral 6/2860
+Reduced block [2e-02 s]
+Processed integral 7/2860
+Reduced block [9e-03 s]
+Processed integral 8/2860
+Reduced block [4e-02 s]
+Processed integral 9/2860
+Reduced block [4e-02 s]
+Processed integral 10/2860
+Reduced block [3e-02 s]
+Processed integral 11/2860
+Reduced block [3e-03 s]
+Processed integral 12/2860
+Reduced block [1e-02 s]
+Processed integral 13/2860
+Reduced block [6e-03 s]
+Processed integral 14/2860
+Reduced block [2e-02 s]
+Processed integral 15/2860
+Reduced block [2e-02 s]
+Processed integral 16/2860
+Reduced block [1e-02 s]
+Processed integral 17/2860
+Reduced block [3e-02 s]
+Processed integral 18/2860
+Reduced block [4e-02 s]
+Processed integral 19/2860
+Reduced block [4e-02 s]
+Processed integral 20/2860
+Reduced block [2e-02 s]
+Processed integral 22/2860
+Reduced block [2e-03 s]
+Processed integral 23/2860
+Reduced block [1e-02 s]
+Processed integral 25/2860
+Reduced block [6e-03 s]
+Processed integral 26/2860
+Reduced block [4e-02 s]
+Reduced block [9e-04 s]
+Reduced block [3e-03 s]
+Processed integral 30/2860
+*Reduced block [2e-03 s]
+Processed integral 31/2860
+Reduced block [5e-03 s]
+Processed integral 32/2860
+Reduced block [4e-03 s]
+Processed integral 33/2860
+Reduced block [1e-02 s]
+Processed integral 34/2860
+Reduced block [3e-02 s]
+Processed integral 35/2860
+Reduced block [2e-02 s]
+Processed integral 39/2860
+Reduced block [7e-03 s]
+Processed integral 40/2860
+Reduced block [2e-02 s]
+Processed integral 41/2860
+Reduced block [1e-02 s]
+Processed integral 42/2860
+Reduced block [5e-02 s]
+Reduced block [8e-04 s]
+Reduced block [3e-03 s]
+Processed integral 43/2860
+Reduced block [6e-02 s]
+Reduced block [2e-03 s]
+Reduced block [5e-03 s]
+Processed integral 44/2860
+Reduced block [9e-02 s]
+Reduced block [1e-03 s]
+Reduced block [7e-03 s]
+Processed integral 51/2860
+Reduced block [2e-03 s]
+Processed integral 52/2860
+Reduced block [6e-03 s]
+Processed integral 53/2860
+Reduced block [4e-03 s]
+Processed integral 54/2860
+Reduced block [1e-02 s]
+Processed integral 55/2860
+Reduced block [1e-02 s]
+Processed integral 56/2860
+Reduced block [8e-03 s]
+Processed integral 57/2860
+Reduced block [1e-02 s]
+Processed integral 58/2860
+Reduced block [3e-02 s]
+Processed integral 59/2860
+Reduced block [2e-02 s]
+Processed integral 60/2860
+Reduced block [6e-02 s]
+Processed integral 61/2860
+Reduced block [5e-02 s]
+Processed integral 62/2860
+Reduced block [3e-02 s]
+Processed integral 69/2860
+Reduced block [7e-03 s]
+Processed integral 70/2860
+Reduced block [2e-02 s]
+Processed integral 71/2860
+Reduced block [1e-02 s]
+Processed integral 72/2860
+Reduced block [4e-02 s]
+Processed integral 73/2860
+Reduced block [4e-02 s]
+Processed integral 74/2860
+Reduced block [3e-02 s]
+Processed integral 75/2860
+Reduced block [5e-02 s]
+Reduced block [9e-04 s]
+Reduced block [3e-03 s]
+Processed integral 76/2860
+Reduced block [8e-02 s]
+Reduced block [2e-03 s]
+Reduced block [7e-03 s]
+Processed integral 77/2860
+Reduced block [1e-01 s]
+Reduced block [2e-03 s]
+Reduced block [7e-03 s]
+Processed integral 78/2860
+Reduced block [1e-01 s]
+Reduced block [4e-03 s]
+Reduced block [1e-02 s]
+Processed integral 79/2860
+Reduced block [2e-01 s]
+Reduced block [4e-03 s]
+Reduced block [2e-02 s]
+Processed integral 80/2860
+Reduced block [2e-01 s]
+Reduced block [3e-03 s]
+Reduced block [1e-02 s]
+Processed integral 91/2860
+*Reduced block [2e-03 s]
+Processed integral 92/2860
+Reduced block [5e-03 s]
+Processed integral 93/2860
+Reduced block [5e-03 s]
+Processed integral 94/2860
+Reduced block [1e-02 s]
+Processed integral 95/2860
+Reduced block [1e-02 s]
+Processed integral 96/2860
+Reduced block [1e-02 s]
+Processed integral 97/2860
+Reduced block [2e-02 s]
+Processed integral 98/2860
+Reduced block [2e-02 s]
+Processed integral 99/2860
+Reduced block [2e-02 s]
+Processed integral 100/2860
+Reduced block [2e-02 s]
+Processed integral 101/2860
+Reduced block [6e-03 s]
+Processed integral 102/2860
+Reduced block [2e-02 s]
+Processed integral 103/2860
+Reduced block [1e-02 s]
+Processed integral 104/2860
+Reduced block [4e-02 s]
+Processed integral 105/2860
+Reduced block [4e-02 s]
+Processed integral 106/2860
+Reduced block [2e-02 s]
+Processed integral 107/2860
+Reduced block [5e-02 s]
+Processed integral 108/2860
+Reduced block [6e-02 s]
+Processed integral 109/2860
+Reduced block [5e-02 s]
+Processed integral 110/2860
+Reduced block [3e-02 s]
+Processed integral 121/2860
+Reduced block [4e-03 s]
+Processed integral 122/2860
+Reduced block [1e-02 s]
+Processed integral 123/2860
+Reduced block [1e-02 s]
+Processed integral 124/2860
+Reduced block [3e-02 s]
+Processed integral 125/2860
+Reduced block [4e-02 s]
+Processed integral 126/2860
+Reduced block [3e-02 s]
+Processed integral 127/2860
+Reduced block [5e-02 s]
+Processed integral 128/2860
+Reduced block [7e-02 s]
+Processed integral 129/2860
+Reduced block [7e-02 s]
+Processed integral 130/2860
+Reduced block [5e-02 s]
+Processed integral 131/2860
+Reduced block [4e-02 s]
+Reduced block [8e-04 s]
+Reduced block [3e-03 s]
+Processed integral 132/2860
+Reduced block [7e-02 s]
+Reduced block [1e-03 s]
+Reduced block [6e-03 s]
+Processed integral 133/2860
+Reduced block [9e-02 s]
+Reduced block [1e-03 s]
+Reduced block [7e-03 s]
+Processed integral 134/2860
+Reduced block [1e-01 s]
+Reduced block [4e-03 s]
+Reduced block [2e-02 s]
+Processed integral 135/2860
+Reduced block [2e-01 s]
+Reduced block [4e-03 s]
+Reduced block [2e-02 s]
+Processed integral 136/2860
+Reduced block [2e-01 s]
+Reduced block [4e-03 s]
+Reduced block [2e-02 s]
+Processed integral 137/2860
+Reduced block [2e-01 s]
+Reduced block [7e-03 s]
+Reduced block [2e-02 s]
+Processed integral 138/2860
+Reduced block [3e-01 s]
+Reduced block [7e-03 s]
+Reduced block [3e-02 s]
+Processed integral 139/2860
+Reduced block [3e-01 s]
+Reduced block [7e-03 s]
+Reduced block [3e-02 s]
+Processed integral 140/2860
+Reduced block [2e-01 s]
+Reduced block [7e-03 s]
+Reduced block [3e-02 s]
+Processed integral 161/2860
+*Reduced block [1e-03 s]
+Processed integral 162/2860
+Reduced block [6e-03 s]
+Processed integral 163/2860
+Reduced block [3e-03 s]
+Processed integral 164/2860
+Reduced block [1e-02 s]
+Processed integral 165/2860
+Reduced block [1e-02 s]
+Processed integral 166/2860
+Reduced block [5e-03 s]
+Processed integral 167/2860
+Reduced block [2e-02 s]
+Processed integral 168/2860
+Reduced block [3e-02 s]
+Processed integral 169/2860
+Reduced block [3e-02 s]
+Processed integral 170/2860
+Reduced block [1e-02 s]
+Processed integral 171/2860
+Reduced block [1e-02 s]
+Processed integral 172/2860
+Reduced block [2e-02 s]
+Processed integral 173/2860
+Reduced block [2e-02 s]
+Processed integral 174/2860
+Reduced block [1e-02 s]
+Processed integral 191/2860
+Reduced block [2e-03 s]
+Processed integral 193/2860
+Reduced block [4e-03 s]
+Processed integral 194/2860
+Reduced block [5e-03 s]
+Processed integral 196/2860
+Reduced block [1e-02 s]
+Processed integral 197/2860
+Reduced block [1e-02 s]
+Processed integral 198/2860
+Reduced block [1e-02 s]
+Processed integral 199/2860
+Reduced block [2e-02 s]
+Processed integral 200/2860
+Reduced block [2e-02 s]
+Processed integral 201/2860
+*Reduced block [2e-02 s]
+Processed integral 202/2860
+Reduced block [2e-02 s]
+Processed integral 203/2860
+Reduced block [4e-03 s]
+Reduced block [2e-03 s]
+Reduced block [3e-03 s]
+Reduced block [6e-03 s]
+Reduced block [1e-02 s]
+Processed integral 204/2860
+Reduced block [8e-03 s]
+Reduced block [3e-03 s]
+Reduced block [7e-03 s]
+Reduced block [1e-02 s]
+Processed integral 205/2860
+Reduced block [2e-02 s]
+Reduced block [3e-03 s]
+Reduced block [2e-03 s]
+Reduced block [3e-03 s]
+Reduced block [7e-03 s]
+Reduced block [1e-02 s]
+Processed integral 206/2860
+Reduced block [2e-02 s]
+Reduced block [7e-03 s]
+Reduced block [1e-02 s]
+Processed integral 207/2860
+Reduced block [5e-02 s]
+Reduced block [1e-02 s]
+Reduced block [4e-03 s]
+Reduced block [7e-03 s]
+Reduced block [1e-02 s]
+Processed integral 208/2860
+Reduced block [4e-02 s]
+Reduced block [9e-03 s]
+Reduced block [4e-03 s]
+Reduced block [7e-03 s]
+Reduced block [1e-02 s]
+Processed integral 209/2860
+Reduced block [3e-02 s]
+Reduced block [1e-02 s]
+Processed integral 210/2860
+Reduced block [9e-02 s]
+Reduced block [1e-02 s]
+Reduced block [8e-03 s]
+Reduced block [1e-02 s]
+Processed integral 211/2860
+Reduced block [9e-02 s]
+Reduced block [1e-02 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Processed integral 212/2860
+Reduced block [9e-02 s]
+Reduced block [1e-02 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Processed integral 214/2860
+Reduced block [6e-02 s]
+Processed integral 215/2860
+Reduced block [7e-02 s]
+Processed integral 216/2860
+Reduced block [8e-02 s]
+Processed integral 217/2860
+Reduced block [8e-02 s]
+Processed integral 220/2860
+Reduced block [2e-03 s]
+Processed integral 223/2860
+Reduced block [6e-03 s]
+Reduced block [1e-03 s]
+Processed integral 224/2860
+Reduced block [2e-03 s]
+Processed integral 225/2860
+Reduced block [5e-03 s]
+Processed integral 227/2860
+Reduced block [4e-03 s]
+Processed integral 228/2860
+Reduced block [2e-02 s]
+Reduced block [3e-03 s]
+Processed integral 229/2860
+Reduced block [1e-02 s]
+Processed integral 230/2860
+Reduced block [2e-03 s]
+Processed integral 231/2860
+Reduced block [7e-03 s]
+Processed integral 232/2860
+Reduced block [4e-02 s]
+Processed integral 234/2860
+Reduced block [2e-03 s]
+Processed integral 235/2860
+Reduced block [2e-02 s]
+Reduced block [3e-03 s]
+Processed integral 236/2860
+Reduced block [5e-03 s]
+Processed integral 237/2860
+Reduced block [3e-02 s]
+Processed integral 238/2860
+Reduced block [4e-02 s]
+Processed integral 245/2860
+Reduced block [4e-03 s]
+Processed integral 246/2860
+Reduced block [5e-03 s]
+Processed integral 247/2860
+Reduced block [4e-03 s]
+Processed integral 254/2860
+Reduced block [1e-02 s]
+Reduced block [1e-03 s]
+Reduced block [1e-03 s]
+Processed integral 255/2860
+Reduced block [1e-02 s]
+Reduced block [2e-03 s]
+Processed integral 256/2860
+Reduced block [3e-02 s]
+Reduced block [2e-03 s]
+Reduced block [2e-03 s]
+Processed integral 257/2860
+Reduced block [2e-03 s]
+Processed integral 258/2860
+*Reduced block [6e-03 s]
+Processed integral 259/2860
+Reduced block [5e-03 s]
+Processed integral 260/2860
+Reduced block [7e-03 s]
+Processed integral 261/2860
+Reduced block [1e-02 s]
+Processed integral 262/2860
+Reduced block [9e-03 s]
+Processed integral 266/2860
+Reduced block [5e-03 s]
+Processed integral 267/2860
+Reduced block [1e-02 s]
+Processed integral 268/2860
+Reduced block [1e-02 s]
+Processed integral 269/2860
+Reduced block [3e-02 s]
+Reduced block [2e-03 s]
+Processed integral 270/2860
+Reduced block [3e-02 s]
+Reduced block [6e-03 s]
+Processed integral 271/2860
+Reduced block [5e-02 s]
+Reduced block [5e-03 s]
+Processed integral 272/2860
+Reduced block [9e-03 s]
+Processed integral 273/2860
+Reduced block [2e-02 s]
+Processed integral 274/2860
+Reduced block [2e-02 s]
+Processed integral 275/2860
+Reduced block [4e-03 s]
+Processed integral 276/2860
+Reduced block [4e-03 s]
+Processed integral 277/2860
+Reduced block [4e-03 s]
+Processed integral 278/2860
+Reduced block [1e-02 s]
+Processed integral 279/2860
+Reduced block [2e-02 s]
+Processed integral 280/2860
+Reduced block [2e-02 s]
+Processed integral 281/2860
+Reduced block [6e-02 s]
+Processed integral 282/2860
+Reduced block [7e-02 s]
+Processed integral 283/2860
+Reduced block [9e-02 s]
+Processed integral 287/2860
+Reduced block [2e-03 s]
+Processed integral 288/2860
+Reduced block [4e-03 s]
+Processed integral 289/2860
+Reduced block [6e-03 s]
+Processed integral 290/2860
+Reduced block [3e-02 s]
+Reduced block [3e-03 s]
+Processed integral 291/2860
+Reduced block [4e-02 s]
+Reduced block [5e-03 s]
+Processed integral 292/2860
+Reduced block [6e-02 s]
+Reduced block [6e-03 s]
+Processed integral 293/2860
+Reduced block [5e-03 s]
+Processed integral 294/2860
+Reduced block [2e-02 s]
+Processed integral 295/2860
+Reduced block [1e-02 s]
+Processed integral 296/2860
+Reduced block [5e-02 s]
+Processed integral 297/2860
+Reduced block [6e-02 s]
+Processed integral 298/2860
+Reduced block [9e-02 s]
+Processed integral 299/2860
+Reduced block [5e-02 s]
+Processed integral 300/2860
+Reduced block [7e-02 s]
+Processed integral 301/2860
+Reduced block [9e-02 s]
+Processed integral 314/2860
+Reduced block [4e-03 s]
+Processed integral 315/2860
+*Reduced block [9e-03 s]
+Processed integral 316/2860
+Reduced block [7e-03 s]
+Processed integral 317/2860
+Reduced block [1e-02 s]
+Processed integral 318/2860
+Reduced block [1e-02 s]
+Processed integral 319/2860
+Reduced block [7e-03 s]
+Processed integral 332/2860
+Reduced block [1e-02 s]
+Reduced block [9e-04 s]
+Reduced block [9e-04 s]
+Processed integral 333/2860
+Reduced block [2e-02 s]
+Reduced block [2e-03 s]
+Reduced block [2e-03 s]
+Processed integral 334/2860
+Reduced block [4e-02 s]
+Reduced block [2e-03 s]
+Reduced block [4e-03 s]
+Processed integral 335/2860
+Reduced block [2e-02 s]
+Reduced block [5e-03 s]
+Processed integral 336/2860
+Reduced block [5e-02 s]
+Reduced block [3e-03 s]
+Reduced block [4e-03 s]
+Processed integral 337/2860
+Reduced block [5e-02 s]
+Reduced block [4e-03 s]
+Reduced block [4e-03 s]
+Processed integral 338/2860
+Reduced block [2e-03 s]
+Processed integral 339/2860
+Reduced block [6e-03 s]
+Processed integral 340/2860
+Reduced block [5e-03 s]
+Processed integral 341/2860
+Reduced block [1e-02 s]
+Processed integral 342/2860
+Reduced block [1e-02 s]
+Processed integral 343/2860
+Reduced block [1e-02 s]
+Processed integral 344/2860
+Reduced block [7e-03 s]
+Processed integral 345/2860
+Reduced block [2e-02 s]
+Processed integral 346/2860
+Reduced block [1e-02 s]
+Processed integral 347/2860
+Reduced block [3e-02 s]
+Processed integral 348/2860
+Reduced block [2e-02 s]
+Processed integral 349/2860
+Reduced block [2e-02 s]
+Processed integral 356/2860
+Reduced block [5e-03 s]
+Processed integral 357/2860
+Reduced block [1e-02 s]
+Processed integral 358/2860
+Reduced block [1e-02 s]
+Processed integral 359/2860
+Reduced block [2e-02 s]
+Processed integral 360/2860
+Reduced block [3e-02 s]
+Processed integral 361/2860
+Reduced block [2e-02 s]
+Processed integral 362/2860
+Reduced block [3e-02 s]
+Reduced block [2e-03 s]
+Processed integral 363/2860
+Reduced block [5e-02 s]
+Reduced block [5e-03 s]
+Processed integral 364/2860
+Reduced block [6e-02 s]
+Reduced block [5e-03 s]
+Processed integral 365/2860
+Reduced block [6e-02 s]
+Reduced block [1e-02 s]
+Processed integral 366/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Processed integral 367/2860
+Reduced block [9e-02 s]
+Reduced block [1e-02 s]
+Processed integral 368/2860
+Reduced block [1e-02 s]
+Processed integral 369/2860
+Reduced block [2e-02 s]
+Processed integral 370/2860
+Reduced block [2e-02 s]
+Processed integral 371/2860
+Reduced block [5e-02 s]
+Processed integral 372/2860
+*Reduced block [5e-02 s]
+Processed integral 373/2860
+Reduced block [4e-02 s]
+Processed integral 374/2860
+Reduced block [4e-03 s]
+Processed integral 375/2860
+Reduced block [1e-02 s]
+Processed integral 376/2860
+Reduced block [8e-03 s]
+Processed integral 377/2860
+Reduced block [1e-02 s]
+Processed integral 378/2860
+Reduced block [1e-02 s]
+Processed integral 379/2860
+Reduced block [9e-03 s]
+Processed integral 380/2860
+Reduced block [1e-02 s]
+Processed integral 381/2860
+Reduced block [3e-02 s]
+Processed integral 382/2860
+Reduced block [2e-02 s]
+Processed integral 383/2860
+Reduced block [4e-02 s]
+Processed integral 384/2860
+Reduced block [5e-02 s]
+Processed integral 385/2860
+Reduced block [3e-02 s]
+Processed integral 386/2860
+Reduced block [6e-02 s]
+Processed integral 387/2860
+Reduced block [1e-01 s]
+Processed integral 388/2860
+Reduced block [1e-01 s]
+Processed integral 389/2860
+Reduced block [1e-01 s]
+Processed integral 390/2860
+Reduced block [2e-01 s]
+Processed integral 391/2860
+Reduced block [2e-01 s]
+Processed integral 398/2860
+Reduced block [2e-03 s]
+Processed integral 399/2860
+Reduced block [5e-03 s]
+Processed integral 400/2860
+Reduced block [7e-03 s]
+Processed integral 401/2860
+Reduced block [9e-03 s]
+Processed integral 402/2860
+Reduced block [1e-02 s]
+Processed integral 403/2860
+Reduced block [1e-02 s]
+Processed integral 404/2860
+Reduced block [3e-02 s]
+Reduced block [3e-03 s]
+Processed integral 405/2860
+Reduced block [6e-02 s]
+Reduced block [6e-03 s]
+Processed integral 406/2860
+Reduced block [9e-02 s]
+Reduced block [8e-03 s]
+Processed integral 407/2860
+Reduced block [8e-02 s]
+Reduced block [8e-03 s]
+Processed integral 408/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Processed integral 409/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Processed integral 410/2860
+Reduced block [6e-03 s]
+Processed integral 411/2860
+Reduced block [2e-02 s]
+Processed integral 412/2860
+Reduced block [1e-02 s]
+Processed integral 413/2860
+Reduced block [3e-02 s]
+Processed integral 414/2860
+Reduced block [4e-02 s]
+Processed integral 415/2860
+Reduced block [3e-02 s]
+Processed integral 416/2860
+Reduced block [5e-02 s]
+Processed integral 417/2860
+Reduced block [9e-02 s]
+Processed integral 418/2860
+Reduced block [1e-01 s]
+Processed integral 419/2860
+Reduced block [1e-01 s]
+Processed integral 420/2860
+Reduced block [2e-01 s]
+Processed integral 421/2860
+Reduced block [2e-01 s]
+Processed integral 422/2860
+Reduced block [5e-02 s]
+Processed integral 423/2860
+Reduced block [8e-02 s]
+Processed integral 424/2860
+Reduced block [1e-01 s]
+Processed integral 425/2860
+Reduced block [1e-01 s]
+Processed integral 426/2860
+Reduced block [2e-01 s]
+Processed integral 427/2860
+Reduced block [2e-01 s]
+Processed integral 448/2860
+*Reduced block [4e-03 s]
+Processed integral 449/2860
+Reduced block [9e-03 s]
+Processed integral 450/2860
+Reduced block [7e-03 s]
+Processed integral 451/2860
+Reduced block [2e-02 s]
+Processed integral 452/2860
+Reduced block [2e-02 s]
+Processed integral 453/2860
+Reduced block [1e-02 s]
+Processed integral 454/2860
+Reduced block [2e-02 s]
+Processed integral 455/2860
+Reduced block [2e-02 s]
+Processed integral 456/2860
+Reduced block [2e-02 s]
+Processed integral 457/2860
+Reduced block [1e-02 s]
+Processed integral 478/2860
+Reduced block [1e-02 s]
+Reduced block [8e-04 s]
+Reduced block [9e-04 s]
+Processed integral 479/2860
+Reduced block [2e-02 s]
+Reduced block [1e-03 s]
+Reduced block [2e-03 s]
+Processed integral 480/2860
+Reduced block [4e-02 s]
+Reduced block [2e-03 s]
+Reduced block [3e-03 s]
+Processed integral 481/2860
+Reduced block [5e-02 s]
+Reduced block [5e-03 s]
+Reduced block [4e-03 s]
+Processed integral 482/2860
+Reduced block [8e-02 s]
+Reduced block [5e-03 s]
+Reduced block [7e-03 s]
+Processed integral 483/2860
+Reduced block [2e-01 s]
+Reduced block [6e-03 s]
+Reduced block [1e-02 s]
+Processed integral 484/2860
+Reduced block [5e-02 s]
+Reduced block [1e-02 s]
+Processed integral 485/2860
+Reduced block [1e-01 s]
+Reduced block [8e-03 s]
+Reduced block [9e-03 s]
+Processed integral 486/2860
+Reduced block [1e-01 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Processed integral 487/2860
+*Reduced block [1e-01 s]
+Reduced block [9e-03 s]
+Reduced block [8e-03 s]
+Processed integral 488/2860
+Reduced block [3e-03 s]
+Processed integral 489/2860
+Reduced block [6e-03 s]
+Processed integral 490/2860
+Reduced block [6e-03 s]
+Processed integral 491/2860
+Reduced block [2e-02 s]
+Processed integral 492/2860
+Reduced block [1e-02 s]
+Processed integral 493/2860
+Reduced block [1e-02 s]
+Processed integral 494/2860
+Reduced block [3e-02 s]
+Processed integral 495/2860
+Reduced block [3e-02 s]
+Processed integral 496/2860
+Reduced block [2e-02 s]
+Processed integral 497/2860
+Reduced block [2e-02 s]
+Processed integral 498/2860
+Reduced block [8e-03 s]
+Processed integral 499/2860
+Reduced block [2e-02 s]
+Processed integral 500/2860
+Reduced block [1e-02 s]
+Processed integral 501/2860
+Reduced block [4e-02 s]
+Processed integral 502/2860
+Reduced block [3e-02 s]
+Processed integral 503/2860
+Reduced block [3e-02 s]
+Processed integral 504/2860
+Reduced block [5e-02 s]
+Processed integral 505/2860
+Reduced block [5e-02 s]
+Processed integral 506/2860
+Reduced block [5e-02 s]
+Processed integral 507/2860
+Reduced block [4e-02 s]
+Processed integral 518/2860
+Reduced block [5e-03 s]
+Processed integral 519/2860
+Reduced block [1e-02 s]
+Processed integral 520/2860
+Reduced block [1e-02 s]
+Processed integral 521/2860
+Reduced block [3e-02 s]
+Processed integral 522/2860
+Reduced block [3e-02 s]
+Processed integral 523/2860
+Reduced block [2e-02 s]
+Processed integral 524/2860
+Reduced block [4e-02 s]
+Processed integral 525/2860
+Reduced block [6e-02 s]
+Processed integral 526/2860
+Reduced block [5e-02 s]
+Processed integral 527/2860
+Reduced block [4e-02 s]
+Processed integral 528/2860
+Reduced block [3e-02 s]
+Reduced block [2e-03 s]
+Processed integral 529/2860
+Reduced block [5e-02 s]
+Reduced block [5e-03 s]
+Processed integral 530/2860
+Reduced block [7e-02 s]
+Reduced block [5e-03 s]
+Processed integral 531/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Processed integral 532/2860
+Reduced block [2e-01 s]
+Reduced block [1e-02 s]
+Processed integral 533/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Processed integral 534/2860
+Reduced block [1e-01 s]
+Reduced block [2e-02 s]
+Processed integral 535/2860
+Reduced block [2e-01 s]
+Reduced block [2e-02 s]
+Processed integral 536/2860
+Reduced block [2e-01 s]
+Reduced block [2e-02 s]
+Processed integral 537/2860
+Reduced block [2e-01 s]
+Reduced block [2e-02 s]
+Processed integral 538/2860
+Reduced block [7e-03 s]
+Processed integral 539/2860
+Reduced block [2e-02 s]
+Processed integral 540/2860
+Reduced block [1e-02 s]
+Processed integral 541/2860
+Reduced block [4e-02 s]
+Processed integral 542/2860
+Reduced block [4e-02 s]
+Processed integral 543/2860
+Reduced block [3e-02 s]
+Processed integral 544/2860
+*Reduced block [5e-02 s]
+Processed integral 545/2860
+Reduced block [6e-02 s]
+Processed integral 546/2860
+Reduced block [5e-02 s]
+Processed integral 547/2860
+Reduced block [3e-02 s]
+Processed integral 548/2860
+Reduced block [4e-03 s]
+Processed integral 549/2860
+Reduced block [1e-02 s]
+Processed integral 550/2860
+Reduced block [8e-03 s]
+Processed integral 551/2860
+Reduced block [2e-02 s]
+Processed integral 552/2860
+Reduced block [2e-02 s]
+Processed integral 553/2860
+Reduced block [2e-01 s]
+Processed integral 554/2860
+Reduced block [2e-02 s]
+Processed integral 555/2860
+Reduced block [2e-02 s]
+Processed integral 556/2860
+Reduced block [2e-02 s]
+Processed integral 557/2860
+Reduced block [2e-02 s]
+Processed integral 558/2860
+Reduced block [1e-02 s]
+Processed integral 559/2860
+Reduced block [3e-02 s]
+Processed integral 560/2860
+Reduced block [2e-02 s]
+Processed integral 561/2860
+Reduced block [6e-02 s]
+Processed integral 562/2860
+Reduced block [7e-02 s]
+Processed integral 563/2860
+Reduced block [4e-02 s]
+Processed integral 564/2860
+Reduced block [8e-02 s]
+Processed integral 565/2860
+Reduced block [9e-02 s]
+Processed integral 566/2860
+Reduced block [9e-02 s]
+Processed integral 567/2860
+Reduced block [6e-02 s]
+Processed integral 568/2860
+Reduced block [5e-02 s]
+Processed integral 569/2860
+Reduced block [9e-02 s]
+Processed integral 570/2860
+Reduced block [1e-01 s]
+Processed integral 571/2860
+Reduced block [2e-01 s]
+Processed integral 572/2860
+Reduced block [2e-01 s]
+Processed integral 573/2860
+Reduced block [2e-01 s]
+Processed integral 574/2860
+Reduced block [2e-01 s]
+Processed integral 575/2860
+Reduced block [3e-01 s]
+Processed integral 576/2860
+Reduced block [3e-01 s]
+Processed integral 577/2860
+Reduced block [4e-01 s]
+Processed integral 588/2860
+Reduced block [3e-03 s]
+Processed integral 589/2860
+Reduced block [6e-03 s]
+Processed integral 590/2860
+Reduced block [6e-03 s]
+Processed integral 591/2860
+Reduced block [1e-02 s]
+Processed integral 592/2860
+Reduced block [1e-02 s]
+Processed integral 593/2860
+Reduced block [1e-02 s]
+Processed integral 594/2860
+Reduced block [2e-02 s]
+Processed integral 595/2860
+Reduced block [3e-02 s]
+Processed integral 596/2860
+Reduced block [3e-02 s]
+Processed integral 597/2860
+Reduced block [2e-02 s]
+Processed integral 598/2860
+Reduced block [3e-02 s]
+Reduced block [3e-03 s]
+Processed integral 599/2860
+Reduced block [7e-02 s]
+Reduced block [6e-03 s]
+Processed integral 600/2860
+Reduced block [9e-02 s]
+Reduced block [6e-03 s]
+Processed integral 601/2860
+*Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Processed integral 602/2860
+Reduced block [2e-01 s]
+Reduced block [2e-02 s]
+Processed integral 603/2860
+Reduced block [2e-01 s]
+Reduced block [2e-02 s]
+Processed integral 604/2860
+Reduced block [2e-01 s]
+Reduced block [2e-02 s]
+Processed integral 605/2860
+Reduced block [3e-01 s]
+Reduced block [3e-02 s]
+Processed integral 606/2860
+Reduced block [3e-01 s]
+Reduced block [3e-02 s]
+Processed integral 607/2860
+Reduced block [2e-01 s]
+Reduced block [2e-02 s]
+Processed integral 608/2860
+Reduced block [7e-03 s]
+Processed integral 609/2860
+Reduced block [2e-02 s]
+Processed integral 610/2860
+Reduced block [1e-02 s]
+Processed integral 611/2860
+Reduced block [4e-02 s]
+Processed integral 612/2860
+Reduced block [5e-02 s]
+Processed integral 613/2860
+Reduced block [3e-02 s]
+Processed integral 614/2860
+Reduced block [6e-02 s]
+Processed integral 615/2860
+Reduced block [8e-02 s]
+Processed integral 616/2860
+Reduced block [8e-02 s]
+Processed integral 617/2860
+Reduced block [5e-02 s]
+Processed integral 618/2860
+Reduced block [5e-02 s]
+Processed integral 619/2860
+Reduced block [1e-01 s]
+Processed integral 620/2860
+Reduced block [1e-01 s]
+Processed integral 621/2860
+Reduced block [2e-01 s]
+Processed integral 622/2860
+Reduced block [2e-01 s]
+Processed integral 623/2860
+Reduced block [2e-01 s]
+Processed integral 624/2860
+Reduced block [2e-01 s]
+Processed integral 625/2860
+Reduced block [3e-01 s]
+Processed integral 626/2860
+Reduced block [3e-01 s]
+Processed integral 627/2860
+Reduced block [3e-01 s]
+Processed integral 628/2860
+Reduced block [4e-02 s]
+Processed integral 629/2860
+Reduced block [8e-02 s]
+Processed integral 630/2860
+Reduced block [1e-01 s]
+Processed integral 631/2860
+Reduced block [1e-01 s]
+Processed integral 632/2860
+Reduced block [2e-01 s]
+Processed integral 633/2860
+Reduced block [2e-01 s]
+Processed integral 634/2860
+Reduced block [2e-01 s]
+Processed integral 635/2860
+Reduced block [3e-01 s]
+Processed integral 636/2860
+Reduced block [3e-01 s]
+Processed integral 637/2860
+Reduced block [2e-01 s]
+Processed integral 658/2860
+*Reduced block [2e-03 s]
+Processed integral 659/2860
+Reduced block [4e-03 s]
+Processed integral 660/2860
+Reduced block [3e-03 s]
+Processed integral 661/2860
+Reduced block [1e-02 s]
+Processed integral 662/2860
+Reduced block [9e-03 s]
+Processed integral 663/2860
+Reduced block [7e-03 s]
+Processed integral 664/2860
+Reduced block [2e-02 s]
+Processed integral 665/2860
+Reduced block [2e-02 s]
+Processed integral 666/2860
+Reduced block [2e-02 s]
+Processed integral 667/2860
+Reduced block [1e-02 s]
+Processed integral 702/2860
+Reduced block [4e-03 s]
+Processed integral 703/2860
+Reduced block [9e-03 s]
+Processed integral 704/2860
+Reduced block [2e-02 s]
+Reduced block [2e-03 s]
+Processed integral 705/2860
+Reduced block [2e-02 s]
+Processed integral 706/2860
+Reduced block [5e-02 s]
+Reduced block [5e-03 s]
+Processed integral 707/2860
+Reduced block [4e-02 s]
+Reduced block [5e-03 s]
+Processed integral 708/2860
+Reduced block [4e-02 s]
+Processed integral 709/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Processed integral 710/2860
+Reduced block [9e-02 s]
+Reduced block [1e-02 s]
+Processed integral 711/2860
+Reduced block [9e-02 s]
+Reduced block [1e-02 s]
+Processed integral 713/2860
+Reduced block [6e-02 s]
+Processed integral 714/2860
+Reduced block [7e-02 s]
+Processed integral 715/2860
+*Reduced block [8e-02 s]
+Processed integral 716/2860
+Reduced block [8e-02 s]
+Processed integral 727/2860
+Reduced block [1e-03 s]
+Processed integral 728/2860
+Reduced block [4e-03 s]
+Processed integral 729/2860
+Reduced block [3e-03 s]
+Processed integral 730/2860
+Reduced block [1e-02 s]
+Processed integral 731/2860
+Reduced block [9e-03 s]
+Processed integral 732/2860
+Reduced block [6e-03 s]
+Processed integral 733/2860
+Reduced block [2e-02 s]
+Processed integral 734/2860
+Reduced block [2e-02 s]
+Processed integral 735/2860
+Reduced block [2e-02 s]
+Processed integral 736/2860
+Reduced block [1e-02 s]
+Processed integral 771/2860
+Reduced block [4e-03 s]
+Processed integral 772/2860
+Reduced block [1e-02 s]
+Processed integral 773/2860
+*Reduced block [2e-02 s]
+Reduced block [3e-03 s]
+Processed integral 774/2860
+Reduced block [2e-02 s]
+Processed integral 775/2860
+Reduced block [5e-02 s]
+Reduced block [6e-03 s]
+Processed integral 776/2860
+Reduced block [5e-02 s]
+Reduced block [6e-03 s]
+Processed integral 777/2860
+Reduced block [4e-02 s]
+Processed integral 778/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Processed integral 779/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Processed integral 780/2860
+Reduced block [9e-02 s]
+Reduced block [1e-02 s]
+Processed integral 782/2860
+Reduced block [6e-02 s]
+Processed integral 783/2860
+Reduced block [8e-02 s]
+Processed integral 784/2860
+Reduced block [8e-02 s]
+Processed integral 785/2860
+Reduced block [8e-02 s]
+Processed integral 786/2860
+Reduced block [1e-03 s]
+Processed integral 787/2860
+Reduced block [4e-03 s]
+Processed integral 788/2860
+Reduced block [3e-03 s]
+Processed integral 789/2860
+Reduced block [1e-02 s]
+Processed integral 790/2860
+Reduced block [1e-02 s]
+Processed integral 791/2860
+Reduced block [7e-03 s]
+Processed integral 792/2860
+Reduced block [2e-02 s]
+Processed integral 793/2860
+Reduced block [2e-02 s]
+Processed integral 794/2860
+Reduced block [2e-02 s]
+Processed integral 795/2860
+Reduced block [1e-02 s]
+Processed integral 800/2860
+Reduced block [2e-03 s]
+Processed integral 801/2860
+Reduced block [6e-03 s]
+Processed integral 802/2860
+Reduced block [4e-03 s]
+Processed integral 803/2860
+Reduced block [1e-02 s]
+Processed integral 804/2860
+Reduced block [1e-02 s]
+Processed integral 805/2860
+Reduced block [9e-03 s]
+Processed integral 806/2860
+Reduced block [2e-02 s]
+Processed integral 807/2860
+Reduced block [2e-02 s]
+Processed integral 808/2860
+Reduced block [2e-02 s]
+Processed integral 809/2860
+Reduced block [2e-02 s]
+Processed integral 815/2860
+Reduced block [2e-03 s]
+Processed integral 816/2860
+Reduced block [7e-03 s]
+Processed integral 817/2860
+Reduced block [5e-03 s]
+Processed integral 818/2860
+Reduced block [1e-02 s]
+Processed integral 819/2860
+Reduced block [2e-02 s]
+Processed integral 820/2860
+Reduced block [1e-02 s]
+Processed integral 821/2860
+Reduced block [3e-02 s]
+Processed integral 822/2860
+Reduced block [3e-02 s]
+Processed integral 823/2860
+Reduced block [3e-02 s]
+Processed integral 824/2860
+Reduced block [2e-02 s]
+Processed integral 830/2860
+*Reduced block [9e-03 s]
+Processed integral 831/2860
+Reduced block [2e-02 s]
+Processed integral 832/2860
+Reduced block [3e-02 s]
+Processed integral 833/2860
+Reduced block [5e-02 s]
+Processed integral 834/2860
+Reduced block [6e-02 s]
+Processed integral 835/2860
+Reduced block [5e-02 s]
+Processed integral 836/2860
+Reduced block [6e-02 s]
+Processed integral 837/2860
+Reduced block [1e-01 s]
+Processed integral 838/2860
+Reduced block [1e-01 s]
+Processed integral 839/2860
+Reduced block [1e-01 s]
+Processed integral 841/2860
+Reduced block [6e-02 s]
+Processed integral 842/2860
+Reduced block [7e-02 s]
+Processed integral 843/2860
+Reduced block [8e-02 s]
+Processed integral 844/2860
+Reduced block [8e-02 s]
+Processed integral 873/2860
+Reduced block [5e-03 s]
+Processed integral 874/2860
+Reduced block [1e-02 s]
+Processed integral 875/2860
+Reduced block [2e-02 s]
+Reduced block [2e-03 s]
+Reduced block [3e-03 s]
+Processed integral 876/2860
+Reduced block [2e-02 s]
+Processed integral 877/2860
+Reduced block [6e-02 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Processed integral 878/2860
+Reduced block [5e-02 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Processed integral 879/2860
+Reduced block [4e-02 s]
+Processed integral 880/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 881/2860
+Reduced block [2e-01 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 882/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 884/2860
+Reduced block [6e-02 s]
+Processed integral 885/2860
+Reduced block [8e-02 s]
+Processed integral 886/2860
+Reduced block [8e-02 s]
+Processed integral 887/2860
+*Reduced block [8e-02 s]
+Processed integral 902/2860
+Reduced block [6e-03 s]
+Processed integral 903/2860
+Reduced block [2e-02 s]
+Processed integral 904/2860
+Reduced block [3e-02 s]
+Reduced block [3e-03 s]
+Processed integral 905/2860
+Reduced block [3e-02 s]
+Processed integral 906/2860
+Reduced block [7e-02 s]
+Reduced block [7e-03 s]
+Processed integral 907/2860
+Reduced block [6e-02 s]
+Reduced block [7e-03 s]
+Processed integral 908/2860
+Reduced block [5e-02 s]
+Processed integral 909/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Processed integral 910/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Processed integral 911/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Processed integral 913/2860
+Reduced block [7e-02 s]
+Processed integral 914/2860
+Reduced block [1e-01 s]
+Processed integral 915/2860
+Reduced block [1e-01 s]
+Processed integral 916/2860
+Reduced block [1e-01 s]
+Processed integral 917/2860
+Reduced block [4e-03 s]
+Processed integral 918/2860
+Reduced block [1e-02 s]
+Processed integral 919/2860
+Reduced block [2e-02 s]
+Processed integral 920/2860
+Reduced block [2e-02 s]
+Processed integral 921/2860
+Reduced block [5e-02 s]
+Processed integral 922/2860
+Reduced block [4e-02 s]
+Processed integral 923/2860
+Reduced block [3e-02 s]
+Processed integral 924/2860
+Reduced block [1e-01 s]
+Processed integral 925/2860
+Reduced block [9e-02 s]
+Processed integral 926/2860
+Reduced block [8e-02 s]
+Processed integral 928/2860
+Reduced block [8e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Processed integral 929/2860
+Reduced block [9e-02 s]
+Processed integral 930/2860
+Reduced block [9e-02 s]
+Processed integral 931/2860
+Reduced block [9e-02 s]
+Processed integral 934/2860
+Reduced block [3e-03 s]
+Processed integral 939/2860
+Reduced block [3e-03 s]
+Processed integral 943/2860
+Reduced block [2e-03 s]
+Processed integral 944/2860
+*Reduced block [3e-03 s]
+Processed integral 945/2860
+Reduced block [3e-03 s]
+Processed integral 946/2860
+Reduced block [2e-03 s]
+Processed integral 954/2860
+Reduced block [3e-03 s]
+Processed integral 958/2860
+Reduced block [3e-03 s]
+Processed integral 959/2860
+Reduced block [3e-03 s]
+Processed integral 960/2860
+Reduced block [3e-03 s]
+Processed integral 961/2860
+Reduced block [3e-03 s]
+Processed integral 968/2860
+Reduced block [2e-03 s]
+Processed integral 969/2860
+Reduced block [2e-03 s]
+Processed integral 970/2860
+Reduced block [2e-03 s]
+Processed integral 971/2860
+Reduced block [2e-03 s]
+Processed integral 972/2860
+Reduced block [2e-03 s]
+Processed integral 973/2860
+Reduced block [3e-03 s]
+Processed integral 974/2860
+Reduced block [2e-03 s]
+Processed integral 975/2860
+Reduced block [3e-03 s]
+Processed integral 976/2860
+Reduced block [2e-03 s]
+Processed integral 977/2860
+Reduced block [2e-03 s]
+Processed integral 993/2860
+Reduced block [5e-03 s]
+Processed integral 994/2860
+Reduced block [5e-03 s]
+Processed integral 995/2860
+Reduced block [4e-03 s]
+Processed integral 1002/2860
+*Reduced block [4e-03 s]
+Processed integral 1004/2860
+Reduced block [7e-03 s]
+Processed integral 1008/2860
+Reduced block [5e-03 s]
+Processed integral 1009/2860
+Reduced block [6e-03 s]
+Processed integral 1010/2860
+Reduced block [5e-03 s]
+Processed integral 1017/2860
+Reduced block [4e-03 s]
+Processed integral 1019/2860
+Reduced block [7e-03 s]
+Processed integral 1020/2860
+Reduced block [4e-03 s]
+Processed integral 1021/2860
+Reduced block [5e-03 s]
+Processed integral 1022/2860
+Reduced block [4e-03 s]
+Processed integral 1023/2860
+Reduced block [5e-03 s]
+Processed integral 1024/2860
+Reduced block [6e-03 s]
+Processed integral 1025/2860
+Reduced block [5e-03 s]
+Processed integral 1026/2860
+Reduced block [5e-03 s]
+Processed integral 1027/2860
+Reduced block [6e-03 s]
+Processed integral 1028/2860
+Reduced block [6e-03 s]
+Processed integral 1029/2860
+Reduced block [1e-02 s]
+Processed integral 1030/2860
+Reduced block [5e-03 s]
+Processed integral 1031/2860
+Reduced block [2e-02 s]
+Processed integral 1038/2860
+Reduced block [4e-03 s]
+Processed integral 1040/2860
+Reduced block [7e-03 s]
+Processed integral 1044/2860
+Reduced block [5e-03 s]
+Processed integral 1046/2860
+Reduced block [9e-03 s]
+Processed integral 1047/2860
+Reduced block [4e-03 s]
+Processed integral 1049/2860
+Reduced block [1e-02 s]
+Reduced block [3e-03 s]
+Processed integral 1053/2860
+Reduced block [4e-03 s]
+Processed integral 1054/2860
+Reduced block [7e-03 s]
+Processed integral 1055/2860
+Reduced block [5e-03 s]
+Processed integral 1062/2860
+*Reduced block [4e-03 s]
+Processed integral 1064/2860
+Reduced block [7e-03 s]
+Processed integral 1065/2860
+Reduced block [5e-03 s]
+Processed integral 1066/2860
+Reduced block [6e-03 s]
+Processed integral 1067/2860
+Reduced block [5e-03 s]
+Processed integral 1068/2860
+Reduced block [6e-03 s]
+Processed integral 1069/2860
+Reduced block [7e-03 s]
+Processed integral 1070/2860
+Reduced block [6e-03 s]
+Processed integral 1071/2860
+Reduced block [6e-03 s]
+Processed integral 1072/2860
+Reduced block [8e-03 s]
+Processed integral 1073/2860
+Reduced block [7e-03 s]
+Processed integral 1074/2860
+Reduced block [1e-02 s]
+Processed integral 1075/2860
+Reduced block [6e-03 s]
+Processed integral 1076/2860
+Reduced block [2e-02 s]
+Processed integral 1083/2860
+Reduced block [5e-03 s]
+Processed integral 1085/2860
+Reduced block [8e-03 s]
+Processed integral 1089/2860
+Reduced block [5e-03 s]
+Processed integral 1091/2860
+Reduced block [1e-02 s]
+Processed integral 1092/2860
+Reduced block [4e-03 s]
+Processed integral 1094/2860
+Reduced block [1e-02 s]
+Reduced block [3e-03 s]
+Processed integral 1095/2860
+Reduced block [4e-03 s]
+Processed integral 1096/2860
+Reduced block [5e-03 s]
+Processed integral 1097/2860
+Reduced block [4e-03 s]
+Processed integral 1098/2860
+Reduced block [4e-03 s]
+Processed integral 1099/2860
+Reduced block [5e-03 s]
+Processed integral 1100/2860
+Reduced block [5e-03 s]
+Processed integral 1101/2860
+Reduced block [4e-03 s]
+Processed integral 1102/2860
+Reduced block [5e-03 s]
+Processed integral 1103/2860
+Reduced block [5e-03 s]
+Processed integral 1104/2860
+Reduced block [1e-02 s]
+Processed integral 1105/2860
+Reduced block [5e-03 s]
+Processed integral 1106/2860
+Reduced block [1e-02 s]
+Processed integral 1107/2860
+Reduced block [5e-03 s]
+Processed integral 1108/2860
+Reduced block [5e-03 s]
+Processed integral 1109/2860
+Reduced block [5e-03 s]
+Processed integral 1110/2860
+Reduced block [6e-03 s]
+Processed integral 1111/2860
+Reduced block [6e-03 s]
+Processed integral 1112/2860
+Reduced block [6e-03 s]
+Processed integral 1113/2860
+Reduced block [1e-02 s]
+Processed integral 1114/2860
+Reduced block [6e-03 s]
+Processed integral 1115/2860
+Reduced block [2e-02 s]
+Processed integral 1116/2860
+*Reduced block [5e-03 s]
+Processed integral 1117/2860
+Reduced block [1e-02 s]
+Processed integral 1118/2860
+Reduced block [7e-03 s]
+Processed integral 1119/2860
+Reduced block [1e-02 s]
+Processed integral 1120/2860
+Reduced block [6e-03 s]
+Processed integral 1121/2860
+Reduced block [7e-02 s]
+Processed integral 1122/2860
+Reduced block [1e-02 s]
+Processed integral 1123/2860
+Reduced block [5e-03 s]
+Processed integral 1124/2860
+Reduced block [1e-02 s]
+Processed integral 1131/2860
+Reduced block [4e-03 s]
+Processed integral 1133/2860
+Reduced block [8e-03 s]
+Processed integral 1137/2860
+Reduced block [6e-03 s]
+Processed integral 1139/2860
+Reduced block [1e-02 s]
+Processed integral 1140/2860
+Reduced block [5e-03 s]
+Processed integral 1142/2860
+Reduced block [1e-02 s]
+Reduced block [2e-03 s]
+Processed integral 1146/2860
+Reduced block [6e-03 s]
+Processed integral 1148/2860
+Reduced block [1e-02 s]
+Processed integral 1149/2860
+Reduced block [6e-03 s]
+Processed integral 1151/2860
+Reduced block [2e-02 s]
+Reduced block [4e-03 s]
+Processed integral 1152/2860
+Reduced block [5e-03 s]
+Processed integral 1154/2860
+Reduced block [1e-02 s]
+Reduced block [3e-03 s]
+Processed integral 1167/2860
+Reduced block [4e-03 s]
+Processed integral 1168/2860
+Reduced block [1e-02 s]
+Processed integral 1169/2860
+Reduced block [8e-03 s]
+Processed integral 1170/2860
+Reduced block [1e-02 s]
+Processed integral 1171/2860
+Reduced block [1e-02 s]
+Processed integral 1172/2860
+Reduced block [9e-03 s]
+Processed integral 1185/2860
+*Reduced block [5e-03 s]
+Processed integral 1186/2860
+Reduced block [8e-03 s]
+Processed integral 1187/2860
+Reduced block [2e-02 s]
+Reduced block [6e-03 s]
+Reduced block [2e-03 s]
+Processed integral 1189/2860
+Reduced block [1e-02 s]
+Processed integral 1190/2860
+Reduced block [2e-02 s]
+Processed integral 1197/2860
+Reduced block [4e-03 s]
+Processed integral 1198/2860
+Reduced block [1e-02 s]
+Processed integral 1199/2860
+Reduced block [8e-03 s]
+Processed integral 1200/2860
+Reduced block [1e-02 s]
+Processed integral 1201/2860
+Reduced block [1e-02 s]
+Processed integral 1202/2860
+Reduced block [1e-02 s]
+Processed integral 1215/2860
+Reduced block [5e-03 s]
+Processed integral 1216/2860
+Reduced block [9e-03 s]
+Processed integral 1217/2860
+Reduced block [2e-02 s]
+Reduced block [6e-03 s]
+Reduced block [2e-03 s]
+Processed integral 1219/2860
+Reduced block [1e-02 s]
+Processed integral 1220/2860
+Reduced block [2e-02 s]
+Processed integral 1221/2860
+Reduced block [4e-03 s]
+Processed integral 1222/2860
+Reduced block [1e-02 s]
+Processed integral 1223/2860
+Reduced block [8e-03 s]
+Processed integral 1224/2860
+Reduced block [1e-02 s]
+Processed integral 1225/2860
+Reduced block [1e-02 s]
+Processed integral 1226/2860
+Reduced block [9e-03 s]
+Processed integral 1227/2860
+Reduced block [5e-03 s]
+Processed integral 1228/2860
+Reduced block [1e-02 s]
+Processed integral 1229/2860
+Reduced block [1e-02 s]
+Processed integral 1230/2860
+*Reduced block [1e-02 s]
+Processed integral 1231/2860
+Reduced block [1e-02 s]
+Processed integral 1232/2860
+Reduced block [1e-02 s]
+Processed integral 1233/2860
+Reduced block [5e-03 s]
+Processed integral 1234/2860
+Reduced block [1e-02 s]
+Processed integral 1235/2860
+Reduced block [1e-02 s]
+Processed integral 1236/2860
+Reduced block [1e-02 s]
+Processed integral 1237/2860
+Reduced block [1e-02 s]
+Processed integral 1238/2860
+Reduced block [1e-02 s]
+Processed integral 1239/2860
+Reduced block [1e-02 s]
+Processed integral 1240/2860
+Reduced block [2e-02 s]
+Processed integral 1241/2860
+Reduced block [3e-02 s]
+Processed integral 1242/2860
+Reduced block [1e-02 s]
+Processed integral 1243/2860
+Reduced block [3e-02 s]
+Processed integral 1244/2860
+Reduced block [5e-02 s]
+Processed integral 1257/2860
+Reduced block [6e-03 s]
+Processed integral 1258/2860
+Reduced block [9e-03 s]
+Processed integral 1259/2860
+Reduced block [3e-02 s]
+Reduced block [3e-03 s]
+Reduced block [6e-03 s]
+Reduced block [2e-03 s]
+Reduced block [3e-03 s]
+Processed integral 1261/2860
+Reduced block [1e-02 s]
+Processed integral 1262/2860
+Reduced block [3e-02 s]
+Processed integral 1269/2860
+Reduced block [6e-03 s]
+Processed integral 1270/2860
+Reduced block [1e-02 s]
+Processed integral 1271/2860
+Reduced block [3e-02 s]
+Reduced block [2e-03 s]
+Reduced block [2e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [2e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [4e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [4e-03 s]
+Reduced block [2e-03 s]
+Reduced block [3e-03 s]
+Reduced block [4e-03 s]
+Reduced block [5e-03 s]
+Reduced block [2e-03 s]
+Reduced block [4e-03 s]
+Reduced block [5e-03 s]
+Reduced block [3e-03 s]
+Reduced block [6e-03 s]
+Processed integral 1273/2860
+Reduced block [2e-02 s]
+Processed integral 1274/2860
+Reduced block [4e-02 s]
+Processed integral 1275/2860
+Reduced block [5e-03 s]
+Processed integral 1276/2860
+Reduced block [1e-02 s]
+Reduced block [3e-03 s]
+Reduced block [2e-03 s]
+Reduced block [2e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [2e-03 s]
+Reduced block [5e-03 s]
+Reduced block [4e-03 s]
+Reduced block [3e-03 s]
+Processed integral 1277/2860
+Reduced block [2e-02 s]
+Processed integral 1279/2860
+Reduced block [2e-02 s]
+Reduced block [5e-03 s]
+Reduced block [7e-03 s]
+Processed integral 1280/2860
+Reduced block [3e-02 s]
+Processed integral 1287/2860
+*Reduced block [4e-03 s]
+Processed integral 1288/2860
+Reduced block [1e-02 s]
+Processed integral 1289/2860
+Reduced block [8e-03 s]
+Processed integral 1290/2860
+Reduced block [2e-02 s]
+Processed integral 1291/2860
+Reduced block [1e-02 s]
+Processed integral 1292/2860
+Reduced block [1e-02 s]
+Processed integral 1305/2860
+Reduced block [5e-03 s]
+Processed integral 1306/2860
+Reduced block [9e-03 s]
+Processed integral 1307/2860
+Reduced block [2e-02 s]
+Reduced block [6e-03 s]
+Reduced block [2e-03 s]
+Processed integral 1309/2860
+Reduced block [2e-02 s]
+Processed integral 1310/2860
+Reduced block [2e-02 s]
+Processed integral 1311/2860
+Reduced block [4e-03 s]
+Processed integral 1312/2860
+Reduced block [1e-02 s]
+Processed integral 1313/2860
+Reduced block [8e-03 s]
+Processed integral 1314/2860
+Reduced block [1e-02 s]
+Processed integral 1315/2860
+Reduced block [1e-02 s]
+Processed integral 1316/2860
+Reduced block [1e-02 s]
+Processed integral 1317/2860
+Reduced block [5e-03 s]
+Processed integral 1318/2860
+Reduced block [1e-02 s]
+Processed integral 1319/2860
+Reduced block [1e-02 s]
+Processed integral 1320/2860
+Reduced block [2e-02 s]
+Processed integral 1321/2860
+Reduced block [2e-02 s]
+Processed integral 1322/2860
+Reduced block [1e-02 s]
+Processed integral 1323/2860
+Reduced block [6e-03 s]
+Processed integral 1324/2860
+Reduced block [2e-02 s]
+Processed integral 1325/2860
+Reduced block [1e-02 s]
+Processed integral 1326/2860
+Reduced block [2e-02 s]
+Processed integral 1327/2860
+Reduced block [2e-02 s]
+Processed integral 1328/2860
+Reduced block [1e-02 s]
+Processed integral 1329/2860
+Reduced block [1e-02 s]
+Processed integral 1330/2860
+Reduced block [3e-02 s]
+Processed integral 1331/2860
+Reduced block [4e-02 s]
+Processed integral 1332/2860
+Reduced block [2e-02 s]
+Processed integral 1333/2860
+Reduced block [4e-02 s]
+Processed integral 1334/2860
+Reduced block [3e-02 s]
+Processed integral 1347/2860
+*Reduced block [6e-03 s]
+Processed integral 1348/2860
+Reduced block [1e-02 s]
+Processed integral 1349/2860
+Reduced block [3e-02 s]
+Reduced block [3e-03 s]
+Reduced block [7e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Processed integral 1351/2860
+Reduced block [2e-02 s]
+Processed integral 1352/2860
+Reduced block [3e-02 s]
+Processed integral 1359/2860
+Reduced block [7e-03 s]
+Processed integral 1360/2860
+Reduced block [1e-02 s]
+Processed integral 1361/2860
+Reduced block [4e-02 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [4e-03 s]
+Reduced block [4e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [4e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [4e-03 s]
+Reduced block [5e-03 s]
+Reduced block [2e-03 s]
+Reduced block [4e-03 s]
+Reduced block [6e-03 s]
+Reduced block [3e-03 s]
+Reduced block [6e-03 s]
+Processed integral 1363/2860
+Reduced block [2e-02 s]
+Processed integral 1364/2860
+Reduced block [4e-02 s]
+Processed integral 1365/2860
+Reduced block [5e-03 s]
+Processed integral 1366/2860
+Reduced block [1e-02 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [6e-03 s]
+Reduced block [4e-03 s]
+Reduced block [3e-03 s]
+Processed integral 1367/2860
+Reduced block [2e-02 s]
+Processed integral 1369/2860
+Reduced block [2e-02 s]
+Reduced block [5e-03 s]
+Reduced block [7e-03 s]
+Processed integral 1370/2860
+Reduced block [3e-02 s]
+Processed integral 1371/2860
+Reduced block [4e-03 s]
+Processed integral 1372/2860
+Reduced block [1e-02 s]
+Processed integral 1373/2860
+Reduced block [7e-03 s]
+Processed integral 1374/2860
+Reduced block [1e-02 s]
+Processed integral 1375/2860
+Reduced block [1e-02 s]
+Processed integral 1376/2860
+Reduced block [8e-03 s]
+Processed integral 1377/2860
+Reduced block [4e-03 s]
+Processed integral 1378/2860
+Reduced block [1e-02 s]
+Processed integral 1379/2860
+Reduced block [9e-03 s]
+Processed integral 1380/2860
+Reduced block [1e-02 s]
+Processed integral 1381/2860
+Reduced block [1e-02 s]
+Processed integral 1382/2860
+Reduced block [9e-03 s]
+Processed integral 1383/2860
+Reduced block [5e-03 s]
+Processed integral 1384/2860
+Reduced block [1e-02 s]
+Processed integral 1385/2860
+Reduced block [9e-03 s]
+Processed integral 1386/2860
+Reduced block [1e-02 s]
+Processed integral 1387/2860
+Reduced block [1e-02 s]
+Processed integral 1388/2860
+Reduced block [1e-02 s]
+Processed integral 1389/2860
+Reduced block [3e-02 s]
+Processed integral 1390/2860
+Reduced block [3e-02 s]
+Processed integral 1391/2860
+Reduced block [3e-02 s]
+Processed integral 1392/2860
+Reduced block [1e-02 s]
+Processed integral 1393/2860
+Reduced block [3e-02 s]
+Processed integral 1394/2860
+Reduced block [3e-02 s]
+Processed integral 1395/2860
+Reduced block [5e-03 s]
+Processed integral 1396/2860
+Reduced block [1e-02 s]
+Processed integral 1397/2860
+Reduced block [1e-02 s]
+Processed integral 1398/2860
+Reduced block [1e-02 s]
+Processed integral 1399/2860
+Reduced block [1e-02 s]
+Processed integral 1400/2860
+Reduced block [1e-02 s]
+Processed integral 1401/2860
+Reduced block [6e-03 s]
+Processed integral 1402/2860
+*Reduced block [1e-02 s]
+Processed integral 1403/2860
+Reduced block [1e-02 s]
+Processed integral 1404/2860
+Reduced block [1e-02 s]
+Processed integral 1405/2860
+Reduced block [1e-02 s]
+Processed integral 1406/2860
+Reduced block [1e-02 s]
+Processed integral 1407/2860
+Reduced block [1e-02 s]
+Processed integral 1408/2860
+Reduced block [3e-02 s]
+Processed integral 1409/2860
+Reduced block [4e-02 s]
+Processed integral 1410/2860
+Reduced block [1e-02 s]
+Processed integral 1411/2860
+Reduced block [4e-02 s]
+Processed integral 1412/2860
+Reduced block [4e-02 s]
+Processed integral 1413/2860
+Reduced block [6e-03 s]
+Processed integral 1414/2860
+Reduced block [1e-02 s]
+Processed integral 1415/2860
+Reduced block [1e-02 s]
+Processed integral 1416/2860
+Reduced block [1e-02 s]
+Processed integral 1417/2860
+Reduced block [2e-02 s]
+Processed integral 1418/2860
+Reduced block [1e-02 s]
+Processed integral 1419/2860
+Reduced block [1e-02 s]
+Processed integral 1420/2860
+Reduced block [3e-02 s]
+Processed integral 1421/2860
+Reduced block [4e-02 s]
+Processed integral 1422/2860
+Reduced block [1e-02 s]
+Processed integral 1423/2860
+Reduced block [4e-02 s]
+Processed integral 1424/2860
+Reduced block [4e-02 s]
+Processed integral 1425/2860
+Reduced block [1e-02 s]
+Processed integral 1426/2860
+Reduced block [2e-02 s]
+Processed integral 1427/2860
+Reduced block [4e-02 s]
+Processed integral 1428/2860
+Reduced block [1e-02 s]
+Processed integral 1429/2860
+Reduced block [3e-02 s]
+Processed integral 1430/2860
+Reduced block [3e-02 s]
+Processed integral 1443/2860
+Reduced block [5e-03 s]
+Processed integral 1444/2860
+Reduced block [9e-03 s]
+Processed integral 1445/2860
+Reduced block [3e-02 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [6e-03 s]
+Reduced block [2e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Processed integral 1447/2860
+Reduced block [1e-02 s]
+Processed integral 1448/2860
+Reduced block [2e-02 s]
+Processed integral 1455/2860
+Reduced block [8e-03 s]
+Processed integral 1456/2860
+Reduced block [1e-02 s]
+Processed integral 1457/2860
+Reduced block [4e-02 s]
+Reduced block [2e-03 s]
+Reduced block [2e-03 s]
+Reduced block [2e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [4e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [4e-03 s]
+Reduced block [3e-03 s]
+Reduced block [5e-03 s]
+Reduced block [2e-03 s]
+Reduced block [3e-03 s]
+Reduced block [4e-03 s]
+Reduced block [4e-03 s]
+Reduced block [2e-03 s]
+Reduced block [4e-03 s]
+Reduced block [4e-03 s]
+Reduced block [2e-03 s]
+Reduced block [6e-03 s]
+Processed integral 1459/2860
+*Reduced block [2e-02 s]
+Processed integral 1460/2860
+Reduced block [4e-02 s]
+Processed integral 1461/2860
+Reduced block [5e-03 s]
+Processed integral 1462/2860
+Reduced block [1e-02 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [4e-03 s]
+Reduced block [3e-03 s]
+Processed integral 1463/2860
+Reduced block [3e-02 s]
+Processed integral 1465/2860
+Reduced block [3e-02 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Processed integral 1466/2860
+Reduced block [3e-02 s]
+Processed integral 1473/2860
+Reduced block [8e-03 s]
+Processed integral 1474/2860
+Reduced block [1e-02 s]
+Processed integral 1475/2860
+Reduced block [4e-02 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [5e-03 s]
+Reduced block [3e-03 s]
+Reduced block [6e-03 s]
+Reduced block [3e-03 s]
+Reduced block [4e-03 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [3e-03 s]
+Reduced block [5e-03 s]
+Reduced block [4e-03 s]
+Reduced block [9e-03 s]
+Processed integral 1477/2860
+Reduced block [3e-02 s]
+Processed integral 1478/2860
+Reduced block [4e-02 s]
+Processed integral 1479/2860
+Reduced block [6e-03 s]
+Processed integral 1480/2860
+Reduced block [1e-02 s]
+Processed integral 1481/2860
+Reduced block [3e-02 s]
+Processed integral 1483/2860
+Reduced block [4e-02 s]
+Reduced block [7e-03 s]
+Reduced block [9e-03 s]
+Processed integral 1484/2860
+Reduced block [3e-02 s]
+Processed integral 1485/2860
+Reduced block [4e-03 s]
+Processed integral 1486/2860
+Reduced block [2e-02 s]
+Reduced block [3e-03 s]
+Reduced block [4e-03 s]
+Reduced block [3e-03 s]
+Processed integral 1487/2860
+Reduced block [2e-02 s]
+Processed integral 1489/2860
+Reduced block [3e-02 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Processed integral 1490/2860
+Reduced block [3e-02 s]
+Processed integral 1511/2860
+Reduced block [5e-03 s]
+Processed integral 1512/2860
+Reduced block [1e-02 s]
+Processed integral 1513/2860
+Reduced block [8e-03 s]
+Processed integral 1514/2860
+Reduced block [3e-02 s]
+Processed integral 1515/2860
+Reduced block [2e-02 s]
+Processed integral 1516/2860
+*Reduced block [2e-02 s]
+Processed integral 1517/2860
+Reduced block [3e-02 s]
+Processed integral 1518/2860
+Reduced block [2e-02 s]
+Processed integral 1519/2860
+Reduced block [2e-02 s]
+Processed integral 1520/2860
+Reduced block [2e-02 s]
+Processed integral 1541/2860
+Reduced block [5e-03 s]
+Processed integral 1542/2860
+Reduced block [1e-02 s]
+Processed integral 1543/2860
+Reduced block [2e-02 s]
+Reduced block [6e-03 s]
+Reduced block [2e-03 s]
+Processed integral 1544/2860
+Reduced block [2e-02 s]
+Processed integral 1545/2860
+Reduced block [5e-02 s]
+Reduced block [1e-02 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Processed integral 1546/2860
+Reduced block [5e-02 s]
+Reduced block [1e-02 s]
+Reduced block [5e-03 s]
+Processed integral 1548/2860
+Reduced block [3e-02 s]
+Processed integral 1549/2860
+Reduced block [4e-02 s]
+Processed integral 1550/2860
+Reduced block [4e-02 s]
+Processed integral 1561/2860
+Reduced block [5e-03 s]
+Processed integral 1562/2860
+Reduced block [1e-02 s]
+Processed integral 1563/2860
+Reduced block [8e-03 s]
+Processed integral 1564/2860
+Reduced block [3e-02 s]
+Processed integral 1565/2860
+Reduced block [2e-02 s]
+Processed integral 1566/2860
+Reduced block [2e-02 s]
+Processed integral 1567/2860
+Reduced block [3e-02 s]
+Processed integral 1568/2860
+Reduced block [2e-02 s]
+Processed integral 1569/2860
+Reduced block [2e-02 s]
+Processed integral 1570/2860
+Reduced block [2e-02 s]
+Processed integral 1591/2860
+*Reduced block [5e-03 s]
+Processed integral 1592/2860
+Reduced block [2e-02 s]
+Processed integral 1593/2860
+Reduced block [3e-02 s]
+Reduced block [7e-03 s]
+Reduced block [3e-03 s]
+Processed integral 1594/2860
+Reduced block [2e-02 s]
+Processed integral 1595/2860
+Reduced block [6e-02 s]
+Reduced block [2e-02 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [8e-03 s]
+Processed integral 1596/2860
+Reduced block [6e-02 s]
+Reduced block [2e-02 s]
+Reduced block [6e-03 s]
+Processed integral 1598/2860
+Reduced block [3e-02 s]
+Processed integral 1599/2860
+Reduced block [5e-02 s]
+Processed integral 1600/2860
+Reduced block [5e-02 s]
+Processed integral 1601/2860
+Reduced block [5e-03 s]
+Processed integral 1602/2860
+Reduced block [1e-02 s]
+Processed integral 1603/2860
+Reduced block [8e-03 s]
+Processed integral 1604/2860
+Reduced block [3e-02 s]
+Processed integral 1605/2860
+Reduced block [2e-02 s]
+Processed integral 1606/2860
+Reduced block [2e-02 s]
+Processed integral 1607/2860
+Reduced block [3e-02 s]
+Processed integral 1608/2860
+Reduced block [2e-02 s]
+Processed integral 1609/2860
+Reduced block [2e-02 s]
+Processed integral 1610/2860
+Reduced block [2e-02 s]
+Processed integral 1611/2860
+Reduced block [5e-03 s]
+Processed integral 1612/2860
+Reduced block [1e-02 s]
+Processed integral 1613/2860
+Reduced block [1e-02 s]
+Processed integral 1614/2860
+Reduced block [3e-02 s]
+Processed integral 1615/2860
+Reduced block [3e-02 s]
+Processed integral 1616/2860
+Reduced block [2e-02 s]
+Processed integral 1617/2860
+Reduced block [3e-02 s]
+Processed integral 1618/2860
+Reduced block [3e-02 s]
+Processed integral 1619/2860
+Reduced block [3e-02 s]
+Processed integral 1620/2860
+Reduced block [2e-02 s]
+Processed integral 1621/2860
+Reduced block [5e-03 s]
+Processed integral 1622/2860
+Reduced block [2e-02 s]
+Processed integral 1623/2860
+Reduced block [1e-02 s]
+Processed integral 1624/2860
+Reduced block [3e-02 s]
+Processed integral 1625/2860
+Reduced block [3e-02 s]
+Processed integral 1626/2860
+Reduced block [2e-02 s]
+Processed integral 1627/2860
+Reduced block [3e-02 s]
+Processed integral 1628/2860
+Reduced block [3e-02 s]
+Processed integral 1629/2860
+Reduced block [3e-02 s]
+Processed integral 1630/2860
+Reduced block [2e-02 s]
+Processed integral 1631/2860
+*Reduced block [1e-02 s]
+Processed integral 1632/2860
+Reduced block [3e-02 s]
+Processed integral 1633/2860
+Reduced block [3e-02 s]
+Processed integral 1634/2860
+Reduced block [5e-02 s]
+Processed integral 1635/2860
+Reduced block [8e-02 s]
+Processed integral 1636/2860
+Reduced block [7e-02 s]
+Processed integral 1637/2860
+Reduced block [3e-02 s]
+Processed integral 1638/2860
+Reduced block [7e-02 s]
+Processed integral 1639/2860
+Reduced block [7e-02 s]
+Processed integral 1640/2860
+Reduced block [6e-02 s]
+Processed integral 1661/2860
+Reduced block [6e-03 s]
+Processed integral 1662/2860
+Reduced block [1e-02 s]
+Processed integral 1663/2860
+Reduced block [3e-02 s]
+Reduced block [4e-03 s]
+Reduced block [8e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Processed integral 1664/2860
+Reduced block [2e-02 s]
+Processed integral 1665/2860
+Reduced block [6e-02 s]
+Reduced block [5e-03 s]
+Reduced block [1e-02 s]
+Reduced block [5e-03 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [6e-03 s]
+Reduced block [8e-03 s]
+Reduced block [8e-03 s]
+Processed integral 1666/2860
+Reduced block [7e-02 s]
+Reduced block [6e-03 s]
+Reduced block [2e-02 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Processed integral 1668/2860
+Reduced block [3e-02 s]
+Processed integral 1669/2860
+Reduced block [5e-02 s]
+Processed integral 1670/2860
+Reduced block [6e-02 s]
+Processed integral 1681/2860
+Reduced block [8e-03 s]
+Processed integral 1682/2860
+Reduced block [2e-02 s]
+Processed integral 1683/2860
+Reduced block [4e-02 s]
+Reduced block [7e-03 s]
+Processed integral 1684/2860
+Reduced block [2e-02 s]
+Processed integral 1685/2860
+Reduced block [8e-02 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [5e-03 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [6e-03 s]
+Reduced block [8e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [8e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [8e-03 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [1e-02 s]
+Reduced block [5e-03 s]
+Reduced block [7e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [5e-03 s]
+Reduced block [1e-02 s]
+Processed integral 1686/2860
+Reduced block [7e-02 s]
+Reduced block [1e-02 s]
+Processed integral 1688/2860
+*Reduced block [4e-02 s]
+Processed integral 1689/2860
+Reduced block [7e-02 s]
+Processed integral 1690/2860
+Reduced block [7e-02 s]
+Processed integral 1691/2860
+Reduced block [5e-03 s]
+Processed integral 1692/2860
+Reduced block [1e-02 s]
+Processed integral 1693/2860
+Reduced block [2e-02 s]
+Processed integral 1694/2860
+Reduced block [2e-02 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [5e-03 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [8e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Processed integral 1695/2860
+Reduced block [5e-02 s]
+Processed integral 1696/2860
+Reduced block [5e-02 s]
+Processed integral 1698/2860
+Reduced block [4e-02 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 1699/2860
+Reduced block [5e-02 s]
+Processed integral 1700/2860
+Reduced block [5e-02 s]
+Processed integral 1711/2860
+Reduced block [5e-03 s]
+Processed integral 1712/2860
+Reduced block [1e-02 s]
+Processed integral 1713/2860
+Reduced block [8e-03 s]
+Processed integral 1714/2860
+Reduced block [3e-02 s]
+Processed integral 1715/2860
+Reduced block [2e-02 s]
+Processed integral 1716/2860
+Reduced block [2e-02 s]
+Processed integral 1717/2860
+Reduced block [3e-02 s]
+Processed integral 1718/2860
+Reduced block [3e-02 s]
+Processed integral 1719/2860
+Reduced block [3e-02 s]
+Processed integral 1720/2860
+Reduced block [2e-02 s]
+Processed integral 1741/2860
+Reduced block [5e-03 s]
+Processed integral 1742/2860
+Reduced block [2e-02 s]
+Processed integral 1743/2860
+Reduced block [3e-02 s]
+Reduced block [7e-03 s]
+Reduced block [3e-03 s]
+Processed integral 1744/2860
+Reduced block [2e-02 s]
+Processed integral 1745/2860
+*Reduced block [6e-02 s]
+Reduced block [2e-02 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Processed integral 1746/2860
+Reduced block [5e-02 s]
+Reduced block [2e-02 s]
+Reduced block [6e-03 s]
+Processed integral 1748/2860
+Reduced block [3e-02 s]
+Processed integral 1749/2860
+Reduced block [5e-02 s]
+Processed integral 1750/2860
+Reduced block [5e-02 s]
+Processed integral 1751/2860
+Reduced block [5e-03 s]
+Processed integral 1752/2860
+Reduced block [1e-02 s]
+Processed integral 1753/2860
+Reduced block [8e-03 s]
+Processed integral 1754/2860
+Reduced block [3e-02 s]
+Processed integral 1755/2860
+Reduced block [2e-02 s]
+Processed integral 1756/2860
+Reduced block [2e-02 s]
+Processed integral 1757/2860
+Reduced block [3e-02 s]
+Processed integral 1758/2860
+Reduced block [3e-02 s]
+Processed integral 1759/2860
+Reduced block [3e-02 s]
+Processed integral 1760/2860
+Reduced block [2e-02 s]
+Processed integral 1761/2860
+Reduced block [6e-03 s]
+Processed integral 1762/2860
+Reduced block [2e-02 s]
+Processed integral 1763/2860
+Reduced block [1e-02 s]
+Processed integral 1764/2860
+Reduced block [3e-02 s]
+Processed integral 1765/2860
+Reduced block [3e-02 s]
+Processed integral 1766/2860
+Reduced block [2e-02 s]
+Processed integral 1767/2860
+Reduced block [3e-02 s]
+Processed integral 1768/2860
+Reduced block [4e-02 s]
+Processed integral 1769/2860
+Reduced block [3e-02 s]
+Processed integral 1770/2860
+Reduced block [3e-02 s]
+Processed integral 1771/2860
+Reduced block [6e-03 s]
+Processed integral 1772/2860
+Reduced block [2e-02 s]
+Processed integral 1773/2860
+Reduced block [1e-02 s]
+Processed integral 1774/2860
+Reduced block [3e-02 s]
+Processed integral 1775/2860
+Reduced block [3e-02 s]
+Processed integral 1776/2860
+Reduced block [3e-02 s]
+Processed integral 1777/2860
+Reduced block [4e-02 s]
+Processed integral 1778/2860
+Reduced block [4e-02 s]
+Processed integral 1779/2860
+Reduced block [4e-02 s]
+Processed integral 1780/2860
+Reduced block [3e-02 s]
+Processed integral 1781/2860
+Reduced block [1e-02 s]
+Processed integral 1782/2860
+Reduced block [3e-02 s]
+Processed integral 1783/2860
+Reduced block [3e-02 s]
+Processed integral 1784/2860
+Reduced block [6e-02 s]
+Processed integral 1785/2860
+Reduced block [9e-02 s]
+Processed integral 1786/2860
+Reduced block [7e-02 s]
+Processed integral 1787/2860
+Reduced block [3e-02 s]
+Processed integral 1788/2860
+Reduced block [8e-02 s]
+Processed integral 1789/2860
+Reduced block [8e-02 s]
+Processed integral 1790/2860
+Reduced block [8e-02 s]
+Processed integral 1811/2860
+*Reduced block [6e-03 s]
+Processed integral 1812/2860
+Reduced block [2e-02 s]
+Processed integral 1813/2860
+Reduced block [4e-02 s]
+Reduced block [4e-03 s]
+Reduced block [9e-03 s]
+Reduced block [3e-03 s]
+Reduced block [4e-03 s]
+Processed integral 1814/2860
+Reduced block [2e-02 s]
+Processed integral 1815/2860
+Reduced block [8e-02 s]
+Reduced block [6e-03 s]
+Reduced block [2e-02 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [8e-03 s]
+Reduced block [7e-03 s]
+Reduced block [8e-03 s]
+Reduced block [9e-03 s]
+Processed integral 1816/2860
+Reduced block [8e-02 s]
+Reduced block [7e-03 s]
+Reduced block [2e-02 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Processed integral 1818/2860
+Reduced block [4e-02 s]
+Processed integral 1819/2860
+Reduced block [6e-02 s]
+Processed integral 1820/2860
+Reduced block [6e-02 s]
+Processed integral 1831/2860
+Reduced block [8e-03 s]
+Processed integral 1832/2860
+Reduced block [2e-02 s]
+Processed integral 1833/2860
+Reduced block [4e-02 s]
+Reduced block [7e-03 s]
+Processed integral 1834/2860
+Reduced block [2e-02 s]
+Processed integral 1835/2860
+Reduced block [9e-02 s]
+Reduced block [7e-03 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [8e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [8e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [9e-03 s]
+Reduced block [5e-03 s]
+Reduced block [8e-03 s]
+Reduced block [8e-03 s]
+Reduced block [1e-02 s]
+Reduced block [5e-03 s]
+Reduced block [8e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [6e-03 s]
+Reduced block [2e-02 s]
+Processed integral 1836/2860
+Reduced block [8e-02 s]
+Reduced block [1e-02 s]
+Processed integral 1838/2860
+Reduced block [4e-02 s]
+Processed integral 1839/2860
+Reduced block [8e-02 s]
+Processed integral 1840/2860
+Reduced block [8e-02 s]
+Processed integral 1841/2860
+Reduced block [4e-03 s]
+Processed integral 1842/2860
+Reduced block [1e-02 s]
+Processed integral 1843/2860
+Reduced block [2e-02 s]
+Processed integral 1844/2860
+Reduced block [3e-02 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [8e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Processed integral 1845/2860
+Reduced block [5e-02 s]
+Processed integral 1846/2860
+Reduced block [5e-02 s]
+Processed integral 1848/2860
+Reduced block [5e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 1849/2860
+Reduced block [6e-02 s]
+Processed integral 1850/2860
+Reduced block [5e-02 s]
+Processed integral 1851/2860
+Reduced block [4e-03 s]
+Processed integral 1852/2860
+Reduced block [1e-02 s]
+Processed integral 1853/2860
+Reduced block [7e-03 s]
+Processed integral 1854/2860
+Reduced block [2e-02 s]
+Processed integral 1855/2860
+Reduced block [2e-02 s]
+Processed integral 1856/2860
+Reduced block [2e-02 s]
+Processed integral 1857/2860
+Reduced block [2e-02 s]
+Processed integral 1858/2860
+Reduced block [2e-02 s]
+Processed integral 1859/2860
+*Reduced block [2e-02 s]
+Processed integral 1860/2860
+Reduced block [2e-02 s]
+Processed integral 1861/2860
+Reduced block [5e-03 s]
+Processed integral 1862/2860
+Reduced block [1e-02 s]
+Processed integral 1863/2860
+Reduced block [9e-03 s]
+Processed integral 1864/2860
+Reduced block [2e-02 s]
+Processed integral 1865/2860
+Reduced block [2e-02 s]
+Processed integral 1866/2860
+Reduced block [2e-02 s]
+Processed integral 1867/2860
+Reduced block [2e-02 s]
+Processed integral 1868/2860
+Reduced block [3e-02 s]
+Processed integral 1869/2860
+Reduced block [2e-02 s]
+Processed integral 1870/2860
+Reduced block [2e-02 s]
+Processed integral 1871/2860
+Reduced block [5e-03 s]
+Processed integral 1872/2860
+Reduced block [1e-02 s]
+Processed integral 1873/2860
+Reduced block [9e-03 s]
+Processed integral 1874/2860
+Reduced block [3e-02 s]
+Processed integral 1875/2860
+Reduced block [3e-02 s]
+Processed integral 1876/2860
+Reduced block [2e-02 s]
+Processed integral 1877/2860
+Reduced block [3e-02 s]
+Processed integral 1878/2860
+Reduced block [3e-02 s]
+Processed integral 1879/2860
+Reduced block [3e-02 s]
+Processed integral 1880/2860
+Reduced block [2e-02 s]
+Processed integral 1881/2860
+Reduced block [1e-02 s]
+Processed integral 1882/2860
+Reduced block [3e-02 s]
+Processed integral 1883/2860
+Reduced block [3e-02 s]
+Processed integral 1884/2860
+Reduced block [5e-02 s]
+Processed integral 1885/2860
+Reduced block [8e-02 s]
+Processed integral 1886/2860
+Reduced block [7e-02 s]
+Processed integral 1887/2860
+Reduced block [2e-02 s]
+Processed integral 1888/2860
+Reduced block [7e-02 s]
+Processed integral 1889/2860
+Reduced block [6e-02 s]
+Processed integral 1890/2860
+Reduced block [6e-02 s]
+Processed integral 1891/2860
+Reduced block [5e-03 s]
+Processed integral 1892/2860
+Reduced block [1e-02 s]
+Processed integral 1893/2860
+Reduced block [1e-02 s]
+Processed integral 1894/2860
+Reduced block [2e-02 s]
+Processed integral 1895/2860
+Reduced block [3e-02 s]
+Processed integral 1896/2860
+Reduced block [2e-02 s]
+Processed integral 1897/2860
+Reduced block [2e-02 s]
+Processed integral 1898/2860
+Reduced block [3e-01 s]
+Processed integral 1899/2860
+Reduced block [3e-02 s]
+Processed integral 1900/2860
+Reduced block [2e-02 s]
+Processed integral 1901/2860
+Reduced block [6e-03 s]
+Processed integral 1902/2860
+Reduced block [2e-02 s]
+Processed integral 1903/2860
+Reduced block [1e-02 s]
+Processed integral 1904/2860
+Reduced block [3e-02 s]
+Processed integral 1905/2860
+Reduced block [3e-02 s]
+Processed integral 1906/2860
+Reduced block [3e-02 s]
+Processed integral 1907/2860
+Reduced block [3e-02 s]
+Processed integral 1908/2860
+Reduced block [3e-02 s]
+Processed integral 1909/2860
+Reduced block [3e-02 s]
+Processed integral 1910/2860
+Reduced block [3e-02 s]
+Processed integral 1911/2860
+Reduced block [1e-02 s]
+Processed integral 1912/2860
+Reduced block [3e-02 s]
+Processed integral 1913/2860
+Reduced block [4e-02 s]
+Processed integral 1914/2860
+Reduced block [6e-02 s]
+Processed integral 1915/2860
+Reduced block [1e-01 s]
+Processed integral 1916/2860
+Reduced block [8e-02 s]
+Processed integral 1917/2860
+*Reduced block [3e-02 s]
+Processed integral 1918/2860
+Reduced block [7e-02 s]
+Processed integral 1919/2860
+Reduced block [8e-02 s]
+Processed integral 1920/2860
+Reduced block [7e-02 s]
+Processed integral 1921/2860
+Reduced block [6e-03 s]
+Processed integral 1922/2860
+Reduced block [2e-02 s]
+Processed integral 1923/2860
+Reduced block [1e-02 s]
+Processed integral 1924/2860
+Reduced block [3e-02 s]
+Processed integral 1925/2860
+Reduced block [3e-02 s]
+Processed integral 1926/2860
+Reduced block [3e-02 s]
+Processed integral 1927/2860
+Reduced block [3e-02 s]
+Processed integral 1928/2860
+Reduced block [3e-02 s]
+Processed integral 1929/2860
+Reduced block [4e-02 s]
+Processed integral 1930/2860
+Reduced block [3e-02 s]
+Processed integral 1931/2860
+Reduced block [1e-02 s]
+Processed integral 1932/2860
+Reduced block [3e-02 s]
+Processed integral 1933/2860
+Reduced block [4e-02 s]
+Processed integral 1934/2860
+Reduced block [6e-02 s]
+Processed integral 1935/2860
+Reduced block [1e-01 s]
+Processed integral 1936/2860
+Reduced block [9e-02 s]
+Processed integral 1937/2860
+Reduced block [3e-02 s]
+Processed integral 1938/2860
+Reduced block [8e-02 s]
+Processed integral 1939/2860
+Reduced block [9e-02 s]
+Processed integral 1940/2860
+Reduced block [8e-02 s]
+Processed integral 1941/2860
+Reduced block [1e-02 s]
+Processed integral 1942/2860
+Reduced block [3e-02 s]
+Processed integral 1943/2860
+Reduced block [3e-02 s]
+Processed integral 1944/2860
+Reduced block [5e-02 s]
+Processed integral 1945/2860
+Reduced block [8e-02 s]
+Processed integral 1946/2860
+Reduced block [7e-02 s]
+Processed integral 1947/2860
+Reduced block [2e-02 s]
+Processed integral 1948/2860
+Reduced block [7e-02 s]
+Processed integral 1949/2860
+Reduced block [7e-02 s]
+Processed integral 1950/2860
+Reduced block [6e-02 s]
+Processed integral 1971/2860
+Reduced block [6e-03 s]
+Processed integral 1972/2860
+Reduced block [1e-02 s]
+Processed integral 1973/2860
+Reduced block [3e-02 s]
+Reduced block [4e-03 s]
+Reduced block [5e-03 s]
+Reduced block [8e-03 s]
+Reduced block [3e-03 s]
+Reduced block [4e-03 s]
+Reduced block [4e-03 s]
+Processed integral 1974/2860
+*Reduced block [2e-02 s]
+Processed integral 1975/2860
+Reduced block [6e-02 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [1e-02 s]
+Reduced block [4e-03 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Processed integral 1976/2860
+Reduced block [7e-02 s]
+Reduced block [8e-03 s]
+Reduced block [9e-03 s]
+Reduced block [2e-02 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [8e-03 s]
+Processed integral 1978/2860
+Reduced block [3e-02 s]
+Processed integral 1979/2860
+Reduced block [5e-02 s]
+Processed integral 1980/2860
+Reduced block [6e-02 s]
+Processed integral 1991/2860
+Reduced block [9e-03 s]
+Processed integral 1992/2860
+Reduced block [2e-02 s]
+Processed integral 1993/2860
+Reduced block [5e-02 s]
+Reduced block [7e-03 s]
+Processed integral 1994/2860
+Reduced block [2e-02 s]
+Processed integral 1995/2860
+Reduced block [9e-02 s]
+Reduced block [5e-03 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [5e-03 s]
+Reduced block [5e-03 s]
+Reduced block [8e-03 s]
+Reduced block [6e-03 s]
+Reduced block [9e-03 s]
+Reduced block [4e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [9e-03 s]
+Reduced block [4e-03 s]
+Reduced block [7e-03 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [5e-03 s]
+Reduced block [1e-02 s]
+Processed integral 1996/2860
+Reduced block [9e-02 s]
+Reduced block [1e-02 s]
+Processed integral 1998/2860
+Reduced block [4e-02 s]
+Processed integral 1999/2860
+Reduced block [7e-02 s]
+Processed integral 2000/2860
+Reduced block [9e-02 s]
+Processed integral 2001/2860
+Reduced block [6e-03 s]
+Processed integral 2002/2860
+Reduced block [1e-02 s]
+Processed integral 2003/2860
+Reduced block [3e-02 s]
+Processed integral 2004/2860
+Reduced block [3e-02 s]
+Reduced block [5e-03 s]
+Reduced block [5e-03 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Processed integral 2005/2860
+Reduced block [6e-02 s]
+Processed integral 2006/2860
+Reduced block [6e-02 s]
+Processed integral 2008/2860
+Reduced block [5e-02 s]
+Reduced block [8e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2009/2860
+Reduced block [6e-02 s]
+Processed integral 2010/2860
+Reduced block [6e-02 s]
+Processed integral 2021/2860
+Reduced block [1e-02 s]
+Processed integral 2022/2860
+Reduced block [2e-02 s]
+Processed integral 2023/2860
+Reduced block [5e-02 s]
+Reduced block [8e-03 s]
+Processed integral 2024/2860
+Reduced block [3e-02 s]
+Processed integral 2025/2860
+Reduced block [9e-02 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [9e-03 s]
+Reduced block [6e-03 s]
+Reduced block [1e-02 s]
+Reduced block [5e-03 s]
+Reduced block [7e-03 s]
+Reduced block [8e-03 s]
+Reduced block [1e-02 s]
+Reduced block [5e-03 s]
+Reduced block [8e-03 s]
+Reduced block [6e-03 s]
+Reduced block [2e-02 s]
+Processed integral 2026/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Processed integral 2028/2860
+Reduced block [4e-02 s]
+Processed integral 2029/2860
+Reduced block [8e-02 s]
+Processed integral 2030/2860
+Reduced block [9e-02 s]
+Processed integral 2031/2860
+*Reduced block [6e-03 s]
+Processed integral 2032/2860
+Reduced block [1e-02 s]
+Processed integral 2033/2860
+Reduced block [3e-02 s]
+Processed integral 2034/2860
+Reduced block [2e-02 s]
+Processed integral 2035/2860
+Reduced block [6e-02 s]
+Processed integral 2036/2860
+Reduced block [6e-02 s]
+Processed integral 2038/2860
+Reduced block [6e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Processed integral 2039/2860
+Reduced block [6e-02 s]
+Processed integral 2040/2860
+Reduced block [7e-02 s]
+Processed integral 2041/2860
+Reduced block [5e-03 s]
+Processed integral 2042/2860
+Reduced block [1e-02 s]
+Processed integral 2043/2860
+Reduced block [2e-02 s]
+Processed integral 2044/2860
+Reduced block [3e-02 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Processed integral 2045/2860
+Reduced block [5e-02 s]
+Processed integral 2046/2860
+Reduced block [5e-02 s]
+Processed integral 2048/2860
+Reduced block [5e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2049/2860
+Reduced block [5e-02 s]
+Processed integral 2050/2860
+Reduced block [6e-02 s]
+Processed integral 2071/2860
+Reduced block [2e-03 s]
+Processed integral 2072/2860
+Reduced block [5e-03 s]
+Processed integral 2073/2860
+Reduced block [4e-03 s]
+Processed integral 2074/2860
+Reduced block [1e-02 s]
+Processed integral 2075/2860
+Reduced block [1e-02 s]
+Processed integral 2076/2860
+Reduced block [8e-03 s]
+Processed integral 2077/2860
+Reduced block [2e-02 s]
+Processed integral 2078/2860
+Reduced block [2e-02 s]
+Processed integral 2079/2860
+Reduced block [2e-02 s]
+Processed integral 2080/2860
+Reduced block [2e-02 s]
+Processed integral 2115/2860
+*Reduced block [6e-03 s]
+Processed integral 2116/2860
+Reduced block [1e-02 s]
+Processed integral 2117/2860
+Reduced block [3e-02 s]
+Reduced block [7e-03 s]
+Reduced block [2e-03 s]
+Processed integral 2118/2860
+Reduced block [3e-02 s]
+Processed integral 2119/2860
+Reduced block [6e-02 s]
+Reduced block [1e-02 s]
+Reduced block [5e-03 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Processed integral 2120/2860
+Reduced block [5e-02 s]
+Reduced block [2e-02 s]
+Reduced block [5e-03 s]
+Processed integral 2121/2860
+Reduced block [4e-02 s]
+Processed integral 2122/2860
+Reduced block [1e-01 s]
+Reduced block [2e-02 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2123/2860
+Reduced block [1e-01 s]
+Reduced block [3e-02 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2124/2860
+Reduced block [1e-01 s]
+Reduced block [3e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2126/2860
+Reduced block [5e-02 s]
+Processed integral 2127/2860
+Reduced block [7e-02 s]
+Processed integral 2128/2860
+Reduced block [8e-02 s]
+Processed integral 2129/2860
+Reduced block [8e-02 s]
+Processed integral 2140/2860
+Reduced block [2e-03 s]
+Processed integral 2141/2860
+Reduced block [5e-03 s]
+Processed integral 2142/2860
+Reduced block [4e-03 s]
+Processed integral 2143/2860
+Reduced block [1e-02 s]
+Processed integral 2144/2860
+Reduced block [1e-02 s]
+Processed integral 2145/2860
+*Reduced block [8e-03 s]
+Processed integral 2146/2860
+Reduced block [3e-02 s]
+Processed integral 2147/2860
+Reduced block [2e-02 s]
+Processed integral 2148/2860
+Reduced block [2e-02 s]
+Processed integral 2149/2860
+Reduced block [2e-02 s]
+Processed integral 2184/2860
+Reduced block [6e-03 s]
+Processed integral 2185/2860
+Reduced block [2e-02 s]
+Processed integral 2186/2860
+Reduced block [3e-02 s]
+Reduced block [9e-03 s]
+Reduced block [3e-03 s]
+Processed integral 2187/2860
+Reduced block [3e-02 s]
+Processed integral 2188/2860
+Reduced block [8e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2189/2860
+Reduced block [6e-02 s]
+Reduced block [2e-02 s]
+Reduced block [7e-03 s]
+Processed integral 2190/2860
+Reduced block [4e-02 s]
+Processed integral 2191/2860
+Reduced block [1e-01 s]
+Reduced block [3e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2192/2860
+Reduced block [1e-01 s]
+Reduced block [3e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2193/2860
+Reduced block [1e-01 s]
+Reduced block [3e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2195/2860
+Reduced block [5e-02 s]
+Processed integral 2196/2860
+Reduced block [8e-02 s]
+Processed integral 2197/2860
+Reduced block [9e-02 s]
+Processed integral 2198/2860
+Reduced block [9e-02 s]
+Processed integral 2199/2860
+Reduced block [2e-03 s]
+Processed integral 2200/2860
+Reduced block [5e-03 s]
+Processed integral 2201/2860
+Reduced block [3e-03 s]
+Processed integral 2202/2860
+Reduced block [1e-02 s]
+Processed integral 2203/2860
+*Reduced block [1e-02 s]
+Processed integral 2204/2860
+Reduced block [8e-03 s]
+Processed integral 2205/2860
+Reduced block [2e-02 s]
+Processed integral 2206/2860
+Reduced block [2e-02 s]
+Processed integral 2207/2860
+Reduced block [2e-02 s]
+Processed integral 2208/2860
+Reduced block [2e-02 s]
+Processed integral 2213/2860
+Reduced block [2e-03 s]
+Processed integral 2214/2860
+Reduced block [6e-03 s]
+Processed integral 2215/2860
+Reduced block [4e-03 s]
+Processed integral 2216/2860
+Reduced block [1e-02 s]
+Processed integral 2217/2860
+Reduced block [1e-02 s]
+Processed integral 2218/2860
+Reduced block [1e-02 s]
+Processed integral 2219/2860
+Reduced block [2e-02 s]
+Processed integral 2220/2860
+Reduced block [3e-02 s]
+Processed integral 2221/2860
+Reduced block [3e-02 s]
+Processed integral 2222/2860
+Reduced block [2e-02 s]
+Processed integral 2228/2860
+Reduced block [3e-03 s]
+Processed integral 2229/2860
+Reduced block [6e-03 s]
+Processed integral 2230/2860
+Reduced block [5e-03 s]
+Processed integral 2231/2860
+Reduced block [2e-02 s]
+Processed integral 2232/2860
+Reduced block [1e-02 s]
+Processed integral 2233/2860
+Reduced block [1e-02 s]
+Processed integral 2234/2860
+Reduced block [3e-02 s]
+Processed integral 2235/2860
+Reduced block [3e-02 s]
+Processed integral 2236/2860
+Reduced block [3e-02 s]
+Processed integral 2237/2860
+Reduced block [2e-02 s]
+Processed integral 2243/2860
+Reduced block [8e-03 s]
+Processed integral 2244/2860
+Reduced block [2e-02 s]
+Processed integral 2245/2860
+Reduced block [3e-02 s]
+Processed integral 2246/2860
+Reduced block [4e-02 s]
+Processed integral 2247/2860
+Reduced block [7e-02 s]
+Processed integral 2248/2860
+Reduced block [6e-02 s]
+Processed integral 2249/2860
+Reduced block [8e-02 s]
+Processed integral 2250/2860
+Reduced block [1e-01 s]
+Processed integral 2251/2860
+Reduced block [1e-01 s]
+Processed integral 2252/2860
+Reduced block [1e-01 s]
+Processed integral 2254/2860
+Reduced block [7e-02 s]
+Processed integral 2255/2860
+Reduced block [9e-02 s]
+Processed integral 2256/2860
+Reduced block [9e-02 s]
+Processed integral 2257/2860
+Reduced block [9e-02 s]
+Processed integral 2288/2860
+*Reduced block [6e-03 s]
+Processed integral 2289/2860
+Reduced block [2e-02 s]
+Processed integral 2290/2860
+Reduced block [4e-02 s]
+Reduced block [5e-03 s]
+Reduced block [9e-03 s]
+Reduced block [4e-03 s]
+Reduced block [4e-03 s]
+Processed integral 2291/2860
+Reduced block [3e-02 s]
+Processed integral 2292/2860
+Reduced block [7e-02 s]
+Reduced block [8e-03 s]
+Reduced block [2e-02 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [7e-03 s]
+Reduced block [8e-03 s]
+Reduced block [8e-03 s]
+Processed integral 2293/2860
+Reduced block [8e-02 s]
+Reduced block [8e-03 s]
+Reduced block [2e-02 s]
+Reduced block [7e-03 s]
+Reduced block [8e-03 s]
+Processed integral 2294/2860
+Reduced block [4e-02 s]
+Processed integral 2295/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Reduced block [3e-02 s]
+Reduced block [8e-03 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Processed integral 2296/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Reduced block [3e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Processed integral 2297/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Reduced block [3e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2299/2860
+Reduced block [5e-02 s]
+Processed integral 2300/2860
+Reduced block [9e-02 s]
+Processed integral 2301/2860
+Reduced block [1e-01 s]
+Processed integral 2302/2860
+Reduced block [1e-01 s]
+Processed integral 2318/2860
+*Reduced block [8e-03 s]
+Processed integral 2319/2860
+Reduced block [2e-02 s]
+Processed integral 2320/2860
+Reduced block [4e-02 s]
+Reduced block [7e-03 s]
+Processed integral 2321/2860
+Reduced block [3e-02 s]
+Processed integral 2322/2860
+Reduced block [8e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2323/2860
+Reduced block [8e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2324/2860
+Reduced block [5e-02 s]
+Processed integral 2325/2860
+Reduced block [1e-01 s]
+Reduced block [9e-03 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [9e-03 s]
+Reduced block [9e-03 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Processed integral 2326/2860
+Reduced block [1e-01 s]
+Reduced block [2e-02 s]
+Processed integral 2327/2860
+Reduced block [1e-01 s]
+Reduced block [2e-02 s]
+Processed integral 2329/2860
+Reduced block [6e-02 s]
+Processed integral 2330/2860
+Reduced block [1e-01 s]
+Processed integral 2331/2860
+Reduced block [1e-01 s]
+Processed integral 2332/2860
+Reduced block [1e-01 s]
+Processed integral 2333/2860
+Reduced block [4e-03 s]
+Processed integral 2334/2860
+Reduced block [1e-02 s]
+Processed integral 2335/2860
+Reduced block [2e-02 s]
+Processed integral 2336/2860
+Reduced block [2e-02 s]
+Processed integral 2337/2860
+Reduced block [5e-02 s]
+Processed integral 2338/2860
+Reduced block [5e-02 s]
+Processed integral 2339/2860
+Reduced block [5e-02 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [8e-03 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [8e-03 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2340/2860
+Reduced block [1e-01 s]
+Processed integral 2341/2860
+Reduced block [1e-01 s]
+Processed integral 2342/2860
+Reduced block [9e-02 s]
+Processed integral 2344/2860
+Reduced block [7e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [3e-02 s]
+Processed integral 2345/2860
+Reduced block [1e-01 s]
+Processed integral 2346/2860
+Reduced block [1e-01 s]
+Processed integral 2347/2860
+Reduced block [1e-01 s]
+Processed integral 2358/2860
+Reduced block [2e-03 s]
+Processed integral 2359/2860
+Reduced block [5e-03 s]
+Processed integral 2360/2860
+Reduced block [3e-03 s]
+Processed integral 2361/2860
+Reduced block [1e-02 s]
+Processed integral 2362/2860
+Reduced block [1e-02 s]
+Processed integral 2363/2860
+Reduced block [7e-03 s]
+Processed integral 2364/2860
+Reduced block [3e-02 s]
+Processed integral 2365/2860
+Reduced block [2e-02 s]
+Processed integral 2366/2860
+Reduced block [2e-02 s]
+Processed integral 2367/2860
+Reduced block [1e-02 s]
+Processed integral 2402/2860
+*Reduced block [6e-03 s]
+Processed integral 2403/2860
+Reduced block [2e-02 s]
+Processed integral 2404/2860
+Reduced block [4e-02 s]
+Reduced block [1e-02 s]
+Reduced block [4e-03 s]
+Processed integral 2405/2860
+Reduced block [3e-02 s]
+Processed integral 2406/2860
+Reduced block [9e-02 s]
+Reduced block [2e-02 s]
+Processed integral 2407/2860
+Reduced block [9e-02 s]
+Reduced block [3e-02 s]
+Reduced block [9e-03 s]
+Processed integral 2408/2860
+Reduced block [5e-02 s]
+Processed integral 2409/2860
+Reduced block [1e-01 s]
+Reduced block [3e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2410/2860
+Reduced block [1e-01 s]
+Reduced block [4e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2411/2860
+Reduced block [1e-01 s]
+Reduced block [3e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2413/2860
+Reduced block [6e-02 s]
+Processed integral 2414/2860
+Reduced block [9e-02 s]
+Processed integral 2415/2860
+Reduced block [1e-01 s]
+Processed integral 2416/2860
+Reduced block [9e-02 s]
+Processed integral 2417/2860
+Reduced block [2e-03 s]
+Processed integral 2418/2860
+Reduced block [4e-03 s]
+Processed integral 2419/2860
+Reduced block [3e-03 s]
+Processed integral 2420/2860
+Reduced block [1e-02 s]
+Processed integral 2421/2860
+Reduced block [9e-03 s]
+Processed integral 2422/2860
+Reduced block [7e-03 s]
+Processed integral 2423/2860
+Reduced block [2e-02 s]
+Processed integral 2424/2860
+Reduced block [2e-02 s]
+Processed integral 2425/2860
+Reduced block [2e-02 s]
+Processed integral 2426/2860
+Reduced block [1e-02 s]
+Processed integral 2431/2860
+*Reduced block [2e-03 s]
+Processed integral 2432/2860
+Reduced block [6e-03 s]
+Processed integral 2433/2860
+Reduced block [4e-03 s]
+Processed integral 2434/2860
+Reduced block [2e-02 s]
+Processed integral 2435/2860
+Reduced block [1e-02 s]
+Processed integral 2436/2860
+Reduced block [1e-02 s]
+Processed integral 2437/2860
+Reduced block [3e-02 s]
+Processed integral 2438/2860
+Reduced block [3e-02 s]
+Processed integral 2439/2860
+Reduced block [3e-02 s]
+Processed integral 2440/2860
+Reduced block [2e-02 s]
+Processed integral 2446/2860
+Reduced block [2e-03 s]
+Processed integral 2447/2860
+Reduced block [6e-03 s]
+Processed integral 2448/2860
+Reduced block [5e-03 s]
+Processed integral 2449/2860
+Reduced block [2e-02 s]
+Processed integral 2450/2860
+Reduced block [1e-02 s]
+Processed integral 2451/2860
+Reduced block [1e-02 s]
+Processed integral 2452/2860
+Reduced block [3e-02 s]
+Processed integral 2453/2860
+Reduced block [3e-02 s]
+Processed integral 2454/2860
+Reduced block [3e-02 s]
+Processed integral 2455/2860
+Reduced block [2e-02 s]
+Processed integral 2461/2860
+Reduced block [9e-03 s]
+Processed integral 2462/2860
+Reduced block [2e-02 s]
+Processed integral 2463/2860
+Reduced block [3e-02 s]
+Processed integral 2464/2860
+Reduced block [5e-02 s]
+Processed integral 2465/2860
+Reduced block [7e-02 s]
+Processed integral 2466/2860
+Reduced block [6e-02 s]
+Processed integral 2467/2860
+Reduced block [9e-02 s]
+Processed integral 2468/2860
+Reduced block [1e-01 s]
+Processed integral 2469/2860
+Reduced block [1e-01 s]
+Processed integral 2470/2860
+Reduced block [1e-01 s]
+Processed integral 2472/2860
+Reduced block [7e-02 s]
+Processed integral 2473/2860
+Reduced block [9e-02 s]
+Processed integral 2474/2860
+Reduced block [9e-02 s]
+Processed integral 2475/2860
+Reduced block [9e-02 s]
+Processed integral 2506/2860
+*Reduced block [6e-03 s]
+Processed integral 2507/2860
+Reduced block [2e-02 s]
+Processed integral 2508/2860
+Reduced block [4e-02 s]
+Reduced block [5e-03 s]
+Reduced block [1e-02 s]
+Reduced block [4e-03 s]
+Reduced block [5e-03 s]
+Processed integral 2509/2860
+Reduced block [4e-02 s]
+Processed integral 2510/2860
+Reduced block [9e-02 s]
+Reduced block [8e-03 s]
+Reduced block [1e-02 s]
+Processed integral 2511/2860
+Reduced block [9e-02 s]
+Reduced block [9e-03 s]
+Reduced block [2e-02 s]
+Reduced block [8e-03 s]
+Reduced block [9e-03 s]
+Processed integral 2512/2860
+Reduced block [5e-02 s]
+Processed integral 2513/2860
+Reduced block [2e-01 s]
+Reduced block [1e-02 s]
+Reduced block [4e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Processed integral 2514/2860
+Reduced block [2e-01 s]
+Reduced block [1e-02 s]
+Reduced block [4e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Processed integral 2515/2860
+Reduced block [1e-01 s]
+Reduced block [2e-02 s]
+Reduced block [4e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2517/2860
+Reduced block [6e-02 s]
+Processed integral 2518/2860
+Reduced block [1e-01 s]
+Processed integral 2519/2860
+Reduced block [1e-01 s]
+Processed integral 2520/2860
+Reduced block [1e-01 s]
+Processed integral 2536/2860
+Reduced block [8e-03 s]
+Processed integral 2537/2860
+Reduced block [2e-02 s]
+Processed integral 2538/2860
+Reduced block [5e-02 s]
+Reduced block [8e-03 s]
+Processed integral 2539/2860
+Reduced block [4e-02 s]
+Processed integral 2540/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Processed integral 2541/2860
+Reduced block [9e-02 s]
+Reduced block [2e-02 s]
+Processed integral 2542/2860
+Reduced block [5e-02 s]
+Processed integral 2543/2860
+Reduced block [2e-01 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [1e-02 s]
+Reduced block [3e-02 s]
+Processed integral 2544/2860
+Reduced block [2e-01 s]
+Reduced block [2e-02 s]
+Processed integral 2545/2860
+Reduced block [2e-01 s]
+Reduced block [2e-02 s]
+Processed integral 2547/2860
+*Reduced block [7e-02 s]
+Processed integral 2548/2860
+Reduced block [1e-01 s]
+Processed integral 2549/2860
+Reduced block [2e-01 s]
+Processed integral 2550/2860
+Reduced block [2e-01 s]
+Processed integral 2551/2860
+Reduced block [4e-03 s]
+Processed integral 2552/2860
+Reduced block [1e-02 s]
+Processed integral 2553/2860
+Reduced block [2e-02 s]
+Processed integral 2554/2860
+Reduced block [2e-02 s]
+Processed integral 2555/2860
+Reduced block [6e-02 s]
+Processed integral 2556/2860
+Reduced block [5e-02 s]
+Processed integral 2557/2860
+Reduced block [5e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2558/2860
+Reduced block [1e-01 s]
+Processed integral 2559/2860
+Reduced block [1e-01 s]
+Processed integral 2560/2860
+Reduced block [9e-02 s]
+Processed integral 2562/2860
+Reduced block [8e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [3e-02 s]
+Reduced block [3e-02 s]
+Processed integral 2563/2860
+Reduced block [1e-01 s]
+Processed integral 2564/2860
+Reduced block [1e-01 s]
+Processed integral 2565/2860
+Reduced block [1e-01 s]
+Processed integral 2566/2860
+Reduced block [2e-03 s]
+Processed integral 2567/2860
+Reduced block [4e-03 s]
+Processed integral 2568/2860
+Reduced block [3e-03 s]
+Processed integral 2569/2860
+Reduced block [1e-02 s]
+Processed integral 2570/2860
+Reduced block [1e-02 s]
+Processed integral 2571/2860
+Reduced block [8e-03 s]
+Processed integral 2572/2860
+Reduced block [2e-02 s]
+Processed integral 2573/2860
+Reduced block [2e-02 s]
+Processed integral 2574/2860
+Reduced block [2e-02 s]
+Processed integral 2575/2860
+Reduced block [1e-02 s]
+Processed integral 2580/2860
+Reduced block [2e-03 s]
+Processed integral 2581/2860
+Reduced block [5e-03 s]
+Processed integral 2582/2860
+Reduced block [4e-03 s]
+Processed integral 2583/2860
+Reduced block [1e-02 s]
+Processed integral 2584/2860
+Reduced block [1e-02 s]
+Processed integral 2585/2860
+Reduced block [9e-03 s]
+Processed integral 2586/2860
+Reduced block [2e-02 s]
+Processed integral 2587/2860
+Reduced block [2e-02 s]
+Processed integral 2588/2860
+Reduced block [2e-02 s]
+Processed integral 2589/2860
+Reduced block [2e-02 s]
+Processed integral 2595/2860
+Reduced block [2e-03 s]
+Processed integral 2596/2860
+Reduced block [6e-03 s]
+Processed integral 2597/2860
+Reduced block [4e-03 s]
+Processed integral 2598/2860
+Reduced block [1e-02 s]
+Processed integral 2599/2860
+Reduced block [1e-02 s]
+Processed integral 2600/2860
+Reduced block [1e-02 s]
+Processed integral 2601/2860
+Reduced block [2e-02 s]
+Processed integral 2602/2860
+Reduced block [2e-02 s]
+Processed integral 2603/2860
+*Reduced block [2e-02 s]
+Processed integral 2604/2860
+Reduced block [2e-02 s]
+Processed integral 2610/2860
+Reduced block [9e-03 s]
+Processed integral 2611/2860
+Reduced block [2e-02 s]
+Processed integral 2612/2860
+Reduced block [3e-02 s]
+Processed integral 2613/2860
+Reduced block [4e-02 s]
+Processed integral 2614/2860
+Reduced block [7e-02 s]
+Processed integral 2615/2860
+Reduced block [6e-02 s]
+Processed integral 2616/2860
+Reduced block [8e-02 s]
+Processed integral 2617/2860
+Reduced block [1e-01 s]
+Processed integral 2618/2860
+Reduced block [1e-01 s]
+Processed integral 2619/2860
+Reduced block [1e-01 s]
+Processed integral 2621/2860
+Reduced block [7e-02 s]
+Processed integral 2622/2860
+Reduced block [9e-02 s]
+Processed integral 2623/2860
+Reduced block [9e-02 s]
+Processed integral 2624/2860
+Reduced block [9e-02 s]
+Processed integral 2625/2860
+Reduced block [2e-03 s]
+Processed integral 2626/2860
+Reduced block [6e-03 s]
+Processed integral 2627/2860
+Reduced block [4e-03 s]
+Processed integral 2628/2860
+Reduced block [1e-02 s]
+Processed integral 2629/2860
+Reduced block [1e-02 s]
+Processed integral 2630/2860
+Reduced block [1e-02 s]
+Processed integral 2631/2860
+Reduced block [2e-02 s]
+Processed integral 2632/2860
+Reduced block [2e-02 s]
+Processed integral 2633/2860
+Reduced block [3e-02 s]
+Processed integral 2634/2860
+Reduced block [2e-02 s]
+Processed integral 2640/2860
+Reduced block [3e-03 s]
+Processed integral 2641/2860
+Reduced block [8e-03 s]
+Processed integral 2642/2860
+Reduced block [6e-03 s]
+Processed integral 2643/2860
+Reduced block [2e-02 s]
+Processed integral 2644/2860
+Reduced block [2e-02 s]
+Processed integral 2645/2860
+Reduced block [1e-02 s]
+Processed integral 2646/2860
+Reduced block [3e-02 s]
+Processed integral 2647/2860
+Reduced block [3e-02 s]
+Processed integral 2648/2860
+Reduced block [3e-02 s]
+Processed integral 2649/2860
+Reduced block [3e-02 s]
+Processed integral 2655/2860
+Reduced block [9e-03 s]
+Processed integral 2656/2860
+Reduced block [2e-02 s]
+Processed integral 2657/2860
+Reduced block [3e-02 s]
+Processed integral 2658/2860
+Reduced block [5e-02 s]
+Processed integral 2659/2860
+Reduced block [8e-02 s]
+Processed integral 2660/2860
+*Reduced block [7e-02 s]
+Processed integral 2661/2860
+Reduced block [8e-02 s]
+Processed integral 2662/2860
+Reduced block [2e-01 s]
+Processed integral 2663/2860
+Reduced block [2e-01 s]
+Processed integral 2664/2860
+Reduced block [1e-01 s]
+Processed integral 2666/2860
+Reduced block [7e-02 s]
+Processed integral 2667/2860
+Reduced block [9e-02 s]
+Processed integral 2668/2860
+Reduced block [1e-01 s]
+Processed integral 2669/2860
+Reduced block [1e-01 s]
+Processed integral 2670/2860
+Reduced block [3e-03 s]
+Processed integral 2671/2860
+Reduced block [8e-03 s]
+Processed integral 2672/2860
+Reduced block [6e-03 s]
+Processed integral 2673/2860
+Reduced block [2e-02 s]
+Processed integral 2674/2860
+Reduced block [2e-02 s]
+Processed integral 2675/2860
+Reduced block [1e-02 s]
+Processed integral 2676/2860
+Reduced block [3e-02 s]
+Processed integral 2677/2860
+Reduced block [3e-02 s]
+Processed integral 2678/2860
+Reduced block [4e-02 s]
+Processed integral 2679/2860
+Reduced block [2e-02 s]
+Processed integral 2685/2860
+Reduced block [1e-02 s]
+Processed integral 2686/2860
+Reduced block [3e-02 s]
+Processed integral 2687/2860
+Reduced block [3e-02 s]
+Processed integral 2688/2860
+Reduced block [5e-02 s]
+Processed integral 2689/2860
+Reduced block [9e-02 s]
+Processed integral 2690/2860
+Reduced block [8e-02 s]
+Processed integral 2691/2860
+Reduced block [9e-02 s]
+Processed integral 2692/2860
+Reduced block [2e-01 s]
+Processed integral 2693/2860
+Reduced block [2e-01 s]
+Processed integral 2694/2860
+Reduced block [1e-01 s]
+Processed integral 2696/2860
+Reduced block [8e-02 s]
+Processed integral 2697/2860
+Reduced block [1e-01 s]
+Processed integral 2698/2860
+Reduced block [1e-01 s]
+Processed integral 2699/2860
+Reduced block [1e-01 s]
+Processed integral 2700/2860
+Reduced block [8e-03 s]
+Processed integral 2701/2860
+Reduced block [2e-02 s]
+Processed integral 2702/2860
+Reduced block [3e-02 s]
+Processed integral 2703/2860
+Reduced block [5e-02 s]
+Processed integral 2704/2860
+Reduced block [7e-02 s]
+Processed integral 2705/2860
+Reduced block [6e-02 s]
+Processed integral 2706/2860
+Reduced block [8e-02 s]
+Processed integral 2707/2860
+Reduced block [1e-01 s]
+Processed integral 2708/2860
+Reduced block [1e-01 s]
+Processed integral 2709/2860
+Reduced block [1e-01 s]
+Processed integral 2711/2860
+Reduced block [4e-01 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [3e-02 s]
+Processed integral 2712/2860
+Reduced block [1e-01 s]
+Processed integral 2713/2860
+Reduced block [1e-01 s]
+Processed integral 2714/2860
+Reduced block [1e-01 s]
+Processed integral 2743/2860
+*Reduced block [6e-03 s]
+Processed integral 2744/2860
+Reduced block [2e-02 s]
+Processed integral 2745/2860
+Reduced block [4e-02 s]
+Reduced block [6e-03 s]
+Reduced block [6e-03 s]
+Reduced block [1e-02 s]
+Reduced block [4e-03 s]
+Reduced block [4e-03 s]
+Reduced block [5e-03 s]
+Processed integral 2746/2860
+Reduced block [3e-02 s]
+Processed integral 2747/2860
+Reduced block [8e-02 s]
+Reduced block [8e-03 s]
+Reduced block [9e-03 s]
+Reduced block [2e-02 s]
+Reduced block [6e-03 s]
+Reduced block [7e-03 s]
+Reduced block [8e-03 s]
+Processed integral 2748/2860
+Reduced block [8e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [7e-03 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Processed integral 2749/2860
+Reduced block [4e-02 s]
+Processed integral 2750/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [3e-02 s]
+Reduced block [8e-03 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Processed integral 2751/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [3e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2752/2860
+Reduced block [1e-01 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [4e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Processed integral 2754/2860
+Reduced block [5e-02 s]
+Processed integral 2755/2860
+Reduced block [9e-02 s]
+Processed integral 2756/2860
+Reduced block [1e-01 s]
+Processed integral 2757/2860
+Reduced block [1e-01 s]
+Processed integral 2772/2860
+Reduced block [9e-03 s]
+Processed integral 2773/2860
+Reduced block [2e-02 s]
+Processed integral 2774/2860
+Reduced block [5e-02 s]
+Reduced block [9e-03 s]
+Processed integral 2775/2860
+*Reduced block [3e-01 s]
+Processed integral 2776/2860
+Reduced block [1e-01 s]
+Reduced block [1e-02 s]
+Processed integral 2777/2860
+Reduced block [1e-01 s]
+Reduced block [2e-02 s]
+Processed integral 2778/2860
+Reduced block [5e-02 s]
+Processed integral 2779/2860
+Reduced block [2e-01 s]
+Reduced block [8e-03 s]
+Reduced block [8e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [8e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [8e-03 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [9e-03 s]
+Reduced block [2e-02 s]
+Processed integral 2780/2860
+Reduced block [2e-01 s]
+Reduced block [2e-02 s]
+Processed integral 2781/2860
+Reduced block [2e-01 s]
+Reduced block [2e-02 s]
+Processed integral 2783/2860
+Reduced block [7e-02 s]
+Processed integral 2784/2860
+Reduced block [1e-01 s]
+Processed integral 2785/2860
+Reduced block [2e-01 s]
+Processed integral 2786/2860
+Reduced block [2e-01 s]
+Processed integral 2787/2860
+Reduced block [5e-03 s]
+Processed integral 2788/2860
+Reduced block [2e-02 s]
+Processed integral 2789/2860
+Reduced block [3e-02 s]
+Processed integral 2790/2860
+Reduced block [3e-02 s]
+Processed integral 2791/2860
+Reduced block [7e-02 s]
+Processed integral 2792/2860
+Reduced block [6e-02 s]
+Processed integral 2793/2860
+Reduced block [4e-01 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2794/2860
+Reduced block [1e-01 s]
+Processed integral 2795/2860
+Reduced block [1e-01 s]
+Processed integral 2796/2860
+Reduced block [1e-01 s]
+Processed integral 2798/2860
+Reduced block [8e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [3e-02 s]
+Reduced block [3e-02 s]
+Processed integral 2799/2860
+Reduced block [1e-01 s]
+Processed integral 2800/2860
+Reduced block [1e-01 s]
+Processed integral 2801/2860
+Reduced block [1e-01 s]
+Processed integral 2816/2860
+Reduced block [1e-02 s]
+Processed integral 2817/2860
+Reduced block [3e-02 s]
+Processed integral 2818/2860
+Reduced block [6e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2819/2860
+Reduced block [4e-02 s]
+Processed integral 2820/2860
+Reduced block [1e-01 s]
+Reduced block [2e-02 s]
+Processed integral 2821/2860
+Reduced block [1e-01 s]
+Reduced block [2e-02 s]
+Processed integral 2822/2860
+Reduced block [5e-02 s]
+Processed integral 2823/2860
+Reduced block [2e-01 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [9e-03 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [3e-02 s]
+Processed integral 2824/2860
+Reduced block [4e-01 s]
+Reduced block [3e-02 s]
+Processed integral 2825/2860
+Reduced block [2e-01 s]
+Reduced block [3e-02 s]
+Processed integral 2827/2860
+Reduced block [7e-02 s]
+Processed integral 2828/2860
+Reduced block [2e-01 s]
+Processed integral 2829/2860
+Reduced block [2e-01 s]
+Processed integral 2830/2860
+Reduced block [2e-01 s]
+Processed integral 2831/2860
+Reduced block [6e-03 s]
+Processed integral 2832/2860
+*Reduced block [2e-02 s]
+Processed integral 2833/2860
+Reduced block [3e-02 s]
+Processed integral 2834/2860
+Reduced block [3e-02 s]
+Processed integral 2835/2860
+Reduced block [7e-02 s]
+Processed integral 2836/2860
+Reduced block [7e-02 s]
+Processed integral 2837/2860
+Reduced block [4e-02 s]
+Processed integral 2838/2860
+Reduced block [1e-01 s]
+Processed integral 2839/2860
+Reduced block [1e-01 s]
+Processed integral 2840/2860
+Reduced block [1e-01 s]
+Processed integral 2842/2860
+Reduced block [1e-01 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [3e-02 s]
+Reduced block [3e-02 s]
+Processed integral 2843/2860
+Reduced block [1e-01 s]
+Processed integral 2844/2860
+Reduced block [1e-01 s]
+Processed integral 2845/2860
+Reduced block [1e-01 s]
+Processed integral 2846/2860
+Reduced block [5e-03 s]
+Processed integral 2847/2860
+Reduced block [1e-02 s]
+Processed integral 2848/2860
+Reduced block [2e-02 s]
+Processed integral 2849/2860
+Reduced block [2e-02 s]
+Processed integral 2850/2860
+Reduced block [5e-02 s]
+Processed integral 2851/2860
+Reduced block [5e-02 s]
+Processed integral 2852/2860
+Reduced block [5e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 2853/2860
+Reduced block [1e-01 s]
+Processed integral 2854/2860
+Reduced block [1e-01 s]
+Processed integral 2855/2860
+Reduced block [1e-01 s]
+Processed integral 2857/2860
+Reduced block [8e-02 s]
+Reduced block [2e-02 s]
+Reduced block [2e-02 s]
+Reduced block [3e-02 s]
+Reduced block [3e-02 s]
+Processed integral 2858/2860
+Reduced block [1e-01 s]
+Processed integral 2859/2860
+Reduced block [1e-01 s]
+Processed integral 2860/2860
+Reduced block [1e-01 s]
+
+Reduction done !
+Writing results to ./reductions/reduction_T1_6_95
+  write result
+  ..................................................  **************************************************
+  file size: 6194206 Bytes
+  time unabbreviate: 0.1 s
+  time I/O:        0.0 s
+  time write tot   0.1 s (42480203 Bytes/s)
+
+Reduction done (time: 83.4 s)
+
+Cleaning up
+Analyzing reduction result
+
+Analyzing reduction file ./reductions/reduction_T1_6_95
+
+Number of equations: 2422
+Average coefficient length [bytes]: 360
+
+Extracting status of reduction for each r,s point
+Showing statistics for reductions found in each sector
+Number of sectors for which this file provides reductions: 1
+
+
+First table shows the following entries:
+A: Number of all integrals
+B: Number of unreduced integrals
+C: Number of different integrals
+D: Number of different unreduced integrals
+E: Identities are interreduced w.r.t. this file (.) or not (x)
+
+Second table shows different unreduced integrals in r-s diagram
+
+
+(T1:6:95)        A       B       C       D       E
+.....................................................
+r=6, s=0:        1       0       1       0       .
+r=6, s=1:        3       0       3       0       .
+r=6, s=2:        6       0       6       0       .
+r=6, s=3:       10       0      10       0       .
+r=6, s=4:       15      15      15      15       .
+r=7, s=0:        6       0       6       0       .
+r=7, s=1:       18       0      18       0       .
+r=7, s=2:       36       0      36       0       .
+r=7, s=3:       60       0      60       0       .
+r=7, s=4:       90      32      90      32       .
+r=8, s=0:       21       0      21       0       .
+r=8, s=1:       63       0      63       0       .
+r=8, s=2:      126       0     126       0       .
+r=8, s=3:      210       0     210       0       .
+r=8, s=4:      315     102     315     102       .
+r=9, s=0:       56      30      56      30       .
+r=9, s=1:      168      36     168      36       .
+r=9, s=2:      336      48     336      48       .
+r=9, s=3:      560      61     560      61       .
+r=9, s=4:      840     194     840     194       .
+
+(T1:6:95)      s=0     s=1     s=2     s=3     s=4
+.....................................................
+r=6:            0.      0.      0.      0.     15.
+r=7:            0.      0.      0.      0.     32.
+r=8:            0.      0.      0.      0.    102.
+r=9:           30.     36.     48.     61.    194.
+
+
+Check for masters done (time: 0.3 s)
+
+Done [85 s]
+Setup:         1 s  (2 %)
+Reduction:     83 s  (98 %)
+Write/analyze: 0 s  (0 %)
+
+
+Job done (total time: 85 s)

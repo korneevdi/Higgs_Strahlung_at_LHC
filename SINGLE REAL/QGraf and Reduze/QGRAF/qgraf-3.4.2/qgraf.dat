@@ -1,0 +1,10 @@
+ output= 'out.draw' ;
+ style= 'xmldraw.sty' ;
+ model= ' model';
+ in= q[p1], Q[p2] ;
+ out= W[p3], H[p4], g[p5] ;
+ loops= 1;
+ loop_momentum= k;
+ options= onshell, notadpole;
+ true= vsum[gwh, 0, 1];
+ true= psum[prop, 0, 0];

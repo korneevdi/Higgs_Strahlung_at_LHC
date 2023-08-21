@@ -1,0 +1,25 @@
+
+Date: Mon Apr  4 11:12:46 2022
+
+
+conditional: false
+input_file: ./tmp/INT_3_26/seeds/seeds_INT_3_26_lorentz
+output_file: ./tmp/INT_3_26/identities/identities_INT_3_26_lorentz_1_of_1
+type: lorentz
+options:
+  transform_integrals_to_equivalent: true
+  solve_equations: true
+  set_subsectors_to_zero: false
+  eliminate_subsectors_by_shift: true
+  map_on_coeff: []
+from: 1
+to: 1000
+
+  Adjusting last integral 1000 to 10
+  Generating identities of type lorentz: identities_INT_3_26_lorentz_1_of_1
+  identities from 10 seeds, range: [1, 10]
+  ..................................................  **************************************************
+  Identities generated: 60 (time: 0.3 s)
+  Average number of integrals per equation: 1e+01
+
+Job done (total time: 0 s)

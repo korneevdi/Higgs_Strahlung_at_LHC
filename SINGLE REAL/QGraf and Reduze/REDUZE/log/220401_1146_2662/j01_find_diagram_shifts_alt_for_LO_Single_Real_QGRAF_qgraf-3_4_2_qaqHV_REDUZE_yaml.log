@@ -1,0 +1,12 @@
+
+Date: Fri Apr  1 11:46:26 2022
+
+
+conditional: false
+qgraf_file: /net/home/lxtsfs1/tpe/korneev/Desktop/NNLO_Single_Real/QGRAF/qgraf-3.4.2/qaqHV_REDUZE.yaml
+output_file: tmp/reduze_qaqHV_alt.yaml
+info_file_form: shifts/reduze_qaqHV_alt.shift
+names:
+  []
+
+Reading diagrams from file: /net/home/lxtsfs1/tpe/korneev/Desktop/NNLO_Single_Real/QGRAF/qgraf-3.4.2/qaqHV_REDUZE.yaml

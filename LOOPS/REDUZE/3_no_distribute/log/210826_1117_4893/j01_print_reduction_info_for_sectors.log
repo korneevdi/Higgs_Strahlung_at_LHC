@@ -1,0 +1,36 @@
+
+Date: Thu Aug 26 11:18:00 2021
+
+
+conditional: false
+sector_selection:
+  select_all: false
+  select:
+    []
+  select_recursively:
+    - [T1, 86]
+    - [T1, 118]
+    - [T1, 54]
+    - [T1, 79]
+    - [T1, 95]
+    - [T1, 111]
+    - [T1, 87]
+    - [T1, 103]
+    - [T1, 119]
+    - [T1, 55]
+    - [T2, 63]
+  deselect:
+    []
+  deselect_recursively:
+    []
+  deselect_independents:
+    []
+  deselect_graphless: false
+  deselect_graphs: false
+  t_restriction: [-1, -1]
+check_for_masters:
+  - {r: [0, 6], s: [0, 2]}
+masters_file_prefix: masters_tmp/masters.T.
+
+
+Job done (total time: 0 s)

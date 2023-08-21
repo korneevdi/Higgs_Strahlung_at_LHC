@@ -1,0 +1,63 @@
+
+Date: Mon Apr  4 10:27:08 2022
+
+
+conditional: false
+
+
+Setting up crossings for kinematics ''
+Crossing equivalence: '' -> ''
+External legs:
+  external leg 1 is incoming, has momenta p1 and mass 0
+  external leg 2 is incoming, has momenta p2 and mass 0
+  external leg 3 is outgoing, has momenta pw and mass mw^2
+  external leg 4 is outgoing, has momenta -pw-p5+p2+p1 and mass s-2*mw^2+u+s35-s15+t-s25
+  external leg 5 is outgoing, has momenta p5 and mass 0
+Rules to replace scalar products by kinematic invariants:
+  SP(pw,p5) -> -1/2*mw^2+1/2*s35
+  SP(p5,p1) -> 1/2*s15
+  SP(p1,p1) -> 0
+  SP(p5,p2) -> 1/2*s25
+  SP(pw,pw) -> mw^2
+  SP(p2,p2) -> 0
+  SP(pw,p1) -> 1/2*mw^2-1/2*t
+  SP(p5,p5) -> 0
+  SP(pw,p2) -> 1/2*mw^2-1/2*u
+  SP(p2,p1) -> 1/2*s
+Permutations of external legs (before completing):
+[]
+[[1, 2]]
+[[1, 2, 5]]
+[[1, 5]]
+[[1, 5, 2]]
+[[2, 5]]
+Discarding invalid crossings due to numeric kinematic invariants:
+discarded 0 crossings
+Completing the permutations:
+Permutations of external legs:
+[]
+[[1, 2]]
+[[1, 2, 5]]
+[[1, 5]]
+[[1, 5, 2]]
+[[2, 5]]
+Generating crossings:
+  generated crossing [[1, 2]]
+  generated crossing [[1, 2, 5]]
+  generated crossing [[1, 5]]
+  generated crossing [[1, 5, 2]]
+  generated crossing [[2, 5]]
+Number of crossings (identity included): 6
+Crossing equivalence: 'x25' -> 'x25'
+Crossing equivalence: 'x152' -> 'x152'
+Crossing equivalence: 'x15' -> 'x15'
+Crossing equivalence: 'x125' -> 'x125'
+Crossing equivalence: 'x12' -> 'x12'
+Crossing equivalence: '' -> ''
+No crossings file defined
+Crossing equivalence: '' -> ''
+Created default crossings for kinematics ''
+
+Saving crossings.
+
+Job done (total time: 0 s)

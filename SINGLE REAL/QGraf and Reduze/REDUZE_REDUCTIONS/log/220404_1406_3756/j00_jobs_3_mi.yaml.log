@@ -1,0 +1,141 @@
+
+Date: Mon Apr  4 14:06:37 2022
+
+Setting up job queue from jobs_3_mi.yaml
+Updating job queue dependencies
+Processing jobs in serial mode (non-MPI build)
+Loading uncrossed integral families from file ./config/integralfamilies.yaml
+Initialize integral family 'INT'
+Loaded integral family INT
+Loaded 1 (uncrossed) integral families
+Done loading uncrossed integral families
+Using integral family INT (id reset to 1)
+Loading crossings from file ./sectormappings/crossings.yaml
+Crossing equivalence: '' -> ''
+using crossing x12 (invs: {u==t,s15==s25,t==u,s25==s15}, mom: {p2==p1,p1==p2})
+using crossing x125 (invs: {s==-s25,u==s35,s35==t,s15==-s,t==u,s25==s15}, mom: {p5==-p1,p2==-p5,p1==p2})
+using crossing x15 (invs: {s==-s25,s35==t,t==s35,s25==-s}, mom: {p5==-p1,p1==-p5})
+using crossing x152 (invs: {s==-s15,u==t,s35==u,s15==s25,t==s35,s25==-s}, mom: {p5==-p2,p2==p1,p1==-p5})
+using crossing x25 (invs: {s==-s15,u==s35,s35==u,s15==-s}, mom: {p5==-p2,p2==-p5})
+Crossing equivalence: 'x25' -> 'x25'
+Crossing equivalence: 'x152' -> 'x152'
+Crossing equivalence: 'x15' -> 'x15'
+Crossing equivalence: 'x125' -> 'x125'
+Crossing equivalence: 'x12' -> 'x12'
+Crossing equivalence: '' -> ''
+Loaded crossings for kinematics ''
+Loaded crossings for 1 kinematics
+Done loading crossings
+  generated crossed integral family INTx12 (id set to 2)
+  generated crossed integral family INTx125 (id set to 3)
+  generated crossed integral family INTx15 (id set to 4)
+  generated crossed integral family INTx152 (id set to 5)
+  generated crossed integral family INTx25 (id set to 6)
+Done loading integral families
+Inserted new job in queue: job(1): print reduction info for sectors
+Updating job queue dependencies
+Determining sectors in selection
+  normalizing user input
+read key 'sectormappings' in file './sectormappings/sectormappings_INT.yaml'
+Found valid sector mappings for INT
+  selecting explicit sectors
+  selecting recursively
+  deselecting explicit sectors
+  deselecting recursively
+  deselecting sectors by t restriction
+Inserted new job in queue: job(2): print reduction info: ./reductions/reduction_INT_4_15
+Inserted new job in queue: job(3): print reduction info: ./reductions/reduction_INTx15_3_11
+Inserted new job in queue: job(4): print reduction info: ./reductions/reduction_INT_3_11
+Inserted new job in queue: job(5): print reduction info: ./reductions/reduction_INTx125_3_7
+Inserted new job in queue: job(6): print reduction info: ./reductions/reduction_INT_3_7
+Inserted new job in queue: job(7): print reduction info: ./reductions/reduction_INT_2_9
+Inserted new job in queue: job(8): print reduction info: ./reductions/reduction_INTx125_2_5
+Inserted new job in queue: job(9): print reduction info: ./reductions/reduction_INT_2_5
+Updated job queue:
+  [p] job(9): print reduction info: ./reductions/reduction_INT_2_5  [dep: ]
+  [p] job(8): print reduction info: ./reductions/reduction_INTx125_2_5  [dep: ]
+  [p] job(7): print reduction info: ./reductions/reduction_INT_2_9  [dep: ]
+  [p] job(6): print reduction info: ./reductions/reduction_INT_3_7  [dep: ]
+  [p] job(5): print reduction info: ./reductions/reduction_INTx125_3_7  [dep: ]
+  [p] job(4): print reduction info: ./reductions/reduction_INT_3_11  [dep: ]
+  [p] job(3): print reduction info: ./reductions/reduction_INTx15_3_11  [dep: ]
+  [p] job(2): print reduction info: ./reductions/reduction_INT_4_15  [dep: ]
+  [p] job(1): print reduction info for sectors  [dep: ]
+
+
+Date: Mon Apr  4 14:06:37 2022
+
+Run ID: 653f3a4c
+
+Starting job(9): print reduction info: ./reductions/reduction_INT_2_5
+Completed Job(9) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Mon Apr  4 14:06:37 2022
+
+Run ID: 653f3a4c
+
+Starting job(8): print reduction info: ./reductions/reduction_INTx125_2_5
+Completed Job(8) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Mon Apr  4 14:06:37 2022
+
+Run ID: 653f3a4c
+
+Starting job(7): print reduction info: ./reductions/reduction_INT_2_9
+Completed Job(7) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Mon Apr  4 14:06:37 2022
+
+Run ID: 653f3a4c
+
+Starting job(6): print reduction info: ./reductions/reduction_INT_3_7
+Completed Job(6) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Mon Apr  4 14:06:37 2022
+
+Run ID: 653f3a4c
+
+Starting job(5): print reduction info: ./reductions/reduction_INTx125_3_7
+Completed Job(5) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Mon Apr  4 14:06:38 2022
+
+Run ID: 653f3a4c
+
+Starting job(4): print reduction info: ./reductions/reduction_INT_3_11
+Completed Job(4) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Mon Apr  4 14:06:38 2022
+
+Run ID: 653f3a4c
+
+Starting job(3): print reduction info: ./reductions/reduction_INTx15_3_11
+Completed Job(3) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Mon Apr  4 14:06:38 2022
+
+Run ID: 653f3a4c
+
+Starting job(2): print reduction info: ./reductions/reduction_INT_4_15
+Completed Job(2) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Mon Apr  4 14:06:38 2022
+
+Run ID: 653f3a4c
+
+Starting job(1): print reduction info for sectors
+Completed Job(1) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+Completed jobs in jobqueue
+
+Completed all jobs
+Total run time: 1 s
+Killing Fermat

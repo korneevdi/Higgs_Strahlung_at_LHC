@@ -1,0 +1,27 @@
+
+Date: Fri Apr  1 14:13:01 2022
+
+Setting up job queue from jobs_B_sectormappings_appl.yaml
+Updating job queue dependencies
+Processing jobs in serial mode (non-MPI build)
+Inserted new job in queue: job(1): select reductions: [...]top/NNLO_Single_Real/REDUZE/List_of_integrals.yaml
+Inserted new job in queue: job(2): reduce files ./masters_tmp/tmp/AMP_MI.sol
+Inserted new job in queue: job(3): reduce files ./masters_tmp/tmp/AMP_MIF2.sol
+Inserted new job in queue: job(4): export file masters_tmp/tmp/AMP_MIF3.sol
+Updating job queue dependencies
+Loading uncrossed integral families from file ./config/integralfamilies.yaml
+Initialize integral family 'INT'
+Loaded integral family INT
+Loaded 1 (uncrossed) integral families
+Done loading uncrossed integral families
+Inserted new job in queue: job(5): run reduction of files ./masters_tmp/tmp/AMP_MI.sol + ...
+Inserted new job in queue: job(6): run reduction of files ./masters_tmp/tmp/AMP_MIF2.sol + ...
+
++-------+
+| ERROR |
++-------+
+could not resolve dependency problem:
+missing file './masters.curr.m' needed by job job(6): run reduction of files ./masters_tmp/tmp/AMP_MIF2.sol + ...
+
+
+Killing Fermat

@@ -1,0 +1,15 @@
+
+Date: Thu Aug 26 09:43:19 2021
+
+
+conditional: false
+integralfamily: T2
+abort_on_first_error: true
+dummy_output_file: ./tmp/permutation_symmetries_verified_for_T2
+
+Verifying permutation symmetries of integral family 'T2'
+All permutation symmetries verified
+
+Complete permutation symmetries of integral family 'T2'
+
+Job done (total time: 0 s)

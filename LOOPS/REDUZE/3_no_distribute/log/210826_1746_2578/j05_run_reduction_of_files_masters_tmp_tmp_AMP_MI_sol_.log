@@ -1,0 +1,1933 @@
+
+Date: Thu Aug 26 17:46:28 2021
+
+
+conditional: false
+min_workers: 1
+max_workers: 1000
+tmp_directory: ./tmp/AMP_MIF2.sol_dir/
+identity_filenames:
+  - ./masters_tmp/tmp/AMP_MI.sol
+subst_filenames:
+  []
+output_file: ./masters_tmp/tmp/AMP_MIF2.sol
+output_file_external: ""
+solutions:
+  requested_solutions:
+    - {r: [0, -1], s: [0, -1]}
+  set_subsectors_to_zero: false
+  map_on_coeff: []
+  discard_new_subsector_identities: false
+reduzer_options:
+  num_equations_per_subjob: 1
+  num_blocks_per_subjob: 1
+  only_substitute: false
+preferred_masters_file: ""
+delete_files:
+  []
+delete_directories:
+  []
+subst_subsectors: true
+sector:
+  []
+
+Checking for aborted previous run
+Setting up in-memory reduction
+Determining integrals: all_ints, external_ints, helper_ints, critical_ints, discard_ints
+Find integrals in identities
+  scanning ./masters_tmp/tmp/AMP_MI.sol (0.008s)
+Find integrals in substitutions
+No sector specified:
+  Setting critical_ints to all_ints
+  No external integrals
+Initialize reduzer
+Allocated maps for data during reduction.
+Building INT translations
+Insert integrals for algorithm control:
+Insert substitutions
+Insert equations to be reduced
+  Inserting equations ./masters_tmp/tmp/AMP_MI.sol to database
+  inserting 80681 bytes to database
+  ..................................................  **************************************************
+  file loaded (time: 0.0 s)
+Starting with 606 reducible integrals
+Setup done
+Setup of reduction done (time: 0.0 s)
+Running Reduction
+Performing computation in serial mode
+  reduction
+  ..................................................Processed integral 76/613
+  ******Reduced block [5e-03 s]
+Processed integral 219/613
+************Reduced block [3e-03 s]
+Processed integral 232/613
+*Reduced block [4e-04 s]
+Processed integral 233/613
+Reduced block [3e-04 s]
+Processed integral 234/613
+Reduced block [3e-04 s]
+Processed integral 235/613
+Reduced block [3e-04 s]
+Processed integral 236/613
+Reduced block [4e-04 s]
+Processed integral 237/613
+Reduced block [4e-04 s]
+Processed integral 260/613
+**Reduced block [4e-04 s]
+Processed integral 261/613
+Reduced block [3e-04 s]
+Processed integral 262/613
+Reduced block [5e-04 s]
+Processed integral 263/613
+Reduced block [2e-04 s]
+Processed integral 264/613
+*Reduced block [7e-04 s]
+Processed integral 265/613
+Reduced block [4e-04 s]
+Processed integral 266/613
+Reduced block [2e-04 s]
+Processed integral 267/613
+Reduced block [2e-04 s]
+Processed integral 268/613
+Reduced block [3e-04 s]
+Processed integral 269/613
+Reduced block [4e-04 s]
+Processed integral 270/613
+Reduced block [4e-04 s]
+Processed integral 271/613
+Reduced block [9e-04 s]
+Processed integral 277/613
+*Reduced block [2e-04 s]
+Processed integral 278/613
+Reduced block [3e-04 s]
+Processed integral 279/613
+Reduced block [3e-04 s]
+Processed integral 280/613
+Reduced block [2e-04 s]
+Processed integral 281/613
+Reduced block [4e-04 s]
+Processed integral 282/613
+Reduced block [4e-04 s]
+Processed integral 289/613
+*Reduced block [2e-04 s]
+Processed integral 290/613
+Reduced block [3e-04 s]
+Processed integral 291/613
+Reduced block [3e-04 s]
+Processed integral 292/613
+Reduced block [2e-04 s]
+Processed integral 293/613
+Reduced block [5e-04 s]
+Processed integral 294/613
+Reduced block [3e-04 s]
+Processed integral 302/613
+*Reduced block [2e-04 s]
+Processed integral 303/613
+Reduced block [2e-04 s]
+Processed integral 304/613
+Reduced block [2e-04 s]
+Processed integral 305/613
+Reduced block [3e-04 s]
+Processed integral 306/613
+Reduced block [2e-04 s]
+Processed integral 307/613
+Reduced block [2e-04 s]
+Processed integral 308/613
+Reduced block [2e-04 s]
+Processed integral 309/613
+Reduced block [3e-04 s]
+Processed integral 310/613
+Reduced block [2e-04 s]
+Processed integral 311/613
+Reduced block [3e-04 s]
+Processed integral 312/613
+Reduced block [4e-04 s]
+Processed integral 313/613
+*Reduced block [3e-04 s]
+Processed integral 314/613
+Reduced block [6e-04 s]
+Processed integral 315/613
+Reduced block [2e-04 s]
+Processed integral 316/613
+Reduced block [3e-04 s]
+Processed integral 317/613
+Reduced block [5e-04 s]
+Processed integral 318/613
+Reduced block [4e-04 s]
+Processed integral 319/613
+Reduced block [4e-04 s]
+Processed integral 320/613
+Reduced block [1e-03 s]
+Processed integral 398/613
+******Reduced block [3e-04 s]
+Processed integral 399/613
+*Reduced block [3e-04 s]
+Processed integral 400/613
+Reduced block [4e-04 s]
+Processed integral 401/613
+Reduced block [4e-04 s]
+Processed integral 402/613
+Reduced block [4e-04 s]
+Processed integral 403/613
+Reduced block [2e-04 s]
+Processed integral 404/613
+Reduced block [2e-04 s]
+Processed integral 405/613
+Reduced block [3e-04 s]
+Processed integral 406/613
+Reduced block [4e-04 s]
+Processed integral 407/613
+Reduced block [4e-04 s]
+Processed integral 408/613
+Reduced block [4e-04 s]
+Processed integral 409/613
+Reduced block [8e-04 s]
+Processed integral 410/613
+Reduced block [8e-04 s]
+Processed integral 440/613
+***Reduced block [5e-04 s]
+Processed integral 441/613
+Reduced block [4e-04 s]
+Processed integral 442/613
+Reduced block [4e-04 s]
+Processed integral 443/613
+Reduced block [8e-04 s]
+Processed integral 444/613
+Reduced block [7e-04 s]
+Processed integral 445/613
+Reduced block [4e-04 s]
+Processed integral 446/613
+Reduced block [4e-04 s]
+Processed integral 447/613
+Reduced block [6e-04 s]
+Processed integral 448/613
+*Reduced block [7e-04 s]
+Processed integral 449/613
+Reduced block [5e-04 s]
+Processed integral 450/613
+Reduced block [8e-04 s]
+Processed integral 451/613
+Reduced block [7e-04 s]
+Processed integral 452/613
+Reduced block [2e-03 s]
+Processed integral 453/613
+Reduced block [2e-03 s]
+Processed integral 454/613
+Reduced block [2e-03 s]
+Processed integral 455/613
+Reduced block [3e-04 s]
+Processed integral 456/613
+Reduced block [2e-04 s]
+Processed integral 457/613
+Reduced block [2e-04 s]
+Processed integral 458/613
+Reduced block [6e-04 s]
+Processed integral 459/613
+Reduced block [6e-04 s]
+Processed integral 460/613
+*Reduced block [1e-03 s]
+Processed integral 461/613
+Reduced block [8e-04 s]
+Processed integral 462/613
+Reduced block [1e-03 s]
+Processed integral 463/613
+Reduced block [2e-03 s]
+Processed integral 464/613
+Reduced block [5e-04 s]
+Processed integral 465/613
+Reduced block [5e-04 s]
+Processed integral 466/613
+Reduced block [4e-04 s]
+Processed integral 467/613
+Reduced block [7e-04 s]
+Processed integral 468/613
+Reduced block [7e-04 s]
+Processed integral 469/613
+Reduced block [2e-04 s]
+Processed integral 470/613
+Reduced block [3e-04 s]
+Processed integral 471/613
+Reduced block [5e-04 s]
+Processed integral 472/613
+Reduced block [7e-04 s]
+Processed integral 473/613
+*Reduced block [2e-04 s]
+Processed integral 474/613
+Reduced block [4e-04 s]
+Processed integral 475/613
+Reduced block [3e-04 s]
+Processed integral 476/613
+Reduced block [6e-04 s]
+Processed integral 477/613
+Reduced block [8e-04 s]
+Processed integral 482/613
+Reduced block [4e-04 s]
+Processed integral 483/613
+Reduced block [3e-04 s]
+Processed integral 484/613
+Reduced block [4e-04 s]
+Processed integral 485/613
+*Reduced block [1e-03 s]
+Processed integral 486/613
+Reduced block [1e-03 s]
+Processed integral 487/613
+Reduced block [4e-04 s]
+Processed integral 488/613
+Reduced block [4e-04 s]
+Processed integral 489/613
+Reduced block [1e-03 s]
+Processed integral 490/613
+Reduced block [4e-04 s]
+Processed integral 491/613
+Reduced block [1e-03 s]
+Processed integral 492/613
+Reduced block [3e-03 s]
+Processed integral 493/613
+Reduced block [6e-04 s]
+Processed integral 494/613
+Reduced block [5e-04 s]
+Processed integral 495/613
+Reduced block [4e-04 s]
+Processed integral 496/613
+Reduced block [8e-04 s]
+Processed integral 497/613
+*Reduced block [9e-04 s]
+Processed integral 498/613
+Reduced block [7e-04 s]
+Processed integral 499/613
+Reduced block [6e-04 s]
+Processed integral 500/613
+Reduced block [9e-04 s]
+Processed integral 501/613
+Reduced block [1e-03 s]
+Processed integral 502/613
+Reduced block [5e-04 s]
+Processed integral 503/613
+Reduced block [4e-03 s]
+Processed integral 504/613
+Reduced block [7e-04 s]
+Processed integral 505/613
+Reduced block [2e-03 s]
+Processed integral 506/613
+Reduced block [2e-03 s]
+Processed integral 507/613
+Reduced block [1e-03 s]
+Processed integral 508/613
+Reduced block [5e-04 s]
+Processed integral 509/613
+*Reduced block [4e-04 s]
+Processed integral 510/613
+Reduced block [3e-04 s]
+Processed integral 511/613
+Reduced block [1e-03 s]
+Processed integral 512/613
+Reduced block [1e-03 s]
+Processed integral 513/613
+Reduced block [4e-04 s]
+Processed integral 514/613
+Reduced block [4e-04 s]
+Processed integral 515/613
+Reduced block [1e-03 s]
+Processed integral 516/613
+Reduced block [2e-03 s]
+Processed integral 517/613
+Reduced block [5e-04 s]
+Processed integral 518/613
+Reduced block [1e-03 s]
+Processed integral 519/613
+Reduced block [1e-03 s]
+Processed integral 520/613
+Reduced block [4e-03 s]
+Processed integral 521/613
+Reduced block [3e-03 s]
+Processed integral 536/613
+**Reduced block [2e-04 s]
+Processed integral 537/613
+Reduced block [1e-04 s]
+Processed integral 538/613
+Reduced block [3e-04 s]
+Processed integral 539/613
+Reduced block [3e-04 s]
+Processed integral 540/613
+Reduced block [4e-04 s]
+Processed integral 541/613
+Reduced block [2e-04 s]
+Processed integral 542/613
+Reduced block [3e-04 s]
+Processed integral 543/613
+Reduced block [3e-04 s]
+Processed integral 544/613
+Reduced block [3e-04 s]
+Processed integral 545/613
+Reduced block [3e-04 s]
+Processed integral 546/613
+*Reduced block [3e-04 s]
+Processed integral 547/613
+Reduced block [7e-04 s]
+Processed integral 548/613
+Reduced block [5e-04 s]
+Processed integral 549/613
+Reduced block [5e-04 s]
+Processed integral 550/613
+Reduced block [3e-04 s]
+Processed integral 551/613
+Reduced block [3e-04 s]
+Processed integral 552/613
+Reduced block [6e-04 s]
+Processed integral 553/613
+Reduced block [7e-04 s]
+Processed integral 554/613
+Reduced block [4e-04 s]
+Processed integral 555/613
+Reduced block [5e-04 s]
+Processed integral 556/613
+Reduced block [7e-04 s]
+Processed integral 557/613
+Reduced block [1e-03 s]
+Processed integral 558/613
+*Reduced block [5e-04 s]
+Processed integral 559/613
+Reduced block [7e-04 s]
+Processed integral 560/613
+Reduced block [2e-03 s]
+Processed integral 561/613
+Reduced block [8e-04 s]
+Processed integral 562/613
+Reduced block [2e-03 s]
+Processed integral 563/613
+Reduced block [1e-03 s]
+Processed integral 564/613
+Reduced block [3e-04 s]
+Processed integral 565/613
+Reduced block [3e-04 s]
+Processed integral 566/613
+Reduced block [6e-04 s]
+Processed integral 567/613
+Reduced block [6e-04 s]
+Processed integral 568/613
+Reduced block [2e-04 s]
+Processed integral 569/613
+Reduced block [2e-04 s]
+Processed integral 570/613
+Reduced block [5e-04 s]
+Processed integral 571/613
+*Reduced block [8e-04 s]
+Processed integral 572/613
+Reduced block [5e-04 s]
+Processed integral 577/613
+Reduced block [5e-04 s]
+Processed integral 578/613
+Reduced block [5e-04 s]
+Processed integral 591/613
+*Reduced block [4e-04 s]
+Processed integral 592/613
+Reduced block [6e-04 s]
+Processed integral 602/613
+*Reduced block [2e-04 s]
+Processed integral 604/613
+Reduced block [2e-04 s]
+Processed integral 608/613
+*Reduced block [2e-04 s]
+Processed integral 611/613
+Reduced block [3e-04 s]
+Processed integral 612/613
+Reduced block [1e-04 s]
+
+Reduction done !
+Writing results to ./masters_tmp/tmp/AMP_MIF2.sol
+  write result
+  ..................................................  **************************************************
+  file size: 83499 Bytes
+  time unabbreviate: 0.0 s
+  time I/O:        0.0 s
+  time write tot   0.0 s (6556220 Bytes/s)
+
+Reduction done (time: 0.1 s)
+
+Cleaning up
+Analyzing reduction result
+
+Analyzing reduction file ./masters_tmp/tmp/AMP_MIF2.sol
+
+Number of equations: 606
+Average coefficient length [bytes]: 25
+
+Extracting status of reduction for each r,s point
+Showing statistics for reductions found in each sector
+Number of sectors for which this file provides reductions: 117
+
+
+First table shows the following entries:
+A: Number of all integrals
+B: Number of unreduced integrals
+C: Number of different integrals
+D: Number of different unreduced integrals
+E: Identities are interreduced w.r.t. this file (.) or not (x)
+
+Second table shows different unreduced integrals in r-s diagram
+
+
+(T1:2:18)        A       B       C       D       E
+.....................................................
+r=2, s=0:        1       1       1       1       .
+r=3, s=0:        2       1       2       2       .
+
+(T1:2:18)      s=0
+.....................
+r=2:            1.
+r=3:            2.
+
+
+
+
+(T1:2:36)        A       B       C       D       E
+.....................................................
+r=2, s=0:        1       1       1       1       .
+r=3, s=0:        2       1       2       2       .
+
+(T1:2:36)      s=0
+.....................
+r=2:            1.
+r=3:            2.
+
+
+
+
+(T1:2:65)        A       B       C       D       E
+.....................................................
+r=2, s=0:        1       1       1       1       .
+r=3, s=0:        2       1       2       2       .
+
+(T1:2:65)      s=0
+.....................
+r=2:            1.
+r=3:            2.
+
+
+
+
+(T1:3:19)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+r=3, s=1:        6       6       6       6       .
+r=4, s=0:        3       2       3       3       .
+r=4, s=1:       18      12      18      18       .
+
+(T1:3:19)      s=0     s=1
+.............................
+r=3:            1.      6.
+r=4:            3.     18.
+
+
+
+
+(T1:3:21)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:21)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:22)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+r=3, s=1:        6       6       6       6       .
+r=4, s=0:        3       3       3       3       .
+r=4, s=1:       18      12      18      18       .
+
+(T1:3:22)      s=0     s=1
+.............................
+r=3:            1.      6.
+r=4:            3.     18.
+
+
+
+
+(T1:3:25)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:25)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:26)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:26)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:28)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:28)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:35)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:35)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:37)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+r=3, s=1:        6       6       6       6       .
+r=4, s=0:        3       2       3       3       .
+r=4, s=1:       18      14      18      18       .
+
+(T1:3:37)      s=0     s=1
+.............................
+r=3:            1.      6.
+r=4:            3.     18.
+
+
+
+
+(T1:3:38)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+r=3, s=1:        6       6       6       6       .
+r=4, s=0:        3       2       3       3       .
+r=4, s=1:       18      12      18      18       .
+
+(T1:3:38)      s=0     s=1
+.............................
+r=3:            1.      6.
+r=4:            3.     18.
+
+
+
+
+(T1:3:41)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:41)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:42)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:42)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:44)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:44)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:49)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:49)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:50)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:50)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:52)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:52)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:56)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:56)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:67)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       1       1       1       .
+r=3, s=1:        6       6       6       6       .
+r=4, s=0:        3       2       3       3       .
+r=4, s=1:       18      12      18      18       .
+
+(T1:3:67)      s=0     s=1
+.............................
+r=3:            1.      6.
+r=4:            3.     18.
+
+
+
+
+(T1:3:69)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+r=3, s=1:        6       6       6       6       .
+r=4, s=0:        3       2       3       3       .
+r=4, s=1:       18      14      18      18       .
+
+(T1:3:69)      s=0     s=1
+.............................
+r=3:            1.      6.
+r=4:            3.     18.
+
+
+
+
+(T1:3:70)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+r=3, s=1:        6       5       6       6       .
+
+(T1:3:70)      s=0     s=1
+.............................
+r=3:            1.      6.
+
+
+
+
+(T1:3:73)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+r=3, s=1:        6       6       6       6       .
+r=4, s=0:        3       2       3       3       .
+r=4, s=1:       18      12      18      18       .
+
+(T1:3:73)      s=0     s=1
+.............................
+r=3:            1.      6.
+r=4:            3.     18.
+
+
+
+
+(T1:3:74)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:74)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:76)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:76)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:81)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:81)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:82)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+r=3, s=1:        6       5       6       6       .
+
+(T1:3:82)      s=0     s=1
+.............................
+r=3:            1.      6.
+
+
+
+
+(T1:3:84)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       1       1       1       .
+r=3, s=1:        6       4       6       4       .
+
+(T1:3:84)      s=0     s=1
+.............................
+r=3:            1.      4.
+
+
+
+
+(T1x12:3:84)        A       B       C       D       E
+........................................................
+r=3, s=0:           1       0       1       0       .
+
+(T1x12:3:84)      s=0
+........................
+r=3:               0.
+
+
+
+
+(T1:3:88)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:88)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:97)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T1:3:97)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T1:3:98)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       0       .
+
+(T1:3:98)      s=0
+.....................
+r=3:            0.
+
+
+
+
+(T1:3:100)        A       B       C       D       E
+......................................................
+r=3, s=0:         1       0       1       1       .
+
+(T1:3:100)      s=0
+......................
+r=3:             1.
+
+
+
+
+(T1:3:104)        A       B       C       D       E
+......................................................
+r=3, s=0:         1       0       1       1       .
+
+(T1:3:104)      s=0
+......................
+r=3:             1.
+
+
+
+
+(T1:3:112)        A       B       C       D       E
+......................................................
+r=3, s=0:         1       0       1       1       .
+
+(T1:3:112)      s=0
+......................
+r=3:             1.
+
+
+
+
+(T1:4:15)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       1       1       1       .
+r=4, s=1:        5       4       5       5       .
+r=5, s=0:        4       4       4       4       .
+r=5, s=1:       20      19      20      20       .
+
+(T1:4:15)      s=0     s=1
+.............................
+r=4:            1.      5.
+r=5:            4.     20.
+
+
+
+
+(T1:4:23)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       0       5       5       .
+r=4, s=2:       15      15      15      15       .
+r=5, s=0:        4       3       4       4       .
+r=5, s=1:       20      15      20      20       .
+r=5, s=2:       60      57      60      60       .
+
+(T1:4:23)      s=0     s=1     s=2
+.....................................
+r=4:            1.      5.     15.
+r=5:            4.     20.     60.
+
+
+
+
+(T1:4:27)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       0       5       5       .
+
+(T1:4:27)      s=0     s=1
+.............................
+r=4:            1.      5.
+
+
+
+
+(T1:4:29)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       0       5       5       .
+
+(T1:4:29)      s=0     s=1
+.............................
+r=4:            1.      5.
+
+
+
+
+(T1:4:30)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       0       5       5       .
+
+(T1:4:30)      s=0     s=1
+.............................
+r=4:            1.      5.
+
+
+
+
+(T1:4:39)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       0       5       5       .
+r=4, s=2:       15      15      15      15       .
+r=5, s=0:        4       4       4       4       .
+r=5, s=1:       20      16      20      20       .
+r=5, s=2:       60      56      60      60       .
+
+(T1:4:39)      s=0     s=1     s=2
+.....................................
+r=4:            1.      5.     15.
+r=5:            4.     20.     60.
+
+
+
+
+(T1:4:43)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       0       5       5       .
+
+(T1:4:43)      s=0     s=1
+.............................
+r=4:            1.      5.
+
+
+
+
+(T1:4:45)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       1       5       5       .
+
+(T1:4:45)      s=0     s=1
+.............................
+r=4:            1.      5.
+
+
+
+
+(T1:4:46)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       0       5       5       .
+
+(T1:4:46)      s=0     s=1
+.............................
+r=4:            1.      5.
+
+
+
+
+(T1:4:51)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       3       5       5       .
+
+(T1:4:51)      s=0     s=1
+.............................
+r=4:            1.      5.
+
+
+
+
+(T1:4:53)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       3       5       5       .
+
+(T1:4:53)      s=0     s=1
+.............................
+r=4:            1.      5.
+
+
+
+
+(T1:4:54)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       1       1       1       .
+r=4, s=1:        5       3       5       3       .
+
+(T1:4:54)      s=0     s=1
+.............................
+r=4:            1.      3.
+
+
+
+
+(T1:4:57)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       0       5       5       .
+
+(T1:4:57)      s=0     s=1
+.............................
+r=4:            1.      5.
+
+
+
+
+(T1:4:58)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       1       1       1       .
+r=4, s=1:        5       0       5       5       .
+
+(T1:4:58)      s=0     s=1
+.............................
+r=4:            1.      5.
+
+
+
+
+(T1:4:60)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       0       5       5       .
+
+(T1:4:60)      s=0     s=1
+.............................
+r=4:            1.      5.
+
+
+
+
+(T1:4:71)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       1       5       5       .
+r=4, s=2:       15      15      15      15       .
+r=5, s=0:        4       3       4       4       .
+r=5, s=1:       20      17      20      20       .
+r=5, s=2:       60      55      60      60       .
+
+(T1:4:71)      s=0     s=1     s=2
+.....................................
+r=4:            1.      5.     15.
+r=5:            4.     20.     60.
+
+
+
+
+(T1:4:75)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       1       5       5       .
+r=4, s=2:       15      15      15      15       .
+r=5, s=0:        4       4       4       4       .
+r=5, s=1:       20      19      20      20       .
+r=5, s=2:       60      57      60      60       .
+
+(T1:4:75)      s=0     s=1     s=2
+.....................................
+r=4:            1.      5.     15.
+r=5:            4.     20.     60.
+
+
+
+
+(T1:4:77)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       1       5       5       .
+r=4, s=2:       15      15      15      15       .
+r=5, s=0:        4       3       4       4       .
+r=5, s=1:       20      16      20      20       .
+r=5, s=2:       60      55      60      60       .
+
+(T1:4:77)      s=0     s=1     s=2
+.....................................
+r=4:            1.      5.     15.
+r=5:            4.     20.     60.
+
+
+
+
+(T1:4:78)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       1       1       1       .
+r=4, s=1:        5       0       5       0       .
+
+(T1:4:78)      s=0     s=1
+.............................
+r=4:            1.      0.
+
+
+
+
+(T1x12:4:78)        A       B       C       D       E
+........................................................
+r=4, s=0:           1       0       1       0       .
+
+(T1x12:4:78)      s=0
+........................
+r=4:               0.
+
+
+
+
+(T1:4:83)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       0       5       5       .
+
+(T1:4:83)      s=0     s=1
+.............................
+r=4:            1.      5.
+
+
+
+
+(T1:4:85)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       0       .
+r=4, s=1:        5       0       5       0       .
+
+(T1:4:85)      s=0     s=1
+.............................
+r=4:            0.      0.
+
+
+
+
+(T1x12:4:85)        A       B       C       D       E
+........................................................
+r=4, s=0:           1       0       1       0       .
+r=4, s=1:           5       0       5       0       .
+
+(T1x12:4:85)      s=0     s=1
+................................
+r=4:               0.      0.
+
+
+
+
+(T1:4:86)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       0       .
+r=4, s=1:        5       0       5       0       .
+r=4, s=2:       15      11      15      11       .
+
+(T1:4:86)      s=0     s=1     s=2
+.....................................
+r=4:            0.      0.     11.
+
+
+
+
+(T1:4:89)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       0       5       5       .
+
+(T1:4:89)      s=0     s=1
+.............................
+r=4:            1.      5.
+
+
+
+
+(T1:4:90)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+r=4, s=1:        5       0       5       5       .
+
+(T1:4:90)      s=0     s=1
+.............................
+r=4:            1.      5.
+
+
+
+
+(T1:4:92)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       0       .
+r=4, s=1:        5       0       5       0       .
+
+(T1:4:92)      s=0     s=1
+.............................
+r=4:            0.      0.
+
+
+
+
+(T1:4:99)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       0       .
+r=4, s=1:        5       0       5       0       .
+
+(T1:4:99)      s=0     s=1
+.............................
+r=4:            0.      0.
+
+
+
+
+(T1:4:101)        A       B       C       D       E
+......................................................
+r=4, s=0:         1       0       1       1       .
+r=4, s=1:         5       1       5       5       .
+
+(T1:4:101)      s=0     s=1
+..............................
+r=4:             1.      5.
+
+
+
+
+(T1:4:102)        A       B       C       D       E
+......................................................
+r=4, s=0:         1       0       1       0       .
+r=4, s=1:         5       0       5       0       .
+
+(T1:4:102)      s=0     s=1
+..............................
+r=4:             0.      0.
+
+
+
+
+(T1:4:105)        A       B       C       D       E
+......................................................
+r=4, s=0:         1       0       1       1       .
+r=4, s=1:         5       0       5       5       .
+
+(T1:4:105)      s=0     s=1
+..............................
+r=4:             1.      5.
+
+
+
+
+(T1:4:106)        A       B       C       D       E
+......................................................
+r=4, s=0:         1       0       1       0       .
+r=4, s=1:         5       0       5       0       .
+
+(T1:4:106)      s=0     s=1
+..............................
+r=4:             0.      0.
+
+
+
+
+(T1:4:108)        A       B       C       D       E
+......................................................
+r=4, s=0:         1       0       1       1       .
+r=4, s=1:         5       0       5       5       .
+
+(T1:4:108)      s=0     s=1
+..............................
+r=4:             1.      5.
+
+
+
+
+(T1:4:113)        A       B       C       D       E
+......................................................
+r=4, s=0:         1       0       1       0       .
+r=4, s=1:         5       0       5       0       .
+
+(T1:4:113)      s=0     s=1
+..............................
+r=4:             0.      0.
+
+
+
+
+(T1:4:114)        A       B       C       D       E
+......................................................
+r=4, s=0:         1       0       1       0       .
+r=4, s=1:         5       0       5       0       .
+
+(T1:4:114)      s=0     s=1
+..............................
+r=4:             0.      0.
+
+
+
+
+(T1:4:116)        A       B       C       D       E
+......................................................
+r=4, s=0:         1       0       1       0       .
+r=4, s=1:         5       0       5       0       .
+r=4, s=2:        15      13      15      13       .
+
+(T1:4:116)      s=0     s=1     s=2
+......................................
+r=4:             0.      0.     13.
+
+
+
+
+(T1:4:120)        A       B       C       D       E
+......................................................
+r=4, s=0:         1       0       1       1       .
+r=4, s=1:         5       0       5       5       .
+r=4, s=2:        15      14      15      15       .
+
+(T1:4:120)      s=0     s=1     s=2
+......................................
+r=4:             1.      5.     15.
+
+
+
+
+(T1:5:31)        A       B       C       D       E
+.....................................................
+r=5, s=0:        1       0       1       1       .
+r=5, s=1:        4       0       4       4       .
+r=5, s=2:       10       6      10      10       .
+
+(T1:5:31)      s=0     s=1     s=2
+.....................................
+r=5:            1.      4.     10.
+
+
+
+
+(T1:5:47)        A       B       C       D       E
+.....................................................
+r=5, s=0:        1       0       1       1       .
+r=5, s=1:        4       0       4       4       .
+r=5, s=2:       10       6      10      10       .
+
+(T1:5:47)      s=0     s=1     s=2
+.....................................
+r=5:            1.      4.     10.
+
+
+
+
+(T1:5:55)        A       B       C       D       E
+.....................................................
+r=5, s=0:        1       0       1       0       .
+r=5, s=1:        4       3       4       3       .
+r=5, s=2:       10       9      10       9       .
+
+(T1:5:55)      s=0     s=1     s=2
+.....................................
+r=5:            0.      3.      9.
+
+
+
+
+(T1:5:59)        A       B       C       D       E
+.....................................................
+r=5, s=0:        1       0       1       1       .
+r=5, s=1:        4       1       4       4       .
+r=5, s=2:       10       6      10      10       .
+
+(T1:5:59)      s=0     s=1     s=2
+.....................................
+r=5:            1.      4.     10.
+
+
+
+
+(T1:5:61)        A       B       C       D       E
+.....................................................
+r=5, s=0:        1       0       1       1       .
+r=5, s=1:        4       1       4       4       .
+r=5, s=2:       10       8      10      10       .
+
+(T1:5:61)      s=0     s=1     s=2
+.....................................
+r=5:            1.      4.     10.
+
+
+
+
+(T1:5:79)        A       B       C       D       E
+.....................................................
+r=5, s=0:        1       0       1       0       .
+r=5, s=1:        4       0       4       0       .
+r=5, s=2:       10       0      10       0       .
+r=5, s=3:       20      20      20      20       .
+r=6, s=0:        5       5       5       5       .
+r=6, s=1:       20      19      20      19       .
+r=6, s=2:       50      48      50      48       .
+r=6, s=3:      100      98     100      98       .
+
+(T1:5:79)      s=0     s=1     s=2     s=3
+.............................................
+r=5:            0.      0.      0.     20.
+r=6:            5.     19.     48.     98.
+
+
+
+
+(T1:5:87)        A       B       C       D       E
+.....................................................
+r=5, s=0:        1       0       1       0       .
+r=5, s=1:        4       0       4       0       .
+r=5, s=2:       10       0      10       0       .
+
+(T1:5:87)      s=0     s=1     s=2
+.....................................
+r=5:            0.      0.      0.
+
+
+
+
+(T1x12:5:87)        A       B       C       D       E
+........................................................
+r=5, s=0:           1       0       1       0       .
+r=5, s=1:           4       0       4       0       .
+r=5, s=2:          10       2      10       2       .
+
+(T1x12:5:87)      s=0     s=1     s=2
+........................................
+r=5:               0.      0.      2.
+
+
+
+
+(T1:5:93)        A       B       C       D       E
+.....................................................
+r=5, s=0:        1       0       1       0       .
+r=5, s=1:        4       0       4       0       .
+r=5, s=2:       10       1      10       1       .
+
+(T1:5:93)      s=0     s=1     s=2
+.....................................
+r=5:            0.      0.      1.
+
+
+
+
+(T1:5:94)        A       B       C       D       E
+.....................................................
+r=5, s=0:        1       0       1       0       .
+r=5, s=1:        4       0       4       0       .
+r=5, s=2:       10       0      10       0       .
+
+(T1:5:94)      s=0     s=1     s=2
+.....................................
+r=5:            0.      0.      0.
+
+
+
+
+(T1x12:5:94)        A       B       C       D       E
+........................................................
+r=5, s=0:           1       0       1       0       .
+r=5, s=1:           4       0       4       0       .
+r=5, s=2:          10       0      10       0       .
+
+(T1x12:5:94)      s=0     s=1     s=2
+........................................
+r=5:               0.      0.      0.
+
+
+
+
+(T1:5:103)        A       B       C       D       E
+......................................................
+r=5, s=0:         1       0       1       0       .
+r=5, s=1:         4       0       4       0       .
+r=5, s=2:        10       6      10       6       .
+
+(T1:5:103)      s=0     s=1     s=2
+......................................
+r=5:             0.      0.      6.
+
+
+
+
+(T1:5:107)        A       B       C       D       E
+......................................................
+r=5, s=0:         1       0       1       0       .
+r=5, s=1:         4       0       4       0       .
+r=5, s=2:        10       1      10       1       .
+
+(T1:5:107)      s=0     s=1     s=2
+......................................
+r=5:             0.      0.      1.
+
+
+
+
+(T1:5:109)        A       B       C       D       E
+......................................................
+r=5, s=0:         1       0       1       1       .
+r=5, s=1:         4       3       4       4       .
+r=6, s=0:         5       5       5       5       .
+r=6, s=1:        20      18      20      20       .
+
+(T1:5:109)      s=0     s=1
+..............................
+r=5:             1.      4.
+r=6:             5.     20.
+
+
+
+
+(T1:5:110)        A       B       C       D       E
+......................................................
+r=5, s=0:         1       0       1       0       .
+r=5, s=1:         4       0       4       0       .
+r=5, s=2:        10       4      10       4       .
+
+(T1:5:110)      s=0     s=1     s=2
+......................................
+r=5:             0.      0.      4.
+
+
+
+
+(T1:5:115)        A       B       C       D       E
+......................................................
+r=5, s=0:         1       0       1       0       .
+r=5, s=1:         4       0       4       0       .
+r=5, s=2:        10       0      10       0       .
+
+(T1:5:115)      s=0     s=1     s=2
+......................................
+r=5:             0.      0.      0.
+
+
+
+
+(T1:5:117)        A       B       C       D       E
+......................................................
+r=5, s=0:         1       0       1       0       .
+r=5, s=1:         4       0       4       0       .
+r=5, s=2:        10       1      10       1       .
+
+(T1:5:117)      s=0     s=1     s=2
+......................................
+r=5:             0.      0.      1.
+
+
+
+
+(T1:5:118)        A       B       C       D       E
+......................................................
+r=5, s=0:         1       0       1       0       .
+r=5, s=1:         4       0       4       0       .
+r=5, s=2:        10       1      10       1       .
+
+(T1:5:118)      s=0     s=1     s=2
+......................................
+r=5:             0.      0.      1.
+
+
+
+
+(T1:5:121)        A       B       C       D       E
+......................................................
+r=5, s=0:         1       0       1       0       .
+r=5, s=1:         4       1       4       1       .
+r=5, s=2:        10       0      10       0       .
+
+(T1:5:121)      s=0     s=1     s=2
+......................................
+r=5:             0.      1.      0.
+
+
+
+
+(T1:5:122)        A       B       C       D       E
+......................................................
+r=5, s=0:         1       0       1       0       .
+r=5, s=1:         4       0       4       0       .
+r=5, s=2:        10       1      10       1       .
+
+(T1:5:122)      s=0     s=1     s=2
+......................................
+r=5:             0.      0.      1.
+
+
+
+
+(T1:5:124)        A       B       C       D       E
+......................................................
+r=5, s=0:         1       0       1       0       .
+r=5, s=1:         4       1       4       1       .
+r=5, s=2:        10       5      10       5       .
+
+(T1:5:124)      s=0     s=1     s=2
+......................................
+r=5:             0.      1.      5.
+
+
+
+
+(T1:5:295)        A       B       C       D       E
+......................................................
+r=5, s=0:         1       1       1       1       .
+r=6, s=0:         5       4       5       4       .
+
+(T1:5:295)      s=0
+......................
+r=5:             1.
+r=6:             4.
+
+
+
+
+(T1:6:95)        A       B       C       D       E
+.....................................................
+r=6, s=0:        1       1       1       1       .
+r=6, s=1:        3       2       3       2       .
+r=6, s=2:        6       5       6       5       .
+
+(T1:6:95)      s=0     s=1     s=2
+.....................................
+r=6:            1.      2.      5.
+
+
+
+
+(T1x12:6:95)        A       B       C       D       E
+........................................................
+r=6, s=0:           1       0       1       0       .
+
+(T1x12:6:95)      s=0
+........................
+r=6:               0.
+
+
+
+
+(T1:6:111)        A       B       C       D       E
+......................................................
+r=6, s=0:         1       0       1       0       .
+
+(T1:6:111)      s=0
+......................
+r=6:             0.
+
+
+
+
+(T1:6:119)        A       B       C       D       E
+......................................................
+r=6, s=0:         1       0       1       0       .
+r=6, s=1:         3       0       3       0       .
+r=6, s=2:         6       0       6       0       .
+r=6, s=3:        10       8      10       8       .
+
+(T1:6:119)      s=0     s=1     s=2     s=3
+..............................................
+r=6:             0.      0.      0.      8.
+
+
+
+
+(T1:6:123)        A       B       C       D       E
+......................................................
+r=6, s=0:         1       1       1       1       .
+r=6, s=1:         3       2       3       2       .
+r=6, s=2:         6       5       6       5       .
+
+(T1:6:123)      s=0     s=1     s=2
+......................................
+r=6:             1.      2.      5.
+
+
+
+
+(T1:6:311)        A       B       C       D       E
+......................................................
+r=6, s=0:         1       1       1       1       .
+r=6, s=1:         3       2       3       2       .
+
+(T1:6:311)      s=0     s=1
+..............................
+r=6:             1.      2.
+
+
+
+
+(T1:6:335)        A       B       C       D       E
+......................................................
+r=6, s=0:         1       1       1       1       .
+r=6, s=1:         3       2       3       2       .
+
+(T1:6:335)      s=0     s=1
+..............................
+r=6:             1.      2.
+
+
+
+
+(T1:6:374)        A       B       C       D       E
+......................................................
+r=6, s=0:         1       0       1       0       .
+
+(T1:6:374)      s=0
+......................
+r=6:             0.
+
+
+
+
+(T2:3:22)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       1       1       1       .
+r=4, s=0:        3       2       3       3       .
+
+(T2:3:22)      s=0
+.....................
+r=3:            1.
+r=4:            3.
+
+
+
+
+(T2:3:35)        A       B       C       D       E
+.....................................................
+r=3, s=0:        1       0       1       1       .
+
+(T2:3:35)      s=0
+.....................
+r=3:            1.
+
+
+
+
+(T2:4:27)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+
+(T2:4:27)      s=0
+.....................
+r=4:            1.
+
+
+
+
+(T2:4:29)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       0       .
+
+(T2:4:29)      s=0
+.....................
+r=4:            0.
+
+
+
+
+(T2:4:30)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+
+(T2:4:30)      s=0
+.....................
+r=4:            1.
+
+
+
+
+(T2:4:43)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       0       .
+
+(T2:4:43)      s=0
+.....................
+r=4:            0.
+
+
+
+
+(T2:4:45)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+
+(T2:4:45)      s=0
+.....................
+r=4:            1.
+
+
+
+
+(T2:4:77)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+
+(T2:4:77)      s=0
+.....................
+r=4:            1.
+
+
+
+
+(T2:4:83)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+
+(T2:4:83)      s=0
+.....................
+r=4:            1.
+
+
+
+
+(T2:4:85)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       0       .
+
+(T2:4:85)      s=0
+.....................
+r=4:            0.
+
+
+
+
+(T2:4:89)        A       B       C       D       E
+.....................................................
+r=4, s=0:        1       0       1       1       .
+
+(T2:4:89)      s=0
+.....................
+r=4:            1.
+
+
+
+
+(T2:4:101)        A       B       C       D       E
+......................................................
+r=4, s=0:         1       0       1       1       .
+
+(T2:4:101)      s=0
+......................
+r=4:             1.
+
+
+
+
+(T2:5:117)        A       B       C       D       E
+......................................................
+r=5, s=0:         1       1       1       1       .
+r=5, s=1:         4       3       4       3       .
+
+(T2:5:117)      s=0     s=1
+..............................
+r=5:             1.      3.
+
+
+
+
+(T2:5:121)        A       B       C       D       E
+......................................................
+r=5, s=0:         1       1       1       1       .
+r=5, s=1:         4       3       4       3       .
+
+(T2:5:121)      s=0     s=1
+..............................
+r=5:             1.      3.
+
+
+
+
+(T2:5:124)        A       B       C       D       E
+......................................................
+r=5, s=0:         1       1       1       1       .
+r=5, s=1:         4       3       4       4       .
+
+(T2:5:124)      s=0     s=1
+..............................
+r=5:             1.      4.
+
+
+Check for masters done (time: 0.0 s)
+
+Done [0 s]
+Setup:         0 s  (10 %)
+Reduction:     0 s  (75 %)
+Write/analyze: 0 s  (15 %)
+
+
+Job done (total time: 0 s)

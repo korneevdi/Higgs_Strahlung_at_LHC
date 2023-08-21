@@ -1,0 +1,209 @@
+
+Date: Mon Apr  4 12:44:51 2022
+
+
+conditional: false
+min_workers: 0
+max_workers: 0
+tmp_directory: ./tmp/INT_4_29/
+identity_filenames:
+  - ./tmp/INT_4_29/identities/identities_INT_4_29_ibp_1_of_1
+  - ./tmp/INT_4_29/identities/identities_INT_4_29_lorentz_1_of_1
+  - ./tmp/INT_4_29/identities/identities_INT_4_29_sector_symmetries_1_of_1
+subst_filenames:
+  []
+output_file: ./reductions/reduction_INT_4_29
+output_file_external: ./reductions/external_INT_4_29
+solutions:
+  requested_solutions:
+    - {r: [t, 5], s: [0, 3]}
+  set_subsectors_to_zero: false
+  map_on_coeff: []
+  discard_new_subsector_identities: false
+reduzer_options:
+  num_equations_per_subjob: 1
+  num_blocks_per_subjob: 1
+  only_substitute: false
+preferred_masters_file: ""
+delete_files:
+  - ./tmp/INT_4_29/seeds/seeds_INT_4_29_ibp
+  - ./tmp/INT_4_29/identities/identities_INT_4_29_ibp_1_of_1
+  - ./tmp/INT_4_29/seeds/seeds_INT_4_29_lorentz
+  - ./tmp/INT_4_29/identities/identities_INT_4_29_lorentz_1_of_1
+  - ./tmp/INT_4_29/seeds/seeds_INT_4_29_sector_symmetries
+  - ./tmp/INT_4_29/identities/identities_INT_4_29_sector_symmetries_1_of_1
+delete_directories:
+  - ./tmp/INT_4_29/seeds/
+  - ./tmp/INT_4_29/identities/
+subst_subsectors: true
+sector: [INT, 29]
+
+Checking for aborted previous run
+Setting up in-memory reduction
+Determining integrals: all_ints, external_ints, helper_ints, critical_ints, discard_ints
+Find integrals in identities
+  scanning ./tmp/INT_4_29/identities/identities_INT_4_29_ibp_1_of_1 (0.007s)
+  scanning ./tmp/INT_4_29/identities/identities_INT_4_29_lorentz_1_of_1 (0.001s)
+  scanning ./tmp/INT_4_29/identities/identities_INT_4_29_sector_symmetries_1_of_1 (0.0005s)
+Add optimal set of sub-sector substitution files
+  using ./reductions/reduction_INTx15_3_11
+  using ./reductions/reduction_INT_3_21
+  using ./reductions/reduction_INT_3_25
+  using ./reductions/reduction_INT_3_28
+Find integrals in substitutions
+  scanning ./reductions/reduction_INTx15_3_11 (0.04s)
+  scanning ./reductions/reduction_INT_3_21 (0.2s)
+  scanning ./reductions/reduction_INT_3_25 (0.05s)
+  scanning ./reductions/reduction_INT_3_28 (0.03s)
+Find external and helper integrals
+Find critical integrals
+Selecting border as critical integrals
+Checking 8 rs-points for border
+  on border: 4 3
+  on border: 5 0
+  on border: 5 1
+  on border: 5 2
+  on border: 5 3
+Initialize reduzer
+Allocated maps for data during reduction.
+Building INT translations
+Insert integrals for algorithm control:
+Insert substitutions
+  Inserting needed substitutions from ./reductions/reduction_INTx15_3_11 to database
+  scanning 2889980 bytes
+  ..................................................  **************************************************
+  file scanned (time: 0.0 s)
+  Inserting needed substitutions from ./reductions/reduction_INT_3_21 to database
+  scanning 25059158 bytes
+  ..................................................  **************************************************
+  file scanned (time: 0.0 s)
+  Inserting needed substitutions from ./reductions/reduction_INT_3_25 to database
+  scanning 33778902 bytes
+  ..................................................  **************************************************
+  file scanned (time: 0.1 s)
+  Inserting needed substitutions from ./reductions/reduction_INT_3_28 to database
+  scanning 1957763 bytes
+  ..................................................  **************************************************
+  file scanned (time: 0.0 s)
+Insert equations to be reduced
+  Inserting equations ./tmp/INT_4_29/identities/identities_INT_4_29_ibp_1_of_1 to database
+  inserting 51271 bytes to database
+  ..................................................  **************************************************
+  file loaded (time: 0.0 s)
+  Inserting equations ./tmp/INT_4_29/identities/identities_INT_4_29_lorentz_1_of_1 to database
+  inserting 24174 bytes to database
+  ..................................................  **************************************************
+  file loaded (time: 0.0 s)
+  Inserting equations ./tmp/INT_4_29/identities/identities_INT_4_29_sector_symmetries_1_of_1 to database
+  inserting 0 bytes to database
+  ..................................................
+  file loaded (time: 0.0 s)
+Starting with 25 reducible integrals
+Setup done
+Setup of reduction done (time: 0.5 s)
+Running Reduction for sector (INT:4:29)
+Performing computation in serial mode
+  reduction
+  ..................................................Processed integral 1/67
+  *Reduced block [7e-02 s]
+Reduced block [5e-02 s]
+Reduced block [3e-02 s]
+Processed integral 7/69
+****Reduced block [1e+00 s]
+Reduced block [1e+00 s]
+Reduced block [1e+00 s]
+Reduced block [5e-01 s]
+Reduced block [1e-01 s]
+Reduced block [4e-02 s]
+Reduced block [3e-02 s]
+Reduced block [9e-03 s]
+Reduced block [2e-01 s]
+Reduced block [2e-01 s]
+Reduced block [3e-01 s]
+Reduced block [6e-02 s]
+Processed integral 15/73
+*****Reduced block [7e+01 s]
+Reduced block [7e+01 s]
+Reduced block [5e+01 s]
+Reduced block [1e+01 s]
+Reduced block [1e+01 s]
+Reduced block [1e+01 s]
+Reduced block [4e+00 s]
+Processed integral 19/73
+***Reduced block [1e+03 s]
+Reduced block [8e+02 s]
+Reduced block [7e+02 s]
+Last critical integral reduced
+Reduced block [1e+02 s]
+Reduced block [1e+02 s]
+Reduced block [2e+02 s]
+Reduced block [6e+01 s]
+
+Reduction done !
+Writing results to ./reductions/reduction_INT_4_29
+  write result
+  ..................................................  **************************************************
+  file size: 56123669 Bytes
+  time unabbreviate: 0.0 s
+  time I/O:        0.0 s
+  time write tot   1.3 s (44726474 Bytes/s)
+
+Reduction done (time: 3429.7 s)
+
+Cleaning up
+Analyzing reduction result
+
+Analyzing reduction file ./reductions/reduction_INT_4_29
+
+Number of equations: 106
+Average coefficient length [bytes]: 58786
+
+Extracting status of reduction for each r,s point
+Showing statistics for reductions found in each sector
+Number of sectors for which this file provides reductions: 1
+
+
+First table shows the following entries:
+A: Number of all integrals
+B: Number of unreduced integrals
+C: Number of different integrals
+D: Number of different unreduced integrals
+E: Identities are interreduced w.r.t. this file (.) or not (x)
+
+Second table shows different unreduced integrals in r-s diagram
+
+
+(INT:4:29)        A       B       C       D       E
+......................................................
+r=4, s=0:         1       1       1       1       .
+r=4, s=1:         1       0       1       0       .
+r=4, s=2:         1       0       1       0       .
+r=4, s=3:         1       0       1       0       .
+r=4, s=4:         1       1       1       1       .
+r=5, s=0:         4       0       4       0       .
+r=5, s=1:         4       0       4       0       .
+r=5, s=2:         4       0       4       0       .
+r=5, s=3:         4       0       4       0       .
+r=5, s=4:         4       3       4       3       x
+r=6, s=0:        10       6      10       6       x
+r=6, s=1:        10       6      10       6       x
+r=6, s=2:        10       6      10       6       x
+r=6, s=3:        10       6      10       6       x
+r=6, s=4:        10       6      10       6       x
+
+(INT:4:29)      s=0     s=1     s=2     s=3     s=4
+......................................................
+r=4:             1.      0.      0.      0.      1.
+r=5:             0.      0.      0.      0.      3x
+r=6:             6x      6x      6x      6x      6x
+
+
+Check for masters done (time: 0.6 s)
+
+Done [3431 s]
+Setup:         0 s  (0 %)
+Reduction:     3430 s  (100 %)
+Write/analyze: 1 s  (0 %)
+
+
+Job done (total time: 3431 s)

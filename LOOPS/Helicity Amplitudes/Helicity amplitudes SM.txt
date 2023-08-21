@@ -1,0 +1,9 @@
+
+			STANDARD MODEL LOOP HELICITY AMPLITUDES
+
+
+
+iM[LL,LL] = -(Sqrt[2]*C*gw*gs^2)/(pv^2-Mv^2) * HEL[angle,p2,p3] * HEL[square,p1,p4] * A3
+
+
+iM[RR,LL] = -(Sqrt[2]*D*gw*gs^2)/(pv^2-Mv^2) * HEL[angle,p1,p3] * HEL[square,p2,p4] * A3

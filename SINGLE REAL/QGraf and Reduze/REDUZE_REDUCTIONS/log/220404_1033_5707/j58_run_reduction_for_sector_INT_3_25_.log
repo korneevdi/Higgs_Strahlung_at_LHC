@@ -1,0 +1,390 @@
+
+Date: Mon Apr  4 10:54:15 2022
+
+
+conditional: false
+min_workers: 0
+max_workers: 0
+tmp_directory: ./tmp/INT_3_25/
+identity_filenames:
+  - ./tmp/INT_3_25/identities/identities_INT_3_25_ibp_1_of_1
+  - ./tmp/INT_3_25/identities/identities_INT_3_25_lorentz_1_of_1
+  - ./tmp/INT_3_25/identities/identities_INT_3_25_sector_symmetries_1_of_1
+subst_filenames:
+  []
+output_file: ./reductions/reduction_INT_3_25
+output_file_external: ./reductions/external_INT_3_25
+solutions:
+  requested_solutions:
+    - {r: [t, 5], s: [0, 3]}
+  set_subsectors_to_zero: false
+  map_on_coeff: []
+  discard_new_subsector_identities: false
+reduzer_options:
+  num_equations_per_subjob: 1
+  num_blocks_per_subjob: 1
+  only_substitute: false
+preferred_masters_file: ""
+delete_files:
+  - ./tmp/INT_3_25/seeds/seeds_INT_3_25_ibp
+  - ./tmp/INT_3_25/identities/identities_INT_3_25_ibp_1_of_1
+  - ./tmp/INT_3_25/seeds/seeds_INT_3_25_lorentz
+  - ./tmp/INT_3_25/identities/identities_INT_3_25_lorentz_1_of_1
+  - ./tmp/INT_3_25/seeds/seeds_INT_3_25_sector_symmetries
+  - ./tmp/INT_3_25/identities/identities_INT_3_25_sector_symmetries_1_of_1
+delete_directories:
+  - ./tmp/INT_3_25/seeds/
+  - ./tmp/INT_3_25/identities/
+subst_subsectors: true
+sector: [INT, 25]
+
+Checking for aborted previous run
+Setting up in-memory reduction
+Determining integrals: all_ints, external_ints, helper_ints, critical_ints, discard_ints
+Find integrals in identities
+  scanning ./tmp/INT_3_25/identities/identities_INT_3_25_ibp_1_of_1 (0.02s)
+  scanning ./tmp/INT_3_25/identities/identities_INT_3_25_lorentz_1_of_1 (0.006s)
+  scanning ./tmp/INT_3_25/identities/identities_INT_3_25_sector_symmetries_1_of_1 (0.0007s)
+Add optimal set of sub-sector substitution files
+  using ./reductions/reduction_INT_2_9
+  using ./reductions/reduction_INT_2_17
+  using ./reductions/reduction_INT_2_24
+Find integrals in substitutions
+  scanning ./reductions/reduction_INT_2_9 (0.02s)
+  scanning ./reductions/reduction_INT_2_17 (0.01s)
+  scanning ./reductions/reduction_INT_2_24 (0.02s)
+Find external and helper integrals
+Find critical integrals
+Selecting border as critical integrals
+Checking 12 rs-points for border
+  on border: 3 3
+  on border: 4 3
+  on border: 5 0
+  on border: 5 1
+  on border: 5 2
+  on border: 5 3
+Initialize reduzer
+Allocated maps for data during reduction.
+Building INT translations
+Insert integrals for algorithm control:
+Insert substitutions
+  Inserting needed substitutions from ./reductions/reduction_INT_2_9 to database
+  scanning 311224 bytes
+  ..................................................  **************************************************
+  file scanned (time: 0.0 s)
+  Inserting needed substitutions from ./reductions/reduction_INT_2_17 to database
+  scanning 519543 bytes
+  ..................................................  **************************************************
+  file scanned (time: 0.0 s)
+  Inserting needed substitutions from ./reductions/reduction_INT_2_24 to database
+  scanning 400036 bytes
+  ..................................................  **************************************************
+  file scanned (time: 0.0 s)
+Insert equations to be reduced
+  Inserting equations ./tmp/INT_3_25/identities/identities_INT_3_25_ibp_1_of_1 to database
+  inserting 223360 bytes to database
+  ..................................................  **************************************************
+  file loaded (time: 0.0 s)
+  Inserting equations ./tmp/INT_3_25/identities/identities_INT_3_25_lorentz_1_of_1 to database
+  inserting 49892 bytes to database
+  ..................................................  **************************************************
+  file loaded (time: 0.0 s)
+  Inserting equations ./tmp/INT_3_25/identities/identities_INT_3_25_sector_symmetries_1_of_1 to database
+  inserting 0 bytes to database
+  ..................................................
+  file loaded (time: 0.0 s)
+Starting with 150 reducible integrals
+Setup done
+Setup of reduction done (time: 0.1 s)
+Running Reduction for sector (INT:3:25)
+Performing computation in serial mode
+  reduction
+  ..................................................Processed integral 1/283
+  Reduced block [3e-03 s]
+Reduced block [2e-03 s]
+Processed integral 6/284
+*Reduced block [5e-02 s]
+Reduced block [4e-02 s]
+Reduced block [6e-03 s]
+Reduced block [1e-02 s]
+Processed integral 8/284
+Reduced block [4e-01 s]
+Reduced block [5e-01 s]
+Reduced block [2e-01 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [3e-03 s]
+Reduced block [2e-03 s]
+Reduced block [2e-02 s]
+Reduced block [1e-01 s]
+Reduced block [3e-02 s]
+Reduced block [5e-02 s]
+Reduced block [4e-02 s]
+Reduced block [7e-03 s]
+Processed integral 23/294
+***Reduced block [3e-01 s]
+Reduced block [4e-01 s]
+Reduced block [2e-01 s]
+Reduced block [1e-01 s]
+Processed integral 25/294
+Reduced block [2e+00 s]
+Reduced block [3e+00 s]
+Reduced block [6e-02 s]
+Reduced block [8e-02 s]
+Reduced block [2e-01 s]
+Reduced block [2e+00 s]
+Reduced block [1e-01 s]
+Reduced block [2e-01 s]
+Reduced block [3e-01 s]
+Reduced block [1e-01 s]
+Processed integral 27/294
+*Reduced block [3e+00 s]
+Reduced block [2e+00 s]
+Reduced block [2e-01 s]
+Reduced block [2e-01 s]
+Processed integral 33/294
+*Reduced block [3e+00 s]
+Reduced block [4e+00 s]
+Reduced block [1e+00 s]
+Reduced block [1e+00 s]
+Processed integral 35/294
+Reduced block [2e+01 s]
+Reduced block [2e+01 s]
+Reduced block [4e-01 s]
+Reduced block [6e-01 s]
+Reduced block [1e+00 s]
+Reduced block [1e+01 s]
+Reduced block [1e+00 s]
+Reduced block [1e+00 s]
+Reduced block [2e+00 s]
+Reduced block [1e+00 s]
+Processed integral 37/294
+Reduced block [3e+01 s]
+Reduced block [2e+01 s]
+Reduced block [2e+00 s]
+Reduced block [2e+00 s]
+Processed integral 39/294
+*Reduced block [2e+01 s]
+Reduced block [1e+01 s]
+Reduced block [1e+00 s]
+Reduced block [1e+00 s]
+Processed integral 46/294
+*Reduced block [7e+00 s]
+Reduced block [4e+00 s]
+Processed integral 48/294
+Reduced block [6e+01 s]
+Reduced block [6e+01 s]
+Reduced block [5e+00 s]
+Reduced block [2e+01 s]
+Reduced block [5e+00 s]
+Reduced block [5e+00 s]
+Reduced block [1e+01 s]
+Reduced block [6e+00 s]
+Processed integral 50/294
+*Reduced block [1e+02 s]
+Reduced block [5e+01 s]
+Reduced block [8e+00 s]
+Reduced block [8e+00 s]
+Processed integral 52/294
+Reduced block [1e+02 s]
+Reduced block [5e+01 s]
+Reduced block [7e+00 s]
+Reduced block [7e+00 s]
+Processed integral 54/294
+Reduced block [1e+02 s]
+Reduced block [3e+01 s]
+Reduced block [4e+00 s]
+Reduced block [7e+00 s]
+Processed integral 57/294
+*Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Processed integral 59/294
+Reduced block [3e-02 s]
+Reduced block [2e-02 s]
+Processed integral 60/294
+Reduced block [5e-02 s]
+Processed integral 64/294
+*Reduced block [3e-01 s]
+Reduced block [3e-01 s]
+Reduced block [2e-01 s]
+Reduced block [3e-01 s]
+Processed integral 66/294
+Reduced block [8e-01 s]
+Reduced block [6e-01 s]
+Reduced block [2e-01 s]
+Reduced block [1e-02 s]
+Reduced block [1e-02 s]
+Reduced block [2e-02 s]
+Reduced block [3e-02 s]
+Reduced block [2e-02 s]
+Reduced block [1e-01 s]
+Reduced block [1e-01 s]
+Reduced block [3e-01 s]
+Reduced block [3e-01 s]
+Reduced block [1e-01 s]
+Reduced block [5e-02 s]
+Processed integral 68/294
+*Reduced block [3e-01 s]
+Reduced block [4e-02 s]
+Reduced block [6e-02 s]
+Processed integral 69/294
+Reduced block [1e-01 s]
+Processed integral 71/294
+Reduced block [4e-01 s]
+Reduced block [5e-02 s]
+Reduced block [5e-02 s]
+Processed integral 72/294
+Reduced block [3e-01 s]
+Processed integral 77/294
+*Reduced block [1e+00 s]
+Reduced block [1e+00 s]
+Reduced block [5e-01 s]
+Reduced block [3e-01 s]
+Processed integral 79/294
+Reduced block [3e+00 s]
+Reduced block [2e+00 s]
+Reduced block [5e-01 s]
+Reduced block [3e-01 s]
+Processed integral 81/294
+*Reduced block [2e+00 s]
+Reduced block [2e+00 s]
+Reduced block [5e-01 s]
+Reduced block [3e-01 s]
+Processed integral 83/294
+Reduced block [2e+00 s]
+Reduced block [2e-01 s]
+Reduced block [4e-01 s]
+Processed integral 84/294
+Reduced block [9e-01 s]
+Processed integral 86/294
+*Reduced block [3e+00 s]
+Reduced block [4e-01 s]
+Reduced block [4e-01 s]
+Processed integral 87/294
+Reduced block [2e+00 s]
+Processed integral 89/294
+Reduced block [2e+00 s]
+Reduced block [2e-01 s]
+Reduced block [3e-01 s]
+Processed integral 90/294
+Reduced block [1e+00 s]
+Processed integral 96/294
+*Reduced block [6e+00 s]
+Reduced block [6e+00 s]
+Reduced block [2e+00 s]
+Reduced block [1e+00 s]
+Processed integral 98/294
+*Reduced block [1e+01 s]
+Reduced block [8e+00 s]
+Reduced block [2e+00 s]
+Reduced block [1e+00 s]
+Processed integral 100/294
+Reduced block [1e+01 s]
+Reduced block [8e+00 s]
+Reduced block [2e+00 s]
+Reduced block [1e+00 s]
+Processed integral 102/294
+Reduced block [1e+01 s]
+Reduced block [6e+00 s]
+Reduced block [2e+00 s]
+Reduced block [1e+00 s]
+Processed integral 104/294
+*Reduced block [8e+00 s]
+Reduced block [1e+00 s]
+Reduced block [2e+00 s]
+Processed integral 105/294
+Reduced block [5e+00 s]
+Processed integral 107/294
+Reduced block [2e+01 s]
+Reduced block [2e+00 s]
+Reduced block [1e+00 s]
+Processed integral 108/294
+Reduced block [1e+01 s]
+Processed integral 110/294
+*Reduced block [2e+01 s]
+Reduced block [2e+00 s]
+Reduced block [1e+00 s]
+Processed integral 111/294
+Reduced block [1e+01 s]
+Processed integral 113/294
+Last critical integral reduced
+Reduced block [1e+01 s]
+Reduced block [1e+00 s]
+Reduced block [1e+00 s]
+Processed integral 114/294
+Reduced block [7e+00 s]
+
+Reduction done !
+Writing results to ./reductions/reduction_INT_3_25
+  write result
+  ..................................................  **************************************************
+  file size: 33778901 Bytes
+  time unabbreviate: 0.0 s
+  time I/O:        0.0 s
+  time write tot   0.6 s (55926074 Bytes/s)
+
+Reduction done (time: 1108.4 s)
+
+Cleaning up
+Analyzing reduction result
+
+Analyzing reduction file ./reductions/reduction_INT_3_25
+
+Number of equations: 450
+Average coefficient length [bytes]: 14944
+
+Extracting status of reduction for each r,s point
+Showing statistics for reductions found in each sector
+Number of sectors for which this file provides reductions: 1
+
+
+First table shows the following entries:
+A: Number of all integrals
+B: Number of unreduced integrals
+C: Number of different integrals
+D: Number of different unreduced integrals
+E: Identities are interreduced w.r.t. this file (.) or not (x)
+
+Second table shows different unreduced integrals in r-s diagram
+
+
+(INT:3:25)        A       B       C       D       E
+......................................................
+r=3, s=0:         1       1       1       1       .
+r=3, s=1:         2       0       2       0       .
+r=3, s=2:         3       0       3       0       .
+r=3, s=3:         4       0       4       0       .
+r=3, s=4:         5       5       5       5       .
+r=4, s=0:         3       0       3       0       .
+r=4, s=1:         6       0       6       0       .
+r=4, s=2:         9       0       9       0       .
+r=4, s=3:        12       0      12       0       .
+r=4, s=4:        15       0      15       0       .
+r=5, s=0:         6       0       6       0       .
+r=5, s=1:        12       0      12       0       .
+r=5, s=2:        18       0      18       0       .
+r=5, s=3:        24       0      24       0       .
+r=5, s=4:        30      15      30      15       x
+r=6, s=0:        10       4      10       4       x
+r=6, s=1:        20       8      20       8       x
+r=6, s=2:        30      12      30      12       x
+r=6, s=3:        40      16      40      16       x
+r=6, s=4:        50      20      50      20       x
+
+(INT:3:25)      s=0     s=1     s=2     s=3     s=4
+......................................................
+r=3:             1.      0.      0.      0.      5.
+r=4:             0.      0.      0.      0.      0.
+r=5:             0.      0.      0.      0.     15x
+r=6:             4x      8x     12x     16x     20x
+
+
+Check for masters done (time: 0.4 s)
+
+Done [1109 s]
+Setup:         0 s  (0 %)
+Reduction:     1108 s  (100 %)
+Write/analyze: 0 s  (0 %)
+
+
+Job done (total time: 1109 s)

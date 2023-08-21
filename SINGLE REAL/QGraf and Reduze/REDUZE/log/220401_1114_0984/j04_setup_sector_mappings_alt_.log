@@ -1,0 +1,1235 @@
+
+Date: Fri Apr  1 11:14:10 2022
+
+
+conditional: false
+source_sectors:
+  select_all: false
+  select:
+    []
+  select_recursively:
+    - [INT, 31]
+  deselect:
+    []
+  deselect_recursively:
+    []
+  deselect_independents:
+    []
+  deselect_graphless: false
+  deselect_graphs: false
+  t_restriction: [-1, -1]
+find_zero_sectors: true
+find_sector_relations: true
+find_crossed_sector_relations: true
+find_sector_symmetries: true
+verify_permutation_symmetries: true
+restrict_bilinear_matches: false
+
+Preparing selections
+Determining sectors in selection
+  normalizing user input
+  selecting explicit sectors
+  selecting recursively
+  deselecting explicit sectors
+  deselecting recursively
+  deselecting sectors by t restriction
+ignoring sector (INTx125:2:5) from crossed integral family
+ignoring sector (INTx125:3:7) from crossed integral family
+ignoring sector (INTx15:3:11) from crossed integral family
+Kinematics '':
+Rules scalar products to invariants:
+  {SP(pw,p5)==-1/2*mw^2+1/2*s35,SP(p5,p1)==1/2*s15,SP(p1,p1)==0,SP(p5,p2)==1/2*s25,SP(pw,pw)==mw^2,SP(p2,p2)==0,SP(pw,p1)==1/2*mw^2-1/2*t,SP(p5,p5)==0,SP(pw,p2)==1/2*mw^2-1/2*u,SP(p2,p1)==1/2*s}
+Rules invariants to scalar products:
+  {mw^(-2)==SP(pw,pw)^(-1),s==2*SP(p2,p1),mw^2==SP(pw,pw),u==SP(pw,pw)-2*SP(pw,p2),s35==2*SP(pw,p5)+SP(pw,pw),s15==2*SP(p5,p1),t==SP(pw,pw)-2*SP(pw,p1),s25==2*SP(p5,p2)}
+
+Integral family 'INT':
+name: INT
+loop_momenta: [k]
+propagators:
+  - {standard: [k, 0]}
+  - {standard: [k+p1, 0]}
+  - {standard: [k+p2+p1, 0]}
+  - {standard: [k-p5+p2+p1, 0]}
+  - {standard: [-pw+k-p5+p2+p1, 0]}
+cut_propagators: []
+permutation_symmetries:
+  []
+kinematics: ""
+
+Cut propagators form sector with id 0
+
+Rules scalar products to propagators:
+{SP(pw,k)==-mw^2+1/2*u+1/2*s35+1/2*Prop(k-p5+p2+p1,0)^(-1)-1/2*Prop(-pw+k-p5+p2+p1,0)^(-1)+1/2*t,SP(k,p2)==-1/2*s+1/2*Prop(k+p2+p1,0)^(-1)-1/2*Prop(k+p1,0)^(-1),SP(k,p1)==1/2*Prop(k+p1,0)^(-1)-1/2*Prop(k,0)^(-1),SP(k,p5)==-1/2*Prop(k-p5+p2+p1,0)^(-1)-1/2*s15+1/2*Prop(k+p2+p1,0)^(-1)-1/2*s25,SP(k,k)==Prop(k,0)^(-1)}
+
+Maximal sector id is 31.
+32 sectors occur in total
+  found 20 source sectors
+
+Finding zero sectors:
+  analyzing 20 sectors
+
+  integral family 'INT':
+   add trivial zero sectors with t < 1
+   finding zero sectors with t >= 1:
+   t = 2:	xxxxxx
+   t = 3:	xxxxxxxx
+   t = 4:	xxxxx
+   t = 5:	x
+
+Finding source sectors
+
+Finding target sectors
+  found 23 target sectors (without crossings)
+  using 6 crossings
+  using 1 crossings equivalent to identity
+
+Finding sector relations:
+
+t = 2
+  (INT:2:5) checking (INT:2:5) -> (INT:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:5) -> (INTx12:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:5) -> (INTx125:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:5) -> (INTx15:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:5) -> (INTx152:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:5) -> (INTx25:2:3)
+  detailed check, 0 massive propagators
+no shift
+  (INT:2:9) checking (INT:2:9) -> (INT:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:9) -> (INTx12:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:9) -> (INTx125:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:9) -> (INTx15:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:9) -> (INTx152:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:9) -> (INTx25:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:9) -> (INT:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:9) -> (INTx12:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:9) -> (INTx125:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:9) -> (INTx15:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:9) -> (INTx152:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:9) -> (INTx25:2:5)
+  detailed check, 0 massive propagators
+no shift
+  (INT:2:17) checking (INT:2:17) -> (INT:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INTx12:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INTx125:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INTx15:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INTx152:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INTx25:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INT:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INTx12:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INTx125:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INTx15:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INTx152:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INTx25:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INT:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INTx12:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INTx125:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INTx15:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INTx152:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:17) -> (INTx25:2:9)
+  detailed check, 0 massive propagators
+no shift
+  (INT:2:18) checking (INT:2:18) -> (INT:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx12:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx125:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx15:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx152:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx25:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INT:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx12:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx125:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx15:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx152:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx25:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INT:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx12:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx125:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx15:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx152:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx25:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INT:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx12:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx125:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx15:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx152:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:18) -> (INTx25:2:17)
+  detailed check, 0 massive propagators
+no shift
+  (INT:2:20) checking (INT:2:20) -> (INT:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx12:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx125:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx15:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx152:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx25:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INT:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx12:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx125:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx15:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx152:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx25:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INT:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx12:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx125:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx15:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx152:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx25:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INT:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx12:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx125:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx15:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx152:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx25:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INT:2:18)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx12:2:18)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx125:2:18)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx15:2:18)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx152:2:18)
+  detailed check, 0 massive propagators
+checking (INT:2:20) -> (INTx25:2:18)
+  detailed check, 0 massive propagators
+no shift
+  (INT:2:24) checking (INT:2:24) -> (INT:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx12:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx125:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx15:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx152:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx25:2:3)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INT:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx12:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx125:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx15:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx152:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx25:2:5)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INT:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx12:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx125:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx15:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx152:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx25:2:9)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INT:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx12:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx125:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx15:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx152:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx25:2:17)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INT:2:18)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx12:2:18)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx125:2:18)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx15:2:18)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx152:2:18)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx25:2:18)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INT:2:20)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx12:2:20)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx125:2:20)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx15:2:20)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx152:2:20)
+  detailed check, 0 massive propagators
+checking (INT:2:24) -> (INTx25:2:20)
+  detailed check, 0 massive propagators
+no shift
+Saving updated sector mappings for INT
+
+
+t = 3
+  (INT:3:7) no shift
+  (INT:3:11) checking (INT:3:11) -> (INT:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:11) -> (INTx12:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:11) -> (INTx125:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:11) -> (INTx15:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:11) -> (INTx152:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:11) -> (INTx25:3:7)
+  detailed check, 0 massive propagators
+no shift
+  (INT:3:19) checking (INT:3:19) -> (INT:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:19) -> (INTx12:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:19) -> (INTx125:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:19) -> (INTx15:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:19) -> (INTx152:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:19) -> (INTx25:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:19) -> (INT:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:19) -> (INTx12:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:19) -> (INTx125:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:19) -> (INTx15:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:19) -> (INTx152:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:19) -> (INTx25:3:11)
+  detailed check, 0 massive propagators
+no shift
+  (INT:3:21) checking (INT:3:21) -> (INT:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INTx12:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INTx125:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INTx15:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INTx152:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INTx25:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INT:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INTx12:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INTx125:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INTx15:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INTx152:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INTx25:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INT:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INTx12:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INTx125:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INTx15:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INTx152:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:21) -> (INTx25:3:19)
+  detailed check, 0 massive propagators
+no shift
+  (INT:3:22) checking (INT:3:22) -> (INT:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx12:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx125:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx15:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx152:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx25:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INT:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx12:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx125:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx15:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx152:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx25:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INT:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx12:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx125:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx15:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx152:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx25:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INT:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx12:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx125:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx15:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx152:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:22) -> (INTx25:3:21)
+  detailed check, 0 massive propagators
+no shift
+  (INT:3:25) checking (INT:3:25) -> (INT:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx12:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx125:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx15:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx152:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx25:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INT:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx12:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx125:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx15:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx152:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx25:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INT:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx12:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx125:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx15:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx152:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx25:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INT:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx12:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx125:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx15:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx152:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx25:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INT:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx12:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx125:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx15:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx152:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:25) -> (INTx25:3:22)
+  detailed check, 0 massive propagators
+no shift
+  (INT:3:26) checking (INT:3:26) -> (INT:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx12:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx125:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx15:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx152:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx25:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INT:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx12:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx125:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx15:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx152:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx25:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INT:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx12:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx125:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx15:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx152:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx25:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INT:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx12:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx125:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx15:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx152:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx25:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INT:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx12:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx125:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx15:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx152:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx25:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INT:3:25)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx12:3:25)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx125:3:25)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx15:3:25)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx152:3:25)
+  detailed check, 0 massive propagators
+checking (INT:3:26) -> (INTx25:3:25)
+  detailed check, 0 massive propagators
+no shift
+  (INT:3:28) checking (INT:3:28) -> (INT:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx12:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx125:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx15:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx152:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx25:3:7)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INT:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx12:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx125:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx15:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx152:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx25:3:11)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INT:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx12:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx125:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx15:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx152:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx25:3:19)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INT:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx12:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx125:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx15:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx152:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx25:3:21)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INT:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx12:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx125:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx15:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx152:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx25:3:22)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INT:3:25)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx12:3:25)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx125:3:25)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx15:3:25)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx152:3:25)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx25:3:25)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INT:3:26)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx12:3:26)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx125:3:26)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx15:3:26)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx152:3:26)
+  detailed check, 0 massive propagators
+checking (INT:3:28) -> (INTx25:3:26)
+  detailed check, 0 massive propagators
+no shift
+Saving updated sector mappings for INT
+
+
+t = 4
+  (INT:4:15) no shift
+  (INT:4:23) checking (INT:4:23) -> (INT:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:23) -> (INTx12:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:23) -> (INTx125:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:23) -> (INTx15:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:23) -> (INTx152:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:23) -> (INTx25:4:15)
+  detailed check, 0 massive propagators
+no shift
+  (INT:4:27) checking (INT:4:27) -> (INT:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:27) -> (INTx12:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:27) -> (INTx125:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:27) -> (INTx15:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:27) -> (INTx152:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:27) -> (INTx25:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:27) -> (INT:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:27) -> (INTx12:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:27) -> (INTx125:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:27) -> (INTx15:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:27) -> (INTx152:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:27) -> (INTx25:4:23)
+  detailed check, 0 massive propagators
+no shift
+  (INT:4:29) checking (INT:4:29) -> (INT:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INTx12:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INTx125:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INTx15:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INTx152:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INTx25:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INT:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INTx12:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INTx125:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INTx15:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INTx152:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INTx25:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INT:4:27)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INTx12:4:27)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INTx125:4:27)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INTx15:4:27)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INTx152:4:27)
+  detailed check, 0 massive propagators
+checking (INT:4:29) -> (INTx25:4:27)
+  detailed check, 0 massive propagators
+no shift
+  (INT:4:30) checking (INT:4:30) -> (INT:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx12:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx125:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx15:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx152:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx25:4:15)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INT:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx12:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx125:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx15:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx152:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx25:4:23)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INT:4:27)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx12:4:27)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx125:4:27)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx15:4:27)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx152:4:27)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx25:4:27)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INT:4:29)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx12:4:29)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx125:4:29)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx15:4:29)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx152:4:29)
+  detailed check, 0 massive propagators
+checking (INT:4:30) -> (INTx25:4:29)
+  detailed check, 0 massive propagators
+no shift
+Saving updated sector mappings for INT
+
+
+t = 5
+  (INT:5:31) no shift
+Saving updated sector mappings for INT
+
+Found following shift target sectors:
+  t=2:6 sectors
+    (INT:2:5)
+    (INT:2:9)
+    (INT:2:17)
+    (INT:2:18)
+    (INT:2:20)
+    (INT:2:24)
+  t=3:8 sectors
+    (INT:3:7)
+    (INT:3:11)
+    (INT:3:19)
+    (INT:3:21)
+    (INT:3:22)
+    (INT:3:25)
+    (INT:3:26)
+    (INT:3:28)
+  t=4:5 sectors
+    (INT:4:15)
+    (INT:4:23)
+    (INT:4:27)
+    (INT:4:29)
+    (INT:4:30)
+  t=5:1 sectors
+    (INT:5:31)
+
+Finding sector symmetries:
+
+t = 2
+checking (INT:2:5) -> (INT:2:5)
+  detailed check, 0 massive propagators
+(INT:2:5): 1 shifts onto itself
+checking (INT:2:9) -> (INT:2:9)
+  detailed check, 0 massive propagators
+(INT:2:9): 1 shifts onto itself
+checking (INT:2:17) -> (INT:2:17)
+  detailed check, 0 massive propagators
+(INT:2:17): 1 shifts onto itself
+checking (INT:2:18) -> (INT:2:18)
+  detailed check, 0 massive propagators
+(INT:2:18): 1 shifts onto itself
+checking (INT:2:20) -> (INT:2:20)
+  detailed check, 0 massive propagators
+(INT:2:20): 1 shifts onto itself
+checking (INT:2:24) -> (INT:2:24)
+  detailed check, 0 massive propagators
+(INT:2:24): 1 shifts onto itself
+Saving updated sector mappings for INT
+
+
+t = 3
+checking (INT:3:7) -> (INT:3:7)
+  detailed check, 0 massive propagators
+(INT:3:7): 0 shifts onto itself
+checking (INT:3:11) -> (INT:3:11)
+  detailed check, 0 massive propagators
+(INT:3:11): 0 shifts onto itself
+checking (INT:3:19) -> (INT:3:19)
+  detailed check, 0 massive propagators
+(INT:3:19): 0 shifts onto itself
+checking (INT:3:21) -> (INT:3:21)
+  detailed check, 0 massive propagators
+(INT:3:21): 0 shifts onto itself
+checking (INT:3:22) -> (INT:3:22)
+  detailed check, 0 massive propagators
+(INT:3:22): 0 shifts onto itself
+checking (INT:3:25) -> (INT:3:25)
+  detailed check, 0 massive propagators
+(INT:3:25): 0 shifts onto itself
+checking (INT:3:26) -> (INT:3:26)
+  detailed check, 0 massive propagators
+(INT:3:26): 0 shifts onto itself
+checking (INT:3:28) -> (INT:3:28)
+  detailed check, 0 massive propagators
+(INT:3:28): 0 shifts onto itself
+Saving updated sector mappings for INT
+
+
+t = 4
+checking (INT:4:15) -> (INT:4:15)
+  detailed check, 0 massive propagators
+(INT:4:15): 0 shifts onto itself
+checking (INT:4:23) -> (INT:4:23)
+  detailed check, 0 massive propagators
+(INT:4:23): 0 shifts onto itself
+checking (INT:4:27) -> (INT:4:27)
+  detailed check, 0 massive propagators
+(INT:4:27): 0 shifts onto itself
+checking (INT:4:29) -> (INT:4:29)
+  detailed check, 0 massive propagators
+(INT:4:29): 0 shifts onto itself
+checking (INT:4:30) -> (INT:4:30)
+  detailed check, 0 massive propagators
+(INT:4:30): 0 shifts onto itself
+Saving updated sector mappings for INT
+
+
+t = 5
+checking (INT:5:31) -> (INT:5:31)
+  detailed check, 0 massive propagators
+(INT:5:31): 0 shifts onto itself
+Saving updated sector mappings for INT
+
+
+Finding crossed sector relations:
+
+t = 2
+  (INTx125:2:5) checking (INTx125:2:5) -> (INT:2:5)
+  detailed check, 0 massive propagators
+checking (INTx125:2:5) -> (INTx12:2:5)
+  detailed check, 0 massive propagators
+no shift
+  (INTx152:2:5) checking (INTx152:2:5) -> (INT:2:5)
+  detailed check, 0 massive propagators
+checking (INTx152:2:5) -> (INTx12:2:5)
+  detailed check, 0 massive propagators
+checking (INTx152:2:5) -> (INTx125:2:5)
+  detailed check, 0 massive propagators
+checking (INTx152:2:5) -> (INTx15:2:5)
+  detailed check, 0 massive propagators
+no shift
+  (INTx12:2:18) checking (INTx12:2:18) -> (INT:2:18)
+  detailed check, 0 massive propagators
+no shift
+  (INTx15:2:18) checking (INTx15:2:18) -> (INT:2:18)
+  detailed check, 0 massive propagators
+checking (INTx15:2:18) -> (INTx12:2:18)
+  detailed check, 0 massive propagators
+checking (INTx15:2:18) -> (INTx125:2:18)
+  detailed check, 0 massive propagators
+no shift
+  (INTx125:2:20) checking (INTx125:2:20) -> (INT:2:20)
+  detailed check, 0 massive propagators
+checking (INTx125:2:20) -> (INTx12:2:20)
+  detailed check, 0 massive propagators
+no shift
+  (INTx152:2:20) checking (INTx152:2:20) -> (INT:2:20)
+  detailed check, 0 massive propagators
+checking (INTx152:2:20) -> (INTx12:2:20)
+  detailed check, 0 massive propagators
+checking (INTx152:2:20) -> (INTx125:2:20)
+  detailed check, 0 massive propagators
+checking (INTx152:2:20) -> (INTx15:2:20)
+  detailed check, 0 massive propagators
+no shift
+Saving updated sector mappings for INT
+
+
+t = 3
+  (INTx125:3:7) checking (INTx125:3:7) -> (INT:3:7)
+  detailed check, 0 massive propagators
+checking (INTx125:3:7) -> (INTx12:3:7)
+  detailed check, 0 massive propagators
+no shift
+  (INTx152:3:7) checking (INTx152:3:7) -> (INT:3:7)
+  detailed check, 0 massive propagators
+checking (INTx152:3:7) -> (INTx12:3:7)
+  detailed check, 0 massive propagators
+checking (INTx152:3:7) -> (INTx125:3:7)
+  detailed check, 0 massive propagators
+checking (INTx152:3:7) -> (INTx15:3:7)
+  detailed check, 0 massive propagators
+no shift
+  (INTx12:3:11) checking (INTx12:3:11) -> (INT:3:11)
+  detailed check, 0 massive propagators
+no shift
+  (INTx15:3:11) checking (INTx15:3:11) -> (INT:3:11)
+  detailed check, 0 massive propagators
+checking (INTx15:3:11) -> (INTx12:3:11)
+  detailed check, 0 massive propagators
+checking (INTx15:3:11) -> (INTx125:3:11)
+  detailed check, 0 massive propagators
+no shift
+  (INTx12:3:19) checking (INTx12:3:19) -> (INT:3:19)
+  detailed check, 0 massive propagators
+no shift
+  (INTx15:3:19) checking (INTx15:3:19) -> (INT:3:19)
+  detailed check, 0 massive propagators
+checking (INTx15:3:19) -> (INTx12:3:19)
+  detailed check, 0 massive propagators
+checking (INTx15:3:19) -> (INTx125:3:19)
+  detailed check, 0 massive propagators
+no shift
+  (INTx125:3:21) checking (INTx125:3:21) -> (INT:3:21)
+  detailed check, 0 massive propagators
+checking (INTx125:3:21) -> (INTx12:3:21)
+  detailed check, 0 massive propagators
+no shift
+  (INTx152:3:21) checking (INTx152:3:21) -> (INT:3:21)
+  detailed check, 0 massive propagators
+checking (INTx152:3:21) -> (INTx12:3:21)
+  detailed check, 0 massive propagators
+checking (INTx152:3:21) -> (INTx125:3:21)
+  detailed check, 0 massive propagators
+checking (INTx152:3:21) -> (INTx15:3:21)
+  detailed check, 0 massive propagators
+no shift
+  (INTx12:3:22) checking (INTx12:3:22) -> (INT:3:22)
+  detailed check, 0 massive propagators
+no shift
+  (INTx125:3:22) checking (INTx125:3:22) -> (INT:3:22)
+  detailed check, 0 massive propagators
+checking (INTx125:3:22) -> (INTx12:3:22)
+  detailed check, 0 massive propagators
+no shift
+  (INTx15:3:22) checking (INTx15:3:22) -> (INT:3:22)
+  detailed check, 0 massive propagators
+checking (INTx15:3:22) -> (INTx12:3:22)
+  detailed check, 0 massive propagators
+checking (INTx15:3:22) -> (INTx125:3:22)
+  detailed check, 0 massive propagators
+no shift
+  (INTx152:3:22) checking (INTx152:3:22) -> (INT:3:22)
+  detailed check, 0 massive propagators
+checking (INTx152:3:22) -> (INTx12:3:22)
+  detailed check, 0 massive propagators
+checking (INTx152:3:22) -> (INTx125:3:22)
+  detailed check, 0 massive propagators
+checking (INTx152:3:22) -> (INTx15:3:22)
+  detailed check, 0 massive propagators
+no shift
+  (INTx25:3:22) checking (INTx25:3:22) -> (INT:3:22)
+  detailed check, 0 massive propagators
+checking (INTx25:3:22) -> (INTx12:3:22)
+  detailed check, 0 massive propagators
+checking (INTx25:3:22) -> (INTx125:3:22)
+  detailed check, 0 massive propagators
+checking (INTx25:3:22) -> (INTx15:3:22)
+  detailed check, 0 massive propagators
+checking (INTx25:3:22) -> (INTx152:3:22)
+  detailed check, 0 massive propagators
+no shift
+  (INTx12:3:26) checking (INTx12:3:26) -> (INT:3:26)
+  detailed check, 0 massive propagators
+no shift
+  (INTx15:3:26) checking (INTx15:3:26) -> (INT:3:26)
+  detailed check, 0 massive propagators
+checking (INTx15:3:26) -> (INTx12:3:26)
+  detailed check, 0 massive propagators
+checking (INTx15:3:26) -> (INTx125:3:26)
+  detailed check, 0 massive propagators
+no shift
+  (INTx125:3:28) checking (INTx125:3:28) -> (INT:3:28)
+  detailed check, 0 massive propagators
+checking (INTx125:3:28) -> (INTx12:3:28)
+  detailed check, 0 massive propagators
+no shift
+  (INTx152:3:28) checking (INTx152:3:28) -> (INT:3:28)
+  detailed check, 0 massive propagators
+checking (INTx152:3:28) -> (INTx12:3:28)
+  detailed check, 0 massive propagators
+checking (INTx152:3:28) -> (INTx125:3:28)
+  detailed check, 0 massive propagators
+checking (INTx152:3:28) -> (INTx15:3:28)
+  detailed check, 0 massive propagators
+no shift
+Saving updated sector mappings for INT
+
+
+t = 4
+  (INTx12:4:15) checking (INTx12:4:15) -> (INT:4:15)
+  detailed check, 0 massive propagators
+no shift
+  (INTx125:4:15) checking (INTx125:4:15) -> (INT:4:15)
+  detailed check, 0 massive propagators
+checking (INTx125:4:15) -> (INTx12:4:15)
+  detailed check, 0 massive propagators
+no shift
+  (INTx12:4:23) checking (INTx12:4:23) -> (INT:4:23)
+  detailed check, 0 massive propagators
+no shift
+  (INTx125:4:23) checking (INTx125:4:23) -> (INT:4:23)
+  detailed check, 0 massive propagators
+checking (INTx125:4:23) -> (INTx12:4:23)
+  detailed check, 0 massive propagators
+no shift
+  (INTx15:4:23) checking (INTx15:4:23) -> (INT:4:23)
+  detailed check, 0 massive propagators
+checking (INTx15:4:23) -> (INTx12:4:23)
+  detailed check, 0 massive propagators
+checking (INTx15:4:23) -> (INTx125:4:23)
+  detailed check, 0 massive propagators
+no shift
+  (INTx152:4:23) checking (INTx152:4:23) -> (INT:4:23)
+  detailed check, 0 massive propagators
+checking (INTx152:4:23) -> (INTx12:4:23)
+  detailed check, 0 massive propagators
+checking (INTx152:4:23) -> (INTx125:4:23)
+  detailed check, 0 massive propagators
+checking (INTx152:4:23) -> (INTx15:4:23)
+  detailed check, 0 massive propagators
+no shift
+  (INTx25:4:23) checking (INTx25:4:23) -> (INT:4:23)
+  detailed check, 0 massive propagators
+checking (INTx25:4:23) -> (INTx12:4:23)
+  detailed check, 0 massive propagators
+checking (INTx25:4:23) -> (INTx125:4:23)
+  detailed check, 0 massive propagators
+checking (INTx25:4:23) -> (INTx15:4:23)
+  detailed check, 0 massive propagators
+checking (INTx25:4:23) -> (INTx152:4:23)
+  detailed check, 0 massive propagators
+no shift
+  (INTx12:4:27) checking (INTx12:4:27) -> (INT:4:27)
+  detailed check, 0 massive propagators
+no shift
+  (INTx15:4:27) checking (INTx15:4:27) -> (INT:4:27)
+  detailed check, 0 massive propagators
+checking (INTx15:4:27) -> (INTx12:4:27)
+  detailed check, 0 massive propagators
+checking (INTx15:4:27) -> (INTx125:4:27)
+  detailed check, 0 massive propagators
+no shift
+  (INTx125:4:29) checking (INTx125:4:29) -> (INT:4:29)
+  detailed check, 0 massive propagators
+checking (INTx125:4:29) -> (INTx12:4:29)
+  detailed check, 0 massive propagators
+no shift
+  (INTx152:4:29) checking (INTx152:4:29) -> (INT:4:29)
+  detailed check, 0 massive propagators
+checking (INTx152:4:29) -> (INTx12:4:29)
+  detailed check, 0 massive propagators
+checking (INTx152:4:29) -> (INTx125:4:29)
+  detailed check, 0 massive propagators
+checking (INTx152:4:29) -> (INTx15:4:29)
+  detailed check, 0 massive propagators
+no shift
+  (INTx12:4:30) checking (INTx12:4:30) -> (INT:4:30)
+  detailed check, 0 massive propagators
+no shift
+  (INTx125:4:30) checking (INTx125:4:30) -> (INT:4:30)
+  detailed check, 0 massive propagators
+checking (INTx125:4:30) -> (INTx12:4:30)
+  detailed check, 0 massive propagators
+no shift
+  (INTx15:4:30) checking (INTx15:4:30) -> (INT:4:30)
+  detailed check, 0 massive propagators
+checking (INTx15:4:30) -> (INTx12:4:30)
+  detailed check, 0 massive propagators
+checking (INTx15:4:30) -> (INTx125:4:30)
+  detailed check, 0 massive propagators
+no shift
+  (INTx152:4:30) checking (INTx152:4:30) -> (INT:4:30)
+  detailed check, 0 massive propagators
+checking (INTx152:4:30) -> (INTx12:4:30)
+  detailed check, 0 massive propagators
+checking (INTx152:4:30) -> (INTx125:4:30)
+  detailed check, 0 massive propagators
+checking (INTx152:4:30) -> (INTx15:4:30)
+  detailed check, 0 massive propagators
+no shift
+  (INTx25:4:30) checking (INTx25:4:30) -> (INT:4:30)
+  detailed check, 0 massive propagators
+checking (INTx25:4:30) -> (INTx12:4:30)
+  detailed check, 0 massive propagators
+checking (INTx25:4:30) -> (INTx125:4:30)
+  detailed check, 0 massive propagators
+checking (INTx25:4:30) -> (INTx15:4:30)
+  detailed check, 0 massive propagators
+checking (INTx25:4:30) -> (INTx152:4:30)
+  detailed check, 0 massive propagators
+no shift
+Saving updated sector mappings for INT
+
+
+t = 5
+  (INTx12:5:31) checking (INTx12:5:31) -> (INT:5:31)
+  detailed check, 0 massive propagators
+no shift
+  (INTx125:5:31) checking (INTx125:5:31) -> (INT:5:31)
+  detailed check, 0 massive propagators
+checking (INTx125:5:31) -> (INTx12:5:31)
+  detailed check, 0 massive propagators
+no shift
+  (INTx15:5:31) checking (INTx15:5:31) -> (INT:5:31)
+  detailed check, 0 massive propagators
+checking (INTx15:5:31) -> (INTx12:5:31)
+  detailed check, 0 massive propagators
+checking (INTx15:5:31) -> (INTx125:5:31)
+  detailed check, 0 massive propagators
+no shift
+  (INTx152:5:31) checking (INTx152:5:31) -> (INT:5:31)
+  detailed check, 0 massive propagators
+checking (INTx152:5:31) -> (INTx12:5:31)
+  detailed check, 0 massive propagators
+checking (INTx152:5:31) -> (INTx125:5:31)
+  detailed check, 0 massive propagators
+checking (INTx152:5:31) -> (INTx15:5:31)
+  detailed check, 0 massive propagators
+no shift
+  (INTx25:5:31) checking (INTx25:5:31) -> (INT:5:31)
+  detailed check, 0 massive propagators
+checking (INTx25:5:31) -> (INTx12:5:31)
+  detailed check, 0 massive propagators
+checking (INTx25:5:31) -> (INTx125:5:31)
+  detailed check, 0 massive propagators
+checking (INTx25:5:31) -> (INTx15:5:31)
+  detailed check, 0 massive propagators
+checking (INTx25:5:31) -> (INTx152:5:31)
+  detailed check, 0 massive propagators
+no shift
+Saving updated sector mappings for INT
+
+
+Job done (total time: 1 s)

@@ -1,0 +1,26 @@
+digraph T2_5_122 {
+  label="T2_5_122";
+  rankdir="LR";
+  subgraph edges {
+    -1 -> 4 [label="(p1,0;1)"];
+    -2 -> 3 [label="(p2,0;2)"];
+    2 -> -3 [label="(p3,mw^2;3)"];
+    2 -> -4 [label="(-p3+p2+p1,mh^2;4)"];
+    4 -> 1 [label="(k1+p1,0;6)"];
+    4 -> 1 [label="(k2,0;8)"];
+    1 -> 2 [label="(k1+k2+p1,0;9)"];
+    2 -> 3 [label="(k1-p2+k2,0;10)"];
+    3 -> 4 [label="(k1+k2,0;11)"];
+  }
+  subgraph incoming { rank="source"; -1; -2; }
+  subgraph outgoing { rank="sink"; -3; -4; }
+-4 [shape=point];
+-3 [shape=point];
+-2 [shape=point];
+-1 [shape=point];
+1 [shape=point];
+2 [shape=point];
+3 [shape=point];
+4 [shape=point];
+}
+
