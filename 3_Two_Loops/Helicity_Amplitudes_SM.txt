@@ -1,0 +1,24 @@
+
+iM[L,R,0] = 0
+
+iM[R,L,0] = 0
+
+iM[L,L,0] = N * a * A3(2, 0) / mV * Hel(ang, p2, r) * Hel(sq, r, p1)
+
+iM[R,R,0] = N * b * A3(2, 0) / mV * Hel(sq, p2, r) * Hel(ang, r, p1)
+
+iM[L,R,L] = 0
+
+iM[R,L,L] = 0
+
+iM[L,L,L] = N * a * A3(2, 0) * sqrt(2) * Hel(ang, p2, r) * Hel(sq, p2, p1) / Hel(sq, p2, r)
+
+iM[R,R,L] = 0
+
+iM[L,R,R] = 0
+
+iM[R,L,R] = 0
+
+iM[L,L,R] = 0
+
+iM[R,R,R] = N * b * A3(2, 0) * sqrt(2) * Hel(sq, p2, r) * Hel(ang, p2, p1) / Hel(ang, p2, r)

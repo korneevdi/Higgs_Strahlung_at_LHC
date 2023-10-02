@@ -1,5 +1,5 @@
 
-A1 = ((-I/4)*1*gC^4*(-1 + Nc)*(1 + Nc)*(-108 + 2*Nc^2*(-3 + 4*\[Epsilon])*
+A1(2, 0) = ((-I/4)*1*gC^4*(-1 + Nc)*(1 + Nc)*(-108 + 2*Nc^2*(-3 + 4*\[Epsilon])*
       (-1 + 4*\[Epsilon])*(6 + \[Epsilon]*
         (-41 + \[Epsilon]*(104 + \[Epsilon]*(-140 + \[Epsilon]*
               (136 + \[Epsilon]*(-111 + 2*\[Epsilon]*(33 + 4*\[Epsilon]*
@@ -35,7 +35,7 @@ A1 = ((-I/4)*1*gC^4*(-1 + Nc)*(1 + Nc)*(-108 + 2*Nc^2*(-3 + 4*\[Epsilon])*
 
 
 
-A2 = ((-4*I)*1*gC^4*(-1 + Nc)*(1 + Nc)*(92 + 2*Nc^2*(-1 + 2*\[Epsilon])*
+A2(2, 0) = ((-4*I)*1*gC^4*(-1 + Nc)*(1 + Nc)*(92 + 2*Nc^2*(-1 + 2*\[Epsilon])*
       (-3 + 4*\[Epsilon])*(-1 + 4*\[Epsilon])*
       (2 + \[Epsilon]*(-5 + \[Epsilon]*(4 + 3*(-1 + \[Epsilon])*
             \[Epsilon]))) + \[Epsilon]*
@@ -64,7 +64,7 @@ A2 = ((-4*I)*1*gC^4*(-1 + Nc)*(1 + Nc)*(92 + 2*Nc^2*(-1 + 2*\[Epsilon])*
 
 
 
-A3 = ((-I/4)*1*gC^4*(-1 + Nc)*(1 + Nc)*(-2 + 3*\[Epsilon])*
+A3(2, 0) = ((-I/4)*1*gC^4*(-1 + Nc)*(1 + Nc)*(-2 + 3*\[Epsilon])*
     (-18 + 2*Nc^2*(-1 + 4*\[Epsilon])*
       (-3 + 4*\[Epsilon]*(3 + \[Epsilon]*(-4 + \[Epsilon]*
             (5 + 2*(-1 + \[Epsilon])*\[Epsilon])))) + 
