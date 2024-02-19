@@ -1,0 +1,85 @@
+
+Date: Thu Aug 26 11:17:59 2021
+
+
+conditional: false
+input_file: ./reductions/reduction_T1x12_6_95
+check_for_masters:
+  - {r: [0, 6], s: [0, 2]}
+masters_file: masters_tmp/masters.T.reduction_T1x12_6_95-rhs
+
+
+Analyzing reduction file ./reductions/reduction_T1x12_6_95
+
+Number of equations: 2422
+Average coefficient length [bytes]: 487
+
+Extracting status of reduction for each r,s point
+Showing statistics for reductions found in each sector
+Number of sectors for which this file provides reductions: 1
+
+
+First table shows the following entries:
+A: Number of all integrals
+B: Number of unreduced integrals
+C: Number of different integrals
+D: Number of different unreduced integrals
+E: Identities are interreduced w.r.t. this file (.) or not (x)
+
+Second table shows different unreduced integrals in r-s diagram
+
+
+(T1x12:6:95)        A       B       C       D       E
+........................................................
+r=6, s=0:           1       0       1       0       .
+r=6, s=1:           3       0       3       0       .
+r=6, s=2:           6       0       6       0       .
+r=6, s=3:          10       0      10       0       .
+r=6, s=4:          15      15      15      15       .
+r=7, s=0:           6       0       6       0       .
+r=7, s=1:          18       0      18       0       .
+r=7, s=2:          36       0      36       0       .
+r=7, s=3:          60       0      60       0       .
+r=7, s=4:          90      32      90      32       .
+r=8, s=0:          21       0      21       0       .
+r=8, s=1:          63       0      63       0       .
+r=8, s=2:         126       0     126       0       .
+r=8, s=3:         210       0     210       0       .
+r=8, s=4:         315     102     315     102       .
+r=9, s=0:          56      30      56      30       .
+r=9, s=1:         168      36     168      36       .
+r=9, s=2:         336      48     336      48       .
+r=9, s=3:         560      61     560      61       .
+r=9, s=4:         840     194     840     194       .
+
+(T1x12:6:95)      s=0     s=1     s=2     s=3     s=4
+........................................................
+r=6:               0.      0.      0.      0.     15.
+r=7:               0.      0.      0.      0.     32.
+r=8:               0.      0.      0.      0.    102.
+r=9:              30.     36.     48.     61.    194.
+
+
+Checking (T1x12:6:95) for masters in range:
+- {r: [0, 6], s: [0, 2]}
+
+Checking 21 rs-points for border
+  on border: 0 2
+  on border: 1 2
+  on border: 2 2
+  on border: 3 2
+  on border: 4 2
+  on border: 5 2
+  on border: 6 0
+  on border: 6 1
+  on border: 6 2
+Missing information for at least one (r,s) in the range
+
+Integrals appearing on r.h.s. of reductions in the range:
+(T1:3:84): 1
+(T1:4:78): 1
+in total: 2
+
+Writing master candidates to file 'masters_tmp/masters.T.reduction_T1x12_6_95-rhs'
+
+Job done (total time: 1 s)

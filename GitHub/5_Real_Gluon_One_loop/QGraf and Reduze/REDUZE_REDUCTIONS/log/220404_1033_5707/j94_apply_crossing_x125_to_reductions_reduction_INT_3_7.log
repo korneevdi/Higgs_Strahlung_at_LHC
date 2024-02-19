@@ -1,0 +1,15 @@
+
+Date: Mon Apr  4 10:34:24 2022
+
+
+conditional: false
+input_file: ./reductions/reduction_INT_3_7
+output_file: ./reductions/reduction_INTx125_3_7
+apply_shifts: true
+crossing:
+  permutation: [[1, 2, 5]]  # name: x125
+                            # rules_momenta: {p5==-p1,p2==-p5,p1==p2}
+                            # rules_invariants: {s==-s25,u==s35,s35==t,s15==-s,t==u,s25==s15}
+
+
+Job done (total time: 1 s)

@@ -1,0 +1,80 @@
+
+Date: Fri Apr  1 11:14:09 2022
+
+Setting up job queue from jobs_0_sectormapping.yaml
+Updating job queue dependencies
+Processing jobs in serial mode (non-MPI build)
+Inserted new job in queue: job(1): setup sector mappings
+Updating job queue dependencies
+Loading uncrossed integral families from file ./config/integralfamilies.yaml
+Initialize integral family 'INT'
+Loaded integral family INT
+Loaded 1 (uncrossed) integral families
+Done loading uncrossed integral families
+Created auxiliary job setup_crossings
+Created auxiliary job verify_permutation_symmetries for family: INT
+Inserted new job in queue: job(2): verify permutation symmetries of family 'INT'
+Inserted new job in queue: job(3): setup crossings
+Updated job queue:
+  [p] job(3): setup crossings  [dep: ]
+  [p] job(2): verify permutation symmetries of family 'INT'  [dep: 3]
+  [p] job(1): setup sector mappings  [dep: 2,3]
+
+
+Date: Fri Apr  1 11:14:09 2022
+
+Run ID: 63a3ee38
+
+Starting job(3): setup crossings
+Completed Job(3) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Fri Apr  1 11:14:09 2022
+
+Run ID: 63a3ee38
+
+Starting job(2): verify permutation symmetries of family 'INT'
+Completed Job(2) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Fri Apr  1 11:14:09 2022
+
+Run ID: 63a3ee38
+
+Starting job(1): setup sector mappings
+Completed Job(1) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+Completed jobs in jobqueue
+
+Inserted new job in queue: job(4): setup sector mappings (alt)
+Updating job queue dependencies
+Created auxiliary job verify_permutation_symmetries for family: INT
+Inserted new job in queue: job(5): verify permutation symmetries of family 'INT'
+Updated job queue:
+  [c] job(3): setup crossings  [dep: ]
+  [c] job(2): verify permutation symmetries of family 'INT'  [dep: 3]
+  [c] job(1): setup sector mappings  [dep: 2,3]
+  [p] job(5): verify permutation symmetries of family 'INT'  [dep: ]
+  [p] job(4): setup sector mappings (alt)  [dep: 5]
+
+
+Date: Fri Apr  1 11:14:10 2022
+
+Run ID: 63a3ee38
+
+Starting job(5): verify permutation symmetries of family 'INT'
+Completed Job(5) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Fri Apr  1 11:14:10 2022
+
+Run ID: 63a3ee38
+
+Starting job(4): setup sector mappings (alt)
+Completed Job(4) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+Completed jobs in jobqueue
+
+Completed all jobs
+Total run time: 2 s
+Killing Fermat

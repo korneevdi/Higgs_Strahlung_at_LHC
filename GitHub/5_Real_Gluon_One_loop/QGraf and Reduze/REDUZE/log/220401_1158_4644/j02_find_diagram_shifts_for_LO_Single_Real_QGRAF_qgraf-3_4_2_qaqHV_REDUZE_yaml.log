@@ -1,0 +1,154 @@
+
+Date: Fri Apr  1 11:58:46 2022
+
+
+conditional: false
+qgraf_file: /net/home/lxtsfs1/tpe/korneev/Desktop/NNLO_Single_Real/QGRAF/qgraf-3.4.2/qaqHV_REDUZE.yaml
+output_file: tmp/reduze_qaqHV_noalt.yaml
+info_file_form: shifts/reduze_qaqHV_noalt.shift
+names:
+  []
+minimize_graphs_by_twists: true
+amputate_external_legs: false
+join_external_legs: false
+kinematics: ""
+
+Read diagrams from file '/net/home/lxtsfs1/tpe/korneev/Desktop/NNLO_Single_Real/QGRAF/qgraf-3.4.2/qaqHV_REDUZE.yaml'
+Reading diagrams from file: /net/home/lxtsfs1/tpe/korneev/Desktop/NNLO_Single_Real/QGRAF/qgraf-3.4.2/qaqHV_REDUZE.yaml
+rename negative field indices
+Loaded diagram 1
+rename negative field indices
+Loaded diagram 2
+rename negative field indices
+Loaded diagram 3
+rename negative field indices
+Loaded diagram 4
+rename negative field indices
+Loaded diagram 5
+rename negative field indices
+Loaded diagram 6
+rename negative field indices
+Loaded diagram 7
+rename negative field indices
+Loaded diagram 8
+rename negative field indices
+Loaded diagram 9
+rename negative field indices
+Loaded diagram 10
+rename negative field indices
+Loaded diagram 11
+rename negative field indices
+Loaded diagram 12
+rename negative field indices
+Loaded diagram 13
+rename negative field indices
+Loaded diagram 14
+rename negative field indices
+Loaded diagram 15
+rename negative field indices
+Loaded diagram 16
+Diagrams loaded. Time: 0.02s
+  preparing graphs:
+  ..................................................  **************************************************
+Loaded 16 diagrams.
+Finding sectors and their graphs to match with diagrams:
+Finding graphs of shift target sectors from integral family INT:
+Finding shift targets (with graph and canonical label):
+  finding graphs: (twists on / construct minimal off)
+  ..................................................  **************************************************
+
+Matching diagrams:
+Analyzing diagram 01
+
+n  no match for diagram 01
+
+Analyzing diagram 02
+n  no match for diagram 02
+
+Analyzing diagram 11
+n  no match for diagram 11
+
+Analyzing diagram 12
+n  no match for diagram 12
+
+Analyzing diagram 13
+n  no match for diagram 13
+
+Analyzing diagram 03
+n  no match for diagram 03
+
+Analyzing diagram 04
+n  no match for diagram 04
+
+Analyzing diagram 05
+n  no match for diagram 05
+
+Analyzing diagram 06
+n  no match for diagram 06
+
+Analyzing diagram 07
+n  no match for diagram 07
+
+Analyzing diagram 08
+n  no match for diagram 08
+
+Analyzing diagram 09
+n  no match for diagram 09
+
+Analyzing diagram 10
+n  no match for diagram 10
+
+Analyzing diagram 14
+n  no match for diagram 14
+
+Analyzing diagram 15
+n  no match for diagram 15
+
+Analyzing diagram 16
+n  no match for diagram 16
+
+Finalizing output file tmp/reduze_qaqHV_noalt.yaml
+
+Unmatched diagrams: 16
+  01 (1)
+  02 (2)
+  11 (11)
+  12 (12)
+  13 (13)
+  03 (3)
+  04 (4)
+  05 (5)
+  06 (6)
+  07 (7)
+  08 (8)
+  09 (9)
+  10 (10)
+  14 (14)
+  15 (15)
+  16 (16)
+
+Matched diagrams: 0
+
+Sectors: 0
+Determining compact recursive sector selection
+
+This selection of sectors should be reduced for the matched diagrams:
+-
+  -
+    - sector_selection:
+        select_all: false
+        select:
+          []
+        select_recursively:
+          []
+        deselect:
+          []
+        deselect_recursively:
+          []
+        deselect_independents:
+          []
+        deselect_graphless: false
+        deselect_graphs: false
+        t_restriction: [-1, -1]
+
+Job done (total time: 0 s)

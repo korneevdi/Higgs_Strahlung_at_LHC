@@ -1,0 +1,15 @@
+jobs:
+  - find_diagram_shifts_alt:
+      conditional: false
+      qgraf_file: "../../QGRAF/qgraf-3.4.2/qaqHV_REDUZE.yaml"
+      output_file: "tmp/reduze_qaqHV_alt.yaml"
+      info_file_form: "shifts/reduze_qaqHV_alt.shift"
+  - find_diagram_shifts:
+      conditional: false
+      qgraf_file: "../../QGRAF/qgraf-3.4.2/qaqHV_REDUZE.yaml"
+      output_file: "tmp/reduze_qaqHV_noalt.yaml"
+      info_file_form: "shifts/reduze_qaqHV_noalt.shift"
+#      minimize_graphs_by_twists: true
+#      amputate_external_legs: false
+#      join_external_legs: false
+

@@ -1,0 +1,46 @@
+
+INT[RLO, 0, 1, 0, 1, 0] =
+
+I/(16*\[Pi]^2)*(4*\[Pi]*\[Mu]02/(-s25))^(\[Epsilon])*Gamma[1-\[Epsilon]]^2*Gamma[\[Epsilon]]/Gamma[2-2*\[Epsilon]]
+
+
+
+INT[RLO, 1, 0, 0, 1, 0] =
+
+I/(16*\[Pi]^2)*(4*\[Pi]*\[Mu]02/(-s-s15-s25))^(\[Epsilon])*Gamma[1-\[Epsilon]]^2*Gamma[\[Epsilon]]/Gamma[2-2*\[Epsilon]]
+
+
+
+INT[RLO, 1, 0, 1, 0, 0] =
+
+I/(16*\[Pi]^2)*(4*\[Pi]*\[Mu]02/(-s))^(\[Epsilon])*Gamma[1-\[Epsilon]]^2*Gamma[\[Epsilon]]/Gamma[2-2*\[Epsilon]]
+
+
+
+INT[RLOx12, 0, 1, 0, 1, 0] =
+
+I/(16*\[Pi]^2)*(4*\[Pi]*\[Mu]02/(-s15))^(\[Epsilon])*Gamma[1-\[Epsilon]]^2*Gamma[\[Epsilon]]/Gamma[2-2*\[Epsilon]]
+
+
+
+INT[RLO, 1, 1, 1, 1, 0] =
+
+I*(4*\[Pi])^(\[Epsilon])/(16*\[Pi]^2)*Gamma[1-\[Epsilon]]^2*Gamma[1+\[Epsilon]]/Gamma[1-2*\[Epsilon]]/(4*SP[p1,p2]*SP[p2,p5])*(2/(\[Epsilon])^2*((\[Mu]02/(-s))^(\[Epsilon])+(\[Mu]02/(-s25))^(\[Epsilon])-(\[Mu]02/(-s-s15-s25))^(\[Epsilon]))-2*PolyLog[2,1-(SP[p1,p2]+SP[p1,p5]+SP[p2,p5])/SP[p1,p2]]-2*PolyLog[2,1-(SP[p1,p2]+SP[p1,p5]+SP[p2,p5])/SP[p2,p5]]-Log[SP[p1,p2]/SP[p2,p5]]^2-\[Pi]^2/3)
+
+
+
+INT[RLOx12, 1, 1, 1, 1, 0] =
+
+I*(4*\[Pi])^(\[Epsilon])/(16*\[Pi]^2)*Gamma[1-\[Epsilon]]^2*Gamma[1+\[Epsilon]]/Gamma[1-2*\[Epsilon]]/(4*SP[p1,p2]*SP[p1,p5])*(2/(\[Epsilon])^2*((\[Mu]02/(-s))^(\[Epsilon])+(\[Mu]02/(-s15))^(\[Epsilon])-(\[Mu]02/(-s-s15-s25))^(\[Epsilon]))-2*PolyLog[2,1-(SP[p1,p2]+SP[p1,p5]+SP[p2,p5])/SP[p1,p2]]-2*PolyLog[2,1-(SP[p1,p2]+SP[p1,p5]+SP[p2,p5])/SP[p1,p5]]-Log[SP[p1,p2]/SP[p1,p5]]^2-\[Pi]^2/3)
+
+
+
+INT[RLOx125, 1, 1, 1, 1, 0] =
+
+I*(4*\[Pi])^(\[Epsilon])/(16*\[Pi]^2)*Gamma[1-\[Epsilon]]^2*Gamma[1+\[Epsilon]]/Gamma[1-2*\[Epsilon]]/(4*SP[p1,p5]*SP[p2,p5])*(2/(\[Epsilon])^2*((\[Mu]02/(-s15))^(\[Epsilon])+(\[Mu]02/(-s25))^(\[Epsilon])-(\[Mu]02/(-s-s15-s25))^(\[Epsilon]))-2*PolyLog[2,1-(SP[p1,p2]+SP[p1,p5]+SP[p2,p5])/SP[p2,p5]]-2*PolyLog[2,1-(SP[p1,p2]+SP[p1,p5]+SP[p2,p5])/SP[p1,p5]]-Log[SP[p2,p5]/SP[p1,p5]]^2-\[Pi]^2/3)
+
+
+
+
+
+

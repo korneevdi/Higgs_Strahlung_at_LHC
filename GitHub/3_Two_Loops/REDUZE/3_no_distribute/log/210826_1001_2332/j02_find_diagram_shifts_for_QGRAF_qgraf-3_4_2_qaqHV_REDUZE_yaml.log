@@ -1,0 +1,198 @@
+
+Date: Thu Aug 26 10:01:24 2021
+
+
+conditional: false
+qgraf_file: ../../QGRAF/qgraf-3.4.2/qaqHV_REDUZE.yaml
+output_file: tmp/reduze_qaqHV_noalt.yaml
+info_file_form: shifts/reduze_qaqHV_noalt.shift
+names:
+  []
+minimize_graphs_by_twists: true
+amputate_external_legs: false
+join_external_legs: false
+kinematics: ""
+
+Read diagrams from file '../../QGRAF/qgraf-3.4.2/qaqHV_REDUZE.yaml'
+Reading diagrams from file: ../../QGRAF/qgraf-3.4.2/qaqHV_REDUZE.yaml
+rename negative field indices
+Loaded diagram 1
+rename negative field indices
+Loaded diagram 2
+rename negative field indices
+Loaded diagram 3
+rename negative field indices
+Loaded diagram 4
+rename negative field indices
+Loaded diagram 5
+rename negative field indices
+Loaded diagram 6
+rename negative field indices
+Loaded diagram 7
+rename negative field indices
+Loaded diagram 8
+rename negative field indices
+Loaded diagram 9
+rename negative field indices
+Loaded diagram 10
+rename negative field indices
+Loaded diagram 11
+rename negative field indices
+Loaded diagram 12
+rename negative field indices
+Loaded diagram 13
+rename negative field indices
+Loaded diagram 14
+rename negative field indices
+Loaded diagram 15
+rename negative field indices
+Loaded diagram 16
+rename negative field indices
+Loaded diagram 17
+rename negative field indices
+Loaded diagram 18
+rename negative field indices
+Loaded diagram 19
+rename negative field indices
+Loaded diagram 20
+Diagrams loaded. Time: 0.03s
+  preparing graphs:
+  ..................................................  **************************************************
+Loaded 20 diagrams.
+Finding sectors and their graphs to match with diagrams:
+Finding graphs of shift target sectors from integral family T1:
+Finding shift targets (with graph and canonical label):
+  finding graphs: (twists on / construct minimal off)
+  ..................................................  **************************************************
+Finding graphs of shift target sectors from integral family T2:
+Finding shift targets (with graph and canonical label):
+  finding graphs: (twists on / construct minimal off)
+  ..................................................  **************************************************
+
+Matching diagrams:
+Analyzing diagram 01
+
+x  => matched diagram 01 to sector (T1:4:86)
+     via shift: {k1==k1+p1,k2==-k2+k1}
+
+Analyzing diagram 02
+x  => matched diagram 02 to sector (T1:4:86)
+     via shift: {k1==k1+p1,k2==-k2+k1}
+
+Analyzing diagram 05
+x  => matched diagram 05 to sector (T1:4:54)
+     via shift: {k1==k2+p1,k2==k1+p1}
+
+Analyzing diagram 06
+x  => matched diagram 06 to sector (T1:4:54)
+     via shift: {k1==k2+p1,k2==k1+p1}
+
+Analyzing diagram 03
+x  => matched diagram 03 to sector (T1:5:118)
+     via shift: {k1==-k2+p2,k2==-k2+k1}
+
+Analyzing diagram 04
+x  => matched diagram 04 to sector (T1:5:118)
+     via shift: {k1==-k2+p2,k2==-k2+k1}
+
+Analyzing diagram 07
+x  => matched diagram 07 to sector (T1:5:79)
+     via shift: {k1==-k1,k2==-k2}
+
+Analyzing diagram 08
+x  => matched diagram 08 to sector (T1:5:79)
+     via shift: {k1==-k1,k2==-k2}
+
+Analyzing diagram 14
+x  => matched diagram 14 to sector (T1:5:87)
+     via shift: {k1==-k1,k2==-k2+k1}
+
+Analyzing diagram 15
+x  => matched diagram 15 to sector (T1x12:5:87)
+     via shift: {k1==-k1,k2==-k2+k1}
+
+Analyzing diagram 19
+x  => matched diagram 19 to sector (T1:5:55)
+     via shift: {k1==-k1,k2==k2+p1}
+
+Analyzing diagram 20
+x  => matched diagram 20 to sector (T1:5:55)
+     via shift: {k1==-k1,k2==k2+p1}
+
+Analyzing diagram 09
+x  => matched diagram 09 to sector (T1:6:95)
+     via shift: {k1==-k2,k2==k1}
+
+Analyzing diagram 10
+x  => matched diagram 10 to sector (T1:6:95)
+     via shift: {k1==-k2,k2==k1}
+
+Analyzing diagram 11
+x  => matched diagram 11 to sector (T1x12:6:95)
+     via shift: {k1==-k2,k2==k1}
+
+Analyzing diagram 12
+x  => matched diagram 12 to sector (T1x12:6:95)
+     via shift: {k1==-k2,k2==k1}
+
+Analyzing diagram 13
+x  => matched diagram 13 to sector (T2:6:63)
+     via shift: {k1==k1+p1,k2==k2}
+
+Analyzing diagram 16
+x  => matched diagram 16 to sector (T1:6:119)
+     via shift: {k1==-k1,k2==-k2+k1}
+
+Analyzing diagram 17
+x  => matched diagram 17 to sector (T1:6:119)
+     via shift: {k1==-k1,k2==-k2+k1}
+
+Analyzing diagram 18
+x  => matched diagram 18 to sector (T1:6:119)
+     via shift: {k1==-k1,k2==-k2+k1}
+
+Finalizing output file tmp/reduze_qaqHV_noalt.yaml
+
+Unmatched diagrams: 0
+
+Matched diagrams: 20
+
+Sectors: 11
+family T1:
+t = 4: 54 86 
+t = 5: 55 79 87 
+family T1x12:
+t = 5: 87 
+family T1:
+t = 5: 118 
+t = 6: 95 
+family T1x12:
+t = 6: 95 
+family T1:
+t = 6: 119 
+family T2:
+t = 6: 63 
+Determining compact recursive sector selection
+
+This selection of sectors should be reduced for the matched diagrams:
+-
+  -
+    - sector_selection:
+        select_all: false
+        select:
+          []
+        select_recursively:
+          - [T2, 63]
+          - [T1, 119]
+          - [T1, 95]
+        deselect:
+          []
+        deselect_recursively:
+          []
+        deselect_independents:
+          []
+        deselect_graphless: false
+        deselect_graphs: false
+        t_restriction: [-1, -1]
+
+Job done (total time: 1 s)

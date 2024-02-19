@@ -1,0 +1,503 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     21201,        493]
+NotebookOptionsPosition[     20911,        480]
+NotebookOutlinePosition[     21245,        495]
+CellTagsIndexPosition[     21202,        492]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"epsm2", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"Series", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{"finremNLO", "//.", 
+              RowBox[{"{", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"\[Delta]cVH11", "\[RuleDelayed]", 
+                 RowBox[{
+                  RowBox[{
+                   SuperscriptBox["\[Epsilon]", 
+                    RowBox[{"-", "2"}]], "\[Delta]cVH11m2"}], "+", 
+                  RowBox[{
+                   SuperscriptBox["\[Epsilon]", 
+                    RowBox[{"-", "1"}]], "\[Delta]cVH11m1"}]}]}], ",", 
+                "\[IndentingNewLine]", 
+                RowBox[{"\[Delta]cVH21", "\[RuleDelayed]", 
+                 RowBox[{
+                  RowBox[{
+                   SuperscriptBox["\[Epsilon]", 
+                    RowBox[{"-", "2"}]], "\[Delta]cVH21m2"}], "+", 
+                  RowBox[{
+                   SuperscriptBox["\[Epsilon]", 
+                    RowBox[{"-", "1"}]], "\[Delta]cVH21m1"}]}]}], ",", 
+                "\[IndentingNewLine]", 
+                RowBox[{"\[Delta]cVH12", "\[RuleDelayed]", 
+                 RowBox[{
+                  RowBox[{
+                   SuperscriptBox["\[Epsilon]", 
+                    RowBox[{"-", "4"}]], "\[Delta]cVH12m4"}], "+", 
+                  RowBox[{
+                   SuperscriptBox["\[Epsilon]", 
+                    RowBox[{"-", "3"}]], "\[Delta]cVH12m3"}], "+", 
+                  RowBox[{
+                   SuperscriptBox["\[Epsilon]", 
+                    RowBox[{"-", "2"}]], "\[Delta]cVH12m2"}], "+", 
+                  RowBox[{
+                   SuperscriptBox["\[Epsilon]", 
+                    RowBox[{"-", "1"}]], "\[Delta]cVH12m1"}]}]}], ",", 
+                "\[IndentingNewLine]", 
+                RowBox[{"\[Delta]cVH22", "\[RuleDelayed]", 
+                 RowBox[{
+                  RowBox[{
+                   SuperscriptBox["\[Epsilon]", 
+                    RowBox[{"-", "4"}]], "\[Delta]cVH22m4"}], "+", 
+                  RowBox[{
+                   SuperscriptBox["\[Epsilon]", 
+                    RowBox[{"-", "3"}]], "\[Delta]cVH22m3"}], "+", 
+                  RowBox[{
+                   SuperscriptBox["\[Epsilon]", 
+                    RowBox[{"-", "2"}]], "\[Delta]cVH22m2"}], "+", 
+                  RowBox[{
+                   SuperscriptBox["\[Epsilon]", 
+                    RowBox[{"-", "1"}]], "\[Delta]cVH22m1"}]}]}]}], 
+               "\[IndentingNewLine]", "}"}]}], "//.", "counterm1m1"}], "//.", 
+            "counterm1m2"}], "//.", 
+           RowBox[{"{", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"INT", "[", 
+               RowBox[{
+               "RLO", ",", "0", ",", "1", ",", "0", ",", "1", ",", "0"}], 
+               "]"}], "\[RuleDelayed]", 
+              RowBox[{"(", 
+               FractionBox[
+                RowBox[{"\[ImaginaryI]", " ", 
+                 SuperscriptBox["minus25over\[Mu]02", 
+                  RowBox[{"-", "\[Epsilon]"}]], " ", 
+                 SuperscriptBox["PI4", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "+", "\[Epsilon]"}]], " ", 
+                 SuperscriptBox[
+                  RowBox[{"Gamma", "[", 
+                   RowBox[{"1", "-", "\[Epsilon]"}], "]"}], "2"], " ", 
+                 RowBox[{"Gamma", "[", "\[Epsilon]", "]"}]}], 
+                RowBox[{"Gamma", "[", 
+                 RowBox[{"2", "-", 
+                  RowBox[{"2", " ", "\[Epsilon]"}]}], "]"}]], ")"}]}], ",", 
+             "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"INT", "[", 
+               RowBox[{
+               "RLO", ",", "1", ",", "0", ",", "0", ",", "1", ",", "0"}], 
+               "]"}], "\[RuleDelayed]", 
+              RowBox[{"(", 
+               FractionBox[
+                RowBox[{"\[ImaginaryI]", " ", 
+                 SuperscriptBox["minus125over\[Mu]02", 
+                  RowBox[{"-", "\[Epsilon]"}]], " ", 
+                 SuperscriptBox["PI4", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "+", "\[Epsilon]"}]], " ", 
+                 SuperscriptBox[
+                  RowBox[{"Gamma", "[", 
+                   RowBox[{"1", "-", "\[Epsilon]"}], "]"}], "2"], " ", 
+                 RowBox[{"Gamma", "[", "\[Epsilon]", "]"}]}], 
+                RowBox[{"Gamma", "[", 
+                 RowBox[{"2", "-", 
+                  RowBox[{"2", " ", "\[Epsilon]"}]}], "]"}]], ")"}]}], ",", 
+             "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"INT", "[", 
+               RowBox[{
+               "RLO", ",", "1", ",", "0", ",", "1", ",", "0", ",", "0"}], 
+               "]"}], "\[RuleDelayed]", 
+              RowBox[{"(", 
+               FractionBox[
+                RowBox[{"\[ImaginaryI]", " ", 
+                 SuperscriptBox["minus12over\[Mu]02", 
+                  RowBox[{"-", "\[Epsilon]"}]], " ", 
+                 SuperscriptBox["PI4", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "+", "\[Epsilon]"}]], " ", 
+                 SuperscriptBox[
+                  RowBox[{"Gamma", "[", 
+                   RowBox[{"1", "-", "\[Epsilon]"}], "]"}], "2"], " ", 
+                 RowBox[{"Gamma", "[", "\[Epsilon]", "]"}]}], 
+                RowBox[{"Gamma", "[", 
+                 RowBox[{"2", "-", 
+                  RowBox[{"2", " ", "\[Epsilon]"}]}], "]"}]], ")"}]}], ",", 
+             "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"INT", "[", 
+               RowBox[{
+               "RLOx12", ",", "0", ",", "1", ",", "0", ",", "1", ",", "0"}], 
+               "]"}], "\[RuleDelayed]", 
+              RowBox[{"(", 
+               FractionBox[
+                RowBox[{"\[ImaginaryI]", " ", 
+                 SuperscriptBox["minus15over\[Mu]02", 
+                  RowBox[{"-", "\[Epsilon]"}]], " ", 
+                 SuperscriptBox["PI4", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "+", "\[Epsilon]"}]], " ", 
+                 SuperscriptBox[
+                  RowBox[{"Gamma", "[", 
+                   RowBox[{"1", "-", "\[Epsilon]"}], "]"}], "2"], " ", 
+                 RowBox[{"Gamma", "[", "\[Epsilon]", "]"}]}], 
+                RowBox[{"Gamma", "[", 
+                 RowBox[{"2", "-", 
+                  RowBox[{"2", " ", "\[Epsilon]"}]}], "]"}]], ")"}]}], ",", 
+             "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"INT", "[", 
+               RowBox[{
+               "RLO", ",", "1", ",", "1", ",", "1", ",", "1", ",", "0"}], 
+               "]"}], "\[RuleDelayed]", 
+              RowBox[{
+               RowBox[{
+                FractionBox["INTMEAS", 
+                 RowBox[{"4", 
+                  RowBox[{"SP", "[", 
+                   RowBox[{"p1", ",", "p2"}], "]"}], 
+                  RowBox[{"SP", "[", 
+                   RowBox[{"p2", ",", "p5"}], "]"}]}]], 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   FractionBox["2", 
+                    SuperscriptBox["\[Epsilon]", "2"]], 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"minus12over\[Mu]02", "^", 
+                    RowBox[{"-", "\[Epsilon]"}]}], "+", 
+                    RowBox[{"minus25over\[Mu]02", "^", 
+                    RowBox[{"-", "\[Epsilon]"}]}], "-", 
+                    RowBox[{"minus125over\[Mu]02", "^", 
+                    RowBox[{"-", "\[Epsilon]"}]}]}], ")"}]}], "-", 
+                  RowBox[{"2", 
+                   RowBox[{"PolyLog", "[", 
+                    RowBox[{"2", ",", 
+                    RowBox[{"1", "-", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p2"}], "]"}], "+", 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p5"}], "]"}], "+", 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p2", ",", "p5"}], "]"}]}], 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p2"}], "]"}]]}]}], "]"}]}], "-", 
+                  RowBox[{"2", 
+                   RowBox[{"PolyLog", "[", 
+                    RowBox[{"2", ",", 
+                    RowBox[{"1", "-", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p2"}], "]"}], "+", 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p5"}], "]"}], "+", 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p2", ",", "p5"}], "]"}]}], 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p2", ",", "p5"}], "]"}]]}]}], "]"}]}], "-", 
+                  RowBox[{
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p2"}], "]"}], 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p2", ",", "p5"}], "]"}]], "]"}], "^", "2"}], "-", 
+                  FractionBox[
+                   RowBox[{"\[Pi]", "^", "2"}], "3"]}], ")"}]}], "+", 
+               RowBox[{"ERRORRLO11110", " ", 
+                SuperscriptBox["\[Epsilon]", "1"]}]}]}], ",", 
+             "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"INT", "[", 
+               RowBox[{
+               "RLOx12", ",", "1", ",", "1", ",", "1", ",", "1", ",", "0"}], 
+               "]"}], "\[RuleDelayed]", 
+              RowBox[{
+               RowBox[{
+                FractionBox["INTMEAS", 
+                 RowBox[{"4", 
+                  RowBox[{"SP", "[", 
+                   RowBox[{"p1", ",", "p2"}], "]"}], 
+                  RowBox[{"SP", "[", 
+                   RowBox[{"p1", ",", "p5"}], "]"}]}]], 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   FractionBox["2", 
+                    SuperscriptBox["\[Epsilon]", "2"]], 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"minus12over\[Mu]02", "^", 
+                    RowBox[{"-", "\[Epsilon]"}]}], "+", 
+                    RowBox[{"minus15over\[Mu]02", "^", 
+                    RowBox[{"-", "\[Epsilon]"}]}], "-", 
+                    RowBox[{"minus125over\[Mu]02", "^", 
+                    RowBox[{"-", "\[Epsilon]"}]}]}], ")"}]}], "-", 
+                  RowBox[{"2", 
+                   RowBox[{"PolyLog", "[", 
+                    RowBox[{"2", ",", 
+                    RowBox[{"1", "-", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p2"}], "]"}], "+", 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p5"}], "]"}], "+", 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p2", ",", "p5"}], "]"}]}], 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p2"}], "]"}]]}]}], "]"}]}], "-", 
+                  RowBox[{"2", 
+                   RowBox[{"PolyLog", "[", 
+                    RowBox[{"2", ",", 
+                    RowBox[{"1", "-", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p2"}], "]"}], "+", 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p5"}], "]"}], "+", 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p2", ",", "p5"}], "]"}]}], 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p5"}], "]"}]]}]}], "]"}]}], "-", 
+                  RowBox[{
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p2"}], "]"}], 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p5"}], "]"}]], "]"}], "^", "2"}], "-", 
+                  FractionBox[
+                   RowBox[{"\[Pi]", "^", "2"}], "3"]}], ")"}]}], "+", 
+               RowBox[{"ERRORRLOx1211110", " ", 
+                SuperscriptBox["\[Epsilon]", "1"]}]}]}], ",", 
+             "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"INT", "[", 
+               RowBox[{
+               "RLOx125", ",", "1", ",", "1", ",", "1", ",", "1", ",", "0"}], 
+               "]"}], "\[RuleDelayed]", 
+              RowBox[{
+               RowBox[{
+                FractionBox["INTMEAS", 
+                 RowBox[{"4", 
+                  RowBox[{"SP", "[", 
+                   RowBox[{"p2", ",", "p5"}], "]"}], 
+                  RowBox[{"SP", "[", 
+                   RowBox[{"p1", ",", "p5"}], "]"}]}]], 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   FractionBox["2", 
+                    SuperscriptBox["\[Epsilon]", "2"]], 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"minus25over\[Mu]02", "^", 
+                    RowBox[{"-", "\[Epsilon]"}]}], "+", 
+                    RowBox[{"minus15over\[Mu]02", "^", 
+                    RowBox[{"-", "\[Epsilon]"}]}], "-", 
+                    RowBox[{"minus125over\[Mu]02", "^", 
+                    RowBox[{"-", "\[Epsilon]"}]}]}], ")"}]}], "-", 
+                  RowBox[{"2", 
+                   RowBox[{"PolyLog", "[", 
+                    RowBox[{"2", ",", 
+                    RowBox[{"1", "-", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p2"}], "]"}], "+", 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p5"}], "]"}], "+", 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p2", ",", "p5"}], "]"}]}], 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p2", ",", "p5"}], "]"}]]}]}], "]"}]}], "-", 
+                  RowBox[{"2", 
+                   RowBox[{"PolyLog", "[", 
+                    RowBox[{"2", ",", 
+                    RowBox[{"1", "-", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p2"}], "]"}], "+", 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p5"}], "]"}], "+", 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p2", ",", "p5"}], "]"}]}], 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p5"}], "]"}]]}]}], "]"}]}], "-", 
+                  RowBox[{
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p2", ",", "p5"}], "]"}], 
+                    RowBox[{"SP", "[", 
+                    RowBox[{"p1", ",", "p5"}], "]"}]], "]"}], "^", "2"}], "-", 
+                  FractionBox[
+                   RowBox[{"\[Pi]", "^", "2"}], "3"]}], ")"}]}], "+", 
+               RowBox[{"ERRORRLOx12511110", " ", 
+                SuperscriptBox["\[Epsilon]", "1"]}]}]}]}], 
+            "\[IndentingNewLine]", "}"}]}], "//.", 
+          RowBox[{"{", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"INTMEAS", "\[RuleDelayed]", 
+             FractionBox[
+              RowBox[{"\[ImaginaryI]", " ", 
+               SuperscriptBox[
+                RowBox[{"(", "PI4", ")"}], 
+                RowBox[{
+                 RowBox[{"-", "2"}], "+", "\[Epsilon]"}]], " ", 
+               SuperscriptBox[
+                RowBox[{"Gamma", "[", 
+                 RowBox[{"1", "-", "\[Epsilon]"}], "]"}], "2"], " ", 
+               RowBox[{"Gamma", "[", 
+                RowBox[{"1", "+", "\[Epsilon]"}], "]"}]}], 
+              RowBox[{"Gamma", "[", 
+               RowBox[{"1", "-", 
+                RowBox[{"2", " ", "\[Epsilon]"}]}], "]"}]]}], ",", 
+            RowBox[{"S\[Epsilon]", "\[RuleDelayed]", 
+             RowBox[{
+              RowBox[{"PI4", "^", "\[Epsilon]"}], " ", 
+              RowBox[{"Exp", "[", 
+               RowBox[{
+                RowBox[{"-", "\[Epsilon]"}], " ", "EulerGamma"}], "]"}]}]}]}],
+            "\[IndentingNewLine]", "}"}]}], "//.", 
+         RowBox[{"{", 
+          RowBox[{"dim", "\[RuleDelayed]", 
+           RowBox[{"4", "-", 
+            RowBox[{"2", "\[Epsilon]"}]}]}], "}"}]}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\[Epsilon]", ",", "0", ",", 
+          RowBox[{"-", "2"}]}], "}"}]}], "]"}], "//.", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"PI4", "\[RuleDelayed]", 
+         RowBox[{"4", "\[Pi]"}]}], ",", 
+        RowBox[{"CA", "\[RuleDelayed]", "Nc"}], ",", 
+        RowBox[{"CF", "\[RuleDelayed]", 
+         RowBox[{"TR", 
+          FractionBox[
+           RowBox[{
+            RowBox[{"Nc", "^", "2"}], "-", "1"}], "Nc"]}]}], ",", 
+        RowBox[{"TR", "\[RuleDelayed]", 
+         FractionBox["1", "2"]}]}], "}"}]}], "//.", 
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Log", "[", 
+         RowBox[{"-", "s12over\[Mu]2"}], "]"}], "\[RuleDelayed]", 
+        RowBox[{"Log", "[", "minus12over\[Mu]2", "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Log", "[", 
+         RowBox[{"-", "s15over\[Mu]2"}], "]"}], "\[RuleDelayed]", 
+        RowBox[{"Log", "[", "minus15over\[Mu]2", "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Log", "[", 
+         RowBox[{"-", "s25over\[Mu]2"}], "]"}], "\[RuleDelayed]", 
+        RowBox[{"Log", "[", "minus25over\[Mu]2", "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Log", "[", 
+         RowBox[{"-", "s125over\[Mu]2"}], "]"}], "\[RuleDelayed]", 
+        RowBox[{"Log", "[", "minus125over\[Mu]2", "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Log", "[", "minus12over\[Mu]02", "]"}], "\[RuleDelayed]", 
+        RowBox[{
+         RowBox[{"Log", "[", "\[Mu]2over\[Mu]02", "]"}], "+", 
+         RowBox[{"Log", "[", "minus12over\[Mu]2", "]"}]}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Log", "[", "minus15over\[Mu]02", "]"}], "\[RuleDelayed]", 
+        RowBox[{
+         RowBox[{"Log", "[", "\[Mu]2over\[Mu]02", "]"}], "+", 
+         RowBox[{"Log", "[", "minus15over\[Mu]2", "]"}]}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Log", "[", "minus25over\[Mu]02", "]"}], "\[RuleDelayed]", 
+        RowBox[{
+         RowBox[{"Log", "[", "\[Mu]2over\[Mu]02", "]"}], "+", 
+         RowBox[{"Log", "[", "minus25over\[Mu]2", "]"}]}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Log", "[", "minus125over\[Mu]02", "]"}], "\[RuleDelayed]", 
+        RowBox[{
+         RowBox[{"Log", "[", "\[Mu]2over\[Mu]02", "]"}], "+", 
+         RowBox[{"Log", "[", "minus125over\[Mu]2", "]"}]}]}]}], 
+      "\[IndentingNewLine]", "}"}]}], "//", "FullSimplify"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"%", "[", 
+  RowBox[{"[", 
+   RowBox[{"1", ";;", "8"}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.862811950113153*^9, 3.862812154850399*^9}, {
+   3.8628121956307697`*^9, 3.862812254577526*^9}, {3.8628125501264677`*^9, 
+   3.862812550202271*^9}, {3.862812629832965*^9, 3.862812635146772*^9}, {
+   3.862812703130887*^9, 3.862812703204393*^9}, {3.862813146092017*^9, 
+   3.862813162628275*^9}, {3.862814065297243*^9, 3.862814067245648*^9}, {
+   3.862814099176517*^9, 3.862814109859756*^9}, {3.8628142280492077`*^9, 
+   3.8628143699867373`*^9}, {3.864272996716408*^9, 3.864272998731947*^9}, {
+   3.864289058639184*^9, 3.864289177495489*^9}, {3.864289212989233*^9, 
+   3.864289249877392*^9}, {3.864289350753007*^9, 3.864289354695614*^9}, {
+   3.864289387302023*^9, 3.8642895745811443`*^9}, {3.864289606000218*^9, 
+   3.864289626479083*^9}, {3.864289799306526*^9, 3.864289826049*^9}, 
+   3.864293808777753*^9, 3.864308731130534*^9, {3.8643087693136*^9, 
+   3.864308833376503*^9}, {3.8643089177151613`*^9, 3.864308973086994*^9}, {
+   3.864309161361247*^9, 3.8643091711927347`*^9}, {3.864309603785574*^9, 
+   3.864309658905847*^9}, {3.865499514046962*^9, 3.8654995278064623`*^9}},
+ Background->RGBColor[
+  0.88, 1, 0.88],ExpressionUUID->"d9ce93ad-976c-4795-9b15-b5ce0fc2fcec"]
+},
+WindowSize->{1920, 1080},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 20349, 458, 1039, "Input",ExpressionUUID->"d9ce93ad-976c-4795-9b15-b5ce0fc2fcec"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

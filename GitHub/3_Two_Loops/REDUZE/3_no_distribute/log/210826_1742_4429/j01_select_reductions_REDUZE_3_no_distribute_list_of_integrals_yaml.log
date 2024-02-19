@@ -1,0 +1,29 @@
+
+Date: Thu Aug 26 17:42:44 2021
+
+
+conditional: false
+input_file: ../../REDUZE/3_no_distribute/list_of_integrals.yaml
+output_file: masters_tmp/tmp/AMP_MI.sol
+notfound_file: masters_tmp/MI_NF.rest
+preferred_masters_file: ""
+generate_crossed: false
+
+Finding selected integrals
+Reading integrals from file "../../REDUZE/3_no_distribute/list_of_integrals.yaml"
+Using integral family T1 (id reset to 1)
+Loading crossings from file ./sectormappings/crossings.yaml
+Crossing equivalence: '' -> ''
+using crossing x12 (invs: {t==-t+mw^2-s+mh^2}, mom: {p2==p1,p1==p2})
+Crossing equivalence: 'x12' -> 'x12'
+Crossing equivalence: '' -> ''
+Loaded crossings for kinematics ''
+Loaded crossings for 1 kinematics
+Done loading crossings
+  generated crossed integral family T1x12 (id set to 2)
+Using integral family T2 (id reset to 3)
+  generated crossed integral family T2x12 (id set to 4)
+Done loading integral families
+Solutions for 549 different integrals requested
+Finding crossing equivalences
+Opening output file 'masters_tmp/tmp/AMP_MI.sol'

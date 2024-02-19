@@ -1,0 +1,15 @@
+iM[RR,LL,RL] =
+
+          + (4*D*CF^2*gw*gs^2)/((p3+p4)^2-MV^2) *((HEL[angle,p1,p2]*HEL[square,p2,p4]*HEL[angle,p3,p6])/(HEL[angle,p1,p5]*HEL[square,p1,p6]*HEL[angle,p2,p5]) + (HEL[angle,p3,p6]*HEL[square,p4,p5])/(HEL[square,p1,p6]*HEL[angle,p2,p5])) +
+
+          + (4*D*CF^2*gw*gs^2)/((p3+p4)^2-MV^2) * 1/(s15+s16+s56) * ((HEL[angle,p1,p3]*HEL[square,p1,p5]*HEL[angle,p1,p6]*HEL[square,p2,p4])/(HEL[angle,p1,p5]*HEL[square,p1,p6]) - (HEL[angle,p1,p6]*HEL[square,p2,p4]*HEL[angle,p3,p6]*HEL[square,p5,p6])/(HEL[angle,p1,p5]*HEL[square,p1,p6])) +
+
+          + (4*D*CF^2*gw*gs^2)/((p3+p4)^2-MV^2) * 1/(s25+s26+s56) * ((s *HEL[angle,p1,p3]*HEL[square,p2,p4]*HEL[angle,p2,p6])/(HEL[angle,p1,p5]*HEL[square,p1,p6]*HEL[square,p2,p5]) + (s *HEL[angle,p1,p3]*HEL[square,p4,p5]*HEL[angle,p5,p6])/(HEL[angle,p1,p5]*HEL[square,p1,p6]*HEL[square,p2,p5]) + (s *HEL[angle,p1,p3]*HEL[square,p2,p4]*HEL[square,p2,p5])/(HEL[angle,p1,p5]*HEL[square,p1,p6]*HEL[square,p2,p6]) + (HEL[angle,p1,p3]*HEL[square,p1,p5]*HEL[square,p2,p4]*HEL[angle,p2,p6])/(HEL[square,p1,p6]*HEL[angle,p2,p5]) + (HEL[angle,p1,p3]*HEL[square,p1,p5]*HEL[square,p4,p5]*HEL[angle,p5,p6])/(HEL[square,p1,p6]*HEL[angle,p2,p5]) - (HEL[square,p1,p2]*HEL[angle,p1,p3]*HEL[square,p2,p5]*HEL[square,p4,p5])/(HEL[square,p1,p6]*HEL[square,p2,p6]) - (HEL[square,p1,p2]*HEL[angle,p1,p3]*HEL[angle,p1,p6]*HEL[square,p2,p5]*HEL[square,p4,p6])/(HEL[angle,p1,p5]*HEL[square,p1,p6]*HEL[square,p2,p6])) -
+
+          + (2*D*CF*Nc*gw*gs^2)/((p3+p4)^2-MV^2) * 1/(s15+s16+s56) * ((HEL[square,p1,p5]*HEL[angle,p1,p6]^2HEL[square,p2,p4]*HEL[angle,p3,p5])/(HEL[angle,p1,p5]*HEL[square,p1,p6]*HEL[angle,p5,p6]) + (HEL[angle,p1,p6]^2HEL[square,p2,p4]*HEL[angle,p3,p6])/(HEL[angle,p1,p5]*HEL[angle,p5,p6]) - (HEL[square,p1,p5]*HEL[angle,p1,p6]*HEL[square,p2,p4]*HEL[angle,p3,p6])/(HEL[square,p1,p6]*HEL[angle,p5,p6])) +
+
+          + (2*D*CF*Nc*gw*gs^2)/((p3+p4)^2-MV^2) * 1/(s25+s26+s56) * ((HEL[square,p1,p2]*HEL[angle,p1,p3]*HEL[angle,p1,p6]*HEL[square,p4,p5])/(HEL[angle,p1,p5]*HEL[square,p1,p6]) - (HEL[square,p1,p2]*HEL[angle,p1,p3]*HEL[angle,p1,p6]*HEL[square,p2,p4]*HEL[angle,p2,p6])/(HEL[angle,p1,p5]*HEL[square,p1,p6]*HEL[angle,p5,p6]) + (HEL[angle,p1,p2]*HEL[angle,p1,p3]*HEL[square,p1,p5]*HEL[square,p2,p4]*HEL[square,p2,p5])/(HEL[angle,p1,p5]*HEL[square,p1,p6]*HEL[square,p5,p6]) + (HEL[angle,p1,p3]*HEL[square,p1,p5]*HEL[square,p2,p5]*HEL[square,p4,p5])/(HEL[square,p1,p6]*HEL[square,p5,p6])) +
+
+          - (D*CF*Nc*gw*gs^2)/((p3+p4)^2-MV^2) * (s15-s16-s56)/(s56(s15+s16+s56))(HEL[angle,p1,p3]*HEL[square,p1,p5]*HEL[angle,p1,p6]*HEL[square,p2,p4])/(HEL[angle,p1,p5]*HEL[square,p1,p6]) +
+
+          - (D*CF*Nc*gw*gs^2)/((p3+p4)^2-MV^2) * (s25-s26-s56)/(2s56(s25+s26+s56))(HEL[angle,p1,p3]*HEL[square,p1,p5]*HEL[angle,p1,p6]*HEL[square,p2,p4])/(HEL[angle,p1,p5]*HEL[square,p1,p6])

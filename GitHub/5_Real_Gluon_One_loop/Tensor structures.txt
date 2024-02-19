@@ -1,0 +1,25 @@
+
+STANDARD MODEL
+
+T1 = GAM[d2, mu, d1]*MOM[p1, nu],
+T3 = GAM[d2, nu, d1]*MOM[p1, mu],
+T4 = GAM[d2, nu, d1]*MOM[p2, mu],
+T5 = GAM[d2, nu, d1]*MOM[p5, mu],
+T12 = GAM[d2, p5, d1]*\[Eta][mu, nu],
+T6 = GAM[d2, p5, d1]*MOM[p1, mu]*MOM[p1, nu],
+T8 = GAM[d2, p5, d1]*MOM[p1, nu]*MOM[p2, mu],
+T10 = GAM[d2, p5, d1]*MOM[p1, nu]*MOM[p5, mu],
+
+
+BEYOND THE STANDARD MODEL
+
+T14 = GAM[d2, d1]*MOM[p1, nu]*(-(MOM[p2, mu]*SP[p1, p3]) + MOM[p1, mu]*SP[p2, p3]),
+T16 = GAM[d2, d1]*MOM[p1, nu]*(-(MOM[p5, mu]*SP[p1, p3]) + MOM[p1, mu]*SP[p3, p5]), 
+T23 = MOM[p1, nu]*(GAM[d2, mu, p3, d1] - GAM[d2, d1]*MOM[p3, mu]), 
+T25 = MOM[p1, nu]*(-(GAM[d2, p3, p5, d1]*MOM[p1, mu]) + GAM[d2, mu, p5, d1]*SP[p1, p3]), 
+T27 = MOM[p1, nu]*(-(GAM[d2, p3, p5, d1]*MOM[p2, mu]) + GAM[d2, mu, p5, d1]*SP[p2, p3]),
+T31 = -(GAM[d2, p3, nu, d1]*MOM[p1, mu]) + GAM[d2, mu, nu, d1]*SP[p1, p3],
+T32 = -(GAM[d2, p3, nu, d1]*MOM[p2, mu]) + GAM[d2, mu, nu, d1]*SP[p2, p3],
+T33 = -(GAM[d2, p3, nu, d1]*MOM[p5, mu]) + GAM[d2, mu, nu, d1]*SP[p3, p5],
+T34 = -GAM[d2, nu, p5, d1]*(-(MOM[p2, mu]*SP[p1, p3]) + MOM[p1, mu]*SP[p2, p3]), 
+T35 = -GAM[d2, nu, p5, d1]*(-(MOM[p5, mu]*SP[p1, p3]) + MOM[p1, mu]*SP[p3, p5])

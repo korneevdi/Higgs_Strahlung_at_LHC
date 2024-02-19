@@ -1,0 +1,24 @@
+
+iM[L,R,0] = A * (2 * p3**2 / mV * A1(1, 0) + s12 / (4 * mV) * (mV**2 - p3**2) * A2(1, 0)) * Hel(sq, p2, p1)
+
+iM[R,L,0] = B * (2 * p3**2 / mV * A1(1, 0) + s12 / (4 * mV) * (mV**2 - p3**2) * A2(1, 0)) * Hel(ang, p2, p1)
+
+iM[L,L,0] = C * A3(1, 0) / mV * Hel(ang, p2, r) * Hel(sq, r, p1)
+
+iM[R,R,0] = D * A3(1, 0) / mV * Hel(sq, p2, r) * Hel(ang, r, p1)
+
+iM[L,R,L] = A * (s23 - p3**2) / (2 * sqrt(2)) * A2(1, 0) * Hel(ang, r, p1) * (Hel(sq, p1, p2))**2 / Hel(sq, r, p2)
+
+iM[R,L,L] = B * (8 * A1(1, 0) - s12 * A2(1, 0)) / (2 * sqrt(2)) * Hel(ang, r, p1) * Hel(ang, p2, r)
+
+iM[L,L,L] = C * A3(1, 0) * sqrt(2) * Hel(ang, p2, r) * Hel(sq, p2, p1) / Hel(sq, p2, r)
+
+iM[R,R,L] = 0
+
+iM[L,R,R] = A * (8 * A1(1, 0) - s12 * A2(1, 0)) / (2 * sqrt(2)) * Hel(sq, r, p1) * Hel(sq, p2, r)
+
+iM[R,L,R] = B * (s23 - p3**2) / (2 * sqrt(2)) * A2(1, 0) * Hel(sq, r, p1) * (Hel(ang, p1, p2))**2 / Hel(ang, r, p2)
+
+iM[L,L,R] = 0
+
+iM[R,R,R] = D * A3(1, 0) * sqrt(2) * Hel(sq, p2, r) * Hel(ang, p2, p1) / Hel(ang, p2, r)

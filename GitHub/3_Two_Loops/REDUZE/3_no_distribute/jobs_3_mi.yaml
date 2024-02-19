@@ -1,0 +1,18 @@
+jobs:
+  - print_reduction_info_sectors:
+      conditional: false
+      sector_selection:
+        select_recursively:
+           - [T1, 86]
+           - [T1, 118]
+           - [T1, 54]
+           - [T1, 79]
+           - [T1, 95]
+           - [T1, 111]
+           - [T1, 87]
+           - [T1, 103]
+           - [T1, 119]
+           - [T1, 55]
+           - [T2, 63]
+      check_for_masters: [{r: [0, 6], s: [0, 2]}]
+      masters_file_prefix: "masters_tmp/masters.T."

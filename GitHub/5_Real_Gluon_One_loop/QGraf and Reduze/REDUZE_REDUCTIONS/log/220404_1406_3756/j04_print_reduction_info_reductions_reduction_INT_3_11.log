@@ -1,0 +1,83 @@
+
+Date: Mon Apr  4 14:06:38 2022
+
+
+conditional: false
+input_file: ./reductions/reduction_INT_3_11
+check_for_masters:
+  - {r: [0, 4], s: [0, 2]}
+masters_file: masters_tmp/masters.T.reduction_INT_3_11-rhs
+
+
+Analyzing reduction file ./reductions/reduction_INT_3_11
+
+Number of equations: 429
+Average coefficient length [bytes]: 615
+
+Extracting status of reduction for each r,s point
+Showing statistics for reductions found in each sector
+Number of sectors for which this file provides reductions: 1
+
+
+First table shows the following entries:
+A: Number of all integrals
+B: Number of unreduced integrals
+C: Number of different integrals
+D: Number of different unreduced integrals
+E: Identities are interreduced w.r.t. this file (.) or not (x)
+
+Second table shows different unreduced integrals in r-s diagram
+
+
+(INT:3:11)        A       B       C       D       E
+......................................................
+r=3, s=0:         1       0       1       0       .
+r=3, s=1:         2       0       2       0       .
+r=3, s=2:         3       0       3       0       .
+r=3, s=3:         4       0       4       0       .
+r=3, s=4:         5       5       5       5       .
+r=4, s=0:         3       0       3       0       .
+r=4, s=1:         6       0       6       0       .
+r=4, s=2:         9       0       9       0       .
+r=4, s=3:        12       0      12       0       .
+r=4, s=4:        15       0      15       0       .
+r=5, s=0:         6       0       6       0       .
+r=5, s=1:        12       0      12       0       .
+r=5, s=2:        18       0      18       0       .
+r=5, s=3:        24       0      24       0       .
+r=5, s=4:        30      15      30      15       x
+r=6, s=0:        10       4      10       4       x
+r=6, s=1:        20       8      20       8       x
+r=6, s=2:        30      12      30      12       x
+r=6, s=3:        40      16      40      16       x
+r=6, s=4:        50      20      50      20       x
+
+(INT:3:11)      s=0     s=1     s=2     s=3     s=4
+......................................................
+r=3:             0.      0.      0.      0.      5.
+r=4:             0.      0.      0.      0.      0.
+r=5:             0.      0.      0.      0.     15x
+r=6:             4x      8x     12x     16x     20x
+
+
+Checking (INT:3:11) for masters in range:
+- {r: [0, 4], s: [0, 2]}
+
+Checking 15 rs-points for border
+  on border: 0 2
+  on border: 1 2
+  on border: 2 2
+  on border: 3 2
+  on border: 4 0
+  on border: 4 1
+  on border: 4 2
+Missing information for at least one (r,s) in the range
+
+Integrals appearing on r.h.s. of reductions in the range:
+(INTx125:2:5): 1
+(INT:2:9): 1
+in total: 2
+
+Writing master candidates to file 'masters_tmp/masters.T.reduction_INT_3_11-rhs'
+
+Job done (total time: 0 s)

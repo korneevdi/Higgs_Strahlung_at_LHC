@@ -1,0 +1,1339 @@
+
+Date: Thu Aug 26 10:04:48 2021
+
+Setting up job queue from jobs_1_reduction.yaml
+Updating job queue dependencies
+Processing jobs in serial mode (non-MPI build)
+Loading uncrossed integral families from file ./config/integralfamilies.yaml
+Initialize integral family 'T1'
+Loaded integral family T1
+Initialize integral family 'T2'
+Loaded integral family T2
+Loaded 2 (uncrossed) integral families
+Done loading uncrossed integral families
+Using integral family T1 (id reset to 1)
+Loading crossings from file ./sectormappings/crossings.yaml
+Crossing equivalence: '' -> ''
+using crossing x12 (invs: {t==-t+mw^2-s+mh^2}, mom: {p2==p1,p1==p2})
+Crossing equivalence: 'x12' -> 'x12'
+Crossing equivalence: '' -> ''
+Loaded crossings for kinematics ''
+Loaded crossings for 1 kinematics
+Done loading crossings
+  generated crossed integral family T1x12 (id set to 2)
+Using integral family T2 (id reset to 3)
+  generated crossed integral family T2x12 (id set to 4)
+Done loading integral families
+Inserted new job in queue: job(1): reduce sectors
+Updating job queue dependencies
+Determining sectors in selection
+  normalizing user input
+read key 'sectormappings' in file './sectormappings/sectormappings_T1.yaml'
+Found valid sector mappings for T1
+Considering (T1x12:6:95) instead of (T1:6:111)
+Considering (T1x12:5:87) instead of (T1:5:103)
+read key 'sectormappings' in file './sectormappings/sectormappings_T2.yaml'
+Found valid sector mappings for T2
+  selecting explicit sectors
+  selecting recursively
+  deselecting explicit sectors
+  deselecting recursively
+  deselecting sectors by t restriction
+Resume reduction:       false for sector (T1:3:84)
+Output file readable:   false for sector (T1:3:84)
+Create identities jobs: true for sector (T1:3:84)
+Resume reduction:       false for sector (T1:4:54)
+Output file readable:   false for sector (T1:4:54)
+Create identities jobs: true for sector (T1:4:54)
+Resume reduction:       false for sector (T1:4:78)
+Output file readable:   false for sector (T1:4:78)
+Create identities jobs: true for sector (T1:4:78)
+Resume reduction:       false for sector (T1:4:85)
+Output file readable:   false for sector (T1:4:85)
+Create identities jobs: true for sector (T1:4:85)
+Resume reduction:       false for sector (T1:4:86)
+Output file readable:   false for sector (T1:4:86)
+Create identities jobs: true for sector (T1:4:86)
+Resume reduction:       false for sector (T1:5:55)
+Output file readable:   false for sector (T1:5:55)
+Create identities jobs: true for sector (T1:5:55)
+Resume reduction:       false for sector (T1:5:79)
+Output file readable:   false for sector (T1:5:79)
+Create identities jobs: true for sector (T1:5:79)
+Resume reduction:       false for sector (T1:5:87)
+Output file readable:   false for sector (T1:5:87)
+Create identities jobs: true for sector (T1:5:87)
+Resume reduction:       false for sector (T1:5:93)
+Output file readable:   false for sector (T1:5:93)
+Create identities jobs: true for sector (T1:5:93)
+Resume reduction:       false for sector (T1:5:94)
+Output file readable:   false for sector (T1:5:94)
+Create identities jobs: true for sector (T1:5:94)
+Resume reduction:       false for sector (T1:5:118)
+Output file readable:   false for sector (T1:5:118)
+Create identities jobs: true for sector (T1:5:118)
+Resume reduction:       false for sector (T1:6:95)
+Output file readable:   false for sector (T1:6:95)
+Create identities jobs: true for sector (T1:6:95)
+Resume reduction:       false for sector (T1:6:119)
+Output file readable:   false for sector (T1:6:119)
+Create identities jobs: true for sector (T1:6:119)
+Resume reduction:       false for sector (T2:6:63)
+Output file readable:   false for sector (T2:6:63)
+Create identities jobs: true for sector (T2:6:63)
+Inserted new job in queue: job(2): run reduction for sector (T2:6:63)
+Inserted new job in queue: job(3): generate identities: identities_T2_6_63_sector_symmetries_1_of_1
+Inserted new job in queue: job(4): generate seeds: seeds_T2_6_63_sector_symmetries
+Inserted new job in queue: job(5): generate identities: identities_T2_6_63_lorentz_1_of_1
+Inserted new job in queue: job(6): generate seeds: seeds_T2_6_63_lorentz
+Inserted new job in queue: job(7): generate identities: identities_T2_6_63_ibp_1_of_1
+Inserted new job in queue: job(8): generate seeds: seeds_T2_6_63_ibp
+Inserted new job in queue: job(9): run reduction for sector (T1:6:119)
+Inserted new job in queue: job(10): generate identities: identities_T1_6_119_sector_symmetries_1_of_1
+Inserted new job in queue: job(11): generate seeds: seeds_T1_6_119_sector_symmetries
+Inserted new job in queue: job(12): generate identities: identities_T1_6_119_lorentz_1_of_1
+Inserted new job in queue: job(13): generate seeds: seeds_T1_6_119_lorentz
+Inserted new job in queue: job(14): generate identities: identities_T1_6_119_ibp_1_of_1
+Inserted new job in queue: job(15): generate seeds: seeds_T1_6_119_ibp
+Inserted new job in queue: job(16): apply crossing x12 to ./reductions/reduction_T1_6_95
+Inserted new job in queue: job(17): run reduction for sector (T1:6:95)
+Inserted new job in queue: job(18): generate identities: identities_T1_6_95_sector_symmetries_1_of_1
+Inserted new job in queue: job(19): generate seeds: seeds_T1_6_95_sector_symmetries
+Inserted new job in queue: job(20): generate identities: identities_T1_6_95_lorentz_1_of_1
+Inserted new job in queue: job(21): generate seeds: seeds_T1_6_95_lorentz
+Inserted new job in queue: job(22): generate identities: identities_T1_6_95_ibp_1_of_1
+Inserted new job in queue: job(23): generate seeds: seeds_T1_6_95_ibp
+Inserted new job in queue: job(24): run reduction for sector (T1:5:118)
+Inserted new job in queue: job(25): generate identities: identities_T1_5_118_sector_symmetries_1_of_1
+Inserted new job in queue: job(26): generate seeds: seeds_T1_5_118_sector_symmetries
+Inserted new job in queue: job(27): generate identities: identities_T1_5_118_lorentz_1_of_1
+Inserted new job in queue: job(28): generate seeds: seeds_T1_5_118_lorentz
+Inserted new job in queue: job(29): generate identities: identities_T1_5_118_ibp_2_of_2
+Inserted new job in queue: job(30): generate identities: identities_T1_5_118_ibp_1_of_2
+Inserted new job in queue: job(31): generate seeds: seeds_T1_5_118_ibp
+Inserted new job in queue: job(32): apply crossing x12 to ./reductions/reduction_T1_5_94
+Inserted new job in queue: job(33): run reduction for sector (T1:5:94)
+Inserted new job in queue: job(34): generate identities: identities_T1_5_94_sector_symmetries_1_of_1
+Inserted new job in queue: job(35): generate seeds: seeds_T1_5_94_sector_symmetries
+Inserted new job in queue: job(36): generate identities: identities_T1_5_94_lorentz_1_of_1
+Inserted new job in queue: job(37): generate seeds: seeds_T1_5_94_lorentz
+Inserted new job in queue: job(38): generate identities: identities_T1_5_94_ibp_2_of_2
+Inserted new job in queue: job(39): generate identities: identities_T1_5_94_ibp_1_of_2
+Inserted new job in queue: job(40): generate seeds: seeds_T1_5_94_ibp
+Inserted new job in queue: job(41): run reduction for sector (T1:5:93)
+Inserted new job in queue: job(42): generate identities: identities_T1_5_93_sector_symmetries_1_of_1
+Inserted new job in queue: job(43): generate seeds: seeds_T1_5_93_sector_symmetries
+Inserted new job in queue: job(44): generate identities: identities_T1_5_93_lorentz_1_of_1
+Inserted new job in queue: job(45): generate seeds: seeds_T1_5_93_lorentz
+Inserted new job in queue: job(46): generate identities: identities_T1_5_93_ibp_2_of_2
+Inserted new job in queue: job(47): generate identities: identities_T1_5_93_ibp_1_of_2
+Inserted new job in queue: job(48): generate seeds: seeds_T1_5_93_ibp
+Inserted new job in queue: job(49): apply crossing x12 to ./reductions/reduction_T1_5_87
+Inserted new job in queue: job(50): run reduction for sector (T1:5:87)
+Inserted new job in queue: job(51): generate identities: identities_T1_5_87_sector_symmetries_1_of_1
+Inserted new job in queue: job(52): generate seeds: seeds_T1_5_87_sector_symmetries
+Inserted new job in queue: job(53): generate identities: identities_T1_5_87_lorentz_1_of_1
+Inserted new job in queue: job(54): generate seeds: seeds_T1_5_87_lorentz
+Inserted new job in queue: job(55): generate identities: identities_T1_5_87_ibp_2_of_2
+Inserted new job in queue: job(56): generate identities: identities_T1_5_87_ibp_1_of_2
+Inserted new job in queue: job(57): generate seeds: seeds_T1_5_87_ibp
+Inserted new job in queue: job(58): run reduction for sector (T1:5:79)
+Inserted new job in queue: job(59): generate identities: identities_T1_5_79_sector_symmetries_1_of_1
+Inserted new job in queue: job(60): generate seeds: seeds_T1_5_79_sector_symmetries
+Inserted new job in queue: job(61): generate identities: identities_T1_5_79_lorentz_1_of_1
+Inserted new job in queue: job(62): generate seeds: seeds_T1_5_79_lorentz
+Inserted new job in queue: job(63): generate identities: identities_T1_5_79_ibp_2_of_2
+Inserted new job in queue: job(64): generate identities: identities_T1_5_79_ibp_1_of_2
+Inserted new job in queue: job(65): generate seeds: seeds_T1_5_79_ibp
+Inserted new job in queue: job(66): run reduction for sector (T1:5:55)
+Inserted new job in queue: job(67): generate identities: identities_T1_5_55_sector_symmetries_1_of_1
+Inserted new job in queue: job(68): generate seeds: seeds_T1_5_55_sector_symmetries
+Inserted new job in queue: job(69): generate identities: identities_T1_5_55_lorentz_1_of_1
+Inserted new job in queue: job(70): generate seeds: seeds_T1_5_55_lorentz
+Inserted new job in queue: job(71): generate identities: identities_T1_5_55_ibp_2_of_2
+Inserted new job in queue: job(72): generate identities: identities_T1_5_55_ibp_1_of_2
+Inserted new job in queue: job(73): generate seeds: seeds_T1_5_55_ibp
+Inserted new job in queue: job(74): run reduction for sector (T1:4:86)
+Inserted new job in queue: job(75): generate identities: identities_T1_4_86_sector_symmetries_1_of_1
+Inserted new job in queue: job(76): generate seeds: seeds_T1_4_86_sector_symmetries
+Inserted new job in queue: job(77): generate identities: identities_T1_4_86_lorentz_1_of_1
+Inserted new job in queue: job(78): generate seeds: seeds_T1_4_86_lorentz
+Inserted new job in queue: job(79): generate identities: identities_T1_4_86_ibp_4_of_4
+Inserted new job in queue: job(80): generate identities: identities_T1_4_86_ibp_3_of_4
+Inserted new job in queue: job(81): generate identities: identities_T1_4_86_ibp_2_of_4
+Inserted new job in queue: job(82): generate identities: identities_T1_4_86_ibp_1_of_4
+Inserted new job in queue: job(83): generate seeds: seeds_T1_4_86_ibp
+Inserted new job in queue: job(84): apply crossing x12 to ./reductions/reduction_T1_4_85
+Inserted new job in queue: job(85): run reduction for sector (T1:4:85)
+Inserted new job in queue: job(86): generate identities: identities_T1_4_85_sector_symmetries_1_of_1
+Inserted new job in queue: job(87): generate seeds: seeds_T1_4_85_sector_symmetries
+Inserted new job in queue: job(88): generate identities: identities_T1_4_85_lorentz_1_of_1
+Inserted new job in queue: job(89): generate seeds: seeds_T1_4_85_lorentz
+Inserted new job in queue: job(90): generate identities: identities_T1_4_85_ibp_4_of_4
+Inserted new job in queue: job(91): generate identities: identities_T1_4_85_ibp_3_of_4
+Inserted new job in queue: job(92): generate identities: identities_T1_4_85_ibp_2_of_4
+Inserted new job in queue: job(93): generate identities: identities_T1_4_85_ibp_1_of_4
+Inserted new job in queue: job(94): generate seeds: seeds_T1_4_85_ibp
+Inserted new job in queue: job(95): run reduction for sector (T1:4:78)
+Inserted new job in queue: job(96): generate identities: identities_T1_4_78_sector_symmetries_1_of_1
+Inserted new job in queue: job(97): generate seeds: seeds_T1_4_78_sector_symmetries
+Inserted new job in queue: job(98): generate identities: identities_T1_4_78_lorentz_1_of_1
+Inserted new job in queue: job(99): generate seeds: seeds_T1_4_78_lorentz
+Inserted new job in queue: job(100): generate identities: identities_T1_4_78_ibp_4_of_4
+Inserted new job in queue: job(101): generate identities: identities_T1_4_78_ibp_3_of_4
+Inserted new job in queue: job(102): generate identities: identities_T1_4_78_ibp_2_of_4
+Inserted new job in queue: job(103): generate identities: identities_T1_4_78_ibp_1_of_4
+Inserted new job in queue: job(104): generate seeds: seeds_T1_4_78_ibp
+Inserted new job in queue: job(105): run reduction for sector (T1:4:54)
+Inserted new job in queue: job(106): generate identities: identities_T1_4_54_sector_symmetries_1_of_1
+Inserted new job in queue: job(107): generate seeds: seeds_T1_4_54_sector_symmetries
+Inserted new job in queue: job(108): generate identities: identities_T1_4_54_lorentz_1_of_1
+Inserted new job in queue: job(109): generate seeds: seeds_T1_4_54_lorentz
+Inserted new job in queue: job(110): generate identities: identities_T1_4_54_ibp_4_of_4
+Inserted new job in queue: job(111): generate identities: identities_T1_4_54_ibp_3_of_4
+Inserted new job in queue: job(112): generate identities: identities_T1_4_54_ibp_2_of_4
+Inserted new job in queue: job(113): generate identities: identities_T1_4_54_ibp_1_of_4
+Inserted new job in queue: job(114): generate seeds: seeds_T1_4_54_ibp
+Inserted new job in queue: job(115): run reduction for sector (T1:3:84)
+Inserted new job in queue: job(116): generate identities: identities_T1_3_84_sector_symmetries_1_of_1
+Inserted new job in queue: job(117): generate seeds: seeds_T1_3_84_sector_symmetries
+Inserted new job in queue: job(118): generate identities: identities_T1_3_84_lorentz_1_of_1
+Inserted new job in queue: job(119): generate seeds: seeds_T1_3_84_lorentz
+Inserted new job in queue: job(120): generate identities: identities_T1_3_84_ibp_5_of_5
+Inserted new job in queue: job(121): generate identities: identities_T1_3_84_ibp_4_of_5
+Inserted new job in queue: job(122): generate identities: identities_T1_3_84_ibp_3_of_5
+Inserted new job in queue: job(123): generate identities: identities_T1_3_84_ibp_2_of_5
+Inserted new job in queue: job(124): generate identities: identities_T1_3_84_ibp_1_of_5
+Inserted new job in queue: job(125): generate seeds: seeds_T1_3_84_ibp
+Updated job queue:
+  [p] job(125): generate seeds: seeds_T1_3_84_ibp  [dep: ]
+  [p] job(124): generate identities: identities_T1_3_84_ibp_1_of_5  [dep: 125]
+  [p] job(123): generate identities: identities_T1_3_84_ibp_2_of_5  [dep: 125]
+  [p] job(122): generate identities: identities_T1_3_84_ibp_3_of_5  [dep: 125]
+  [p] job(121): generate identities: identities_T1_3_84_ibp_4_of_5  [dep: 125]
+  [p] job(120): generate identities: identities_T1_3_84_ibp_5_of_5  [dep: 125]
+  [p] job(119): generate seeds: seeds_T1_3_84_lorentz  [dep: ]
+  [p] job(118): generate identities: identities_T1_3_84_lorentz_1_of_1  [dep: 119]
+  [p] job(117): generate seeds: seeds_T1_3_84_sector_symmetries  [dep: ]
+  [p] job(116): generate identities: identities_T1_3_84_sector_symmetries_1_of_1  [dep: 117]
+  [p] job(115): run reduction for sector (T1:3:84)  [dep: 116,118,120,121,122,123,124]
+  [p] job(114): generate seeds: seeds_T1_4_54_ibp  [dep: ]
+  [p] job(113): generate identities: identities_T1_4_54_ibp_1_of_4  [dep: 114]
+  [p] job(112): generate identities: identities_T1_4_54_ibp_2_of_4  [dep: 114]
+  [p] job(111): generate identities: identities_T1_4_54_ibp_3_of_4  [dep: 114]
+  [p] job(110): generate identities: identities_T1_4_54_ibp_4_of_4  [dep: 114]
+  [p] job(109): generate seeds: seeds_T1_4_54_lorentz  [dep: ]
+  [p] job(108): generate identities: identities_T1_4_54_lorentz_1_of_1  [dep: 109]
+  [p] job(107): generate seeds: seeds_T1_4_54_sector_symmetries  [dep: ]
+  [p] job(106): generate identities: identities_T1_4_54_sector_symmetries_1_of_1  [dep: 107]
+  [p] job(105): run reduction for sector (T1:4:54)  [dep: 106,108,110,111,112,113]
+  [p] job(104): generate seeds: seeds_T1_4_78_ibp  [dep: ]
+  [p] job(103): generate identities: identities_T1_4_78_ibp_1_of_4  [dep: 104]
+  [p] job(102): generate identities: identities_T1_4_78_ibp_2_of_4  [dep: 104]
+  [p] job(101): generate identities: identities_T1_4_78_ibp_3_of_4  [dep: 104]
+  [p] job(100): generate identities: identities_T1_4_78_ibp_4_of_4  [dep: 104]
+  [p] job(99):  generate seeds: seeds_T1_4_78_lorentz  [dep: ]
+  [p] job(98):  generate identities: identities_T1_4_78_lorentz_1_of_1  [dep: 99]
+  [p] job(97):  generate seeds: seeds_T1_4_78_sector_symmetries  [dep: ]
+  [p] job(96):  generate identities: identities_T1_4_78_sector_symmetries_1_of_1  [dep: 97]
+  [p] job(95):  run reduction for sector (T1:4:78)  [dep: 96,98,100,101,102,103]
+  [p] job(94):  generate seeds: seeds_T1_4_85_ibp  [dep: ]
+  [p] job(93):  generate identities: identities_T1_4_85_ibp_1_of_4  [dep: 94]
+  [p] job(92):  generate identities: identities_T1_4_85_ibp_2_of_4  [dep: 94]
+  [p] job(91):  generate identities: identities_T1_4_85_ibp_3_of_4  [dep: 94]
+  [p] job(90):  generate identities: identities_T1_4_85_ibp_4_of_4  [dep: 94]
+  [p] job(89):  generate seeds: seeds_T1_4_85_lorentz  [dep: ]
+  [p] job(88):  generate identities: identities_T1_4_85_lorentz_1_of_1  [dep: 89]
+  [p] job(87):  generate seeds: seeds_T1_4_85_sector_symmetries  [dep: ]
+  [p] job(86):  generate identities: identities_T1_4_85_sector_symmetries_1_of_1  [dep: 87]
+  [p] job(85):  run reduction for sector (T1:4:85)  [dep: 86,88,90,91,92,93,115]
+  [p] job(84):  apply crossing x12 to ./reductions/reduction_T1_4_85  [dep: 85]
+  [p] job(83):  generate seeds: seeds_T1_4_86_ibp  [dep: ]
+  [p] job(82):  generate identities: identities_T1_4_86_ibp_1_of_4  [dep: 83]
+  [p] job(81):  generate identities: identities_T1_4_86_ibp_2_of_4  [dep: 83]
+  [p] job(80):  generate identities: identities_T1_4_86_ibp_3_of_4  [dep: 83]
+  [p] job(79):  generate identities: identities_T1_4_86_ibp_4_of_4  [dep: 83]
+  [p] job(78):  generate seeds: seeds_T1_4_86_lorentz  [dep: ]
+  [p] job(77):  generate identities: identities_T1_4_86_lorentz_1_of_1  [dep: 78]
+  [p] job(76):  generate seeds: seeds_T1_4_86_sector_symmetries  [dep: ]
+  [p] job(75):  generate identities: identities_T1_4_86_sector_symmetries_1_of_1  [dep: 76]
+  [p] job(74):  run reduction for sector (T1:4:86)  [dep: 75,77,79,80,81,82,115]
+  [p] job(73):  generate seeds: seeds_T1_5_55_ibp  [dep: ]
+  [p] job(72):  generate identities: identities_T1_5_55_ibp_1_of_2  [dep: 73]
+  [p] job(71):  generate identities: identities_T1_5_55_ibp_2_of_2  [dep: 73]
+  [p] job(70):  generate seeds: seeds_T1_5_55_lorentz  [dep: ]
+  [p] job(69):  generate identities: identities_T1_5_55_lorentz_1_of_1  [dep: 70]
+  [p] job(68):  generate seeds: seeds_T1_5_55_sector_symmetries  [dep: ]
+  [p] job(67):  generate identities: identities_T1_5_55_sector_symmetries_1_of_1  [dep: 68]
+  [p] job(66):  run reduction for sector (T1:5:55)  [dep: 67,69,71,72,105]
+  [p] job(65):  generate seeds: seeds_T1_5_79_ibp  [dep: ]
+  [p] job(64):  generate identities: identities_T1_5_79_ibp_1_of_2  [dep: 65]
+  [p] job(63):  generate identities: identities_T1_5_79_ibp_2_of_2  [dep: 65]
+  [p] job(62):  generate seeds: seeds_T1_5_79_lorentz  [dep: ]
+  [p] job(61):  generate identities: identities_T1_5_79_lorentz_1_of_1  [dep: 62]
+  [p] job(60):  generate seeds: seeds_T1_5_79_sector_symmetries  [dep: ]
+  [p] job(59):  generate identities: identities_T1_5_79_sector_symmetries_1_of_1  [dep: 60]
+  [p] job(58):  run reduction for sector (T1:5:79)  [dep: 59,61,63,64,95]
+  [p] job(57):  generate seeds: seeds_T1_5_87_ibp  [dep: ]
+  [p] job(56):  generate identities: identities_T1_5_87_ibp_1_of_2  [dep: 57]
+  [p] job(55):  generate identities: identities_T1_5_87_ibp_2_of_2  [dep: 57]
+  [p] job(54):  generate seeds: seeds_T1_5_87_lorentz  [dep: ]
+  [p] job(53):  generate identities: identities_T1_5_87_lorentz_1_of_1  [dep: 54]
+  [p] job(52):  generate seeds: seeds_T1_5_87_sector_symmetries  [dep: ]
+  [p] job(51):  generate identities: identities_T1_5_87_sector_symmetries_1_of_1  [dep: 52]
+  [p] job(50):  run reduction for sector (T1:5:87)  [dep: 51,53,55,56,74,85,115]
+  [p] job(49):  apply crossing x12 to ./reductions/reduction_T1_5_87  [dep: 50]
+  [p] job(48):  generate seeds: seeds_T1_5_93_ibp  [dep: ]
+  [p] job(47):  generate identities: identities_T1_5_93_ibp_1_of_2  [dep: 48]
+  [p] job(46):  generate identities: identities_T1_5_93_ibp_2_of_2  [dep: 48]
+  [p] job(45):  generate seeds: seeds_T1_5_93_lorentz  [dep: ]
+  [p] job(44):  generate identities: identities_T1_5_93_lorentz_1_of_1  [dep: 45]
+  [p] job(43):  generate seeds: seeds_T1_5_93_sector_symmetries  [dep: ]
+  [p] job(42):  generate identities: identities_T1_5_93_sector_symmetries_1_of_1  [dep: 43]
+  [p] job(41):  run reduction for sector (T1:5:93)  [dep: 42,44,46,47,84,85,115]
+  [p] job(40):  generate seeds: seeds_T1_5_94_ibp  [dep: ]
+  [p] job(39):  generate identities: identities_T1_5_94_ibp_1_of_2  [dep: 40]
+  [p] job(38):  generate identities: identities_T1_5_94_ibp_2_of_2  [dep: 40]
+  [p] job(37):  generate seeds: seeds_T1_5_94_lorentz  [dep: ]
+  [p] job(36):  generate identities: identities_T1_5_94_lorentz_1_of_1  [dep: 37]
+  [p] job(35):  generate seeds: seeds_T1_5_94_sector_symmetries  [dep: ]
+  [p] job(34):  generate identities: identities_T1_5_94_sector_symmetries_1_of_1  [dep: 35]
+  [p] job(33):  run reduction for sector (T1:5:94)  [dep: 34,36,38,39,74,84,85,95,115]
+  [p] job(32):  apply crossing x12 to ./reductions/reduction_T1_5_94  [dep: 33]
+  [p] job(31):  generate seeds: seeds_T1_5_118_ibp  [dep: ]
+  [p] job(30):  generate identities: identities_T1_5_118_ibp_1_of_2  [dep: 31]
+  [p] job(29):  generate identities: identities_T1_5_118_ibp_2_of_2  [dep: 31]
+  [p] job(28):  generate seeds: seeds_T1_5_118_lorentz  [dep: ]
+  [p] job(27):  generate identities: identities_T1_5_118_lorentz_1_of_1  [dep: 28]
+  [p] job(26):  generate seeds: seeds_T1_5_118_sector_symmetries  [dep: ]
+  [p] job(25):  generate identities: identities_T1_5_118_sector_symmetries_1_of_1  [dep: 26]
+  [p] job(24):  run reduction for sector (T1:5:118)  [dep: 25,27,29,30,74,105,115]
+  [p] job(23):  generate seeds: seeds_T1_6_95_ibp  [dep: ]
+  [p] job(22):  generate identities: identities_T1_6_95_ibp_1_of_1  [dep: 23]
+  [p] job(21):  generate seeds: seeds_T1_6_95_lorentz  [dep: ]
+  [p] job(20):  generate identities: identities_T1_6_95_lorentz_1_of_1  [dep: 21]
+  [p] job(19):  generate seeds: seeds_T1_6_95_sector_symmetries  [dep: ]
+  [p] job(18):  generate identities: identities_T1_6_95_sector_symmetries_1_of_1  [dep: 19]
+  [p] job(17):  run reduction for sector (T1:6:95)  [dep: 18,20,22,33,41,50,58,74,84,85,95,115]
+  [p] job(16):  apply crossing x12 to ./reductions/reduction_T1_6_95  [dep: 17]
+  [p] job(15):  generate seeds: seeds_T1_6_119_ibp  [dep: ]
+  [p] job(14):  generate identities: identities_T1_6_119_ibp_1_of_1  [dep: 15]
+  [p] job(13):  generate seeds: seeds_T1_6_119_lorentz  [dep: ]
+  [p] job(12):  generate identities: identities_T1_6_119_lorentz_1_of_1  [dep: 13]
+  [p] job(11):  generate seeds: seeds_T1_6_119_sector_symmetries  [dep: ]
+  [p] job(10):  generate identities: identities_T1_6_119_sector_symmetries_1_of_1  [dep: 11]
+  [p] job(9):   run reduction for sector (T1:6:119)  [dep: 10,12,14,24,32,33,49,50,66,74,84,85,95,105,115]
+  [p] job(8):   generate seeds: seeds_T2_6_63_ibp  [dep: ]
+  [p] job(7):   generate identities: identities_T2_6_63_ibp_1_of_1  [dep: 8]
+  [p] job(6):   generate seeds: seeds_T2_6_63_lorentz  [dep: ]
+  [p] job(5):   generate identities: identities_T2_6_63_lorentz_1_of_1  [dep: 6]
+  [p] job(4):   generate seeds: seeds_T2_6_63_sector_symmetries  [dep: ]
+  [p] job(3):   generate identities: identities_T2_6_63_sector_symmetries_1_of_1  [dep: 4]
+  [p] job(2):   run reduction for sector (T2:6:63)  [dep: 3,5,7,32,33,41,74,84,85,95,115]
+  [p] job(1):   reduce sectors  [dep: 2,9,16,17,24,32,33,41,49,50,58,66,74,84,85,95,105,115]
+
+
+Date: Thu Aug 26 10:04:48 2021
+
+Run ID: f35958b5
+
+Starting job(125): generate seeds: seeds_T1_3_84_ibp
+Completed Job(125) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:04:48 2021
+
+Run ID: f35958b5
+
+Starting job(114): generate seeds: seeds_T1_4_54_ibp
+Completed Job(114) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:04:48 2021
+
+Run ID: f35958b5
+
+Starting job(104): generate seeds: seeds_T1_4_78_ibp
+Completed Job(104) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:04:48 2021
+
+Run ID: f35958b5
+
+Starting job(94):  generate seeds: seeds_T1_4_85_ibp
+Completed Job(94) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:04:48 2021
+
+Run ID: f35958b5
+
+Starting job(83):  generate seeds: seeds_T1_4_86_ibp
+Completed Job(83) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:04:49 2021
+
+Run ID: f35958b5
+
+Starting job(73):  generate seeds: seeds_T1_5_55_ibp
+Completed Job(73) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:04:49 2021
+
+Run ID: f35958b5
+
+Starting job(65):  generate seeds: seeds_T1_5_79_ibp
+Completed Job(65) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:04:49 2021
+
+Run ID: f35958b5
+
+Starting job(57):  generate seeds: seeds_T1_5_87_ibp
+Completed Job(57) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:04:49 2021
+
+Run ID: f35958b5
+
+Starting job(48):  generate seeds: seeds_T1_5_93_ibp
+Completed Job(48) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:04:49 2021
+
+Run ID: f35958b5
+
+Starting job(40):  generate seeds: seeds_T1_5_94_ibp
+Completed Job(40) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:04:49 2021
+
+Run ID: f35958b5
+
+Starting job(31):  generate seeds: seeds_T1_5_118_ibp
+Completed Job(31) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:04:49 2021
+
+Run ID: f35958b5
+
+Starting job(124): generate identities: identities_T1_3_84_ibp_1_of_5
+Completed Job(124) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:04:52 2021
+
+Run ID: f35958b5
+
+Starting job(123): generate identities: identities_T1_3_84_ibp_2_of_5
+Completed Job(123) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:04:55 2021
+
+Run ID: f35958b5
+
+Starting job(122): generate identities: identities_T1_3_84_ibp_3_of_5
+Completed Job(122) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:04:58 2021
+
+Run ID: f35958b5
+
+Starting job(121): generate identities: identities_T1_3_84_ibp_4_of_5
+Completed Job(121) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:05:01 2021
+
+Run ID: f35958b5
+
+Starting job(120): generate identities: identities_T1_3_84_ibp_5_of_5
+Completed Job(120) [Time: 2s, CPU: 1s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:05:04 2021
+
+Run ID: f35958b5
+
+Starting job(119): generate seeds: seeds_T1_3_84_lorentz
+Completed Job(119) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:05:04 2021
+
+Run ID: f35958b5
+
+Starting job(118): generate identities: identities_T1_3_84_lorentz_1_of_1
+Completed Job(118) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:05:04 2021
+
+Run ID: f35958b5
+
+Starting job(117): generate seeds: seeds_T1_3_84_sector_symmetries
+Completed Job(117) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:05:04 2021
+
+Run ID: f35958b5
+
+Starting job(116): generate identities: identities_T1_3_84_sector_symmetries_1_of_1
+Completed Job(116) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:05:05 2021
+
+Run ID: f35958b5
+
+Starting job(115): run reduction for sector (T1:3:84)
+Completed Job(115) [Time: 215s, CPU: 187s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:08:41 2021
+
+Run ID: f35958b5
+
+Starting job(113): generate identities: identities_T1_4_54_ibp_1_of_4
+Completed Job(113) [Time: 2s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:08:43 2021
+
+Run ID: f35958b5
+
+Starting job(112): generate identities: identities_T1_4_54_ibp_2_of_4
+Completed Job(112) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:08:47 2021
+
+Run ID: f35958b5
+
+Starting job(111): generate identities: identities_T1_4_54_ibp_3_of_4
+Completed Job(111) [Time: 2s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:08:49 2021
+
+Run ID: f35958b5
+
+Starting job(110): generate identities: identities_T1_4_54_ibp_4_of_4
+Completed Job(110) [Time: 2s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:08:52 2021
+
+Run ID: f35958b5
+
+Starting job(109): generate seeds: seeds_T1_4_54_lorentz
+Completed Job(109) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:08:52 2021
+
+Run ID: f35958b5
+
+Starting job(108): generate identities: identities_T1_4_54_lorentz_1_of_1
+Completed Job(108) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:08:52 2021
+
+Run ID: f35958b5
+
+Starting job(107): generate seeds: seeds_T1_4_54_sector_symmetries
+Completed Job(107) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:08:52 2021
+
+Run ID: f35958b5
+
+Starting job(106): generate identities: identities_T1_4_54_sector_symmetries_1_of_1
+Completed Job(106) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:08:53 2021
+
+Run ID: f35958b5
+
+Starting job(105): run reduction for sector (T1:4:54)
+Completed Job(105) [Time: 76s, CPU: 66s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:10:09 2021
+
+Run ID: f35958b5
+
+Starting job(103): generate identities: identities_T1_4_78_ibp_1_of_4
+Completed Job(103) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:10:12 2021
+
+Run ID: f35958b5
+
+Starting job(102): generate identities: identities_T1_4_78_ibp_2_of_4
+Completed Job(102) [Time: 4s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:10:17 2021
+
+Run ID: f35958b5
+
+Starting job(101): generate identities: identities_T1_4_78_ibp_3_of_4
+Completed Job(101) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:10:20 2021
+
+Run ID: f35958b5
+
+Starting job(100): generate identities: identities_T1_4_78_ibp_4_of_4
+Completed Job(100) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:10:23 2021
+
+Run ID: f35958b5
+
+Starting job(99):  generate seeds: seeds_T1_4_78_lorentz
+Completed Job(99) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:10:23 2021
+
+Run ID: f35958b5
+
+Starting job(98):  generate identities: identities_T1_4_78_lorentz_1_of_1
+Completed Job(98) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:10:23 2021
+
+Run ID: f35958b5
+
+Starting job(97):  generate seeds: seeds_T1_4_78_sector_symmetries
+Completed Job(97) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:10:23 2021
+
+Run ID: f35958b5
+
+Starting job(96):  generate identities: identities_T1_4_78_sector_symmetries_1_of_1
+Completed Job(96) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:10:23 2021
+
+Run ID: f35958b5
+
+Starting job(95):  run reduction for sector (T1:4:78)
+Completed Job(95) [Time: 151s, CPU: 132s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:12:55 2021
+
+Run ID: f35958b5
+
+Starting job(93):  generate identities: identities_T1_4_85_ibp_1_of_4
+Completed Job(93) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:12:58 2021
+
+Run ID: f35958b5
+
+Starting job(92):  generate identities: identities_T1_4_85_ibp_2_of_4
+Completed Job(92) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:13:02 2021
+
+Run ID: f35958b5
+
+Starting job(91):  generate identities: identities_T1_4_85_ibp_3_of_4
+Completed Job(91) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:13:05 2021
+
+Run ID: f35958b5
+
+Starting job(90):  generate identities: identities_T1_4_85_ibp_4_of_4
+Completed Job(90) [Time: 4s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:13:10 2021
+
+Run ID: f35958b5
+
+Starting job(89):  generate seeds: seeds_T1_4_85_lorentz
+Completed Job(89) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:13:10 2021
+
+Run ID: f35958b5
+
+Starting job(88):  generate identities: identities_T1_4_85_lorentz_1_of_1
+Completed Job(88) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:13:10 2021
+
+Run ID: f35958b5
+
+Starting job(87):  generate seeds: seeds_T1_4_85_sector_symmetries
+Completed Job(87) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:13:10 2021
+
+Run ID: f35958b5
+
+Starting job(86):  generate identities: identities_T1_4_85_sector_symmetries_1_of_1
+Completed Job(86) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:13:10 2021
+
+Run ID: f35958b5
+
+Starting job(85):  run reduction for sector (T1:4:85)
+Completed Job(85) [Time: 243s, CPU: 212s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:17:13 2021
+
+Run ID: f35958b5
+
+Starting job(84):  apply crossing x12 to ./reductions/reduction_T1_4_85
+Completed Job(84) [Time: 9s, CPU: 8s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:17:23 2021
+
+Run ID: f35958b5
+
+Starting job(82):  generate identities: identities_T1_4_86_ibp_1_of_4
+Completed Job(82) [Time: 4s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:17:27 2021
+
+Run ID: f35958b5
+
+Starting job(81):  generate identities: identities_T1_4_86_ibp_2_of_4
+Completed Job(81) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:17:31 2021
+
+Run ID: f35958b5
+
+Starting job(80):  generate identities: identities_T1_4_86_ibp_3_of_4
+Completed Job(80) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:17:35 2021
+
+Run ID: f35958b5
+
+Starting job(79):  generate identities: identities_T1_4_86_ibp_4_of_4
+Completed Job(79) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:17:39 2021
+
+Run ID: f35958b5
+
+Starting job(78):  generate seeds: seeds_T1_4_86_lorentz
+Completed Job(78) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:17:39 2021
+
+Run ID: f35958b5
+
+Starting job(77):  generate identities: identities_T1_4_86_lorentz_1_of_1
+Completed Job(77) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:17:39 2021
+
+Run ID: f35958b5
+
+Starting job(76):  generate seeds: seeds_T1_4_86_sector_symmetries
+Completed Job(76) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:17:39 2021
+
+Run ID: f35958b5
+
+Starting job(75):  generate identities: identities_T1_4_86_sector_symmetries_1_of_1
+Completed Job(75) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:17:39 2021
+
+Run ID: f35958b5
+
+Starting job(74):  run reduction for sector (T1:4:86)
+Completed Job(74) [Time: 257s, CPU: 228s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:21:57 2021
+
+Run ID: f35958b5
+
+Starting job(72):  generate identities: identities_T1_5_55_ibp_1_of_2
+Completed Job(72) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:22:00 2021
+
+Run ID: f35958b5
+
+Starting job(71):  generate identities: identities_T1_5_55_ibp_2_of_2
+Completed Job(71) [Time: 4s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:22:04 2021
+
+Run ID: f35958b5
+
+Starting job(70):  generate seeds: seeds_T1_5_55_lorentz
+Completed Job(70) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:22:04 2021
+
+Run ID: f35958b5
+
+Starting job(69):  generate identities: identities_T1_5_55_lorentz_1_of_1
+Completed Job(69) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:22:04 2021
+
+Run ID: f35958b5
+
+Starting job(68):  generate seeds: seeds_T1_5_55_sector_symmetries
+Completed Job(68) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:22:04 2021
+
+Run ID: f35958b5
+
+Starting job(67):  generate identities: identities_T1_5_55_sector_symmetries_1_of_1
+Completed Job(67) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:22:04 2021
+
+Run ID: f35958b5
+
+Starting job(66):  run reduction for sector (T1:5:55)
+Completed Job(66) [Time: 46s, CPU: 41s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:22:51 2021
+
+Run ID: f35958b5
+
+Starting job(64):  generate identities: identities_T1_5_79_ibp_1_of_2
+Completed Job(64) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:22:54 2021
+
+Run ID: f35958b5
+
+Starting job(63):  generate identities: identities_T1_5_79_ibp_2_of_2
+Completed Job(63) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:22:57 2021
+
+Run ID: f35958b5
+
+Starting job(62):  generate seeds: seeds_T1_5_79_lorentz
+Completed Job(62) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:22:57 2021
+
+Run ID: f35958b5
+
+Starting job(61):  generate identities: identities_T1_5_79_lorentz_1_of_1
+Completed Job(61) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:22:57 2021
+
+Run ID: f35958b5
+
+Starting job(60):  generate seeds: seeds_T1_5_79_sector_symmetries
+Completed Job(60) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:22:57 2021
+
+Run ID: f35958b5
+
+Starting job(59):  generate identities: identities_T1_5_79_sector_symmetries_1_of_1
+Completed Job(59) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:22:58 2021
+
+Run ID: f35958b5
+
+Starting job(58):  run reduction for sector (T1:5:79)
+Completed Job(58) [Time: 92s, CPU: 79s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:24:30 2021
+
+Run ID: f35958b5
+
+Starting job(56):  generate identities: identities_T1_5_87_ibp_1_of_2
+Completed Job(56) [Time: 3s, CPU: 2s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:24:34 2021
+
+Run ID: f35958b5
+
+Starting job(55):  generate identities: identities_T1_5_87_ibp_2_of_2
+Completed Job(55) [Time: 4s, CPU: 3s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:24:38 2021
+
+Run ID: f35958b5
+
+Starting job(54):  generate seeds: seeds_T1_5_87_lorentz
+Completed Job(54) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:24:38 2021
+
+Run ID: f35958b5
+
+Starting job(53):  generate identities: identities_T1_5_87_lorentz_1_of_1
+Completed Job(53) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:24:38 2021
+
+Run ID: f35958b5
+
+Starting job(52):  generate seeds: seeds_T1_5_87_sector_symmetries
+Completed Job(52) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:24:38 2021
+
+Run ID: f35958b5
+
+Starting job(51):  generate identities: identities_T1_5_87_sector_symmetries_1_of_1
+Completed Job(51) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:24:38 2021
+
+Run ID: f35958b5
+
+Starting job(50):  run reduction for sector (T1:5:87)
+Completed Job(50) [Time: 183s, CPU: 161s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:27:41 2021
+
+Run ID: f35958b5
+
+Starting job(49):  apply crossing x12 to ./reductions/reduction_T1_5_87
+Completed Job(49) [Time: 6s, CPU: 5s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:27:48 2021
+
+Run ID: f35958b5
+
+Starting job(47):  generate identities: identities_T1_5_93_ibp_1_of_2
+Completed Job(47) [Time: 45s, CPU: 41s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:28:33 2021
+
+Run ID: f35958b5
+
+Starting job(46):  generate identities: identities_T1_5_93_ibp_2_of_2
+Completed Job(46) [Time: 56s, CPU: 53s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:29:30 2021
+
+Run ID: f35958b5
+
+Starting job(45):  generate seeds: seeds_T1_5_93_lorentz
+Completed Job(45) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:29:30 2021
+
+Run ID: f35958b5
+
+Starting job(44):  generate identities: identities_T1_5_93_lorentz_1_of_1
+Completed Job(44) [Time: 1s, CPU: 1s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:29:31 2021
+
+Run ID: f35958b5
+
+Starting job(43):  generate seeds: seeds_T1_5_93_sector_symmetries
+Completed Job(43) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:29:31 2021
+
+Run ID: f35958b5
+
+Starting job(42):  generate identities: identities_T1_5_93_sector_symmetries_1_of_1
+Completed Job(42) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:29:31 2021
+
+Run ID: f35958b5
+
+Starting job(41):  run reduction for sector (T1:5:93)
+Completed Job(41) [Time: 291s, CPU: 260s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:34:22 2021
+
+Run ID: f35958b5
+
+Starting job(39):  generate identities: identities_T1_5_94_ibp_1_of_2
+Completed Job(39) [Time: 39s, CPU: 36s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:35:02 2021
+
+Run ID: f35958b5
+
+Starting job(38):  generate identities: identities_T1_5_94_ibp_2_of_2
+Completed Job(38) [Time: 44s, CPU: 41s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:35:47 2021
+
+Run ID: f35958b5
+
+Starting job(37):  generate seeds: seeds_T1_5_94_lorentz
+Completed Job(37) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:35:47 2021
+
+Run ID: f35958b5
+
+Starting job(36):  generate identities: identities_T1_5_94_lorentz_1_of_1
+Completed Job(36) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:35:48 2021
+
+Run ID: f35958b5
+
+Starting job(35):  generate seeds: seeds_T1_5_94_sector_symmetries
+Completed Job(35) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:35:48 2021
+
+Run ID: f35958b5
+
+Starting job(34):  generate identities: identities_T1_5_94_sector_symmetries_1_of_1
+Completed Job(34) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:35:48 2021
+
+Run ID: f35958b5
+
+Starting job(33):  run reduction for sector (T1:5:94)
+Completed Job(33) [Time: 359s, CPU: 314s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:41:48 2021
+
+Run ID: f35958b5
+
+Starting job(32):  apply crossing x12 to ./reductions/reduction_T1_5_94
+Completed Job(32) [Time: 15s, CPU: 12s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:42:03 2021
+
+Run ID: f35958b5
+
+Starting job(30):  generate identities: identities_T1_5_118_ibp_1_of_2
+Completed Job(30) [Time: 24s, CPU: 20s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:42:27 2021
+
+Run ID: f35958b5
+
+Starting job(29):  generate identities: identities_T1_5_118_ibp_2_of_2
+Completed Job(29) [Time: 28s, CPU: 23s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:42:56 2021
+
+Run ID: f35958b5
+
+Starting job(28):  generate seeds: seeds_T1_5_118_lorentz
+Completed Job(28) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:42:56 2021
+
+Run ID: f35958b5
+
+Starting job(27):  generate identities: identities_T1_5_118_lorentz_1_of_1
+Completed Job(27) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:42:56 2021
+
+Run ID: f35958b5
+
+Starting job(26):  generate seeds: seeds_T1_5_118_sector_symmetries
+Completed Job(26) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:42:56 2021
+
+Run ID: f35958b5
+
+Starting job(25):  generate identities: identities_T1_5_118_sector_symmetries_1_of_1
+Completed Job(25) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:42:57 2021
+
+Run ID: f35958b5
+
+Starting job(24):  run reduction for sector (T1:5:118)
+Completed Job(24) [Time: 388s, CPU: 344s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:49:26 2021
+
+Run ID: f35958b5
+
+Starting job(23):  generate seeds: seeds_T1_6_95_ibp
+Completed Job(23) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:49:26 2021
+
+Run ID: f35958b5
+
+Starting job(22):  generate identities: identities_T1_6_95_ibp_1_of_1
+Completed Job(22) [Time: 2s, CPU: 1s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:49:28 2021
+
+Run ID: f35958b5
+
+Starting job(21):  generate seeds: seeds_T1_6_95_lorentz
+Completed Job(21) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:49:28 2021
+
+Run ID: f35958b5
+
+Starting job(20):  generate identities: identities_T1_6_95_lorentz_1_of_1
+Completed Job(20) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:49:28 2021
+
+Run ID: f35958b5
+
+Starting job(19):  generate seeds: seeds_T1_6_95_sector_symmetries
+Completed Job(19) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:49:28 2021
+
+Run ID: f35958b5
+
+Starting job(18):  generate identities: identities_T1_6_95_sector_symmetries_1_of_1
+Completed Job(18) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:49:28 2021
+
+Run ID: f35958b5
+
+Starting job(17):  run reduction for sector (T1:6:95)
+Completed Job(17) [Time: 85s, CPU: 75s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:50:53 2021
+
+Run ID: f35958b5
+
+Starting job(16):  apply crossing x12 to ./reductions/reduction_T1_6_95
+Completed Job(16) [Time: 5s, CPU: 4s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:50:58 2021
+
+Run ID: f35958b5
+
+Starting job(15):  generate seeds: seeds_T1_6_119_ibp
+Completed Job(15) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:50:58 2021
+
+Run ID: f35958b5
+
+Starting job(14):  generate identities: identities_T1_6_119_ibp_1_of_1
+Completed Job(14) [Time: 17s, CPU: 16s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:51:16 2021
+
+Run ID: f35958b5
+
+Starting job(13):  generate seeds: seeds_T1_6_119_lorentz
+Completed Job(13) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:51:16 2021
+
+Run ID: f35958b5
+
+Starting job(12):  generate identities: identities_T1_6_119_lorentz_1_of_1
+Completed Job(12) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:51:17 2021
+
+Run ID: f35958b5
+
+Starting job(11):  generate seeds: seeds_T1_6_119_sector_symmetries
+Completed Job(11) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:51:17 2021
+
+Run ID: f35958b5
+
+Starting job(10):  generate identities: identities_T1_6_119_sector_symmetries_1_of_1
+Completed Job(10) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:51:17 2021
+
+Run ID: f35958b5
+
+Starting job(9):   run reduction for sector (T1:6:119)
+Completed Job(9) [Time: 198s, CPU: 178s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:54:35 2021
+
+Run ID: f35958b5
+
+Starting job(8):   generate seeds: seeds_T2_6_63_ibp
+Completed Job(8) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:54:36 2021
+
+Run ID: f35958b5
+
+Starting job(7):   generate identities: identities_T2_6_63_ibp_1_of_1
+Completed Job(7) [Time: 174s, CPU: 165s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:57:30 2021
+
+Run ID: f35958b5
+
+Starting job(6):   generate seeds: seeds_T2_6_63_lorentz
+Completed Job(6) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:57:30 2021
+
+Run ID: f35958b5
+
+Starting job(5):   generate identities: identities_T2_6_63_lorentz_1_of_1
+Completed Job(5) [Time: 6s, CPU: 5s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:57:36 2021
+
+Run ID: f35958b5
+
+Starting job(4):   generate seeds: seeds_T2_6_63_sector_symmetries
+Completed Job(4) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:57:36 2021
+
+Run ID: f35958b5
+
+Starting job(3):   generate identities: identities_T2_6_63_sector_symmetries_1_of_1
+Completed Job(3) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 10:57:36 2021
+
+Run ID: f35958b5
+
+Starting job(2):   run reduction for sector (T2:6:63)
+Completed Job(2) [Time: 396s, CPU: 365s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:04:12 2021
+
+Run ID: f35958b5
+
+Starting job(1):   reduce sectors
+Completed Job(1) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+Completed jobs in jobqueue
+
+Completed all jobs
+Total run time: 3564 s
+Killing Fermat

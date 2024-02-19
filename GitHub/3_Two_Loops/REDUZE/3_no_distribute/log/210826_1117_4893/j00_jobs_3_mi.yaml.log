@@ -1,0 +1,237 @@
+
+Date: Thu Aug 26 11:17:48 2021
+
+Setting up job queue from jobs_3_mi.yaml
+Updating job queue dependencies
+Processing jobs in serial mode (non-MPI build)
+Loading uncrossed integral families from file ./config/integralfamilies.yaml
+Initialize integral family 'T1'
+Loaded integral family T1
+Initialize integral family 'T2'
+Loaded integral family T2
+Loaded 2 (uncrossed) integral families
+Done loading uncrossed integral families
+Using integral family T1 (id reset to 1)
+Loading crossings from file ./sectormappings/crossings.yaml
+Crossing equivalence: '' -> ''
+using crossing x12 (invs: {t==-t+mw^2-s+mh^2}, mom: {p2==p1,p1==p2})
+Crossing equivalence: 'x12' -> 'x12'
+Crossing equivalence: '' -> ''
+Loaded crossings for kinematics ''
+Loaded crossings for 1 kinematics
+Done loading crossings
+  generated crossed integral family T1x12 (id set to 2)
+Using integral family T2 (id reset to 3)
+  generated crossed integral family T2x12 (id set to 4)
+Done loading integral families
+Inserted new job in queue: job(1): print reduction info for sectors
+Updating job queue dependencies
+Determining sectors in selection
+  normalizing user input
+read key 'sectormappings' in file './sectormappings/sectormappings_T1.yaml'
+Found valid sector mappings for T1
+Considering (T1x12:6:95) instead of (T1:6:111)
+Considering (T1x12:5:87) instead of (T1:5:103)
+read key 'sectormappings' in file './sectormappings/sectormappings_T2.yaml'
+Found valid sector mappings for T2
+  selecting explicit sectors
+  selecting recursively
+  deselecting explicit sectors
+  deselecting recursively
+  deselecting sectors by t restriction
+Inserted new job in queue: job(2): print reduction info: ./reductions/reduction_T2_6_63
+Inserted new job in queue: job(3): print reduction info: ./reductions/reduction_T1_6_119
+Inserted new job in queue: job(4): print reduction info: ./reductions/reduction_T1x12_6_95
+Inserted new job in queue: job(5): print reduction info: ./reductions/reduction_T1_6_95
+Inserted new job in queue: job(6): print reduction info: ./reductions/reduction_T1_5_118
+Inserted new job in queue: job(7): print reduction info: ./reductions/reduction_T1x12_5_94
+Inserted new job in queue: job(8): print reduction info: ./reductions/reduction_T1_5_94
+Inserted new job in queue: job(9): print reduction info: ./reductions/reduction_T1_5_93
+Inserted new job in queue: job(10): print reduction info: ./reductions/reduction_T1x12_5_87
+Inserted new job in queue: job(11): print reduction info: ./reductions/reduction_T1_5_87
+Inserted new job in queue: job(12): print reduction info: ./reductions/reduction_T1_5_79
+Inserted new job in queue: job(13): print reduction info: ./reductions/reduction_T1_5_55
+Inserted new job in queue: job(14): print reduction info: ./reductions/reduction_T1_4_86
+Inserted new job in queue: job(15): print reduction info: ./reductions/reduction_T1x12_4_85
+Inserted new job in queue: job(16): print reduction info: ./reductions/reduction_T1_4_85
+Inserted new job in queue: job(17): print reduction info: ./reductions/reduction_T1_4_78
+Inserted new job in queue: job(18): print reduction info: ./reductions/reduction_T1_4_54
+Inserted new job in queue: job(19): print reduction info: ./reductions/reduction_T1_3_84
+Updated job queue:
+  [p] job(19): print reduction info: ./reductions/reduction_T1_3_84  [dep: ]
+  [p] job(18): print reduction info: ./reductions/reduction_T1_4_54  [dep: ]
+  [p] job(17): print reduction info: ./reductions/reduction_T1_4_78  [dep: ]
+  [p] job(16): print reduction info: ./reductions/reduction_T1_4_85  [dep: ]
+  [p] job(15): print reduction info: ./reductions/reduction_T1x12_4_85  [dep: ]
+  [p] job(14): print reduction info: ./reductions/reduction_T1_4_86  [dep: ]
+  [p] job(13): print reduction info: ./reductions/reduction_T1_5_55  [dep: ]
+  [p] job(12): print reduction info: ./reductions/reduction_T1_5_79  [dep: ]
+  [p] job(11): print reduction info: ./reductions/reduction_T1_5_87  [dep: ]
+  [p] job(10): print reduction info: ./reductions/reduction_T1x12_5_87  [dep: ]
+  [p] job(9):  print reduction info: ./reductions/reduction_T1_5_93  [dep: ]
+  [p] job(8):  print reduction info: ./reductions/reduction_T1_5_94  [dep: ]
+  [p] job(7):  print reduction info: ./reductions/reduction_T1x12_5_94  [dep: ]
+  [p] job(6):  print reduction info: ./reductions/reduction_T1_5_118  [dep: ]
+  [p] job(5):  print reduction info: ./reductions/reduction_T1_6_95  [dep: ]
+  [p] job(4):  print reduction info: ./reductions/reduction_T1x12_6_95  [dep: ]
+  [p] job(3):  print reduction info: ./reductions/reduction_T1_6_119  [dep: ]
+  [p] job(2):  print reduction info: ./reductions/reduction_T2_6_63  [dep: ]
+  [p] job(1):  print reduction info for sectors  [dep: ]
+
+
+Date: Thu Aug 26 11:17:49 2021
+
+Run ID: f36007cd
+
+Starting job(19): print reduction info: ./reductions/reduction_T1_3_84
+Completed Job(19) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:49 2021
+
+Run ID: f36007cd
+
+Starting job(18): print reduction info: ./reductions/reduction_T1_4_54
+Completed Job(18) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:50 2021
+
+Run ID: f36007cd
+
+Starting job(17): print reduction info: ./reductions/reduction_T1_4_78
+Completed Job(17) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:51 2021
+
+Run ID: f36007cd
+
+Starting job(16): print reduction info: ./reductions/reduction_T1_4_85
+Completed Job(16) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:51 2021
+
+Run ID: f36007cd
+
+Starting job(15): print reduction info: ./reductions/reduction_T1x12_4_85
+Completed Job(15) [Time: 1s, CPU: 1s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:53 2021
+
+Run ID: f36007cd
+
+Starting job(14): print reduction info: ./reductions/reduction_T1_4_86
+Completed Job(14) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:54 2021
+
+Run ID: f36007cd
+
+Starting job(13): print reduction info: ./reductions/reduction_T1_5_55
+Completed Job(13) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:54 2021
+
+Run ID: f36007cd
+
+Starting job(12): print reduction info: ./reductions/reduction_T1_5_79
+Completed Job(12) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:54 2021
+
+Run ID: f36007cd
+
+Starting job(11): print reduction info: ./reductions/reduction_T1_5_87
+Completed Job(11) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:55 2021
+
+Run ID: f36007cd
+
+Starting job(10): print reduction info: ./reductions/reduction_T1x12_5_87
+Completed Job(10) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:56 2021
+
+Run ID: f36007cd
+
+Starting job(9):  print reduction info: ./reductions/reduction_T1_5_93
+Completed Job(9) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:56 2021
+
+Run ID: f36007cd
+
+Starting job(8):  print reduction info: ./reductions/reduction_T1_5_94
+Completed Job(8) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:56 2021
+
+Run ID: f36007cd
+
+Starting job(7):  print reduction info: ./reductions/reduction_T1x12_5_94
+Completed Job(7) [Time: 1s, CPU: 1s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:58 2021
+
+Run ID: f36007cd
+
+Starting job(6):  print reduction info: ./reductions/reduction_T1_5_118
+Completed Job(6) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:58 2021
+
+Run ID: f36007cd
+
+Starting job(5):  print reduction info: ./reductions/reduction_T1_6_95
+Completed Job(5) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:59 2021
+
+Run ID: f36007cd
+
+Starting job(4):  print reduction info: ./reductions/reduction_T1x12_6_95
+Completed Job(4) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:59 2021
+
+Run ID: f36007cd
+
+Starting job(3):  print reduction info: ./reductions/reduction_T1_6_119
+Completed Job(3) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:17:59 2021
+
+Run ID: f36007cd
+
+Starting job(2):  print reduction info: ./reductions/reduction_T2_6_63
+Completed Job(2) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 11:18:00 2021
+
+Run ID: f36007cd
+
+Starting job(1):  print reduction info for sectors
+Completed Job(1) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+Completed jobs in jobqueue
+
+Completed all jobs
+Total run time: 11 s
+Killing Fermat

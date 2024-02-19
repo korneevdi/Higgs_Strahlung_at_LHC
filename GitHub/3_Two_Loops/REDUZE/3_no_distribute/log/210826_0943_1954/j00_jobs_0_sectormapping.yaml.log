@@ -1,0 +1,105 @@
+
+Date: Thu Aug 26 09:43:19 2021
+
+Setting up job queue from jobs_0_sectormapping.yaml
+Updating job queue dependencies
+Processing jobs in serial mode (non-MPI build)
+Inserted new job in queue: job(1): setup sector mappings
+Updating job queue dependencies
+Loading uncrossed integral families from file ./config/integralfamilies.yaml
+Initialize integral family 'T1'
+Loaded integral family T1
+Initialize integral family 'T2'
+Loaded integral family T2
+Loaded 2 (uncrossed) integral families
+Done loading uncrossed integral families
+Created auxiliary job setup_crossings
+Created auxiliary job verify_permutation_symmetries for family: T1
+Created auxiliary job verify_permutation_symmetries for family: T2
+Inserted new job in queue: job(2): verify permutation symmetries of family 'T2'
+Inserted new job in queue: job(3): verify permutation symmetries of family 'T1'
+Inserted new job in queue: job(4): setup crossings
+Updated job queue:
+  [p] job(4): setup crossings  [dep: ]
+  [p] job(3): verify permutation symmetries of family 'T1'  [dep: 4]
+  [p] job(2): verify permutation symmetries of family 'T2'  [dep: 4]
+  [p] job(1): setup sector mappings  [dep: 2,3,4]
+
+
+Date: Thu Aug 26 09:43:19 2021
+
+Run ID: f3576132
+
+Starting job(4): setup crossings
+Completed Job(4) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 09:43:19 2021
+
+Run ID: f3576132
+
+Starting job(3): verify permutation symmetries of family 'T1'
+Completed Job(3) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 09:43:19 2021
+
+Run ID: f3576132
+
+Starting job(2): verify permutation symmetries of family 'T2'
+Completed Job(2) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 09:43:19 2021
+
+Run ID: f3576132
+
+Starting job(1): setup sector mappings
+Completed Job(1) [Time: 5s, CPU: 3s]
+Updating job queue dependencies
+Completed jobs in jobqueue
+
+Inserted new job in queue: job(5): setup sector mappings (alt)
+Updating job queue dependencies
+Created auxiliary job verify_permutation_symmetries for family: T1
+Created auxiliary job verify_permutation_symmetries for family: T2
+Inserted new job in queue: job(6): verify permutation symmetries of family 'T2'
+Inserted new job in queue: job(7): verify permutation symmetries of family 'T1'
+Updated job queue:
+  [c] job(4): setup crossings  [dep: ]
+  [c] job(3): verify permutation symmetries of family 'T1'  [dep: 4]
+  [c] job(2): verify permutation symmetries of family 'T2'  [dep: 4]
+  [c] job(1): setup sector mappings  [dep: 2,3,4]
+  [p] job(7): verify permutation symmetries of family 'T1'  [dep: ]
+  [p] job(6): verify permutation symmetries of family 'T2'  [dep: ]
+  [p] job(5): setup sector mappings (alt)  [dep: 6,7]
+
+
+Date: Thu Aug 26 09:43:25 2021
+
+Run ID: f3576132
+
+Starting job(7): verify permutation symmetries of family 'T1'
+Completed Job(7) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 09:43:25 2021
+
+Run ID: f3576132
+
+Starting job(6): verify permutation symmetries of family 'T2'
+Completed Job(6) [Time: 0s, CPU: 0s]
+Updating job queue dependencies
+
+Date: Thu Aug 26 09:43:25 2021
+
+Run ID: f3576132
+
+Starting job(5): setup sector mappings (alt)
+Completed Job(5) [Time: 1066s, CPU: 1027s]
+Updating job queue dependencies
+Completed jobs in jobqueue
+
+Completed all jobs
+Total run time: 1073 s
+Killing Fermat

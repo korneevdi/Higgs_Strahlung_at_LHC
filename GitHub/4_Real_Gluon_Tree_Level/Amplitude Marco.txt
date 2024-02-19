@@ -1,0 +1,268 @@
+
+
+************************ Total Amlitude From Marco ************************
+
+
+g AMPLI =  + Num([25] + [15])*Den([15])*Den([25])*POL(g(91,p5))*POL(W(95,p3))*
+      UV(97,p2)*UVBAR(99,p1)*TM(99,91,97)*GAM(99,p5,91,95,97)*gC*gSMEFTa * ( 
+          - 1/2 )
+
+       + Num([25] + [15])*Den([15])*Den([25])*POL(g(91,p5))*POL(W(95,p3))*UV(
+      97,p2)*UVBAR(99,p1)*TM(99,91,97)*GAM(99,p3,p5,91,95,97)*gC*gSMEFTb * ( 1
+          )
+
+       + Num([35])*Den([15])*POL(g(91,p5))*POL(W(95,p3))*UV(97,p2)*UVBAR(99,p1
+      )*TM(99,91,97)*GAM(99,91,95,97)*gC*gSMEFTb * (  - 2 )
+
+       + Den([15])*POL(g(91,p5))*POL(W(95,p3))*UV(97,p2)*UVBAR(99,p1)*TM(99,91
+      ,97)*MOM(p3,91)*GAM(99,p5,95,97)*gC*gSMEFTb * ( 2 )
+
+       + Den([15])*POL(g(91,p5))*POL(W(95,p3))*UV(97,p2)*UVBAR(99,p1)*TM(99,91
+      ,97)*MOM(p1,91)*GAM(99,p3,95,97)*gC*gSMEFTb * (  - 2 )
+
+       + Den([15])*POL(g(91,p5))*POL(W(95,p3))*UV(97,p2)*UVBAR(99,p1)*TM(99,91
+      ,97)*MOM(p1,91)*GAM(99,95,97)*gC*gSMEFTa * ( 1 )
+
+       + Den([25])*POL(g(91,p5))*POL(W(95,p3))*UV(97,p2)*UVBAR(99,p1)*TM(99,91
+      ,97)*ETA(91,95)*GAM(99,p5,97)*gC*gSMEFTa * ( 1 )
+
+       + Den([25])*POL(g(91,p5))*POL(W(95,p3))*UV(97,p2)*UVBAR(99,p1)*TM(99,91
+      ,97)*ETA(91,95)*GAM(99,p3,p5,97)*gC*gSMEFTb * (  - 2 )
+
+       + Den([25])*POL(g(91,p5))*POL(W(95,p3))*UV(97,p2)*UVBAR(99,p1)*TM(99,91
+      ,97)*MOM(p5,95)*GAM(99,p3,91,97)*gC*gSMEFTb * ( 2 )
+
+       + Den([25])*POL(g(91,p5))*POL(W(95,p3))*UV(97,p2)*UVBAR(99,p1)*TM(99,91
+      ,97)*MOM(p5,95)*GAM(99,91,97)*gC*gSMEFTa * (  - 1 )
+
+
+
+[ij] = (pi*pj) = sij/2
+
+Particle ordering: au[p1], d[p2], W[p3], H[p4], g[p5]
+
+p1 + p2 + p3 + p4 + p5 -> 0
+
+p3 = -p1 - p2 - p5 - p4
+
+p3 -> pV = p3 + p4, where p3 is the lepton momentum and p4 is the antilepton momentum
+
+AB - SMEFT coupling (A or B)
+
+CD - SM coupling (C or D)
+
+TM(99,91,97) -> T(a)
+
+
+
+
+************************ Rewitten Total Amlitude ************************
+
+
+iM(q, qb, V, g) = gC * eps(W(95,pV)) * T(a) * 
+
+	(
+	   	+ AB * ((p2*p5) + (p1*p5)) / ((p1*p5)*(p2*p5)) * UVBAR(p1)*GAM(pV,p5,eps(g(p5)),95)*UV(p2)
+
+           	+ AB * (-2) * (pV*p5) / (p1*p5) * UVBAR(p1)*GAM(eps(g(p5)),95)*UV(p2)
+
+        	+ AB * 2 / (p1*p5) * UVBAR(p1)*MOM(pV,eps(g(p5)))*GAM(p5,95)*UV(p2)
+
+           	+ AB * (-2) / (p1*p5) * UVBAR(p1)*MOM(p1,eps(g(p5)))*GAM(pV,95)*UV(p2)
+
+           	+ AB * (-2) / (p2*p5) * UVBAR(p1)*ETA(eps(g(p5)),95)*GAM(pV,p5)*UV(p2)
+
+           	+ AB * 2 / (p2*p5) * UVBAR(p1)*MOM(p5,95)*GAM(pV,eps(g(p5)))*UV(p2)
+
+           	+ CD * 1 / (p1*p5) * UVBAR(p1)*MOM(p1,eps(g(p5)))*GAM(95)*UV(p2)
+
+           	+ CD * 1 / (p2*p5) * UVBAR(p1)*ETA(eps(g(p5)),95)*GAM(p5)*UV(p2)
+
+	   	+ CD * (-1/2) * ((p2*p5) + (p1*p5)) / ((p1*p5)*(p2*p5)) * UVBAR(p1)*GAM(p5,eps(g(p5)),95)*UV(p2)
+
+           	+ CD * (-1) / (p2*p5) * UVBAR(p1)*MOM(p5,95)*GAM(eps(g(p5)))*UV(p2)
+	)
+
+
+
+
+************************ Exchange of the weak boson by the lepton current ************************
+
+
+iM(q, qb, l, lb, g) = gC * T(a) * 
+
+	(
+	   	+ AB * ((p2*p5) + (p1*p5)) / ((p1*p5)*(p2*p5)) * UVBAR(p1)*GAM(pV,p5,eps(g(p5)),95)*UV(p2)
+
+           	+ AB * (-2) * (pV*p5) / (p1*p5) * UVBAR(p1)*GAM(eps(g(p5)),95)*UV(p2)
+
+        	+ AB * 2 / (p1*p5) * UVBAR(p1)*MOM(pV,eps(g(p5)))*GAM(p5,95)*UV(p2)
+
+           	+ AB * (-2) / (p1*p5) * UVBAR(p1)*MOM(p1,eps(g(p5)))*GAM(pV,95)*UV(p2)
+
+           	+ AB * (-2) / (p2*p5) * UVBAR(p1)*ETA(eps(g(p5)),95)*GAM(pV,p5)*UV(p2)
+
+           	+ AB * 2 / (p2*p5) * UVBAR(p1)*MOM(p5,95)*GAM(pV,eps(g(p5)))*UV(p2)
+
+           	+ CD * 1 / (p1*p5) * UVBAR(p1)*MOM(p1,eps(g(p5)))*GAM(95)*UV(p2)
+
+           	+ CD * 1 / (p2*p5) * UVBAR(p1)*ETA(eps(g(p5)),95)*GAM(p5)*UV(p2)
+
+	   	+ CD * (-1/2) * ((p2*p5) + (p1*p5)) / ((p1*p5)*(p2*p5)) * UVBAR(p1)*GAM(p5,eps(g(p5)),95)*UV(p2)
+
+           	+ CD * (-1) / (p2*p5) * UVBAR(p1)*MOM(p5,95)*GAM(eps(g(p5)))*UV(p2)
+	)
+
+	* UVBAR(p3)*GAM(95)*(a*PL + b)*UV(p4)
+
+
+
+************************ Helicity Amplitudes iM(q, qb, l, lb, g) ************************
+
+
+***** Left-handed leptons *****
+
+iM(L,R,L,L,g) = A * gC * (a + b) * T(a) * 
+
+	(
+	   	+ ((p2*p5) + (p1*p5)) / ((p1*p5)*(p2*p5)) * ULBAR(p1)*GAM(pV,p5,eps(g(p5)),95)*UR(p2)
+
+           	+ (-2) * (pV*p5) / (p1*p5) * ULBAR(p1)*GAM(eps(g(p5)),95)*UR(p2)
+
+        	+ 2 / (p1*p5) * ULBAR(p1)*MOM(pV,eps(g(p5)))*GAM(p5,95)*UR(p2)
+
+           	+ (-2) / (p1*p5) * ULBAR(p1)*MOM(p1,eps(g(p5)))*GAM(pV,95)*UR(p2)
+
+           	+ (-2) / (p2*p5) * ULBAR(p1)*ETA(eps(g(p5)),95)*GAM(pV,p5)*UR(p2)
+
+           	+ 2 / (p2*p5) * ULBAR(p1)*MOM(p5,95)*GAM(pV,eps(g(p5)))*UR(p2)
+	)
+
+	* ULBAR(p3)*GAM(95)*UL(p4)
+
+
+iM(R,L,L,L,g) = B * gC * (a + b) * T(a) * 
+
+	(
+	   	+ ((p2*p5) + (p1*p5)) / ((p1*p5)*(p2*p5)) * URBAR(p1)*GAM(pV,p5,eps(g(p5)),95)*UL(p2)
+
+           	+ (-2) * (pV*p5) / (p1*p5) * URBAR(p1)*GAM(eps(g(p5)),95)*UL(p2)
+
+        	+ 2 / (p1*p5) * URBAR(p1)*MOM(pV,eps(g(p5)))*GAM(p5,95)*UL(p2)
+
+           	+ (-2) / (p1*p5) * URBAR(p1)*MOM(p1,eps(g(p5)))*GAM(pV,95)*UL(p2)
+
+           	+ (-2) / (p2*p5) * URBAR(p1)*ETA(eps(g(p5)),95)*GAM(pV,p5)*UL(p2)
+
+           	+ 2 / (p2*p5) * URBAR(p1)*MOM(p5,95)*GAM(pV,eps(g(p5)))*UL(p2)
+	)
+
+	* ULBAR(p3)*GAM(95)*UL(p4)
+
+
+iM(L,L,L,L,g) = C * gC * (a + b) * T(a) * 
+
+	(
+           	+ 1 / (p1*p5) * ULBAR(p1)*MOM(p1,eps(g(p5)))*GAM(95)*UL(p2)
+
+           	+ 1 / (p2*p5) * ULBAR(p1)*ETA(eps(g(p5)),95)*GAM(p5)*UL(p2)
+
+	   	+ (-1/2) * ((p2*p5) + (p1*p5)) / ((p1*p5)*(p2*p5)) * ULBAR(p1)*GAM(p5,eps(g(p5)),95)*UL(p2)
+
+           	+ (-1) / (p2*p5) * ULBAR(p1)*MOM(p5,95)*GAM(eps(g(p5)))*UL(p2)
+	)
+
+	* ULBAR(p3)*GAM(95)*UL(p4)
+
+
+iM(R,R,L,L,g) = D * gC * (a + b) * T(a) * 
+
+	(
+           	+ 1 / (p1*p5) * URBAR(p1)*MOM(p1,eps(g(p5)))*GAM(95)*UR(p2)
+
+           	+ 1 / (p2*p5) * URBAR(p1)*ETA(eps(g(p5)),95)*GAM(p5)*UR(p2)
+
+	   	+ (-1/2) * ((p2*p5) + (p1*p5)) / ((p1*p5)*(p2*p5)) * URBAR(p1)*GAM(p5,eps(g(p5)),95)*UR(p2)
+
+           	+ (-1) / (p2*p5) * URBAR(p1)*MOM(p5,95)*GAM(eps(g(p5)))*UR(p2)
+	)
+
+	* ULBAR(p3)*GAM(95)*UL(p4)
+
+
+***** Right-handed leptons *****
+
+iM(L,R,R,R,g) = A * gC * b * T(a) * 
+
+	(
+	   	+ ((p2*p5) + (p1*p5)) / ((p1*p5)*(p2*p5)) * ULBAR(p1)*GAM(pV,p5,eps(g(p5)),95)*UR(p2)
+
+           	+ (-2) * (pV*p5) / (p1*p5) * ULBAR(p1)*GAM(eps(g(p5)),95)*UR(p2)
+
+        	+ 2 / (p1*p5) * ULBAR(p1)*MOM(pV,eps(g(p5)))*GAM(p5,95)*UR(p2)
+
+           	+ (-2) / (p1*p5) * ULBAR(p1)*MOM(p1,eps(g(p5)))*GAM(pV,95)*UR(p2)
+
+           	+ (-2) / (p2*p5) * ULBAR(p1)*ETA(eps(g(p5)),95)*GAM(pV,p5)*UR(p2)
+
+           	+ 2 / (p2*p5) * ULBAR(p1)*MOM(p5,95)*GAM(pV,eps(g(p5)))*UR(p2)
+	)
+
+	* URBAR(p3)*GAM(95)*UR(p4)
+
+
+iM(R,L,R,R,g) = B * gC * b * T(a) * 
+
+	(
+	   	+ ((p2*p5) + (p1*p5)) / ((p1*p5)*(p2*p5)) * URBAR(p1)*GAM(pV,p5,eps(g(p5)),95)*UL(p2)
+
+           	+ (-2) * (pV*p5) / (p1*p5) * URBAR(p1)*GAM(eps(g(p5)),95)*UL(p2)
+
+        	+ 2 / (p1*p5) * URBAR(p1)*MOM(pV,eps(g(p5)))*GAM(p5,95)*UL(p2)
+
+           	+ (-2) / (p1*p5) * URBAR(p1)*MOM(p1,eps(g(p5)))*GAM(pV,95)*UL(p2)
+
+           	+ (-2) / (p2*p5) * URBAR(p1)*ETA(eps(g(p5)),95)*GAM(pV,p5)*UL(p2)
+
+           	+ 2 / (p2*p5) * URBAR(p1)*MOM(p5,95)*GAM(pV,eps(g(p5)))*UL(p2)
+	)
+
+	* URBAR(p3)*GAM(95)*UR(p4)
+
+
+iM(L,L,R,R,g) = C * gC * b * T(a) * 
+
+	(
+           	+ 1 / (p1*p5) * ULBAR(p1)*MOM(p1,eps(g(p5)))*GAM(95)*UL(p2)
+
+           	+ 1 / (p2*p5) * ULBAR(p1)*ETA(eps(g(p5)),95)*GAM(p5)*UL(p2)
+
+	   	+ (-1/2) * ((p2*p5) + (p1*p5)) / ((p1*p5)*(p2*p5)) * ULBAR(p1)*GAM(p5,eps(g(p5)),95)*UL(p2)
+
+           	+ (-1) / (p2*p5) * ULBAR(p1)*MOM(p5,95)*GAM(eps(g(p5)))*UL(p2)
+	)
+
+	* URBAR(p3)*GAM(95)*UR(p4)
+
+
+iM(R,R,R,R,g) = D * gC * b * T(a) * 
+
+	(
+           	+ 1 / (p1*p5) * URBAR(p1)*MOM(p1,eps(g(p5)))*GAM(95)*UR(p2)
+
+           	+ 1 / (p2*p5) * URBAR(p1)*ETA(eps(g(p5)),95)*GAM(p5)*UR(p2)
+
+	   	+ (-1/2) * ((p2*p5) + (p1*p5)) / ((p1*p5)*(p2*p5)) * URBAR(p1)*GAM(p5,eps(g(p5)),95)*UR(p2)
+
+           	+ (-1) / (p2*p5) * URBAR(p1)*MOM(p5,95)*GAM(eps(g(p5)))*UR(p2)
+	)
+
+	* URBAR(p3)*GAM(95)*UR(p4)
+
+
+
+
+
+
+
+

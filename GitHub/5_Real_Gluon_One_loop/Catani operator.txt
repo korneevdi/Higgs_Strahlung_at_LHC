@@ -1,0 +1,13 @@
+CAT = 
+
+(\[Mu]^2/(-s))^\[Epsilon]*(-(1/24)*(3 - 2*CF)*\[Pi]^2 + (
+    3 - 2 CF)/(2 \[Epsilon]^2) + (3 (3 - 2 CF))/(
+    4 \[Epsilon]) + ((3 - 2 CF) \[Epsilon]^2 (\[Pi]^4 - 
+       720 \[Zeta][3]))/2880 - 
+    1/48 (3 - 2 CF) \[Epsilon] (3 \[Pi]^2 + 
+       8 \[Zeta][3])) + (minus15over\[Mu]2^-\[Epsilon] + 
+    minus25over\[Mu]2^-\[Epsilon]) (\[Pi]^2/8 - 3/(
+    2 \[Epsilon]^2) + (-15 + Nf/2)/(6 \[Epsilon]) + 
+    1/72 \[Epsilon] (15 \[Pi]^2 - (Nf \[Pi]^2)/2 + 
+       36 \[Zeta][3]) + (\[Epsilon]^2 (-3 \[Pi]^4 + 2400 \[Zeta][3] - 
+       80 Nf \[Zeta][3]))/2880) 
