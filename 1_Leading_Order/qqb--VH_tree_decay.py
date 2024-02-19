@@ -7,6 +7,8 @@ from mpmath import *
 In this project, I compute radiative 2-loop QCD corrections to the process q qb -> g W H -> g l nub H
 After quark-antiquark (q and qb) collision a gluon (g), a vector boson (W) and a Higgs (H) appear with subsequent decay of the vector boson into a lepton-antinuetrino (l and nub) pair)
 As a result I obtain 2-loop squared amplitude for this process, which allows to compute the cross section measured in CERN (at the Long Hanron Collider)
+
+THE OPENLOOPS RESULT IS GIVEN FOR THE CASE OF W-BOSON WITHIN THE STANDARD MODEL
 """
 
 # PROCESS
@@ -17,7 +19,7 @@ print()
 # LEADING ORDER, ONE-LOOP, TWO-LOOP
 # q(p1) + qb(p2) -> e(p3) + nub(p4) + H(pH)
 
-print("Tree-level, one-loop and teo-loop process without real emission: q(p1) + qb(p2) -> gVH -> l(p3) + nub(p4) + H(pH)")
+print("Tree-level, one-loop and two-loop process without real emission: q(p1) + qb(p2) -> gVH -> l(p3) + nub(p4) + H(pH)")
 print()
 
 print("-----------------------------------------")
@@ -25,20 +27,21 @@ print("PRELIMINARY COMPUTATIONS")
 print("-----------------------------------------")
 
 # PARAMETERS (various high energy physics constants used for calculations)
-mW = 80.419                     # W-boson mass
-mZ = 91.188                     # Z-boson mass
-mH = 125.0                      # Higgs boson mass 
-Gamma_W = 2.085                 # W-boson decay width
-Gamma_Z = 2.4952                # Z-boson decay width
-cosW = mW/mZ                    # cosine of the Weinberg angle
-sinW = math.sqrt(1 - cosW**2)   # sine of the Weinberg angle
-gW = 0.6530704531238141         # electroweak coupling
-vev = 246.21845810181634        # vacuum expectation value
-mu = 91.188                     # energy scale
-musq = mu**2                    # square of the energy scale
-alpha_s = 1                     # strong coupling
-Cf = 4/3                        # Casimir operator of SU(3)
-Nc = 3                          # number of colors
+mW = 80.419                         # W-boson mass
+mZ = 91.188                         # Z-boson mass
+mH = 125.0                          # Higgs boson mass 
+Gamma_W = 2.085                     # W-boson decay width
+Gamma_Z = 2.4952                    # Z-boson decay width
+cosW = mW/mZ                        # cosine of the Weinberg angle
+sinW = math.sqrt(1 - cosW**2)       # sine of the Weinberg angle
+gW = 0.6530704531238141             # electroweak coupling
+vev = 246.21845810181634            # vacuum expectation value
+mu = 91.188                         # energy scale
+musq = mu**2                        # square of the energy scale
+alpha_s = 1                         # strong coupling
+gs = math.sqrt(4*math.pi*alpha_s)
+Cf = 4/3                            # Casimir operator of SU(3)
+Nc = 3                              # number of colors
 
 
 # for (u db -> W) and (d ub -> W) BosonType = 1, for (u ub -> Z) and (d db -> Z) BosonType = 2
@@ -109,23 +112,18 @@ print()
 
 
 
-# External Momenta
-"""
-p1 = [334.79722981844668, 0.0000000000000000, 0.0000000000000000, 334.79722981844668]       # quark
-p2 = [334.79722981844668,  0.0000000000000000, 0.0000000000000000, -334.79722981844668]     # antiquark
-p3 = [145.15993839229942, -30.227566266348898, 116.90904445233252, 80.56039521322626]       # lepton
-p4 = [279.97048626896714, -108.00766613660149, -100.56224442936262, -237.91816288954988]    # antinuetrino
-pH = [244.46403497562682, 138.23523240295037, -16.346800022969902, 157.35776767632362]      # Higgs boson
-"""
+# External Momenta and OpenLoops results
 
 # T1
-"""
+
 p1 = [500.00000000000000, 0.0000000000000000, 0.0000000000000000, 500.00000000000000]       # quark
 p2 = [500.00000000000000,  0.0000000000000000, 0.0000000000000000, -500.00000000000000]     # antiquark
 p4 = [439.78021928785591, 162.50680658487221, 364.09047948353401, -185.57020730686239]      # antinuetrino
 p3 = [349.14239937112842, -17.578471028824460, -333.45082223855940, 101.99000707591840]     # lepton
 pH = [211.07738134101581, -144.92833555604770, -30.639657244974519, 83.580200230944016]     # Higgs boson
-"""
+# OpenLoops results for squared amplitude
+OpenLoopsResTree = 3.4729976354737612E-011          # tree level
+
 
 # T2
 """
@@ -134,6 +132,8 @@ p2 = [500.00000000000000,  0.0000000000000000, 0.0000000000000000, -500.00000000
 p4 = [422.08957321198892, -126.50552822371320, -399.42574168565420, 51.137422911046571]     # antinuetrino
 p3 = [180.70100467419249, 177.01798495038040, 32.064088390317352, 17.011182500560881]       # lepton
 pH = [397.20942211381850, -50.512456726667111, 367.36165329533691, -68.148605411607434]     # Higgs boson
+# OpenLoops results for squared amplitude
+OpenLoopsResTree = 6.7466380038976574E-011          # tree level
 """
 
 # T3
@@ -143,6 +143,8 @@ p2 = [500.00000000000000,  0.0000000000000000, 0.0000000000000000, -500.00000000
 p4 = [362.19939027519791, 244.30626335943609, 153.49919119423609, -218.95398215558970]      # antinuetrino
 p3 = [451.73431596931482, -246.55144057953359, -288.90577126990979, 244.56028847578659]     # lepton
 pH = [186.06629375548721, 2.2451772200975202, 135.40658007567370, -25.606306320196850]      # Higgs boson
+# OpenLoops results for squared amplitude
+OpenLoopsResTree = 4.2298820425566844E-011          # tree level
 """
 
 # T4
@@ -152,6 +154,8 @@ p2 = [500.00000000000000,  0.0000000000000000, 0.0000000000000000, -500.00000000
 p4 = [330.53969568768753, -33.008723457689108, -303.71353193985487, -126.19431491799300]    # antinuetrino
 p3 = [212.92384630012540, 167.02867017961910, -110.86379342176120, 71.744037866602881]      # lepton
 pH = [456.53645801218698, -134.01994672192990, 414.57732536161609, 54.450277051390032]      # Higgs boson
+# OpenLoops results for squared amplitude
+OpenLoopsResTree = 5.9737839579143591E-010          # tree level
 """
 
 # T5
@@ -161,16 +165,20 @@ p2 = [500.00000000000000,  0.0000000000000000, 0.0000000000000000, -500.00000000
 p4 = [452.43514519062069, -360.30712670107181, 273.29434984302782, 13.657722941712629]      # antinuetrino
 p3 = [166.74787661340551, 136.45200948428351, -3.9533202721630261, -95.760507108130113]     # lepton
 pH = [380.81697819597377, 223.85511721678819, -269.34102957086469, 82.102784166417536]      # Higgs boson
+# OpenLoops results for squared amplitude
+OpenLoopsResTree = 2.1564977816288064E-011          # tree level
 """
 
 # T6
-
+"""
 p1 = [500.00000000000000, 0.0000000000000000, 0.0000000000000000, 500.00000000000000]       # quark
 p2 = [500.00000000000000,  0.0000000000000000, 0.0000000000000000, -500.00000000000000]     # antiquark
 p4 = [437.54043701755631, -97.116824717561357, 24.273872530803061, -425.93513061809170]     # antinuetrino
 p3 = [155.34397295089261, 76.271838801236925, 118.04809928637390, 66.174034129106673]       # lepton
 pH = [407.11559003155111, 20.844985916324440, -142.32197181717689, 359.76109648898500]      # Higgs boson
-
+# OpenLoops results for squared amplitude
+OpenLoopsResTree = 2.1353768988401058E-010          # tree level
+"""
 
 
 print("External Momenta:")
@@ -348,7 +356,7 @@ print("Global factors:")
 print("G = ", GlobFac_SM, " (Standard Model)")
 print("G = ", GlobFac_SMEFT, " (SMEFT)")
 print()
-
+print()
 
 
                                                                                         # LEADING ORDER (TREE LEVEL)
@@ -360,33 +368,33 @@ print("LEADING ORDER (TREE LEVEL)")
 print("-----------------------------------------")
 
 # Tree-level form factors
+FFtree1 = 1
+FFtree2 = 0
+FFtree3 = 1
 print("Tree-level form factors:")
-FFtree = [0, 1, 0, 1]
-i = 1
-while i < 4:
-    print("FF_tree[", i, "] =", FFtree[i])
-    i += 1
-print()
+print("FFtree1 =", FFtree1)
+print("FFtree2 =", FFtree2)
+print("FFtree3 =", FFtree3)
 
 # SM Tree-level helicity amplitudes iM(quark, antiquark, lepton, antilepton)
 MLRLLtreeSM = 0 * GlobFac_SM
 MRLLLtreeSM = 0 * GlobFac_SM
-MLLLLtreeSM = -2 * (vq + aq) * (a + b) * FFtree[3] * Ang[2,3] * Sq[1,4] * GlobFac_SM
-MRRLLtreeSM = -2 * (vq - aq) * (a + b) * FFtree[3] * Ang[1,3] * Sq[2,4] * GlobFac_SM
+MLLLLtreeSM = -2 * (vq + aq) * (a + b) * FFtree3 * Ang[2,3] * Sq[1,4] * GlobFac_SM
+MRRLLtreeSM = -2 * (vq - aq) * (a + b) * FFtree3 * Ang[1,3] * Sq[2,4] * GlobFac_SM
 MLRRRtreeSM = 0 * GlobFac_SM
 MRLRRtreeSM = 0 * GlobFac_SM
-MLLRRtreeSM = -2 * (vq + aq) * b * FFtree[3] * Sq[1,3] * Ang[2,4] * GlobFac_SM
-MRRRRtreeSM = -2 * (vq - aq) * b * FFtree[3] * Ang[1,4] * Sq[2,3] * GlobFac_SM
+MLLRRtreeSM = -2 * (vq + aq) * b * FFtree3 * Sq[1,3] * Ang[2,4] * GlobFac_SM
+MRRRRtreeSM = -2 * (vq - aq) * b * FFtree3 * Ang[1,4] * Sq[2,3] * GlobFac_SM
 
 # SMEFT Tree-level helicity amplitudes
-MLRLLtreeSMEFT = A * (a + b) * (-4 * FFtree[1] * Sq[1,4] * Sq[2,4] * Ang[3,4] + (s[2,3]/2 + s[2,4]/2) * FFtree[2] * Sq[1,2] * Ang[1,3] * Sq[1,4] - (s[1,3]/2 + s[1,4]/2) * FFtree[2] * Sq[1,2] * Ang[2,3] * Sq[2,4]) * GlobFac_SMEFT
-MRLLLtreeSMEFT = B * (a + b) * (4 * FFtree[1] * Ang[1,3] * Ang[2,3] * Sq[3,4] + (s[2,3]/2 + s[2,4]/2) * FFtree[2] * Ang[1,2] * Ang[1,3] * Sq[1,4] - (s[1,3]/2 + s[1,4]/2) * FFtree[2] * Ang[1,2] * Ang[2,3] * Sq[2,4]) * GlobFac_SMEFT
-MLLLLtreeSMEFT = -2 * C * (a + b) * FFtree[3] * Ang[2,3] * Sq[1,4] * GlobFac_SMEFT
-MRRLLtreeSMEFT = -2 * D * (a + b) * FFtree[3] * Ang[1,3] * Sq[2,4] * GlobFac_SMEFT
-MLRRRtreeSMEFT = A * b * (4 * FFtree[1] * Sq[1,3] * Sq[2,3] * Ang[3,4] + (s[2,3]/2 + s[2,4]/2) * FFtree[2] * Sq[1,2] * Sq[1,3] * Ang[1,4] - (s[1,3]/2 + s[1,4]/2) * FFtree[2] * Sq[1,2] * Sq[2,3] * Ang[2,4]) * GlobFac_SMEFT
-MRLRRtreeSMEFT = B * b * (-4 * FFtree[1] * Ang[1,4] * Ang[2,4] * Sq[3,4] + (s[2,3]/2 + s[2,4]/2) * FFtree[2] * Ang[1,2] * Sq[1,3] * Ang[1,4] - (s[1,3]/2 + s[1,4]/2) * FFtree[2] * Ang[1,2] * Sq[2,3] * Ang[2,4]) * GlobFac_SMEFT
-MLLRRtreeSMEFT = -2 * C * b * FFtree[3] * Sq[1,3] * Ang[2,4] * GlobFac_SMEFT
-MRRRRtreeSMEFT = -2 * D * b * FFtree[3] * Ang[1,4] * Sq[2,3] * GlobFac_SMEFT
+MLRLLtreeSMEFT = A * (a + b) * (-4 * FFtree1 * Sq[1,4] * Sq[2,4] * Ang[3,4] + (s[2,3]/2 + s[2,4]/2) * FFtree2 * Sq[1,2] * Ang[1,3] * Sq[1,4] - (s[1,3]/2 + s[1,4]/2) * FFtree2 * Sq[1,2] * Ang[2,3] * Sq[2,4]) * GlobFac_SMEFT
+MRLLLtreeSMEFT = B * (a + b) * (4 * FFtree1 * Ang[1,3] * Ang[2,3] * Sq[3,4] + (s[2,3]/2 + s[2,4]/2) * FFtree2 * Ang[1,2] * Ang[1,3] * Sq[1,4] - (s[1,3]/2 + s[1,4]/2) * FFtree2 * Ang[1,2] * Ang[2,3] * Sq[2,4]) * GlobFac_SMEFT
+MLLLLtreeSMEFT = -2 * C * (a + b) * FFtree3 * Ang[2,3] * Sq[1,4] * GlobFac_SMEFT
+MRRLLtreeSMEFT = -2 * D * (a + b) * FFtree3 * Ang[1,3] * Sq[2,4] * GlobFac_SMEFT
+MLRRRtreeSMEFT = A * b * (4 * FFtree1 * Sq[1,3] * Sq[2,3] * Ang[3,4] + (s[2,3]/2 + s[2,4]/2) * FFtree2 * Sq[1,2] * Sq[1,3] * Ang[1,4] - (s[1,3]/2 + s[1,4]/2) * FFtree2 * Sq[1,2] * Sq[2,3] * Ang[2,4]) * GlobFac_SMEFT
+MRLRRtreeSMEFT = B * b * (-4 * FFtree1 * Ang[1,4] * Ang[2,4] * Sq[3,4] + (s[2,3]/2 + s[2,4]/2) * FFtree2 * Ang[1,2] * Sq[1,3] * Ang[1,4] - (s[1,3]/2 + s[1,4]/2) * FFtree2 * Ang[1,2] * Sq[2,3] * Ang[2,4]) * GlobFac_SMEFT
+MLLRRtreeSMEFT = -2 * C * b * FFtree3 * Sq[1,3] * Ang[2,4] * GlobFac_SMEFT
+MRRRRtreeSMEFT = -2 * D * b * FFtree3 * Ang[1,4] * Sq[2,3] * GlobFac_SMEFT
 
 
 print("Standard Model tree-level helicity amplitudes iM(quark, antiquark, lepton, antilepton):")
@@ -436,23 +444,9 @@ print()
 M2tree = M2LRLLtree.real + M2RLLLtree.real + M2LLLLtree.real + M2RRLLtree.real + M2LRRRtree.real + M2RLRRtree.real + M2LLRRtree.real + M2RRRRtree.real
 
 print("Total tree-level squared amplitude:")
-print("|M_tree|^2 = ", M2tree)
-print()
-
-
-# OpenLoops & MadGraph results
-#OpenLoopsRes = 3.4729976354737612E-011 # T1
-#OpenLoopsRes = 6.7466380038976574E-011 # T2
-#OpenLoopsRes = 4.2298820425566844E-011 # T3
-#OpenLoopsRes = 5.9737839579143591E-010 # T4
-#OpenLoopsRes = 2.1564977816288064E-011 # T5
-OpenLoopsRes = 2.1353768988401058E-010 # T6
-
-print("OpenLoops & MadGraph result:")
-print("|M_tree|^2 = ", OpenLoopsRes)
-
-print("ratio Dmitrii/OpenLoops: ", M2tree / OpenLoopsRes)
-
+print("|M_tree|^2 = ", M2tree, " (Dmitrii)")
+print("|M_tree|^2 = ", OpenLoopsResTree, " (OpenLoops & MadGraph)")
+print("ratio Dmitrii/OpenLoops: ", M2tree / OpenLoopsResTree)
 
 
 

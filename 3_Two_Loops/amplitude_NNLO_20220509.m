@@ -21,7 +21,9 @@
     INT[SNLO1, 1, 0, 1, 0, 1, 0, 1, 0, 0])/(Nc^2*\[Epsilon]^2) + 
   ((I/4)*cVH2*gC^4*(-1 + Nc^2)*s^2*
     (2 + \[Epsilon]*(-2 + \[Epsilon]*(4 + \[Epsilon])))*
-    INT[SNLO2, 1, 1, 1, 1, 1, 0, 1, 0, 0])/(Nc^2*(-1 + 4*\[Epsilon])), 
+    INT[SNLO2, 1, 1, 1, 1, 1, 0, 1, 0, 0])/(Nc^2*(-1 + 4*\[Epsilon])),
+
+ 
  ((-I/4)*cVH1*gC^4*(-1 + Nc)*(1 + Nc)*(-108 + 2*Nc^2*(-3 + 4*\[Epsilon])*
       (-1 + 4*\[Epsilon])*(6 + \[Epsilon]*
         (-41 + \[Epsilon]*(104 + \[Epsilon]*(-140 + \[Epsilon]*
@@ -53,7 +55,9 @@
     (6 + \[Epsilon]*(-13 + \[Epsilon]*(6 + \[Epsilon]*
           (-16 + \[Epsilon]*(21 + 4*\[Epsilon])))))*
     INT[SNLO2, 1, 1, 1, 1, 1, 0, 1, 0, 0])/(Nc^2*(-1 + \[Epsilon])*
-    (-3 + 4*\[Epsilon])*(-1 + 4*\[Epsilon])), 
+    (-3 + 4*\[Epsilon])*(-1 + 4*\[Epsilon])),
+
+ 
  ((-4*I)*cVH1*gC^4*(-1 + Nc)*(1 + Nc)*(92 + 2*Nc^2*(-1 + 2*\[Epsilon])*
       (-3 + 4*\[Epsilon])*(-1 + 4*\[Epsilon])*
       (2 + \[Epsilon]*(-5 + \[Epsilon]*(4 + 3*(-1 + \[Epsilon])*

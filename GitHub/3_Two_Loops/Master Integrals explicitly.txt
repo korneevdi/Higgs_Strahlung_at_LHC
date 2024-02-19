@@ -1,7 +1,0 @@
-INT[SUNRISE] = (4*\[Pi]*mu02/(-s12))^(2*\[Epsilon]) * s12/(256*\[pi]^4) * (1/(4*\[Epsilon]) + 13/8 + (115/16 - \[Pi]^2/24)*\[Epsilon] + (205/8 - 13*\[Pi]^2/48 - 3*Zeta[3]/2)*\[Epsilon]^2)
-
-INT[TRIANGLE] = (4*\[Pi]*mu02/(-s12))^(2*\[Epsilon]) * 1/(256*\[pi]^4) * (1/(2*\[Epsilon]^2) + 5/(2*\[Epsilon]) + 12 + \[Pi]^2/12 + (65/2 + 5*\[Pi]^2/12 - 2*Zeta[3])*\[Epsilon] + (211/2 + 19*\[Pi]^2/12 - 7*\[Pi]^4/288 - 10*Zeta[3])*\[Epsilon]^2)
-
-INT[BUBBLE] = (4*\[Pi]*mu02/(-s12))^(2*\[Epsilon]) * 1/(256*\[pi]^4) * (1/(\[Epsilon]^2) + 4/(\[Epsilon]) + 12 - \[Pi]^2/6 + (32 - 2*\[Pi]^2/3)*\[Epsilon] + (80 - 2*\[Pi]^2 + \[Pi]^4/144)*\[Epsilon]^2)
-
-INT[NON-PLANAR] = (4*\[Pi]*mu02/(-s12))^(2*\[Epsilon]) * 1/(s^2*256*\[pi]^4) * (1/(\[Epsilon]^4) - 5*\[Pi]^2/(6*\[Epsilon]^2) - 27*Zeta[3]/(\[Epsilon]) - 23*[Pi]^2/36 + (8\[Pi]^2*Zeta[3] - 117*Zeta[5])*\[Epsilon] - (19*\[Pi]^6/315 - 267*(Zeta[3])^2)*\[Epsilon]^2)
