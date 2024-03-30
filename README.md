@@ -20,4 +20,10 @@ I assume that you understand that experiments at CERN are very expensive, and th
 
 As part of this project, I performed complex analytical calculations, developed several Python programs for some predictions using machine learning methods and numerical verification of the results, and also developed an intuitive and user-friendly graphical interface in Java for visual perception of the results. As a result, my project brought together many different ideas and approaches that helped me achieve reliable and accurate results that the client was happy with.
 
-New files will be gradually added to this repository as their publication becomes possible.
+## Technical description of the project
+
+#### Step #1: Identify specific quantum processes to research
+
+CERN conducts a large number of experiments on particle collisions. Particles are accelerated by a magnetic field to enormous speeds and collide at enormous energies, after which other particles appear at the point of collision. Special detectors measure various parameters of these particles and this data is entered into a database. Next, you can analyze the results of the experiments and find out which particles appeared in the experiments.
+
+This was the first step of my project - to analyze a large amount of data from real experiments at CERN and understand which quantum processes we need to research in order to quickly achieve our goal, namely, to study the properties of the Higgs boson. To do this, I used some machine learning techniques to cluster quantum processes in experiments.
