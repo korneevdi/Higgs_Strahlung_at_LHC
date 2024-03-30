@@ -6,7 +6,7 @@ My PhD project was dedicated to performing some complex calculations in the fiel
 
 Now let's turn back the clock. Then we will see how galaxies and other objects come closer to each other and, finally, at time zero, gather at one point. Now let's start the timer again. At this moment the Big Bang occurs and our Universe is born. The universe begins to expand and eventually reaches its current size.
 
-PICTURE (diagram of the expansion of the Universe)
+![Universe expansion](https://github.com/korneevdi/Quantum_Radiative_Corrections_-Python-/blob/main/Pictures/Big_Bang.png)
 
 Such thought experiments are very often conducted by scientists and help us find answers to fundamental questions. For example, what is mass and where does it come from? You know that all objects in the world are made up of small particles such as electrons and others. This means that these particles also have mass. But why? According to modern ideas, this is due to the existence of a particle such as the Higgs boson, also called the God particle, since when interacting with it, other particles acquire their specific mass.
 
