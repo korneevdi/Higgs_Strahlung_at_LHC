@@ -43,3 +43,5 @@ Here, two different partons collide and a weak boson appear that then emits a Hi
 #### Step #3: Developing Python code for numerical verification
 
 #### Step #4: Developing Java software for graphical interpretation of the results
+
+## Structure of the project
