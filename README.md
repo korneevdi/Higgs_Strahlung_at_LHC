@@ -1,12 +1,14 @@
+**My project is a new result in science, so I currently cannot publish the entire project. New files will be added to this repository as their publication is possible.**
+
 ## Easy Introduction :)
 
 My PhD project was dedicated to performing some complex calculations in the field of quantum field theory. Perhaps, at least once in your life, looking at the starry sky, you wondered why our world exists and where it came from. You may know that our Universe was born as a result of the Big Bang. So let's do a thought experiment. Imagine a picture of space with galaxies, nebulae and planets.
 
-<img src="https://github.com/korneevdi/Quantum_Radiative_Corrections_-Python-/blob/main/Pictures/Universe.png" width="600" height="400">
+<img src="https://github.com/korneevdi/Quantum_Radiative_Corrections/blob/main/Pictures/Universe.png" width="600" height="400">
 
 Now let's turn back the clock. Then we will see how galaxies and other objects come closer to each other and, finally, at time zero, gather at one point. Now let's start the timer again. At this moment the Big Bang occurs and our Universe is born. The universe begins to expand and eventually reaches its current size.
 
-<img src="https://github.com/korneevdi/Quantum_Radiative_Corrections_-Python-/blob/main/Pictures/Big_Bang.png" width="600" height="400">
+<img src="https://github.com/korneevdi/Quantum_Radiative_Corrections/blob/main/Pictures/Big_Bang.png" width="600" height="400">
 
 Such thought experiments are very often conducted by scientists and help us find answers to fundamental questions. For example, what is mass and where does it come from? You know that all objects in the world are made up of small particles such as electrons and others. This means that these particles also have mass. But why? According to modern ideas, this is due to the existence of a particle such as the Higgs boson, also called the God particle, since when interacting with it, other particles acquire their specific mass.
 
