@@ -1,4 +1,4 @@
-**My project is a new result in science, so I currently cannot publish the entire project. New files will be added to this repository as their publication is possible.**
+**My project is a new scientific result, so I currently cannot publish the entire project. New files will be added to this repository as their publication is possible.**
 
 ## Easy Introduction :)
 
@@ -27,3 +27,13 @@ As part of this project, I performed complex analytical calculations, developed 
 CERN conducts a large number of experiments on particle collisions. Particles are accelerated by a magnetic field to enormous speeds and collide at enormous energies, after which other particles appear at the point of collision. Special detectors measure various parameters of these particles and this data is entered into a database. Next, you can analyze the results of the experiments and find out which particles appeared in the experiments.
 
 This was the first step of my project - to analyze a large amount of data from real experiments at CERN and understand which quantum processes we need to research in order to quickly achieve our goal, namely, to study the properties of the Higgs boson. To do this, I used some machine learning techniques to cluster quantum processes in experiments.
+
+#### Step #2: Perform analytical computations
+
+In the first step of my project, I found out that the most important quantum process occurring in the CERN experiments is the creation of the Higgs boson when two **partons** collide. **Parton** is a conventional name for a certain group of particles. All matter in the Universe (at least 4% that is not dark matter and dark energy) is made up of atoms, all of which are listed in the periodic table. These atoms, in turn, are made up of electrons that orbit atomic nuclei. The nuclei of atoms consist of protons and neutrons. But that is not all. Protons and neutrons are divided into even smaller particles - quarks and gluons. It is these quarks and gluons that we call **partons**.
+
+In addition to the particles that make up matter, there are other particles. For example, **photons** that make up light. Photons are also carriers of electromagnetic interactions (such as the attraction or repulsion of electric charges). The **Higgs boson** helps particles gain mass. The so-called weak interaction is carried out through three particles - **electroweak bosons** $W^+$, $W^-$ and $Z^0$. Plus, minus and zero denote the electric charge.
+
+In most CERN experiments, beams of protons collide. However, the temperature and energy are maintained so high that the protons do not exist as a whole, but break up into their component parts, that is, into partons. Thus, partons actually participate in collisions. After the collision, these particles turn into other particles, the properties of which I studied in the first step of my project. So the quantum process I studied in my project looks like this: $PP \rightarrow VH$, where $P$ denotes a parton (quark or gluon), V denotes an electroweak boson ($W^+$, $W^-$ or $Z^0$), and $H$ denotes the Higgs boson:
+
+PICTURE
