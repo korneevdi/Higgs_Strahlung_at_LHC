@@ -36,4 +36,5 @@ In addition to the particles that make up matter, there are other particles. For
 
 In most CERN experiments, beams of protons collide. However, the temperature and energy are maintained so high that the protons do not exist as a whole, but break up into their component parts, that is, into partons. Thus, partons actually participate in collisions. After the collision, these particles turn into other particles, the properties of which I studied in the first step of my project. So the quantum process I studied in my project looks like this: $PP \rightarrow VH$, where $P$ denotes a parton (quark or gluon), V denotes an electroweak boson ($W^+$, $W^-$ or $Z^0$), and $H$ denotes the Higgs boson:
 
-PICTURE
+<img src="https://github.com/korneevdi/Quantum_Radiative_Corrections/blob/main/Pictures/Quantum_process.png" width="300" height="200">
+
