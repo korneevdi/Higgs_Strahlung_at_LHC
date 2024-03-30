@@ -40,3 +40,6 @@ In most CERN experiments, beams of protons collide. However, the temperature and
 
 Here, two different partons collide and a weak boson appear that then emits a Higgs boson and subsequently decays into a lepton and a nuetrino. QCD corrections are the complex small (but very important) quantum corrections that have been studied in this project.
 
+#### Step #3: Developing Python code for numerical verification
+
+#### Step #4: Developing Java software for graphical interpretation of the results
