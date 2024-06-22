@@ -1,6 +1,8 @@
 
-A1(0, 0) = 1
+Leading order form factors
 
-A2(0, 0) = 0
+A1 = 2*I
 
-A3(0, 0) = 1
+A2 = 0
+
+A3 = I

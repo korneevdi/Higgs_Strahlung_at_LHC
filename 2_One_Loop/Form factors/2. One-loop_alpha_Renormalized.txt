@@ -1,0 +1,56 @@
+
+One-loop renormalized form factors (after alpha_s renormalization) up to order eps^(-2)
+
+A1 =
+
+-((2 I cf)/e^2) - (2 I cf (2 + Log[-(mu2/s12)]))/e + 
+ 1/6 I cf (-48 + \[Pi]^2 - 24 Log[-(mu2/s12)] - 
+    6 Log[-(mu2/s12)]^2) + 
+ 1/6 I cf e (-52 + 2 \[Pi]^2 - 
+    48 Log[-(mu2/s12)] + \[Pi]^2 Log[-(mu2/s12)] - 
+    12 Log[-(mu2/s12)]^2 - 2 Log[-(mu2/s12)]^3 + 2 PolyGamma[2, 1] - 
+    16 PolyGamma[2, 2]) - 
+ 1/720 I cf e^2 (11040 - 480 \[Pi]^2 - 47 \[Pi]^4 + 
+    6240 Log[-(mu2/s12)] - 240 \[Pi]^2 Log[-(mu2/s12)] + 
+    2880 Log[-(mu2/s12)]^2 - 60 \[Pi]^2 Log[-(mu2/s12)]^2 + 
+    480 Log[-(mu2/s12)]^3 + 60 Log[-(mu2/s12)]^4 - 
+    480 PolyGamma[2, 1] - 240 Log[-(mu2/s12)] PolyGamma[2, 1] + 
+    3840 PolyGamma[2, 2] + 1920 Log[-(mu2/s12)] PolyGamma[2, 2])
+
+
+
+A2 =
+
+-((2 I cf e)/s12) - (2 I cf e^2 (3 + Log[-(mu2/s12)]))/s12
+
+
+
+A3 =
+
+-((I cf)/e^2) - (I cf (3 + 2 Log[-(mu2/s12)]))/(2 e) + 
+ 1/12 I cf (-48 + \[Pi]^2 - 18 Log[-(mu2/s12)] - 
+    6 Log[-(mu2/s12)]^2) - 
+ 1/24 I cf e (128 - 3 \[Pi]^2 + 96 Log[-(mu2/s12)] - 
+    2 \[Pi]^2 Log[-(mu2/s12)] + 18 Log[-(mu2/s12)]^2 + 
+    4 Log[-(mu2/s12)]^3 - 4 PolyGamma[2, 1] + 32 PolyGamma[2, 2]) - 
+ 1/1440 I cf e^2 (17280 - 480 \[Pi]^2 - 47 \[Pi]^4 + 
+     7680 Log[-(mu2/s12)] - 180 \[Pi]^2 Log[-(mu2/s12)] + 
+     2880 Log[-(mu2/s12)]^2 - 60 \[Pi]^2 Log[-(mu2/s12)]^2 + 
+     360 Log[-(mu2/s12)]^3 + 60 Log[-(mu2/s12)]^4 - 
+     360 PolyGamma[2, 1] - 240 Log[-(mu2/s12)] PolyGamma[2, 1] + 
+     2880 PolyGamma[2, 2] + 1920 Log[-(mu2/s12)] PolyGamma[2, 2])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+A1 = 
+
++ eps^(-4) * cf2/2
+
++ eps^(-3) * ((-11*cacf)/24 + beta0*CF + (3*cf2)/2 + cfnf/12 + cf2*Log[-(mu2/s12)])
+
++ eps^(-2) * ((126*beta0*CF + 369*cf2 + 34*cfnf - 6*cf2*Pi^2 + cacf*(-199 + 3*Pi^2))/72 + ((-11*cacf)/12 + beta0*CF + (7*cf2)/2 + cfnf/6)*Log[-(mu2/s12)] + cf2*Log[-(mu2/s12)]^2)
+
++ eps^(-1) * ((1728*beta0*CF + 5535*cf2 + 706*cfnf - 36*beta0*CF*Pi^2 - 18*cf2*Pi^2 + 6*cfnf*Pi^2 + 12*(72*beta0*CF + 396*cf2 + 34*cfnf - 6*cf2*Pi^2 
+		+ cacf*(-199 + 3*Pi^2))*Log[-(mu2/s12)] - 36*(11*cacf - 6*beta0*CF - 45*cf2 - 2*cfnf)*Log[-(mu2/s12)]^2 
+		+ 288*cf2*Log[-(mu2/s12)]^3 - 2304*cf2*Zeta[3] + cacf*(-4129 - 33*Pi^2 + 1404*Zeta[3]))/432)
+
++ eps^(0) * 1 / 6480 * 
+
+		( + 180*(36*beta0*CF + 414*cf2 + 34*cfnf - 6*cf2*Pi^2 + cacf*(-199 + 3*Pi^2))*Log[-(mu2/s12)]^2 
+		  - 180*(22*cacf - 6*beta0*CF - 93*cf2 - 4*cfnf)*Log[-(mu2/s12)]^3 
+		  + 2160*cf2*Log[-(mu2/s12)]^4 
+		  + cacf*(-249070 - 3525*Pi^2 + 396*Pi^4 + 106740*Zeta[3]) 
+		  - 30*Log[-(mu2/s12)]*(-6480*cf2 - 784*cfnf + 27*cf2*Pi^2 - 6*cfnf*Pi^2 + 18*beta0*CF*(-48 + Pi^2) + cacf*(4900 + 33*Pi^2 - 1404*Zeta[3]) + 2304*cf2*Zeta[3]) 
+		  - 5*(216*beta0*CF*(Pi^2 + 14*(-3 + Zeta[3])) - 2*cfnf*(3862 + 51*Pi^2 - 468*Zeta[3]) + 9*cf2*(-5376 - 12*Pi^2 + 13*Pi^4 + 2832*Zeta[3]))
+		)
+
+
+
+A2 = 
+
++ eps^(-1) * (2*cf2)/s12
+
++ eps^(0) * (-11*cacf + 6*beta0*CF + 27*cf2 + 2*cfnf + 12*cf2*Log[-(mu2/s12)])/(3*s12)
+
+
+
+A3 =
+
++ eps^(-4) * (-cf2/2)
+
++ eps^(-3) * ((11*cacf - 2*(12*beta0*CF + 18*cf2 + cfnf) - 24*cf2*Log[-(mu2/s12)])/24)
+
++ eps^(-2) * ((-108*beta0*CF - 369*cf2 - 28*cfnf + 6*cf2*Pi^2 + cacf*(166 - 3*Pi^2) + 6*(11*cacf - 2*(6*beta0*CF + 18*cf2 + cfnf))*Log[-(mu2/s12)] - 72*cf2*Log[-(mu2/s12)]^2)/72)
+
++ eps^(-1) * ((-1728*beta0*CF - 5967*cf2 - 706*cfnf + 36*beta0*CF*Pi^2 - 6*cfnf*Pi^2 - 12*(54*beta0*CF + 369*cf2 + 28*cfnf - 6*cf2*Pi^2 + cacf*(-166 + 3*Pi^2))*Log[-(mu2/s12)] 
+		+ 36*(11*cacf - 2*(3*beta0*CF + 18*cf2 + cfnf))*Log[-(mu2/s12)]^2 - 288*cf2*Log[-(mu2/s12)]^3 + cacf*(4129 + 33*Pi^2 - 1404*Zeta[3]) + 2304*cf2*Zeta[3])/432)
+
++ eps^(0) * ((-360*(27*beta0*CF + 369*cf2 + 28*cfnf - 6*cf2*Pi^2 + cacf*(-166 + 3*Pi^2))*Log[-(mu2/s12)]^2 + 720*(11*cacf - 3*beta0*CF - 2*(18*cf2 + cfnf))*Log[-(mu2/s12)]^3 
+		- 4320*cf2*Log[-(mu2/s12)]^4 + cacf*(445865 + 7140*Pi^2 - 792*Pi^4 - 168120*Zeta[3]) + 60*Log[-(mu2/s12)]*(-5967*cf2 - 706*cfnf - 6*cfnf*Pi^2 + 18*beta0*CF*(-48 + Pi^2) 
+		+ cacf*(4129 + 33*Pi^2 - 1404*Zeta[3]) + 2304*cf2*Zeta[3]) + 5*(-2*cfnf*(7541 + 84*Pi^2 - 936*Zeta[3]) + 108*beta0*CF*(-192 + 3*Pi^2 + 56*Zeta[3]) 
+		+ 9*cf2*(-10359 - 102*Pi^2 + 26*Pi^4 + 4176*Zeta[3])))/12960)
+
+
+
+
+
+

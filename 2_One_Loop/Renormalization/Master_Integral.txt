@@ -1,0 +1,1 @@
+tri1[0, 1, 1] = I/(16*Pi^2)*(4*Pi*mu02/(-s12))^e*Gamma[e]*Gamma[1 - e]^2/Gamma[2 - 2*e]
