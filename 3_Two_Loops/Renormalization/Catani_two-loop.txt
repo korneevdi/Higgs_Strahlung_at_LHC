@@ -1,0 +1,36 @@
+
+Cat2 =
+
+-(cf^2/(2 e^4)) + (-3 cf^2 + 3 beta0 cf \[Pi] - 
+  2 cf^2 Log[-(mu2/s12)])/(
+ 2 e^3) + (-67 ca cf - 81 cf^2 + 10 cf nf + 108 beta0 cf \[Pi] + 
+  3 ca cf \[Pi]^2 + 6 cf^2 \[Pi]^2 - 216 cf^2 Log[-(mu2/s12)] + 
+  72 beta0 cf \[Pi] Log[-(mu2/s12)] - 72 cf^2 Log[-(mu2/s12)]^2)/(
+ 72 e^2) + (1/(
+ 144 e))(-115 ca cf - 27 cf^2 + 6 cf nf - 224 beta0 cf \[Pi] - 
+   44 ca cf \[Pi]^2 + 72 cf^2 \[Pi]^2 + 8 cf nf \[Pi]^2 + 
+   12 beta0 cf \[Pi]^3 - 268 ca cf Log[-(mu2/s12)] - 
+   324 cf^2 Log[-(mu2/s12)] + 40 cf nf Log[-(mu2/s12)] + 
+   12 ca cf \[Pi]^2 Log[-(mu2/s12)] + 
+   24 cf^2 \[Pi]^2 Log[-(mu2/s12)] - 432 cf^2 Log[-(mu2/s12)]^2 - 
+   96 cf^2 Log[-(mu2/s12)]^3 - 24 cf^2 PolyGamma[2, 1] + 
+   468 ca cf Zeta[3] - 432 cf^2 Zeta[3]) + 1/4320(335 ca cf \[Pi]^2 + 
+   810 cf^2 \[Pi]^2 - 50 cf nf \[Pi]^2 - 540 beta0 cf \[Pi]^3 - 
+   15 ca cf \[Pi]^4 - 18 cf^2 \[Pi]^4 - 6900 ca cf Log[-(mu2/s12)] - 
+   1620 cf^2 Log[-(mu2/s12)] + 360 cf nf Log[-(mu2/s12)] - 
+   13440 beta0 cf \[Pi] Log[-(mu2/s12)] - 
+   2640 ca cf \[Pi]^2 Log[-(mu2/s12)] + 
+   4320 cf^2 \[Pi]^2 Log[-(mu2/s12)] + 
+   480 cf nf \[Pi]^2 Log[-(mu2/s12)] + 
+   1440 beta0 cf \[Pi]^3 Log[-(mu2/s12)] - 
+   8040 ca cf Log[-(mu2/s12)]^2 - 9720 cf^2 Log[-(mu2/s12)]^2 + 
+   1200 cf nf Log[-(mu2/s12)]^2 - 
+   6480 beta0 cf \[Pi] Log[-(mu2/s12)]^2 + 
+   360 ca cf \[Pi]^2 Log[-(mu2/s12)]^2 + 
+   720 cf^2 \[Pi]^2 Log[-(mu2/s12)]^2 - 8640 cf^2 Log[-(mu2/s12)]^3 - 
+   1440 beta0 cf \[Pi] Log[-(mu2/s12)]^3 - 
+   1440 cf^2 Log[-(mu2/s12)]^4 - 2160 cf^2 PolyGamma[2, 1] + 
+   1080 beta0 cf \[Pi] PolyGamma[2, 1] - 
+   1440 cf^2 Log[-(mu2/s12)] PolyGamma[2, 1] + 
+   28080 ca cf Log[-(mu2/s12)] Zeta[3] - 
+   25920 cf^2 Log[-(mu2/s12)]  Zeta[3])

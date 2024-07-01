@@ -1,0 +1,12 @@
+
+Cat1 =
+
+-(cf/e^2) + (-((3 cf)/2) - cf Log[-(mu2/s12)])/e + 
+ 1/12 (cf \[Pi]^2 - 18 cf Log[-(mu2/s12)] - 6 cf Log[-(mu2/s12)]^2) + 
+ 1/24 e (3 cf \[Pi]^2 + 2 cf \[Pi]^2 Log[-(mu2/s12)] - 
+    18 cf Log[-(mu2/s12)]^2 - 4 cf Log[-(mu2/s12)]^3 - 
+    4 cf PolyGamma[2, 1]) + (
+ e^2 (-cf \[Pi]^4 + 180 cf \[Pi]^2 Log[-(mu2/s12)] + 
+    60 cf \[Pi]^2 Log[-(mu2/s12)]^2 - 360 cf Log[-(mu2/s12)]^3 - 
+    60 cf Log[-(mu2/s12)]^4 - 360 cf PolyGamma[2, 1] - 
+    240 cf Log[-(mu2/s12)] PolyGamma[2, 1]))/1440
