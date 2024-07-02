@@ -1,0 +1,33 @@
+Cat = 
+
+(1/Nc - 2 Nc)/(2 e^2) + (
+ 9 - 20 Nc^2 + 2 Nc Nf + 6 Log[-(mu2/s12)] - 6 Nc^2 Log[-(mu2/s13)] - 
+  6 Nc^2 Log[-(mu2/s23)])/(
+ 12 Nc e) + (-\[Pi]^2 + 2 Nc^2 \[Pi]^2 + 18 Log[-(mu2/s12)] + 
+  6 Log[-(mu2/s12)]^2 - 20 Nc^2 Log[-(mu2/s13)] + 
+  2 Nc Nf Log[-(mu2/s13)] - 6 Nc^2 Log[-(mu2/s13)]^2 - 
+  20 Nc^2 Log[-(mu2/s23)] + 2 Nc Nf Log[-(mu2/s23)] - 
+  6 Nc^2 Log[-(mu2/s23)]^2)/(24 Nc) + 
+ 1/(144 Nc) (-9 \[Pi]^2 + 20 Nc^2 \[Pi]^2 - 2 Nc Nf \[Pi]^2 - 
+     6 \[Pi]^2 Log[-(mu2/s12)] + 54 Log[-(mu2/s12)]^2 + 
+     12 Log[-(mu2/s12)]^3 + 6 Nc^2 \[Pi]^2 Log[-(mu2/s13)] - 
+     60 Nc^2 Log[-(mu2/s13)]^2 + 6 Nc Nf Log[-(mu2/s13)]^2 - 
+     12 Nc^2 Log[-(mu2/s13)]^3 + 6 Nc^2 \[Pi]^2 Log[-(mu2/s23)] - 
+     60 Nc^2 Log[-(mu2/s23)]^2 + 6 Nc Nf Log[-(mu2/s23)]^2 - 
+     12 Nc^2 Log[-(mu2/s23)]^3 + 12 PolyGamma[2, 1] - 
+     24 Nc^2 PolyGamma[2, 1]) e + 
+ 1/(2880 Nc) (\[Pi]^4 - 2 Nc^2 \[Pi]^4 - 
+    180 \[Pi]^2 Log[-(mu2/s12)] - 60 \[Pi]^2 Log[-(mu2/s12)]^2 + 
+    360 Log[-(mu2/s12)]^3 + 60 Log[-(mu2/s12)]^4 + 
+    200 Nc^2 \[Pi]^2 Log[-(mu2/s13)] - 
+    20 Nc Nf \[Pi]^2 Log[-(mu2/s13)] + 
+    60 Nc^2 \[Pi]^2 Log[-(mu2/s13)]^2 - 400 Nc^2 Log[-(mu2/s13)]^3 + 
+    40 Nc Nf Log[-(mu2/s13)]^3 - 60 Nc^2 Log[-(mu2/s13)]^4 + 
+    200 Nc^2 \[Pi]^2 Log[-(mu2/s23)] - 
+    20 Nc Nf \[Pi]^2 Log[-(mu2/s23)] + 
+    60 Nc^2 \[Pi]^2 Log[-(mu2/s23)]^2 - 400 Nc^2 Log[-(mu2/s23)]^3 + 
+    40 Nc Nf Log[-(mu2/s23)]^3 - 60 Nc^2 Log[-(mu2/s23)]^4 + 
+    360 PolyGamma[2, 1] - 800 Nc^2 PolyGamma[2, 1] + 
+    80 Nc Nf PolyGamma[2, 1] + 240 Log[-(mu2/s12)] PolyGamma[2, 1] - 
+    240 Nc^2 Log[-(mu2/s13)] PolyGamma[2, 1] - 
+    240 Nc^2 Log[-(mu2/s23)] PolyGamma[2, 1])  e^2
