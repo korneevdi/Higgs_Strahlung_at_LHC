@@ -57,7 +57,7 @@ L T3(mu) = Ubarp1*(g_(1, pg)*eps.p1*pg(mu) - s1g/2*g_(1, eps)*pg(mu) + (s12 - s1
 L T4(mu) = Ubarp1*(g_(1, pg)*eps.p2*p1(mu) - s2g/2*g_(1, eps)*p1(mu) + s12/4*g_(1, mu, pg, eps))*Up2;
 L T5(mu) = Ubarp1*(g_(1, pg)*eps.p2*p2(mu) - s2g/2*g_(1, eps)*p2(mu) + s12/4*g_(1, mu, pg, eps))*Up2;
 L T6(mu) = Ubarp1*(g_(1, pg)*eps.p2*pg(mu) - s2g/2*g_(1, eps)*pg(mu) + (s12 - s1g - s2g)/4*g_(1, mu, pg, eps))*Up2;
-L T7(mu) = Ubarp1*(s2g*(g_(1, mu)*eps.p1 + 1/2*g_(1, eps, pg, mu)) - s21*(g_(1, mu)*eps.p2 + 1/2*g_(1, mu, pg, eps)))*Up2;
+L T7(mu) = Ubarp1*(s2g*(g_(1, mu)*eps.p1 + 1/2*g_(1, eps, pg, mu)) - s12*(g_(1, mu)*eps.p2 + 1/2*g_(1, mu, pg, eps)))*Up2;
 
 L T8(mu) = Ubarp1*(g_(1, mu, pV, pg, eps) - g_(1, pV, mu, pg, eps))*Up2;
 L T9(mu) = Ubarp1*(g_(1, pg, eps) * (g_(1, mu, pV, pg, eps) - g_(1, pV, mu, pg, eps)))*Up2;
@@ -130,8 +130,8 @@ L Ampl21 = M(mu)*Ubarp1*T21(mu)*Up2;
 L Ampl22 = M(mu)*Ubarp1*T22(mu)*Up2;
 L Ampl23 = M(mu)*Ubarp1*T23(mu)*Up2;
 
-* Substitute spinors with gamma matrices
-id Ubarp1 = g_(1, p1)/Up1;
+* REPLACE spinors with gamma matrices
+id Ubarp1 * Up1 = g_(1, p1);
 id Ubarp2 = 1;
 id Up2 = 1;
 
