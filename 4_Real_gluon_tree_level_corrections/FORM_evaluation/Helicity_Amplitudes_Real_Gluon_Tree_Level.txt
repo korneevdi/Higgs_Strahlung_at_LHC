@@ -26,8 +26,8 @@ I mu, nu;
 
 
 *** AMPLITUDE
-L M_gamma = AlphaOverTwoPi^(3/2) * Ubar(p2) * A7*T7(mu) * U(p1) * Wprop(pV, mu, nu) * LeptonCurrent(p3, p4, nu);
-L M_commutator = AlphaOverTwoPi^(3/2) * Ubar(p2) * (A8*T8(mu) + A9*T9(mu) + A12*T12(mu)) * U(p1) * Wprop(pV, mu, nu) * LeptonCurrent(p3, p4, nu);
+L M_gamma = AlphaOverTwoPi^(1/2) * Ubar(p2) * A7*T7(mu) * U(p1) * Wprop(pV, mu, nu) * LeptonCurrent(p3, p4, nu);
+L M_commutator = AlphaOverTwoPi^(1/2) * Ubar(p2) * (A8*T8(mu) + A9*T9(mu) + A12*T12(mu)) * U(p1) * Wprop(pV, mu, nu) * LeptonCurrent(p3, p4, nu);
 
 
 *** REPLACE TENSOR STRUCTURES

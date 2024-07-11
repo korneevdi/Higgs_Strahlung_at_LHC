@@ -1,0 +1,12 @@
+
+
+M_LRLL = sqrt2 * C1 * gw / (pV^2 - mV^2) * (2 * A1 * square(p4, p1) * square(p2, p4) * angle(p3, p4) + A2 * (mV^2 - s2v) / 2 * square(p1, p2) * angle(p1, p3) * square(p1, p4) + A2 * (s1v - mV^2) / 2 * square(p1, p2) * angle(p2, p3) * square(p2, p4));
+
+
+M_RLLL = sqrt2 * C2 * gw / (pV^2 - mV^2) * (2 * A1 * angle(p1, p3) * angle(p2, p3) * square(p3, p4) + A2 * (mV^2 - s2v) / 2 * anglq(p1, p2) * angle(p1, p3) * square(p1, p4) + A2 * (s1v - mV^2) / 2 * angle(p1, p2) * angle(p2, p3) * square(p2, p4));
+
+
+M_LLLL = sqrt2 * C3 * gw / (pV^2 - mV^2) * A3 * angle(p2, p3) * square(p4, p1);
+
+
+M_RRLL = sqrt2 * C4 * gw / (pV^2 - mV^2) * A3 * square(p2, p4) * angle(p3, p1);

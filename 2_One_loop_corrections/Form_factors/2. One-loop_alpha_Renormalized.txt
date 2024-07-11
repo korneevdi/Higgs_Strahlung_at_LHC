@@ -1,5 +1,5 @@
 
-One-loop renormalized form factors (after alpha_s renormalization) up to order eps^(-2)
+One-loop renormalized form factors (after alpha_s renormalization) up to order eps^(2)
 
 A1 =
 
