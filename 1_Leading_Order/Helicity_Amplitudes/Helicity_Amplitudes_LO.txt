@@ -1,12 +1,29 @@
+LEADING-ORDER HELICITY AMPLITUDES
+
+<!-- Helicities: quark - antiquark - lepton - antilepton -->
+
+--------------------------------------------------------------------------------------
 
 
-M_LRLL = sqrt2 * C1 * gw / (pV^2 - mV^2) * (2 * A1 * square(p4, p1) * square(p2, p4) * angle(p3, p4) + A2 * (mV^2 - s2v) / 2 * square(p1, p2) * angle(p1, p3) * square(p1, p4) + A2 * (s1v - mV^2) / 2 * square(p1, p2) * angle(p2, p3) * square(p2, p4));
+M4_LRLL = 2 * C1 * af * gw * Q4 / (pV^2 - mV^2) * (2 * A1 * square(p4, p1) * square(p2, p4) * angle(p3, p4) + A2 * (mV^2 - s2v) / 2 * square(p1, p2) * angle(p1, p3) * square(p1, p4) + A2 * (s1v - mV^2) / 2 * square(p1, p2) * angle(p2, p3) * square(p2, p4));
 
 
-M_RLLL = sqrt2 * C2 * gw / (pV^2 - mV^2) * (2 * A1 * angle(p1, p3) * angle(p2, p3) * square(p3, p4) + A2 * (mV^2 - s2v) / 2 * anglq(p1, p2) * angle(p1, p3) * square(p1, p4) + A2 * (s1v - mV^2) / 2 * angle(p1, p2) * angle(p2, p3) * square(p2, p4));
+M4_RLLL = 2 * C2 * af * gw * Q4 / (pV^2 - mV^2) * (2 * A1 * angle(p1, p3) * angle(p2, p3) * square(p3, p4) + A2 * (mV^2 - s2v) / 2 * anglq(p1, p2) * angle(p1, p3) * square(p1, p4) + A2 * (s1v - mV^2) / 2 * angle(p1, p2) * angle(p2, p3) * square(p2, p4));
 
 
-M_LLLL = sqrt2 * C3 * gw / (pV^2 - mV^2) * A3 * angle(p2, p3) * square(p4, p1);
+M4_LLLL = 2 * C3 * af * gw * Q4 / (pV^2 - mV^2) * A3 * angle(p2, p3) * square(p4, p1);
 
 
-M_RRLL = sqrt2 * C4 * gw / (pV^2 - mV^2) * A3 * square(p2, p4) * angle(p3, p1);
+M4_RRLL = 2 * C4 * af * gw * Q4 / (pV^2 - mV^2) * A3 * square(p2, p4) * angle(p3, p1);
+
+
+M3_LRLL = v * C1 * af * mV * gm^2 * Q3 / (2 * (pV^2 - mV^2) * (s12 - mV^2)) * (B1 - s12/2 * B2) * square(p1, p2) * (angle(p3, p1) * square(p1, p4) - angle(p2, p3) * square(p2, p4));
+
+
+M3_RLLL = v * C2 * af * mV * gm^2 * Q3 / (2 * (pV^2 - mV^2) * (s12 - mV^2)) * (B1 - s12/2 * B2) * angle(p1, p2) * (angle(p3, p1) * square(p1, p4) - angle(p2, p3) * square(p2, p4));
+
+
+M3_LLLL = (S3 + v/2 * C3) * af * mV * gm^2 * Q3 / ((pV^2 - mV^2) * (s12 - mV^2)) * B3 * angle(p2, p3) * square(p4, p1);
+
+
+M3_RRLL = (S4 + v/2 * C4) * af * mV * gm^2 * Q3 / ((pV^2 - mV^2) * (s12 - mV^2)) * B3 * angle(p3, p1) * square(p2, p4);
