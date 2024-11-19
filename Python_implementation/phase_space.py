@@ -1,21 +1,21 @@
 
+import math
 import numpy as np
 import random
-import math
-from scipy.optimize import root
 from decimal import Decimal, getcontext, ROUND_DOWN
+from scipy.optimize import root
 
 import const
 
 
 
-precise = 17 # Number of digits after the point for momenta
-precise_sq = 8 # Number of digits after the point for squared momenta
+precise = const.precise                     # Number of digits after the point for momenta
+precise_sq = const.precise_sq               # Number of digits after the point for squared momenta
 
-mH = Decimal(const.mH)
-mW = Decimal(const.mW)
-sqrt_s_min = Decimal(const.sqrt_s_min)
-sqrt_s_max = Decimal(const.sqrt_s_max)
+mH = Decimal(const.mH)                      # Higgs mass
+mW = Decimal(const.mW)                      # W boson mass
+sqrt_s_min = Decimal(const.sqrt_s_min)      # Center-of-mass energy minimum
+sqrt_s_max = Decimal(const.sqrt_s_max)      # Center-of-mass energy maximum
 
 
 
@@ -35,6 +35,7 @@ def generate_random(a, b):
     result = random_decimal.quantize(Decimal('1.' + '0' * precise), rounding=ROUND_DOWN)
 
     return result
+
 
 
 def check_sqrt_s_validity(sqrt_s):
@@ -161,7 +162,6 @@ def phase_space_generate_3(sqrt_s):
     p4 = p4.astype(float)
     pH = pH.astype(float)
 
-    print("\nCenter-of-mass energy:", sqrt_s, " GeV")
     print("\nPhase-space:")
     print(f"p1 = [{p1[0]}, {p1[1]}, {p1[2]}, {p1[3]}] (quark)")
     print(f"p2 = [{p2[0]}, {p2[1]}, {p2[2]}, {p2[3]}] (antiquark)")
@@ -173,7 +173,6 @@ def phase_space_generate_3(sqrt_s):
     p = np.column_stack((np.zeros(4), p1, p2, p3, p4))
 
     return p
-
 
 
 
@@ -308,7 +307,6 @@ def phase_space_generate_4(sqrt_s):
     p5 = p5.astype(float)
     pH = pH.astype(float)
 
-    print("\nCenter-of-mass energy:", sqrt_s, " GeV")
     print("\nPhase-space:")
     print(f"p1 = [{p1[0]}, {p1[1]}, {p1[2]}, {p1[3]}] (quark)")
     print(f"p2 = [{p2[0]}, {p2[1]}, {p2[2]}, {p2[3]}] (antiquark)")
@@ -321,7 +319,6 @@ def phase_space_generate_4(sqrt_s):
     p = np.column_stack((np.zeros(4), p1, p2, p3, p4, p5))
 
     return p
-
 
 
 
@@ -470,7 +467,6 @@ def phase_space_generate_5(sqrt_s):
     p6 = p6.astype(float)
     pH = pH.astype(float)
 
-    print("\nCenter-of-mass energy:", sqrt_s, " GeV")
     print("\nPhase-space:")
     print(f"p1 = [{p1[0]}, {p1[1]}, {p1[2]}, {p1[3]}] (quark)")
     print(f"p2 = [{p2[0]}, {p2[1]}, {p2[2]}, {p2[3]}] (antiquark)")
@@ -489,16 +485,6 @@ def phase_space_generate_5(sqrt_s):
 
 
 
-
-
-# Request for input and convert it to a number
-sqrt_s = int(input("\nEnter the center-of-mass energy between 206 and 20.000 GeV: "))
-
-phase_space_generate_3(sqrt_s)
-
-phase_space_generate_4(sqrt_s)
-
-phase_space_generate_5(sqrt_s)
 
 
 
