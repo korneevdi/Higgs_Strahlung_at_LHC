@@ -5,101 +5,178 @@ REAL-GLUON_TREE HELICITY AMPLITUDES
 --------------------------------------------------------------------------------------
 
 
-M4_LRLLL = 1 / sqrt2 * C1 * af * gw * Q4 * ta / (pV^2 - mV^2) * ( 4 * A12 * square(p1, p2) * square(p1, p4) * square(p2, p4) * angle(p3, p4) * angle(p1, p5) * angle(p2, p5) + ( s15 * A13 - A16 ) * square(p1, p2) * angle(p2, p5) * (square(p1, p2) * angle(p1, p3) * square(p3, p4) * angle(p3, p5) + square(p1, p4) * square(p2, p4) * angle(p5, p1) * angle(p3, p4) ) + ( s15 * A14 - A17 ) * square(p2, p1) * square(p2, p4)^2 * angle(p2, p5)^2 * angle(p3, p4) + ( s15 * A15 - A18 ) * s25 * square(p2, p1) * angle(p3, p5)^2 * square(p3, p4) + A19 * square(p1, p2) * angle(p3, p5)^2 * square(p3, p4) + A20 * square(p1, p2) * square(p1, p4)^2 * angle(p1, p5)^2 * angle(p3, p4) + A21 * square(p2, p1) * angle(p1, p5) * ( square(p1, p2) * angle(p3, p2) * angle(p3, p5) * square(p3, p4) + square(p1, p4) * square(p2, p4) * angle(p3, p4) * angle(p2, p5) ) + A22 * square(p2, p1) * square(p1, p4) * square(p2, p4) * angle(p1, p5) * angle(p2, p5) * angle(p3, p4) + A23 * square(p1, p2) * square(p2, p4)^2 * angle(p2, p5) * angle(p3, p4) )
+# 3-point amplitudes
 
+MLRLLL_3 = (alpha_s / (2 * pi))^(1/2) * (vev/2 * C1) * gW^2 * mW * sqrt(2) * 1 / (s[1,2] - mW^2 + I * mW * Gamma_W) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) 
+		* (2 * b12 * Sq[1,2]^2 * Ang[1,5] * Ang[2,5] * ( Ang[1,3] * Sq[1,4] - Ang[2,3] * Sq[2,4] ) 
+		+ b13 * s[1,5] * Sq[1,2] * Ang[2,5] * ( Ang[3,1] * Sq[1,4] * Sq[2,1] * Ang[1,5] - s[1,2] * Sq[2,4] * Ang[3,5] ) 
+		+ b14 * s[1,5] * Sq[1,2] * Ang[2,5] * ( Ang[3,2] * Sq[2,4] * Sq[2,1] * Ang[1,5] - s[1,2] * Sq[2,4] * Ang[3,5] ) 
+		+ b15 * s[1,5] * Sq[1,2] * Ang[2,5] * ( Ang[3,5] * Sq[5,4] * Sq[2,1] * Ang[1,5] - (s[5,3] + s[5,4]) * Sq[2,4] * Ang[3,5] ) 
+		+ b16 * Sq[1,2] * Ang[2,5] * ( Ang[1,3] * Sq[1,4] * Ang[1,5] * Sq[2,1] + s[1,2] * Sq[2,4] * Ang[3,5] ) 
+		+ b17 * Sq[1,2] * Ang[2,5] * ( Ang[2,3] * Sq[2,4] * Ang[1,5] * Sq[2,1] + s[1,2] * Sq[2,4] * Ang[3,5] ) 
+		+ b18 * Sq[1,2] * Ang[2,5] * ( Ang[3,5] * Sq[4,5] * Ang[1,5] * Sq[2,1] + (s[5,3] + s[5,4]) * Sq[2,4] * Ang[3,5] ) 
+		+ b19 * Sq[1,2] * Ang[3,5] * ( Ang[1,5] * Sq[1,4] + Ang[2,5] * Sq[2,4] ) 
+		+ b20 * Sq[1,2]^2 * Sq[1,4] * Ang[2,3] * Ang[1,5]^2 
+		+ b21 * Sq[1,2]^2 * Sq[2,4] * Ang[2,3] * Ang[2,5]^2 
+		+ b22 * Sq[1,2]^2 * Sq[1,4] * Ang[2,3] * Ang[2,5]^2 
+		+ b23 * Sq[1,2]^2 * Sq[2,4] * Ang[2,3] * Ang[2,5]^2)
 
-M4_RLLLL = 1 / sqrt2 * C2 * af * gw * Q4 * ta / (pV^2 - mV^2) * ( 8 * A8 * angle(p2, p3) * square(p3, p4) * angle(p3, p5) * angle(p1, p5) + 4 * A9 * angle(p1, p3) * angle(p2, p5) * square(p3, p4) * angle(p3, p5) + 2 * A10 * angle(p1, p5) * angle(p2, p5) * ( s1V * angle(p3, p5) * square(p4, p5) * - s5v * angle(p1, p3) * square(p1, p4) ) + 2 * A11 * angle(p1, p5) * angle(p2, p5) * ( s2V * angle(p3, p5) * square(p4, p5) - s5v * angle(p2, p3) * square(p2, p4) ) + 2 * A12 * square(p1, p2) * angle(p1, p3) * angle(p2, p3) * square(p4, p3) * angle(p1, p5) * angle(p2, p5) + A13 * angle(p1, p5)^2 * angle(p2, p5) * square(p1, p2) * (angle(p3, p1) * angle(p2, p3) * square(p1, p5) * square(p3, p4) + square(p1, p4) * square(p4, p5) * angle(p4, p3) * angle(p1, p2) ) + A14 * s25 * square(p1, p2) * angle(p2, p3)^2 * square(p3, p4) * angle(p1, p5)^2 + A15 * square(p1, p2) * angle(p1, p5)^2 * angle(p2, p5)^2 * angle(p4, p3) * square(p4, p5)^2 + A16 * square(p1, p4) * angle(p2, p3) * angle(p5, p1) * angle(p2, p5) * ( angle(p3, p1) * square(p2, p3) + angle(p1, p4) * square(p2, p4) ) + A17 * square(p2, p4) * angle(p2, p3) * angle(p5, p1) * angle(p2, p5) * ( angle(p3, p2) * square(p2, p3) + angle(p2, p4) * square(p2, p4) ) + A18 * square(p5, p4) * angle(p2, p3) * angle(p5, p1) * angle(p2, p5) * ( angle(p3, p5) * square(p2, p3) + angle(p5, p4) * square(p2, p4) ) + A19 * angle(p1, p2) * square(p3, p4) * angle(p3, p5)^2 + A20 * angle(p1, p2) * square(p1, p4)^2 * angle(p1, p5)^2 * angle(p3, p4) + A21 * angle(p1, p2) * angle(p1, p5) * ( square(p1, p2) * angle(p3, p2) * angle(p3, p5) * square(p3, p4) + square(p1, p4) * square(p2, p4) * angle(p3, p4) * angle(p2, p5) ) + A22 * angle(p1, p2) * square(p1, p4) * square(p2, p4) * angle(p1, p5) * angle(p2, p5) * angle(p3, p4) + A23 * angle(p1, p2) * square(p2, p4)^2 * angle(p2, p5) * angle(p3, p4) )
+MLRRLL_3 = - (alpha_s / (2 * pi))^(1/2) * (vev/2 * C1) * gW^2 * mW * sqrt(2) * 1 / (s[1,2] - mW^2 + I * mW * Gamma_W) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) 
+		* (8 * b8 * Sq[1,2] * Ang[1,3] * Sq[1,5] * Sq[4,5] 
+		+ 8 * b9 * Sq[1,2] * Ang[2,3] * Sq[2,5] * Sq[4,5] 
+		+ 2 * b10 * Sq[1,5] * Sq[2,5] * (s[1,2] * Ang[3,5] * Sq[4,5] - (s[5,3] + s[5,4]) * Ang[1,3] * Sq[1,4] ) 
+		+ 2 * b11 * Sq[1,5] * Sq[2,5] * (s[1,2] * Ang[3,5] * Sq[4,5] - (s[5,3] + s[5,4]) * Ang[2,3] * Sq[2,4] ) 
+		+ 2 * b12 * s[1,2] * Sq[1,5] * Sq[2,5] * ( Ang[2,3] * Sq[2,4] - Ang[1,3] * Sq[1,4] ) 
+		+ ( s[1,5] * b13 + b16 ) * Sq[2,1] * Sq[2,5] * ( Ang[3,1] * Sq[1,4] * Ang[1,2] * Sq[1,5] + s[1,2] * Ang[2,3] * Sq[4,5] ) 
+		+ ( s[1,5] * b14 + b17 ) * Sq[2,1] * Sq[2,5] * Ang[2,3] * ( Ang[2,1] * Sq[2,4] * Sq[1,5] + s[1,2] * Sq[4,5] ) 
+		+ ( s[1,5] * b15 + b18 ) * Sq[2,1] * Sq[2,5] * Sq[4,5] * ( Ang[2,1] * Sq[1,5] * Ang[3,5] + (s[5,3] + s[5,4]) * Ang[2,3] ) 
+		+ b19 * Sq[2,1] * Ang[3,5] * ( Sq[1,5] * Sq[1,4] + Sq[2,5] * Sq[2,4] ) 
+		+ ( s[1,5] * b20 + s[2,5] * b22 ) * Sq[1,2]^2 * Sq[1,4] * Ang[2,3] 
+		+ ( s[2,5] * b21 + s[1,5] * b23 ) * Sq[1,2]^2 * Sq[2,4] * Ang[2,3])
 
+MRLLLL_3 = (alpha_s / (2 * pi))^(1/2) * (vev/2 * C2) * gW^2 * mW * sqrt(2) * 1 / (s[1,2] - mW^2 + I * mW * Gamma_W) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) 
+		* (4 * ( b8 + b9 ) * Ang[1,5] * Ang[2,5] * ( Ang[2,3] * Sq[2,4] + Ang[1,3] * Sq[1,4] ) 
+		+ 2 *b10 * Ang[1,5] * Ang[2,5] * ( (s[5,3] + s[5,4]) * Ang[3,1] * Sq[1,4] * s[1,2] * Ang[3,5] * Sq[5,4] ) 
+		+ 2 *b11 * Ang[1,5] * Ang[2,5] * ( (s[5,3] + s[5,4]) * Ang[3,2] * Sq[2,4] * s[1,2] * Ang[3,5] * Sq[5,4] ) 
+		+ 2 *b12 * s[1,2] * Ang[1,5] * Ang[2,5] * ( Ang[2,3] * Sq[2,4] - Ang[1,3] * Sq[1,4] ) 
+		+ b13 * s[1,5] * Ang[1,2] * Ang[2,5] * ( Ang[3,1] * Sq[1,4] * Sq[2,1] * Ang[1,5] - s[1,2] * Sq[2,4] * Ang[3,5] ) 
+		+ b14 * s[1,5] * Ang[1,2] * Ang[2,5] * ( Ang[3,2] * Sq[2,4] * Sq[2,1] * Ang[1,5] - s[1,2] * Sq[2,4] * Ang[3,5] ) 
+		+ b15 * s[1,5] * Ang[1,2] * Ang[2,5] * ( Ang[3,5] * Sq[5,4] * Sq[2,1] * Ang[1,5] - (s[5,3] + s[5,4]) * Sq[2,4] * Ang[3,5] ) 
+		+ b16 * Ang[1,2] * Ang[2,5] * ( Ang[1,3] * Sq[1,4] * Ang[1,5] * Sq[2,1] + s[1,2] * Sq[2,4] * Ang[3,5] ) 
+		+ b17 * Ang[1,2] * Ang[2,5] * ( Ang[2,3] * Sq[2,4] * Ang[1,5] * Sq[2,1] + s[1,2] * Sq[2,4] * Ang[3,5] ) 
+		+ b18 * Ang[1,2] * Ang[2,5] * ( Ang[3,5] * Sq[4,5] * Ang[1,5] * Sq[2,1] + (s[5,3] + s[5,4]) * Sq[2,4] * Ang[3,5] ) 
+		+ b19 * Ang[1,2] * Ang[3,5] * ( Ang[1,5] * Sq[1,4] + Ang[2,5] * Sq[2,4] ) 
+		+ b20 * s[1,2] * Sq[1,4] * Ang[3,2] * Ang[1,5]^2 
+		+ b21 * s[1,2] * Sq[2,4] * Ang[3,2] * Ang[2,5]^2 
+		+ b22 * s[1,2] * Sq[1,4] * Ang[3,2] * Ang[2,5]^2 
+		+ b23 * s[1,2] * Sq[2,4] * Ang[3,2] * Ang[1,5]^2 )
 
-M4_LRRLL = 1 / sqrt2 * C1 * af * gw * Q4 * ta / (pV^2 - mV^2) * ( 8 * A8 * square(p2, p3) * square(p3, p4) * angle(p3, p5) * square(p5, p1) + 4 * A9 * square(p3, p1) * square(p2, p5) * square(p3, p4) * angle(p3, p5) + 2 * A10 * square(p1, p5) * square(p2, p5) * ( s5v * angle(p1, p3) * square(p1, p4) - s1V * angle(p3, p5) * square(p4, p5) ) + 2 * A11 * square(p1, p5) * square(p2, p5) * ( s5v * angle(p2, p3) * square(p2, p4) - s2V * angle(p3, p5) * square(p4, p5) ) + 2 * A12 * square(p1, p2) * square(p1, p3) * square(p2, p3) * square(p4, p3) * angle(p1, p5) * angle(p2, p5) + A13 * angle(p1, p5)^2 * angle(p2, p5) * square(p1, p2) * (square(p1, p3) * square(p2, p3) * square(p1, p5) * square(p3, p4) + square(p1, p4) * square(p4, p5) * angle(p3, p4) * square(p1, p2) ) + A14 * s25 * square(p1, p2) * square(p2, p3)^2 * square(p3, p4) * angle(p1, p5)^2 + A15 * square(p1, p2) * angle(p1, p5)^2 * angle(p2, p5)^2 * square(p3, p4) * square(p4, p5)^2 + A16 * square(p1, p4) * square(p2, p3) * square(p1, p5) * square(p2, p5) * ( angle(p3, p1) * square(p2, p3) + angle(p1, p4) * square(p2, p4) ) + A17 * square(p2, p4) * square(p2, p3) * square(p1, p5) * square(p2, p5) * ( angle(p3, p2) * square(p2, p3) + angle(p2, p4) * square(p2, p4) ) + A18 * square(p5, p4) * square(p2, p3) * square(p1, p5) * square(p2, p5) * ( angle(p3, p5) * square(p2, p3) + angle(p5, p4) * square(p2, p4) ) + A19 * square(p2, p1) * square(p3, p4) * angle(p3, p5)^2 + A20 * square(p2, p1) * square(p1, p4)^2 * angle(p1, p5)^2 * angle(p3, p4) + A21 * square(p2, p1) * angle(p1, p5) * ( square(p1, p2) * angle(p3, p2) * angle(p3, p5) * square(p3, p4) + square(p1, p4) * square(p2, p4) * angle(p3, p4) * angle(p2, p5) ) + A22 * square(p2, p1) * square(p1, p4) * square(p2, p4) * angle(p1, p5) * angle(p2, p5) * angle(p3, p4) + A23 * square(p2, p1) * square(p2, p4)^2 * angle(p2, p5) * angle(p3, p4) )
+MRLRLL_3 = - (alpha_s / (2 * pi))^(1/2) * (vev/2 * C2) * gW^2 * mW * sqrt(2) * 1 / (s[1,2] - mW^2 + I * mW * Gamma_W) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) 
+		* (2 * b12 * Ang[1,2]^2 * Sq[1,5] * Sq[2,5] * ( Ang[1,3] * Sq[1,4] - Ang[2,3] * Sq[2,4] ) 
+		+ ( s[1,5] * b13 + b16 ) * Ang[1,2] * Sq[2,5] * ( Ang[3,1] * Sq[1,4] * Ang[1,2] * Sq[1,5] + s[1,2] * Ang[2,3] * Sq[4,5] ) 
+		+ ( s[1,5] * b14 + b17 ) * Ang[1,2] * Sq[2,5] * Ang[2,3] * ( Ang[2,1] * Sq[2,4] * Sq[1,5] + s[1,2] * Sq[4,5] ) 
+		+ ( s[1,5] * b15 + b18 ) * Ang[1,2] * Sq[2,5] * Sq[4,5] * ( Ang[2,1] * Sq[1,5] * Ang[3,5] + (s[5,3] * s[5,4]) * Ang[2,3] ) 
+		+ b19 * Ang[1,2] * Ang[3,5] * ( Sq[1,5] * Sq[1,4] + Sq[2,5] * Sq[2,4] ) 
+		+ ( s[1,5] * b20 + s[2,5] * b22 ) * s[1,2] * Sq[1,4] * Ang[2,3] 
+		+ ( s[2,5] * b21 + s[1,5] * b23 ) * s[1,2] * Sq[2,4] * Ang[2,3] )
 
+MLLLLL_3 = (alpha_s / (2 * pi))^(1/2) * (S3 + vev/2 * C3) * gW^2 * mW * sqrt(2) * 1 / (s[1,2] - mW^2 + I * mW * Gamma_W) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) 
+		* (( s[1,2] * b1 + s[1,2] * b2 + (s[1,2] + s[1,5] + s[2,5]) * b3 + 2 * s[2,5] * b7 ) * Ang[5,2] * Ang[5,3] * Sq[4,1] 
+		+ b4 * Ang[3,1] * Sq[1,4] * Ang[2,5]^2 * Sq[1,2] 
+		+ b5 * Ang[3,2] * Sq[2,4] * Ang[2,5]^2 * Sq[1,2] 
+		+ b6 * Ang[3,5] * Sq[5,4] * Ang[2,5]^2 * Sq[1,2] 
+		+ 2 * b7 * Ang[2,5] * Ang[1,5] * Sq[2,1] * Ang[2,3] * Sq[4,1] )
 
-M4_RLRLL = 1 / sqrt2 * C2 * af * gw * Q4 * ta / (pV^2 - mV^2) * ( 4 * A12 * angle(p2, p1) * square(p1, p4) * square(p2, p4) * angle(p3, p4) * angle(p1, p5) * angle(p2, p5) + ( s15 * A13 - A16 ) * angle(p2, p1) * angle(p2, p5) * (angle(p2, p1) * angle(p1, p3) * square(p3, p4) * angle(p3, p5) + square(p1, p4) * square(p2, p4) * angle(p5, p1) * square(p3, p4) ) + ( s15 * A14 - A17 ) * angle(p1, p2) * square(p2, p4)^2 * angle(p2, p5)^2 * angle(p3, p4) + ( s15 * A15 - A18 ) * s25 * angle(p1, p2) * angle(p3, p5)^2 * square(p3, p4) + A19 * angle(p2, p1) * angle(p3, p5)^2 * square(p3, p4) + A20 * angle(p2, p1) * square(p1, p4)^2 * angle(p1, p5)^2 * angle(p3, p4) + A21 * angle(p1, p2) * angle(p1, p5) * ( square(p1, p2) * angle(p3, p2) * angle(p3, p5) * square(p3, p4) + square(p1, p4) * square(p2, p4) * angle(p3, p4) * angle(p2, p5) ) + A22 * angle(p1, p2) * square(p1, p4) * square(p2, p4) * angle(p1, p5) * angle(p2, p5) * angle(p3, p4) + A23 * angle(p2, p1) * angle(p2, p4)^2 * angle(p2, p5) * angle(p3, p4) )
+MLLRLL_3 = (alpha_s / (2 * pi))^(1/2) * (S3 + vev/2 * C3) * gW^2 * mW * sqrt(2) * 1 / (s[1,2] - mW^2 + I * mW * Gamma_W) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) 
+		* (b1 * Ang[3,1] * Sq[1,4] * Sq[1,5]^2 * Ang[1,2] 
+		+ b2 * Ang[3,2] * Sq[2,4] * Sq[1,5]^2 * Ang[1,2] 
+		+ b3 * Ang[3,5] * Sq[5,4] * Sq[1,5]^2 * Ang[1,2] 
+		+ 2 * b7 * Sq[1,5] * Sq[2,5] * Ang[1,2] * Ang[2,3] * Sq[4,1] 
+		+ ( s[1,2] * b4 + s[1,2] * b5 + (s[1,2] + s[1,5] + s[2,5]) * b6 - 2 * s[1,5] * b7 ) * Sq[1,5] * Ang[2,3] * Sq[4,5] )
 
+MRRLLL_3 = (alpha_s / (2 * pi))^(1/2) * (vev/2 * C4) * gW^2 * mW * sqrt(2) * 1 / (s[1,2] - mW^2 + I * mW * Gamma_W) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) 
+		* (b1 * Ang[3,1] * Sq[1,4] * Ang[1,5]^2 * Sq[2,1] 
+		+ b2 * Ang[3,2] * Sq[2,4] * Ang[1,5]^2 * Sq[2,1] 
+		+ b3 * Ang[3,5] * Sq[5,4] * Ang[1,5]^2 * Sq[2,1] 
+		+ 2 * b7 * Ang[1,5] * Ang[2,5] * Sq[2,1] * Sq[2,4] * Ang[3,1] 
+		+ ( s[1,2] * b4 + s[1,2] * b5 + (s[1,2] + s[1,5] + s[2,5]) * b6 - 2 * s[1,5] * b7 ) * Ang[5,1] * Sq[2,4] * Ang[3,5] )
 
-M4_LRLRR = 1 / sqrt2 * C1 * bf * gw * Q4 * ta / (pV^2 - mV^2) * ( 4 * A12 * square(p1, p2) * square(p1, p3) * square(p2, p3) * angle(p4, p3) * angle(p1, p5) * angle(p2, p5) + ( s15 * A13 - A16 ) * square(p1, p2) * angle(p2, p5) * (square(p1, p2) * angle(p1, p4) * square(p4, p3) * angle(p4, p5) + square(p1, p3) * square(p2, p3) * angle(p5, p1) * angle(p4, p3) ) + ( s15 * A14 - A17 ) * square(p2, p1) * square(p2, p3)^2 * angle(p2, p5)^2 * angle(p4, p3) + ( s15 * A15 - A18 ) * s25 * square(p2, p1) * angle(p4, p5)^2 * square(p4, p3) + A19 * square(p1, p2) * angle(p4, p5)^2 * square(p4, p3) + A20 * square(p1, p2) * square(p1, p3)^2 * angle(p1, p5)^2 * angle(p4, p3) + A21 * square(p2, p1) * angle(p1, p5) * ( square(p1, p2) * angle(p4, p2) * angle(p4, p5) * square(p4, p3) + square(p1, p3) * square(p2, p3) * angle(p4, p3) * angle(p2, p5) ) + A22 * square(p2, p1) * square(p1, p3) * square(p2, p3) * angle(p1, p5) * angle(p2, p5) * angle(p4, p3) + A23 * square(p1, p2) * square(p2, p3)^2 * angle(p2, p5) * angle(p4, p3) )
+MRRRLL_3 = (alpha_s / (2 * pi))^(1/2) * (vev/2 * C4) * gW^2 * mW * sqrt(2) * 1 / (s[1,2] - mW^2 + I * mW * Gamma_W) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) 
+		* (( s[1,2] * b1 + s[1,2] * b2 + (s[1,2] + s[1,5] + s[2,5]) * b3 + 2 * s[2,5] * b7 ) * Sq[2,5] * Sq[5,4] * Ang[3,1] 
+		+ b4 * Ang[3,1] * Sq[1,4] * Sq[2,5]^2 * Ang[2,1] 
+		+ b5 * Ang[3,2] * Sq[2,4] * Sq[2,5]^2 * Ang[2,1] 
+		+ b6 * Ang[3,5] * Sq[5,4] * Sq[2,5]^2 * Ang[2,1] 
+		+ 2 * b7 * Sq[1,5] * Sq[2,5] * Ang[2,1] * Sq[2,4] * Ang[3,1] )
 
+    
 
-M4_RLLRR = 1 / sqrt2 * C2 * bf * gw * Q4 * ta / (pV^2 - mV^2) * ( 8 * A8 * angle(p2, p4) * square(p4, p3) * angle(p4, p5) * angle(p1, p5) + 4 * A9 * angle(p1, p4) * angle(p2, p5) * square(p4, p3) * angle(p4, p5) + 2 * A10 * angle(p1, p5) * angle(p2, p5) * ( s1V * angle(p4, p5) * square(p3, p5) * - s5v * angle(p1, p4) * square(p1, p3) ) + 2 * A11 * angle(p1, p5) * angle(p2, p5) * ( s2V * angle(p4, p5) * square(p3, p5) - s5v * angle(p2, p4) * square(p2, p3) ) + 2 * A12 * square(p1, p2) * angle(p1, p4) * angle(p2, p4) * square(p3, p4) * angle(p1, p5) * angle(p2, p5) + A13 * angle(p1, p5)^2 * angle(p2, p5) * square(p1, p2) * (angle(p4, p1) * angle(p2, p4) * square(p1, p5) * square(p4, p3) + square(p1, p3) * square(p3, p5) * angle(p3, p4) * angle(p1, p2) ) + A14 * s25 * square(p1, p2) * angle(p2, p4)^2 * square(p4, p3) * angle(p1, p5)^2 + A15 * square(p1, p2) * angle(p1, p5)^2 * angle(p2, p5)^2 * angle(p3, p4) * square(p3, p5)^2 + A16 * square(p1, p3) * angle(p2, p4) * angle(p5, p1) * angle(p2, p5) * ( angle(p4, p1) * square(p2, p4) + angle(p1, p3) * square(p2, p3) ) + A17 * square(p2, p3) * angle(p2, p4) * angle(p5, p1) * angle(p2, p5) * ( angle(p4, p2) * square(p2, p4) + angle(p2, p3) * square(p2, p3) ) + A18 * square(p5, p3) * angle(p2, p4) * angle(p5, p1) * angle(p2, p5) * ( angle(p4, p5) * square(p2, p4) + angle(p5, p3) * square(p2, p3) ) + A19 * angle(p1, p2) * square(p4, p3) * angle(p4, p5)^2 + A20 * angle(p1, p2) * square(p1, p3)^2 * angle(p1, p5)^2 * angle(p4, p3) + A21 * angle(p1, p2) * angle(p1, p5) * ( square(p1, p2) * angle(p4, p2) * angle(p4, p5) * square(p4, p3) + square(p1, p3) * square(p2, p3) * angle(p4, p3) * angle(p2, p5) ) + A22 * angle(p1, p2) * square(p1, p3) * square(p2, p3) * angle(p1, p5) * angle(p2, p5) * angle(p4, p3) + A23 * angle(p1, p2) * square(p2, p3)^2 * angle(p2, p5) * angle(p4, p3) )
+# 4-point amplitudes
 
+MLRLLL_4 = (alpha_s / (2 * pi))^(1/2) * C1 * gW * sqrt(2) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) 
+		* (4 * form_factor.a['a12 * Sq[1,2] * Sq[1,4] * Sq[2,4] * Ang[3,4] * Ang[1,5] * Ang[2,5] 
+		+ ( s[1,5] * form_factor.a['a13 - form_factor.a['a16 ) * Sq[1,2] * Ang[2,5] * (Sq[1,2] * Ang[1,3] * Sq[3,4] * Ang[3,5] + Sq[1,4] * Sq[2,4] * Ang[5,1] * Ang[3,4])
+		+ ( s[1,5] * form_factor.a['a14 - form_factor.a['a17 ) * Sq[2,1] * Sq[2,4]^2 * Ang[2,5]^2 * Ang[3,4] 
+		+ ( s[1,5] * form_factor.a['a15 - form_factor.a['a18 ) * s[2,5] * Sq[2,1] * Ang[3,5]^2 * Sq[3,4] 
+		+ form_factor.a['a19 * Sq[1,2] * Ang[3,5]^2 * Sq[3,4] 
+		+ form_factor.a['a20 * Sq[1,2] * Sq[1,4]^2 * Ang[1,5]^2 * Ang[3,4] 
+		+ form_factor.a['a21 * Sq[2,1] * Ang[1,5] * ( Sq[1,2] * Ang[3,2] * Ang[3,5] * Sq[3,4] + Sq[1,4] * Sq[2,4] * Ang[3,4] * Ang[2,5] ) 
+		+ form_factor.a['a22 * Sq[2,1] * Sq[1,4] * Sq[2,4] * Ang[1,5] * Ang[2,5] * Ang[3,4] 
+		+ form_factor.a['a23 * Sq[1,2] * Sq[2,4]^2 * Ang[2,5] * Ang[3,4])
 
-M4_LRRRR = 1 / sqrt2 * C1 * bf * gw * Q4 * ta / (pV^2 - mV^2) * ( 8 * A8 * square(p2, p4) * square(p4, p3) * angle(p4, p5) * square(p5, p1) + 4 * A9 * square(p4, p1) * square(p2, p5) * square(p4, p3) * angle(p4, p5) + 2 * A10 * square(p1, p5) * square(p2, p5) * ( s5v * angle(p1, p4) * square(p1, p3) - s1V * angle(p4, p5) * square(p3, p5) ) + 2 * A11 * square(p1, p5) * square(p2, p5) * ( s5v * angle(p2, p4) * square(p2, p3) - s2V * angle(p4, p5) * square(p3, p5) ) + 2 * A12 * square(p1, p2) * square(p1, p4) * square(p2, p4) * square(p3, p4) * angle(p1, p5) * angle(p2, p5) + A13 * angle(p1, p5)^2 * angle(p2, p5) * square(p1, p2) * (square(p1, p4) * square(p2, p4) * square(p1, p5) * square(p4, p3) + square(p1, p3) * square(p3, p5) * angle(p4, p3) * square(p1, p2) ) + A14 * s25 * square(p1, p2) * square(p2, p4)^2 * square(p4, p3) * angle(p1, p5)^2 + A15 * square(p1, p2) * angle(p1, p5)^2 * angle(p2, p5)^2 * square(p4, p3) * square(p3, p5)^2 + A16 * square(p1, p3) * square(p2, p4) * square(p1, p5) * square(p2, p5) * ( angle(p4, p1) * square(p2, p4) + angle(p1, p3) * square(p2, p3) ) + A17 * square(p2, p3) * square(p2, p4) * square(p1, p5) * square(p2, p5) * ( angle(p4, p2) * square(p2, p4) + angle(p2, p3) * square(p2, p3) ) + A18 * square(p5, p3) * square(p2, p4) * square(p1, p5) * square(p2, p5) * ( angle(p4, p5) * square(p2, p4) + angle(p5, p3) * square(p2, p3) ) + A19 * square(p2, p1) * square(p4, p3) * angle(p4, p5)^2 + A20 * square(p2, p1) * square(p1, p3)^2 * angle(p1, p5)^2 * angle(p4, p3) + A21 * square(p2, p1) * angle(p1, p5) * ( square(p1, p2) * angle(p4, p2) * angle(p4, p5) * square(p4, p3) + square(p1, p3) * square(p2, p3) * angle(p4, p3) * angle(p2, p5) ) + A22 * square(p2, p1) * square(p1, p3) * square(p2, p3) * angle(p1, p5) * angle(p2, p5) * angle(p4, p3) + A23 * square(p2, p1) * square(p2, p3)^2 * angle(p2, p5) * angle(p4, p3) )
+MLRRLL_4 = (alpha_s / (2 * pi))^(1/2) * C1 * gW * sqrt(2) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) 
+		* (8 * form_factor.a['a8 * Sq[2,3] * Sq[3,4] * Ang[3,5] * Sq[5,1] 
+		+ 4 * form_factor.a['a9 * Sq[3,1] * Sq[2,5] * Sq[3,4] * Ang[3,5] 
+		+ 2 * form_factor.a['a10 * Sq[1,5] * Sq[2,5] * ( (s[5,3] + s[5,4]) * Ang[1,3] * Sq[1,4] - (s[1,3] + s[1,4]) * Ang[3,5] * Sq[4,5] ) 
+		+ 2 * form_factor.a['a11 * Sq[1,5] * Sq[2,5] * ( (s[5,3] + s[5,4]) * Ang[2,3] * Sq[2,4] - (s[2,3] + s[2,4]) * Ang[3,5] * Sq[4,5] ) 
+		+ 2 * form_factor.a['a12 * Sq[1,2] * Sq[1,3] * Sq[2,3] * Sq[4,3] * Ang[1,5] * Ang[2,5] 
+		+ form_factor.a['a13 * Ang[1,5]^2 * Ang[2,5] * Sq[1,2] * (Sq[1,3] * Sq[2,3] * Sq[1,5] * Sq[3,4] + Sq[1,4] * Sq[4,5] * Ang[3,4] * Sq[1,2] ) 
+		+ form_factor.a['a14 * s[2,5] * Sq[1,2] * Sq[2,3]^2 * Sq[3,4] * Ang[1,5]^2 
+		+ form_factor.a['a15 * Sq[1,2] * Ang[1,5]^2 * Ang[2,5]^2 * Sq[3,4] * Sq[4,5]^2 
+		+ form_factor.a['a16 * Sq[1,4] * Sq[2,3] * Sq[1,5] * Sq[2,5] * ( Ang[3,1] * Sq[2,3] + Ang[1,4] * Sq[2,4] ) 
+		+ form_factor.a['a17 * Sq[2,4] * Sq[2,3] * Sq[1,5] * Sq[2,5] * ( Ang[3,2] * Sq[2,3] + Ang[2,4] * Sq[2,4] ) 
+		+ form_factor.a['a18 * Sq[5,4] * Sq[2,3] * Sq[1,5] * Sq[2,5] * ( Ang[3,5] * Sq[2,3] + Ang[5,4] * Sq[2,4] ) 
+		+ form_factor.a['a19 * Sq[2,1] * Sq[3,4] * Ang[3,5]^2 
+		+ form_factor.a['a20 * Sq[2,1] * Sq[1,4]^2 * Ang[1,5]^2 * Ang[3,4] 
+		+ form_factor.a['a21 * Sq[2,1] * Ang[1,5] * ( Sq[1,2] * Ang[3,2] * Ang[3,5] * Sq[3,4] + Sq[1,4] * Sq[2,4] * Ang[3,4] * Ang[2,5] ) 
+		+ form_factor.a['a22 * Sq[2,1] * Sq[1,4] * Sq[2,4] * Ang[1,5] * Ang[2,5] * Ang[3,4] 
+		+ form_factor.a['a23 * Sq[2,1] * Sq[2,4]^2 * Ang[2,5] * Ang[3,4])
 
+MRLLLL_4 = (alpha_s / (2 * pi))^(1/2) * C2 * gW * sqrt(2) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) 
+		* (8 * form_factor.a['a8 * Ang[2,3] * Sq[3,4] * Ang[3,5] * Ang[1,5] 
+		+ 4 * form_factor.a['a9 * Ang[1,3] * Ang[2,5] * Sq[3,4] * Ang[3,5] 
+		+ 2 * form_factor.a['a10 * Ang[1,5] * Ang[2,5] * ( (s[1,3] + s[1,4]) * Ang[3,5] * Sq[4,5] * - (s[5,3] + s[5,4]) * Ang[1,3] * Sq[1,4] ) 
+		+ 2 * form_factor.a['a11 * Ang[1,5] * Ang[2,5] * ( (s[2,3] + s[2,4]) * Ang[3,5] * Sq[4,5] - (s[5,3] + s[5,4]) * Ang[2,3] * Sq[2,4] ) 
+		+ 2 * form_factor.a['a12 * Sq[1,2] * Ang[1,3] * Ang[2,3] * Sq[4,3] * Ang[1,5] * Ang[2,5] 
+		+ form_factor.a['a13 * Ang[1,5]^2 * Ang[2,5] * Sq[1,2] * (Ang[3,1] * Ang[2,3] * Sq[1,5] * Sq[3,4] + Sq[1,4] * Sq[4,5] * Ang[4,3] * Ang[1,2] ) 
+		+ form_factor.a['a14 * s[2,5] * Sq[1,2] * Ang[2,3]^2 * Sq[3,4] * Ang[1,5]^2 
+		+ form_factor.a['a15 * Sq[1,2] * Ang[1,5]^2 * Ang[2,5]^2 * Ang[4,3] * Sq[4,5]^2 
+		+ form_factor.a['a16 * Sq[1,4] * Ang[2,3] * Ang[5,1] * Ang[2,5] * ( Ang[3,1] * Sq[2,3] + Ang[1,4] * Sq[2,4] ) 
+		+ form_factor.a['a17 * Sq[2,4] * Ang[2,3] * Ang[5,1] * Ang[2,5] * ( Ang[3,2] * Sq[2,3] + Ang[2,4] * Sq[2,4] ) 
+		+ form_factor.a['a18 * Sq[5,4] * Ang[2,3] * Ang[5,1] * Ang[2,5] * ( Ang[3,5] * Sq[2,3] + Ang[5,4] * Sq[2,4] ) 
+		+ form_factor.a['a19 * Ang[1,2] * Sq[3,4] * Ang[3,5]^2 
+		+ form_factor.a['a20 * Ang[1,2] * Sq[1,4]^2 * Ang[1,5]^2 * Ang[3,4] 
+		+ form_factor.a['a21 * Ang[1,2] * Ang[1,5] * ( Sq[1,2] * Ang[3,2] * Ang[3,5] * Sq[3,4] + Sq[1,4] * Sq[2,4] * Ang[3,4] * Ang[2,5] ) 
+		+ form_factor.a['a22 * Ang[1,2] * Sq[1,4] * Sq[2,4] * Ang[1,5] * Ang[2,5] * Ang[3,4] 
+		+ form_factor.a['a23 * Ang[1,2] * Sq[2,4]^2 * Ang[2,5] * Ang[3,4])
 
-M4_RLRRR = 1 / sqrt2 * C2 * bf * gw * Q4 * ta / (pV^2 - mV^2) * ( 4 * A12 * angle(p2, p1) * square(p1, p3) * square(p2, p3) * angle(p4, p3) * angle(p1, p5) * angle(p2, p5) + ( s15 * A13 - A16 ) * angle(p2, p1) * angle(p2, p5) * (angle(p2, p1) * angle(p1, p4) * square(p4, p3) * angle(p4, p5) + square(p1, p3) * square(p2, p3) * angle(p5, p1) * square(p4, p3) ) + ( s15 * A14 - A17 ) * angle(p1, p2) * square(p2, p3)^2 * angle(p2, p5)^2 * angle(p4, p3) + ( s15 * A15 - A18 ) * s25 * angle(p1, p2) * angle(p4, p5)^2 * square(p4, p3) + A19 * angle(p2, p1) * angle(p4, p5)^2 * square(p4, p3) + A20 * angle(p2, p1) * square(p1, p3)^2 * angle(p1, p5)^2 * angle(p4, p3) + A21 * angle(p1, p2) * angle(p1, p5) * ( square(p1, p2) * angle(p4, p2) * angle(p4, p5) * square(p4, p3) + square(p1, p3) * square(p2, p3) * angle(p4, p3) * angle(p2, p5) ) + A22 * angle(p1, p2) * square(p1, p3) * square(p2, p3) * angle(p1, p5) * angle(p2, p5) * angle(p4, p3) + A23 * angle(p2, p1) * angle(p2, p3)^2 * angle(p2, p5) * angle(p4, p3) )
+MRLRLL_4 = (alpha_s / (2 * pi))^(1/2) * C2 * gW * sqrt(2) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) 
+		* (4 * form_factor.a['a12 * Ang[2,1] * Sq[1,4] * Sq[2,4] * Ang[3,4] * Ang[1,5] * Ang[2,5] 
+		+ ( s[1,5] * form_factor.a['a13 - form_factor.a['a16 ) * Ang[2,1] * Ang[2,5] * (Ang[2,1] * Ang[1,3] * Sq[3,4] * Ang[3,5] + Sq[1,4] * Sq[2,4] * Ang[5,1] * Sq[3,4]) 
+		+ ( s[1,5] * form_factor.a['a14 - form_factor.a['a17 ) * Ang[1,2] * Sq[2,4]^2 * Ang[2,5]^2 * Ang[3,4] 
+		+ ( s[1,5] * form_factor.a['a15 - form_factor.a['a18 ) * s[2,5] * Ang[1,2] * Ang[3,5]^2 * Sq[3,4] 
+		+ form_factor.a['a19 * Ang[2,1] * Ang[3,5]^2 * Sq[3,4] 
+		+ form_factor.a['a20 * Ang[2,1] * Sq[1,4]^2 * Ang[1,5]^2 * Ang[3,4] 
+		+ form_factor.a['a21 * Ang[1,2] * Ang[1,5] * ( Sq[1,2] * Ang[3,2] * Ang[3,5] * Sq[3,4] + Sq[1,4] * Sq[2,4] * Ang[3,4] * Ang[2,5] ) 
+		+ form_factor.a['a22 * Ang[1,2] * Sq[1,4] * Sq[2,4] * Ang[1,5] * Ang[2,5] * Ang[3,4] 
+		+ form_factor.a['a23 * Ang[2,1] * Ang[2,4]^2 * Ang[2,5] * Ang[3,4])
 
+MLLLLL_4 = (alpha_s / (2 * pi))^(1/2) * C3 * gW * sqrt(2) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) 
+		* (( s[1,2] * form_factor.a['a1 + s[1,2] * form_factor.a['a2 + (s[1,2] + s[1,5] + s[2,5]) * form_factor.a['a3 + 2 * s[2,5] * form_factor.a['a7 ) * Ang[5,2] * Ang[5,3] * Sq[4,1] 
+		+ form_factor.a['a4 * Ang[3,1] * Sq[1,4] * Ang[2,5]^2 * Sq[1,2] 
+		+ form_factor.a['a5 * Ang[3,2] * Sq[2,4] * Ang[2,5]^2 * Sq[1,2] 
+		+ form_factor.a['a6 * Ang[3,5] * Sq[5,4] * Ang[2,5]^2 * Sq[1,2] 
+		+ 2 * form_factor.a['a7 * Ang[2,5] * Ang[1,5] * Sq[2,1] * Ang[2,3] * Sq[4,1])
 
-M4_LLLLL = 1 / sqrt2 * C3 * af * gw * Q4 * ta / (pV^2 - mV^2) * ( ( s12 * A1 + s12 * A2 + s125 * A3 + 2 * s25 * A7 ) * angle(p5, p2) * angle(p5, p3) * square(p4, p1) + A4 * angle(p3, p1) * square(p1, p4) * angle(p2, p5)^2 * square(p1, p2) + A5 * angle(p3, p2) * square(p2, p4) * angle(p2, p5)^2 * square(p1, p2) + A6 * angle(p3, p5) * square(p5, p4) * angle(p2, p5)^2 * square(p1, p2) + 2 * A7 * angle(p2, p5) * angle(p1, p5) * square(p2, p1) * angle(p2, p3) * square(p4, p1) )
+MLLRLL_4 = (alpha_s / (2 * pi))^(1/2) * C3 * gW * sqrt(2) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) 
+		* (form_factor.a['a1 * Ang[3,1] * Sq[1,4] * Sq[1,5]^2 * Ang[1,2] 
+		+ form_factor.a['a2 * Ang[3,2] * Sq[2,4] * Sq[1,5]^2 * Ang[1,2] 
+		+ form_factor.a['a3 * Ang[3,5] * Sq[5,4] * Sq[1,5]^2 * Ang[1,2] 
+		+ 2 * form_factor.a['a7 * Sq[1,5] * Sq[2,5] * Ang[1,2] * Ang[2,3] * Sq[4,1] 
+		+ ( s[1,2] * form_factor.a['a4 + s[1,2] * form_factor.a['a5 + (s[1,2] + s[1,5] + s[2,5]) * form_factor.a['a6 - 2 * s[1,5] * form_factor.a['a7 ) * Sq[1,5] * Ang[2,3] * Sq[4,5] )
 
+MRRLLL_4 = (alpha_s / (2 * pi))^(1/2) * C4 * gW * sqrt(2) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) 
+		* (form_factor.a['a1 * Ang[3,1] * Sq[1,4] * Ang[1,5]^2 * Sq[2,1] 
+		+ form_factor.a['a2 * Ang[3,2] * Sq[2,4] * Ang[1,5]^2 * Sq[2,1] 
+		+ form_factor.a['a3 * Ang[3,5] * Sq[5,4] * Ang[1,5]^2 * Sq[2,1] 
+		+ 2 * form_factor.a['a7 * Ang[1,5] * Ang[2,5] * Sq[2,1] * Sq[2,4] * Ang[3,1] 
+		+ ( s[1,2] * form_factor.a['a4 + s[1,2] * form_factor.a['a5 + (s[1,2] + s[1,5] + s[2,5]) * form_factor.a['a6 - 2 * s[1,5] * form_factor.a['a7 ) * Ang[5,1] * Sq[2,4] * Ang[3,5] )
 
-M4_RRLLL = 1 / sqrt2 * C4 * af * gw * Q4 * ta / (pV^2 - mV^2) * ( A1 * angle(p3, p1) * square(p1, p4) * angle(p1, p5)^2 * square(p2, p1) + A2 * angle(p3, p2) * square(p2, p4) * angle(p1, p5)^2 * square(p2, p1) + A3 * angle(p3, p5) * square(p5, p4) * angle(p1, p5)^2 * square(p2, p1) + 2 * A7 * angle(p1, p5) * angle(p2, p5) * square(p2, p1) * square(p2, p4) * angle(p3, p1) + ( s12 * A4 + s12 * A5 + s125 * A6 - 2 * s15 * A7 ) * angle(p5, p1) * square(p2, p4) * angle(p3, p5) )
-
-
-M4_LLRLL = 1 / sqrt2 * C3 * af * gw * Q4 * ta / (pV^2 - mV^2) * ( A1 * angle(p3, p1) * square(p1, p4) * square(p1, p5)^2 * angle(p1, p2) + A2 * angle(p3, p2) * square(p2, p4) * square(p1, p5)^2 * angle(p1, p2) + A3 * angle(p3, p5) * square(p5, p4) * square(p1, p5)^2 * angle(p1, p2) + 2 * A7 * square(p1, p5) * square(p2, p5) * angle(p1, p2) * angle(p2, p3) * square(p4, p1) + ( s12 * A4 + s12 * A5 + s125 * A6 - 2 * s15 * A7 ) * square(p1, p5) * angle(p2, p3) * square(p4, p5) )
-
-
-M4_RRRLL = 1 / sqrt2 * C4 * af * gw * Q4 * ta / (pV^2 - mV^2) * ( ( s12 * A1 + s12 * A2 + s125 * A3 + 2 * s25 * A7 ) * square(p2, p5) * square(p5, p4) * angle(p3, p1) + A4 * angle(p3, p1) * square(p1, p4) * square(p2, p5)^2 * angle(p2, p1) + A5 * angle(p3, p2) * square(p2, p4) * square(p2, p5)^2 * angle(p2, p1) + A6 * angle(p3, p5) * square(p5, p4) * square(p2, p5)^2 * angle(p2, p1) + 2 * A7 * square(p1, p5) * square(p2, p5) * angle(p2, p1) * square(p2, p4) * angle(p3, p1) )
-
-
-M4_LLLRR = 1 / sqrt2 * C3 * bf * gw * Q4 * ta / (pV^2 - mV^2) * ( ( s12 * A1 + s12 * A2 + s125 * A3 + 2 * s25 * A7 ) * angle(p5, p2) * angle(p5, p4) * square(p3, p1) + A4 * angle(p4, p1) * square(p1, p3) * angle(p2, p5)^2 * square(p1, p2) + A5 * angle(p4, p2) * square(p2, p3) * angle(p2, p5)^2 * square(p1, p2) + A6 * angle(p4, p5) * square(p5, p3) * angle(p2, p5)^2 * square(p1, p2) + 2 * A7 * angle(p2, p5) * angle(p1, p5) * square(p2, p1) * angle(p2, p4) * square(p3, p1) )
-
-
-M4_RRLRR = 1 / sqrt2 * C4 * bf * gw * Q4 * ta / (pV^2 - mV^2) * ( A1 * angle(p4, p1) * square(p1, p3) * angle(p1, p5)^2 * square(p2, p1) + A2 * angle(p4, p2) * square(p2, p3) * angle(p1, p5)^2 * square(p2, p1) + A3 * angle(p4, p5) * square(p5, p3) * angle(p1, p5)^2 * square(p2, p1) + 2 * A7 * angle(p1, p5) * angle(p2, p5) * square(p2, p1) * square(p2, p3) * angle(p4, p1) + ( s12 * A4 + s12 * A5 + s125 * A6 - 2 * s15 * A7 ) * angle(p5, p1) * square(p2, p3) * angle(p4, p5) )
-
-
-M4_LLRRR = 1 / sqrt2 * C3 * bf * gw * Q4 * ta / (pV^2 - mV^2) * ( A1 * angle(p4, p1) * square(p1, p3) * square(p1, p5)^2 * angle(p1, p2) + A2 * angle(p4, p2) * square(p2, p3) * square(p1, p5)^2 * angle(p1, p2) + A3 * angle(p4, p5) * square(p5, p3) * square(p1, p5)^2 * angle(p1, p2) + 2 * A7 * square(p1, p5)square(p2, p5) * angle(p1, p2) * angle(p2, p4) * square(p3, p1) + ( s12 * A4 + s12 * A5 + s125 * A6 - 2 * s15 * A7 ) * square(p1, p5) * angle(p2, p4) * square(p3, p5) )
-
-
-M4_RRRRR = 1 / sqrt2 * C4 * bf * gw * Q4 * ta / (pV^2 - mV^2) * ( ( s12 * A1 + s12 * A2 + s125 * A3 + 2 * s25 * A7 ) * square(p2, p5) * square(p5, p3) * angle(p4, p1) + A4 * angle(p4, p1) * square(p1, p3) * square(p2, p5)^2 * angle(p2, p1) + A5 * angle(p4, p2) * square(p2, p3) * square(p2, p5)^2 * angle(p2, p1) + A6 * angle(p4, p5) * square(p5, p3) * square(p2, p5)^2 * angle(p2, p1) + 2 * A7 * square(p1, p5) * square(p2, p5) * angle(p2, p1) * square(p2, p3) * angle(p4, p1) )
-
-
-M3_LRLLL = 1 / sqrt2 * C1 * af * mv * gw^2 * Q3 * ta / ( (s12 - mV^2) * (pV^2 - mV^2) ) * ( 2 * B12 * square(p1, p2)^2 * angle(p1, p5) * angle(p2, p5) * ( angle(p1, p3) * square(p1, p4) - angle(p2, p3) * square(p2, p4) ) + B13 * s15 * square(p1, p2) * angle(p2, p5) * ( angle(p3, p1) * square(p1, p4) * square(p2, p1) * angle(p1, p5) - s12 * square(p2, p4) * angle(p3, p5) ) + B14 * s15 * square(p1, p2) * angle(p2, p5) * ( angle(p3, p2) * square(p2, p4) * square(p2, p1) * angle(p1, p5) - s12 * square(p2, p4) * angle(p3, p5) ) + B15 * s15 * square(p1, p2) * angle(p2, p5) * ( angle(p3, p5) * square(p5, p4) * square(p2, p1) * angle(p1, p5) - s5v * square(p2, p4) * angle(p3, p5) ) + B16 * square(p1, p2) * angle(p2, p5) * ( angle(p1, p3) * square(p1, p4) * angle(p1, p5) * square(p2, p1) + s12 * square(p2, p4) * angle(p3, p5) ) + B17 * square(p1, p2) * angle(p2, p5) * ( angle(p2, p3) * square(p2, p4) * angle(p1, p5) * square(p2, p1) + s12 * square(p2, p4) * angle(p3, p5) ) + B18 * square(p1, p2) * angle(p2, p5) * ( angle(p3, p5) * square(p4, p5) * angle(p1, p5) * square(p2, p1) + s5v * square(p2, p4) * angle(p3, p5) ) + B19 * square(p1, p2) * angle(p3, p5) * ( angle(p1, p5) * square(p1, p4) + angle(p2, p5) * square(p2, p4) ) + B20 * square(p1, p2)^2 * square(p1, p4) * angle(p2, p3) * angle(p1, p5)^2 + B21 * square(p1, p2)^2 * square(p2, p4) * angle(p2, p3) * angle(p2, p5)^2 + B22 * square(p1, p2)^2 * square(p1, p4) * angle(p2, p3) * angle(p2, p5)^2 + B23 * square(p1, p2)^2 * square(p2, p4) * angle(p2, p3) * angle(p2, p5)^2 )
-
-
-M3_RLLLL = 1 / sqrt2 * C2 * af * mv * gw^2 * Q3 * ta / ( (s12 - mV^2) * (pV^2 - mV^2) ) * ( 4 * ( B8 + B9 ) * angle(p1, p5) * angle(p2, p5) * ( angle(p2, p3) * square(p2, p4) + angle(p1, p3) * square(p1, p4) ) + 2 *B10 * angle(p1, p5) * angle(p2, p5) * ( s5v * angle(p3, p1) * square(p1, p4) * - s12 * angle(p3, p5) * square(p5, p4) ) + 2 *B11 * angle(p1, p5) * angle(p2, p5) * ( s5v * angle(p3, p2) * square(p2, p4) * - s12 * angle(p3, p5) * square(p5, p4) ) + 2 *B12 * s12 angle(p1, p5) * angle(p2, p5) * ( angle(p2, p3) * square(p2, p4) * - angle(p1, p3) * square(p1, p4) ) + B13 * s15 * angle(p1, p2) * angle(p2, p5) * ( angle(p3, p1) * square(p1, p4) * square(p2, p1) * angle(p1, p5) * - s12 * square(p2, p4) * angle(p3, p5) ) + B14 * s15 * angle(p1, p2) * angle(p2, p5) * ( angle(p3, p2) * square(p2, p4) * square(p2, p1) * angle(p1, p5) * - s12 * square(p2, p4) * angle(p3, p5) ) + B15 * s15 * angle(p1, p2) * angle(p2, p5) * ( angle(p3, p5) * square(p5, p4) * square(p2, p1) * angle(p1, p5) * - s5v * square(p2, p4)  angle(p3, p5) ) + B16 * angle(p1, p2) * angle(p2, p5) * ( angle(p1, p3) * square(p1, p4) * angle(p1, p5) * square(p2, p1) + s12 * square(p2, p4) * angle(p3, p5) ) + B17 * angle(p1, p2) * angle(p2, p5) * ( angle(p2, p3) * square(p2, p4) * angle(p1, p5) * square(p2, p1) + s12 * square(p2, p4) * angle(p3, p5) ) + B18 * angle(p1, p2) * angle(p2, p5) * ( angle(p3, p5) * square(p4, p5) * angle(p1, p5) * square(p2, p1) + s5v * square(p2, p4) * angle(p3, p5) ) + B19 * angle(p1, p2) * angle(p3, p5) * ( angle(p1, p5) * square(p1, p4) + angle(p2, p5) * square(p2, p4) ) + B20 * s12 * square(p1, p4) * angle(p3, p2) * angle(p1, p5)^2 + B21 * s12 * square(p2, p4) * angle(p3, p2) * angle(p2, p5)^2 + B22 * s12 * square(p1, p4) * angle(p3, p2) * angle(p2, p5)^2 + B23 * s12 * square(p2, p4) * angle(p3, p2) * angle(p1, p5)^2 )
-
-
-M3_LRRLL = - 1 / sqrt2 * C1 * af * mv * gw^2 * Q3 * ta / ( (s12 - mV^2) * (pV^2 - mV^2) ) * ( 8 * B8 * square(p1, p2) * angle(p1, p3) * square(p1, p5) * square(p4, p5) + 8 * B9 * square(p1, p2) * angle(p2, p3) * square(p2, p5) * square(p4, p5) + 2 * B10 * square(p1, p5) * square(p2, p5) * (s12 * angle(p3, p5) * square(p4, p5) * - s5v * angle(p1, p3) * square(p1, p4) ) + 2 * B11 * square(p1, p5) * square(p2, p5) * (s12 * angle(p3, p5) * square(p4, p5) * - s5v * angle(p2, p3) * square(p2, p4) ) + 2 * B12 * s12 * square(p1, p5) * square(p2, p5) * ( angle(p2, p3) * square(p2, p4) * - angle(p1, p3) * square(p1, p4) ) + ( s15 * B13 + B16 ) * square(p2, p1) * square(p2, p5) * ( angle(p3, p1) * square(p1, p4) * angle(p1, p2) * square(p1, p5) + s12 * angle(p2, p3) * square(p4, p5) ) + ( s15 * B14 + B17 ) * square(p2, p1) * square(p2, p5) * angle(p2, p3) * ( angle(p2, p1) * square(p2, p4) * square(p1, p5) + s12 * square(p4, p5) ) + ( s15 * B15 + B18 ) * square(p2, p1) * square(p2, p5) * square(p4, p5) * ( angle(p2, p1) square(p1, p5) * angle(p3, p5) + s5v * angle(p2, p3) ) + B19 * square(p2, p1) * angle(p3, p5) * ( square(p1, p5) * square(p1, p4) + square(p2, p5) * square(p2, p4) ) + ( s15 * B20 + s25 * B22 ) * square(p1, p2)^2 * square(p1, p4) * angle(p2, p3) + ( s25 * B21 + s15 * B23 ) * square(p1, p2)^2 * square(p2, p4) * angle(p2, p3) )
-
-
-M3_RLRLL = - 1 / sqrt2 * C1 * af * mv * gw^2 * Q3 * ta / ( (s12 - mV^2) * (pV^2 - mV^2) ) * ( 2 * B12 * angle(p1, p2)^2 * square(p1, p5) * square(p2, p5) * ( angle(p1, p3) * square(p1, p4) - angle(p2, p3) * square(p2, p4) ) + ( s15 * B13 + B16 ) * angle(p1, p2) * square(p2, p5) * ( angle(p3, p1) * square(p1, p4) * angle(p1, p2) * square(p1, p5) + s12 * angle(p2, p3) * square(p4, p5) ) + ( s15 * B14 + B17 ) * angle(p1, p2) * square(p2, p5) * angle(p2, p3) * ( angle(p2, p1) * square(p2, p4) * square(p1, p5) + s12 square(p4, p5) ) + ( s15 * B15 + B18 ) * angle(p1, p2) * square(p2, p5) * square(p4, p5) * ( angle(p2, p1) * square(p1, p5) * angle(p3, p5) + s5v * angle(p2, p3) ) + B19 * angle(p1, p2) * angle(p3, p5) * ( square(p1, p5) * square(p1, p4) + square(p2, p5) * square(p2, p4) ) + ( s15 * B20 + s25 * B22 ) * s12 * square(p1, p4) * angle(p2, p3) + ( s25 * B21 + s15 * B23 ) * s12 * square(p2, p4) * angle(p2, p3) )
-
-
-M3_LRLRR = 1 / sqrt2 * C1 * bf * mv * gw^2 * Q3 * ta / ( (s12 - mV^2) * (pV^2 - mV^2) ) * ( 2 * B12 * square(p1, p2)^2 * angle(p1, p5) * angle(p2, p5) * ( angle(p1, p4) * square(p1, p3) - angle(p2, p4) * square(p2, p3) ) + B13 * s15 * square(p1, p2) * angle(p2, p5) * ( angle(p4, p1) * square(p1, p3) * square(p2, p1) * angle(p1, p5) - s12 * square(p2, p3) * angle(p4, p5) ) + B14 * s15 * square(p1, p2) * angle(p2, p5) * ( angle(p4, p2) * square(p2, p3) * square(p2, p1) * angle(p1, p5) - s12 * square(p2, p3) * angle(p4, p5) ) + B15 * s15 * square(p1, p2) * angle(p2, p5) * ( angle(p4, p5) * square(p5, p3) * square(p2, p1) * angle(p1, p5) - s5v * square(p2, p3) * angle(p4, p5) ) + B16 * square(p1, p2) * angle(p2, p5) * ( angle(p1, p4) * square(p1, p3) * angle(p1, p5) * square(p2, p1) + s12 * square(p2, p3) * angle(p4, p5) ) + B17 * square(p1, p2) * angle(p2, p5) * ( angle(p2, p4) * square(p2, p3) * angle(p1, p5) * square(p2, p1) + s12 * square(p2, p3) * angle(p4, p5) ) + B18 * square(p1, p2) * angle(p2, p5) * ( angle(p4, p5) * square(p3, p5) * angle(p1, p5) * square(p2, p1) + s5v * square(p2, p3) * angle(p4, p5) ) + B19 * square(p1, p2) * angle(p4, p5) * ( angle(p1, p5) * square(p1, p3) + angle(p2, p5) * square(p2, p3) ) + B20 * square(p1, p2)^2 * square(p1, p3) * angle(p2, p4) * angle(p1, p5)^2 + B21 * square(p1, p2)^2 * square(p2, p3) * angle(p2, p4) * angle(p2, p5)^2 + B22 * square(p1, p2)^2 * square(p1, p3) * angle(p2, p4) * angle(p2, p5)^2 + B23 * square(p1, p2)^2 * square(p2, p3) * angle(p2, p4) * angle(p2, p5)^2 )
-
-
-M3_RLLRR = 1 / sqrt2 * C2 * bf * mv * gw^2 * Q3 * ta / ( (s12 - mV^2) * (pV^2 - mV^2) ) * ( 4 * ( B8 + B9 ) * angle(p1, p5) * angle(p2, p5) * ( angle(p2, p4) * square(p2, p3) + angle(p1, p4) * square(p1, p3) ) + 2 *B10 * angle(p1, p5) * angle(p2, p5) * ( s5v * angle(p4, p1) * square(p1, p3) * - s12 * angle(p4, p5) * square(p5, p3) ) + 2 *B11 * angle(p1, p5) * angle(p2, p5) * ( s5v * angle(p4, p2) * square(p2, p3) * - s12 * angle(p4, p5) * square(p5, p3) ) + 2 *B12 * s12 angle(p1, p5) * angle(p2, p5) * ( angle(p2, p4) * square(p2, p3) * - angle(p1, p4) * square(p1, p3) ) + B13 * s15 * angle(p1, p2) * angle(p2, p5) * ( angle(p4, p1) * square(p1, p3) * square(p2, p1) * angle(p1, p5) * - s12 * square(p2, p3) * angle(p4, p5) ) + B14 * s15 * angle(p1, p2) * angle(p2, p5) * ( angle(p4, p2) * square(p2, p3) * square(p2, p1) * angle(p1, p5) * - s12 * square(p2, p3) * angle(p4, p5) ) + B15 * s15 * angle(p1, p2) * angle(p2, p5) * ( angle(p4, p5) * square(p5, p3) * square(p2, p1) * angle(p1, p5) * - s5v * square(p2, p3)  angle(p4, p5) ) + B16 * angle(p1, p2) * angle(p2, p5) * ( angle(p1, p4) * square(p1, p3) * angle(p1, p5) * square(p2, p1) + s12 * square(p2, p3) * angle(p4, p5) ) + B17 * angle(p1, p2) * angle(p2, p5) * ( angle(p2, p4) * square(p2, p3) * angle(p1, p5) * square(p2, p1) + s12 * square(p2, p3) * angle(p4, p5) ) + B18 * angle(p1, p2) * angle(p2, p5) * ( angle(p4, p5) * square(p3, p5) * angle(p1, p5) * square(p2, p1) + s5v * square(p2, p3) * angle(p4, p5) ) + B19 * angle(p1, p2) * angle(p4, p5) * ( angle(p1, p5) * square(p1, p3) + angle(p2, p5) * square(p2, p3) ) + B20 * s12 * square(p1, p3) * angle(p4, p2) * angle(p1, p5)^2 + B21 * s12 * square(p2, p3) * angle(p4, p2) * angle(p2, p5)^2 + B22 * s12 * square(p1, p3) * angle(p4, p2) * angle(p2, p5)^2 + B23 * s12 * square(p2, p3) * angle(p4, p2) * angle(p1, p5)^2 )
-
-
-M3_LRRRR = - 1 / sqrt2 * C1 * bf * mv * gw^2 * Q3 * ta / ( (s12 - mV^2) * (pV^2 - mV^2) ) * ( 8 * B8 * square(p1, p2) * angle(p1, p4) * square(p1, p5) * square(p3, p5) + 8 * B9 * square(p1, p2) * angle(p2, p4) * square(p2, p5) * square(p3, p5) + 2 * B10 * square(p1, p5) * square(p2, p5) * (s12 * angle(p4, p5) * square(p3, p5) * - s5v * angle(p1, p4) * square(p1, p3) ) + 2 * B11 * square(p1, p5) * square(p2, p5) * (s12 * angle(p4, p5) * square(p3, p5) * - s5v * angle(p2, p4) * square(p2, p3) ) + 2 * B12 * s12 * square(p1, p5) * square(p2, p5) * ( angle(p2, p4) * square(p2, p3) * - angle(p1, p4) * square(p1, p3) ) + ( s15 * B13 + B16 ) * square(p2, p1) * square(p2, p5) * ( angle(p4, p1) * square(p1, p3) * angle(p1, p2) * square(p1, p5) + s12 * angle(p2, p4) * square(p3, p5) ) + ( s15 * B14 + B17 ) * square(p2, p1) * square(p2, p5) * angle(p2, p4) * ( angle(p2, p1) * square(p2, p3) * square(p1, p5) + s12 * square(p3, p5) ) + ( s15 * B15 + B18 ) * square(p2, p1) * square(p2, p5) * square(p3, p5) * ( angle(p2, p1) square(p1, p5) * angle(p4, p5) + s5v * angle(p2, p4) ) + B19 * square(p2, p1) * angle(p4, p5) * ( square(p1, p5) * square(p1, p3) + square(p2, p5) * square(p2, p3) ) + ( s15 * B20 + s25 * B22 ) * square(p1, p2)^2 * square(p1, p3) * angle(p2, p4) + ( s25 * B21 + s15 * B23 ) * square(p1, p2)^2 * square(p2, p3) * angle(p2, p4) )
-
-
-M3_RLRRR = - 1 / sqrt2 * C1 * bf * mv * gw^2 * Q3 * ta / ( (s12 - mV^2) * (pV^2 - mV^2) ) * ( 2 * B12 * angle(p1, p2)^2 * square(p1, p5) * square(p2, p5) * ( angle(p1, p4) * square(p1, p3) - angle(p2, p4) * square(p2, p3) ) + ( s15 * B13 + B16 ) * angle(p1, p2) * square(p2, p5) * ( angle(p4, p1) * square(p1, p3) * angle(p1, p2) * square(p1, p5) + s12 * angle(p2, p4) * square(p3, p5) ) + ( s15 * B14 + B17 ) * angle(p1, p2) * square(p2, p5) * angle(p2, p4) * ( angle(p2, p1) * square(p2, p3) * square(p1, p5) + s12 square(p3, p5) ) + ( s15 * B15 + B18 ) * angle(p1, p2) * square(p2, p5) * square(p3, p5) * ( angle(p2, p1) * square(p1, p5) * angle(p4, p5) + s5v * angle(p2, p4) ) + B19 * angle(p1, p2) * angle(p4, p5) * ( square(p1, p5) * square(p1, p3) + square(p2, p5) * square(p2, p3) ) + ( s15 * B20 + s25 * B22 ) * s12 * square(p1, p3) * angle(p2, p4) + ( s25 * B21 + s15 * B23 ) * s12 * square(p2, p3) * angle(p2, p4) )
-
-
-M3_LLLLL = 1 / sqrt2 * C3 * af * mv * gw^2 * Q3 * ta / ( (s12 - mV^2) * (pV^2 - mV^2) ) * ( ( s12 * B1 + s12 * B2 + s125 * B3 + 2 * s25 * B7 ) * angle(p5, p2) * angle(p5, p3) * square(p4, p1) + B4 * angle(p3, p1) * square(p1, p4) * angle(p2, p5)^2 * square(p1, p2) + B5 * angle(p3, p2) * square(p2, p4) * angle(p2, p5)^2 * square(p1, p2) + B6 * angle(p3, p5) * square(p5, p4) * angle(p2, p5)^2 * square(p1, p2) + 2 * B7 * angle(p2, p5) * angle(p1, p5) * square(p2, p1) * angle(p2, p3) * square(p4, p1) )
-
-
-M3_RRLLL = 1 / sqrt2 * C4 * af * mv * gw^2 * Q3 * ta / ( (s12 - mV^2) * (pV^2 - mV^2) ) * ( B1 * angle(p3, p1) * square(p1, p4) * angle(p1, p5)^2 * square(p2, p1) + B2 * angle(p3, p2) * square(p2, p4) * angle(p1, p5)^2 * square(p2, p1) + B3 * angle(p3, p5) * square(p5, p4) * angle(p1, p5)^2 * square(p2, p1) + 2 * B7 * angle(p1, p5) * angle(p2, p5) * square(p2, p1) * square(p2, p4) * angle(p3, p1) + ( s12 * B4 + s12 * B5 + s125 * B6 - 2 * s15 * B7 ) * angle(p5, p1) * square(p2, p4) * angle(p3, p5) )
-
-
-M3_LLRLL = 1 / sqrt2 * C3 * af * mv * gw^2 * Q3 * ta / ( (s12 - mV^2) * (pV^2 - mV^2) ) * ( B1 * angle(p3, p1) * square(p1, p4) * square(p1, p5)^2 * angle(p1, p2) + B2 * angle(p3, p2) * square(p2, p4) * square(p1, p5)^2 * angle(p1, p2) + B3 * angle(p3, p5) * square(p5, p4) * square(p1, p5)^2 * angle(p1, p2) + 2 * B7 * square(p1, p5) * square(p2, p5) * angle(p1, p2) * angle(p2, p3) * square(p4, p1) + ( s12 * B4 + s12 * B5 + s125 * B6 - 2 * s15 * B7 ) * square(p1, p5) * angle(p2, p3) * square(p4, p5) )
-
-
-M3_RRRLL = 1 / sqrt2 * C4 * af * mv * gw^2 * Q3 * ta / ( (s12 - mV^2) * (pV^2 - mV^2) ) * ( ( s12 * B1 + s12 * B2 + s125 * B3 + 2 * s25 * B7 ) * square(p2, p5) * square(p5, p4) * angle(p3, p1) + B4 * angle(p3, p1) * square(p1, p4) * square(p2, p5)^2 * angle(p2, p1) + B5 * angle(p3, p2) * square(p2, p4) * square(p2, p5)^2 * angle(p2, p1) + B6 * angle(p3, p5) * square(p5, p4) * square(p2, p5)^2 * angle(p2, p1) + 2 * B7 * square(p1, p5) * square(p2, p5) * angle(p2, p1) * square(p2, p4) * angle(p3, p1) )
-
-
-M3_LLLRR = 1 / sqrt2 * C3 * bf * mv * gw^2 * Q3 * ta / ( (s12 - mV^2) * (pV^2 - mV^2) ) * ( ( s12 * B1 + s12 * B2 + s125 * B3 + 2 * s25 * B7 ) * angle(p5, p2) * angle(p5, p4) * square(p3, p1) + B4 * angle(p4, p1) * square(p1, p3) * angle(p2, p5)^2 * square(p1, p2) + B5 * angle(p4, p2) * square(p2, p3) * angle(p2, p5)^2 * square(p1, p2) + B6 * angle(p4, p5) * square(p5, p3) * angle(p2, p5)^2 * square(p1, p2) + 2 * B7 * angle(p2, p5) * angle(p1, p5) * square(p2, p1) * angle(p2, p4) * square(p3, p1) )
-
-
-M3_RRLRR = 1 / sqrt2 * C4 * bf * mv * gw^2 * Q3 * ta / ( (s12 - mV^2) * (pV^2 - mV^2) ) * ( B1 * angle(p4, p1) * square(p1, p3) * angle(p1, p5)^2 * square(p2, p1) + B2 * angle(p4, p2) * square(p2, p3) * angle(p1, p5)^2 * square(p2, p1) + B3 * angle(p4, p5) * square(p5, p3) * angle(p1, p5)^2 * square(p2, p1) + 2 * B7 * angle(p1, p5) * angle(p2, p5) * square(p2, p1) * square(p2, p3) * angle(p4, p1) + ( s12 * B4 + s12 * B5 + s125 * B6 - 2 * s15 * B7 ) * angle(p5, p1) * square(p2, p3) * angle(p4, p5) )
-
-
-M3_LLRRR = 1 / sqrt2 * C3 * bf * mv * gw^2 * Q3 * ta / ( (s12 - mV^2) * (pV^2 - mV^2) ) * ( B1 * angle(p4, p1) * square(p1, p3) * square(p1, p5)^2 * angle(p1, p2) + B2 * angle(p4, p2) * square(p2, p3) * square(p1, p5)^2 * angle(p1, p2) + B3 * angle(p4, p5) * square(p5, p3) * square(p1, p5)^2 * angle(p1, p2) + 2 * B7 * square(p1, p5)square(p2, p5) * angle(p1, p2) * angle(p2, p4) * square(p3, p1) + ( s12 * B4 + s12 * B5 + s125 * B6 - 2 * s15 * B7 ) * square(p1, p5) * angle(p2, p4) * square(p3, p5) )
-
-
-M3_RRRRR = 1 / sqrt2 * C4 * bf * mv * gw^2 * Q3 * ta / ( (s12 - mV^2) * (pV^2 - mV^2) ) * ( ( s12 * B1 + s12 * B2 + s125 * B3 + 2 * s25 * B7 ) * square(p2, p5) * square(p5, p3) * angle(p4, p1) + B4 * angle(p4, p1) * square(p1, p3) * square(p2, p5)^2 * angle(p2, p1) + B5 * angle(p4, p2) * square(p2, p3) * square(p2, p5)^2 * angle(p2, p1) + B6 * angle(p4, p5) * square(p5, p3) * square(p2, p5)^2 * angle(p2, p1) + 2 * B7 * square(p1, p5) * square(p2, p5) * angle(p2, p1) * square(p2, p3) * angle(p4, p1) )
-
+MRRRLL_4 = (alpha_s / (2 * pi))^(1/2) * C4 * gW * sqrt(2) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) 
+		* (( s[1,2] * form_factor.a['a1 + s[1,2] * form_factor.a['a2 + (s[1,2] + s[1,5] + s[2,5]) * form_factor.a['a3 + 2 * s[2,5] * form_factor.a['a7 ) * Sq[2,5] * Sq[5,4] * Ang[3,1] 
+		+ form_factor.a['a4 * Ang[3,1] * Sq[1,4] * Sq[2,5]^2 * Ang[2,1] 
+		+ form_factor.a['a5 * Ang[3,2] * Sq[2,4] * Sq[2,5]^2 * Ang[2,1] 
+		+ form_factor.a['a6 * Ang[3,5] * Sq[5,4] * Sq[2,5]^2 * Ang[2,1] 
+		+ 2 * form_factor.a['a7 * Sq[1,5] * Sq[2,5] * Ang[2,1] * Sq[2,4] * Ang[3,1] )
 
 
 

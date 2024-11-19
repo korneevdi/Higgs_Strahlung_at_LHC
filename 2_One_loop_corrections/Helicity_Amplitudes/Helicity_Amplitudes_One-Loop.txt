@@ -5,25 +5,24 @@ ONE-LOOP HELICITY AMPLITUDES
 --------------------------------------------------------------------------------------
 
 
-M4_LRLL = 2 * C1 * af * gw * Q4 / (pV^2 - mV^2) * (2 * A1 * square(p4, p1) * square(p2, p4) * angle(p3, p4) + A2 * (mV^2 - s2v) / 2 * square(p1, p2) * angle(p1, p3) * square(p1, p4) + A2 * (s1v - mV^2) / 2 * square(p1, p2) * angle(p2, p3) * square(p2, p4));
+# 3-point amplitudes
+
+MLRLL_3 = (alpha_s / (2 * pi)) * (vev/2 * C1) * gW^2 * mW * sqrt(2) * 1 / (s[1,2] - mW^2 + I * mW * Gamma_W) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) * (B1[number_of_loops] - s[1,2] / 2 * B2[number_of_loops]) * Sq[1,2] * (Ang[3,1] * Sq[1,4] - Ang[3,2] * Sq[2,4])
+
+MRLLL_3 = (alpha_s / (2 * pi)) * (vev/2 * C2) * gW^2 * mW * sqrt(2) * 1 / (s[1,2] - mW^2 + I * mW * Gamma_W) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) * (B1[number_of_loops] - s[1,2] / 2 * B2[number_of_loops]) * Ang[1,2] * (Ang[3,1] * Sq[1,4] - Ang[3,2] * Sq[2,4])
+
+MLLLL_3 = (alpha_s / (2 * pi)) * (S3 + vev/2 * C3) * gW^2 * mW * sqrt(2) * 1 / (s[1,2] - mW^2 + I * mW * Gamma_W) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) * B3[number_of_loops] * Ang[2,3] * Sq[4,1]
+
+MRRLL_3 = (alpha_s / (2 * pi)) * (vev/2 * C4) * gW^2 * mW * sqrt(2) * 1 / (s[1,2] - mW^2 + I * mW * Gamma_W) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) * B3[number_of_loops] * Ang[3,1] * Sq[2,4]
 
 
-M4_RLLL = 2 * C2 * af * gw * Q4 / (pV^2 - mV^2) * (2 * A1 * angle(p1, p3) * angle(p2, p3) * square(p3, p4) + A2 * (mV^2 - s2v) / 2 * anglq(p1, p2) * angle(p1, p3) * square(p1, p4) + A2 * (s1v - mV^2) / 2 * angle(p1, p2) * angle(p2, p3) * square(p2, p4));
 
+# 4-point amplitudes
 
-M4_LLLL = 2 * C3 * af * gw * Q4 / (pV^2 - mV^2) * A3 * angle(p2, p3) * square(p4, p1);
+MLRLL_4 = (alpha_s / (2 * pi)) * C1 * gW * sqrt(2) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) * ( 2 * A1[number_of_loops] * Sq[4,1] * Sq[2,4] * Ang[3,4] + A2[number_of_loops] * (s[2,3] + s[2,4]) / 2 * Sq[1,2] * Ang[1,3] * Sq[1,4] + A2[number_of_loops] * (- s[1,3] - s[1,4]) / 2 * Sq[1,2] * Ang[2,3] * Sq[2,4])
 
+MRLLL_4 = (alpha_s / (2 * pi)) * C2 * gW * sqrt(2) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) * ( 2 * A1[number_of_loops] * Ang[1,3] * Ang[2,3] * Sq[3,4] + A2[number_of_loops] * (s[2,3] + s[2,4]) / 2 * Ang[1,2] * Ang[1,3] * Sq[1,4] + A2[number_of_loops] * (- s[1,3] - s[1,4]) / 2 * Ang[1,2] * Ang[1,3] * Sq[2,4])
 
-M4_RRLL = 2 * C4 * af * gw * Q4 / (pV^2 - mV^2) * A3 * square(p2, p4) * angle(p3, p1);
+MLLLL_4 = (alpha_s / (2 * pi)) * C3 * gW * sqrt(2) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) * A3[number_of_loops] * Ang[2,3] * Sq[4,1]
 
-
-M3_LRLL = v * C1 * af * mV * gm^2 * Q3 / (2 * (pV^2 - mV^2) * (s12 - mV^2)) * (B1 - s12/2 * B2) * square(p1, p2) * (angle(p3, p1) * square(p1, p4) - angle(p2, p3) * square(p2, p4));
-
-
-M3_RLLL = v * C2 * af * mV * gm^2 * Q3 / (2 * (pV^2 - mV^2) * (s12 - mV^2)) * (B1 - s12/2 * B2) * angle(p1, p2) * (angle(p3, p1) * square(p1, p4) - angle(p2, p3) * square(p2, p4));
-
-
-M3_LLLL = (S3 + v/2 * C3) * af * mV * gm^2 * Q3 / ((pV^2 - mV^2) * (s12 - mV^2)) * B3 * angle(p2, p3) * square(p4, p1);
-
-
-M3_RRLL = (S4 + v/2 * C4) * af * mV * gm^2 * Q3 / ((pV^2 - mV^2) * (s12 - mV^2)) * B3 * angle(p3, p1) * square(p2, p4);
+MRRLL_4 = (alpha_s / (2 * pi)) * C4 * gW * sqrt(2) * 1 / (s[3,4] - mW^2 + I * mW * Gamma_W) * A3[number_of_loops] * Ang[3,1] * Sq[2,4]

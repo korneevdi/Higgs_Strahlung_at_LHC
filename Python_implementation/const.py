@@ -22,5 +22,10 @@ C4 = 0
 # PARAMETERS
 mu = 91.188                         # energy scale
 mu2 = mu**2                         # square of the energy scale
-alpha_s = 0.1                         # strong coupling constant
+alpha_s = 0.1                       # strong coupling constant
 gs = math.sqrt(4*math.pi*alpha_s)   # gluon coupling constant
+
+
+# PROGRAM SETTINGS
+sqrt_s_min = mW + mH
+sqrt_s_max = 20000

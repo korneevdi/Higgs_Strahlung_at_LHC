@@ -1,8 +1,8 @@
 
 Finite remainders of the one-loop form factors
 
-B1 = -I (8 cf + cf Log[-(mu2/s12)])
+B1 = - Cf * (8 + log(-mu2 / s[1,2]))
 
 B2 = 0
 
-B3 = -4 I cf 
+B3 = -4 * Cf

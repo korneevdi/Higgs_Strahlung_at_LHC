@@ -1,8 +1,8 @@
 
 Leading order form factors
 
-A1 = 2*I
+A1 = 2
 
 A2 = 0
 
-A3 = I
+A3 = 1
