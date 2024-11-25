@@ -1,5 +1,6 @@
 
 import amplitudes
+import const
 import phase_space
 
 
@@ -7,7 +8,7 @@ import phase_space
 def main():
 
     # Request for input and convert it to a number
-    sqrt_s = int(input("\nEnter the center-of-mass energy between mW + mH and 20.000 GeV: "))
+    sqrt_s = int(input(f"\nEnter the center-of-mass energy between mW + mH and {const.sqrt_s_max} GeV and press Enter: "))
 
     print("\nCenter-of-mass energy:", sqrt_s, " GeV")
 
