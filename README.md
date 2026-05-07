@@ -1,5 +1,3 @@
-**My project is a new scientific result, so I currently cannot publish the entire project. New files will be added to this repository as their publication is possible.**
-
 ## Easy Introduction :)
 
 My PhD project was dedicated to performing some complex calculations in the field of quantum field theory. Perhaps, at least once in your life, looking at the starry sky, you wondered why our world exists and where it came from. You may know that our Universe was born as a result of the Big Bang. So let's do a thought experiment. Imagine a picture of space with galaxies, nebulae and planets.
